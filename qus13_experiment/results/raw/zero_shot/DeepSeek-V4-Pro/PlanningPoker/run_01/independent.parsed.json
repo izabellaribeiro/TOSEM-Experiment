@@ -1,0 +1,549 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "PlanningPoker",
+    "criterion": "Independent",
+    "run": 1,
+    "temperature": 0,
+    "elapsed_seconds": 421.496
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Foundational story: creating a game does not require any other backlog story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "giving them a URL where they can access the game",
+      "rationale": "Inviting estimators requires an existing game created by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Starting a round by entering an item is an initial estimation activity; no other backlog story is a concrete prerequisite for this feature.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see all items we try to estimate this session",
+      "rationale": "Viewing the item list requires items to have been created by PP-003 or PP-006.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "Selecting an item requires existing items from PP-003 or PP-006.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Adding an item can populate the item list; it does not require a separate item-creation story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "edit an item in the list of items to be estimated",
+      "rationale": "Editing an item requires an existing item from PP-003 or PP-006.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "delete an item from the list of items to be estimated",
+      "rationale": "Deleting an item requires an existing item from PP-003 or PP-006.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Showing estimates does not explicitly depend on another backlog story implementing estimate submission first.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Accepting the average estimate does not have a concrete prerequisite among the supplied stories.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Auto-filling the estimate when cards match does not require another identified backlog story first.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Entering an agreed-upon estimate is not explicitly dependent on another supplied story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "Re-estimating requires a story to have already been estimated or selected, as covered by PP-005.",
+      "related_story_ids": [
+        "PP-005"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Importing stories from a spreadsheet is an alternative way to create items and does not require prior item stories.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Copy/pasting stories from a spreadsheet is an alternative item-creation path and does not require prior item stories.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "browse through previous games",
+      "rationale": "Browsing previous games requires games to have been created by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "view a transcript of a game",
+      "rationale": "Viewing a transcript requires existing games and recorded stories/estimates from PP-001 and PP-003.",
+      "related_story_ids": [
+        "PP-001",
+        "PP-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "export a transcript of a game as a HTML file",
+      "rationale": "Exporting a transcript requires an existing game transcript based on games and stories/estimates from PP-001 and PP-003.",
+      "related_story_ids": [
+        "PP-001",
+        "PP-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "export a transcript of a game as a CSV file",
+      "rationale": "Exporting a transcript requires an existing game transcript based on games and stories/estimates from PP-001 and PP-003.",
+      "related_story_ids": [
+        "PP-001",
+        "PP-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "delete a game",
+      "rationale": "Deleting a game requires an existing game created by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Foundational account-creation story; it does not require another backlog story first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "Logging in requires an account created by PP-021.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "change my account details",
+      "rationale": "Changing account details requires an existing account and authentication from PP-021 and PP-022.",
+      "related_story_ids": [
+        "PP-021",
+        "PP-022"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "delete my account",
+      "rationale": "Deleting an account requires an existing account and authentication from PP-021 and PP-022.",
+      "related_story_ids": [
+        "PP-021",
+        "PP-022"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Displaying dates and times in a local timezone is a self-contained user preference feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "get a password reminder by email",
+      "rationale": "Password reminders require an existing account with an email address from PP-021.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Selecting a deck type is a self-contained configuration choice; no concrete prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "The invitation limit extends the invitation feature from PP-002.",
+      "related_story_ids": [
+        "PP-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "join a game by entering my name on the page I received the URL for",
+      "rationale": "Joining via URL requires the invitation URL provided by PP-002.",
+      "related_story_ids": [
+        "PP-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "An estimator can see the current item only after a round/item has been started or selected via PP-003 or PP-005.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-005"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see all items we will try to estimate this session",
+      "rationale": "Estimators need the session item list created via PP-003 or PP-006.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing that an estimate has been given does not have a concrete prerequisite story for estimate submission in the backlog.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Automatic reveal after all estimates does not explicitly depend on another supplied backlog story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Changing an estimate before the draw completes does not identify a concrete prerequisite story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see each estimator's prior estimates for the story being estimated",
+      "rationale": "Prior estimates require earlier estimation rounds created by PP-003.",
+      "related_story_ids": [
+        "PP-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing who gave which estimates in the current round does not specify a prerequisite backlog story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "A countdown timer is a self-contained feature; no concrete dependency on another supplied story is identified.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "have the two-minute timer reset itself",
+      "rationale": "Reset behavior depends on the timer introduced in PP-037.",
+      "related_story_ids": [
+        "PP-037"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Scrolling back requires prior rounds/items from PP-003.",
+      "related_story_ids": [
+        "PP-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Consistent card ordering is a self-contained presentation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Changing an estimate before draw completion does not require a separate supplied backlog story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Adding a thumbnail photo is self-contained and does not depend on a concrete prior backlog story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Non-functional standards-compliance requirement with no backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Definitions list is a standalone reference feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Database index creation is a technical task and does not require another user story first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Browser compatibility is a standalone non-functional requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Accessibility compliance is a standalone non-functional requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Performance is a standalone non-functional requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Unicode support is a standalone non-functional requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Predictable URLs are a standalone non-functional requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Error pages are standalone and do not depend on another supplied story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Non-identifiable storage is a data-handling requirement with no concrete prerequisite story identified.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Usage metrics can be added as a standalone analytics feature.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    }
+  ]
+}

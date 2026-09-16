@@ -1,0 +1,705 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "BADCamp",
+    "criterion": "Independent",
+    "run": 4,
+    "temperature": null,
+    "elapsed_seconds": 103.104
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "view a list of sponsors",
+      "rationale": "Listing sponsors is self-contained and does not explicitly require another backlog story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "view a list of user profiles",
+      "rationale": "Displaying user profiles can be implemented independently; the story does not reference another story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "email all the trainers at once from the website",
+      "rationale": "Capability to email trainers is a self-contained feature request; it does not state a requirement that another backlog story must exist first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "have a very clear map where the buildings and rooms are",
+      "rationale": "Providing a map is standalone and does not refer to other stories as prerequisites.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "edit my training node myself",
+      "rationale": "Editing a training node is a self-contained authoring capability and is not described as depending on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "limit to one registration per day per authenticated user",
+      "rationale": "Although it refers to a registration constraint, the story does not name a specific backlog story that must exist first; it's a requirement for the registration feature rather than an explicit dependency.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "have an admin view that helps track registration status for each attendee",
+      "rationale": "The admin view is described as a standalone feature; it does not explicitly require a separate backlog story to be completed first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "be added to a training waitlist",
+      "rationale": "Waitlist capability is specified as a feature in itself and does not cite another story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "must accept the cancellation terms with a checkbox",
+      "rationale": "Adding a terms acceptance checkbox is self-contained and does not inherently depend on another backlog item.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "tie in a cancellation deadline to whatever registration / cancellation workflow exists",
+      "rationale": "This modifies a registration workflow but does not refer to a specific other story as a prerequisite; it's a requirement on the workflow itself.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "add to \"my schedule\" if there is a schedule feature on the site",
+      "rationale": "This story explicitly conditions its functionality on the presence of a schedule feature; it therefore depends on a schedule implementation (e.g., BC-055).",
+      "related_story_ids": [
+        "BC-055"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "see which trainings I have signed up for",
+      "rationale": "Showing a user's signed-up trainings can be implemented as a self-contained view; it does not explicitly cite another backlog story as required first.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "view that is attached to their training node that shows all attendee information",
+      "rationale": "Trainer-facing view attached to a training node is described as a standalone feature; it does not explicitly require another story to be completed first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "admin view where all trainee information is shown and can be filtered to show a single training session",
+      "rationale": "Administrative filtering view is self-contained and not stated as dependent on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "link to register for class",
+      "rationale": "Providing a 'register for class' link inherently depends on having a registration/registration-form implementation in place (e.g., BC-067/BC-068), so this story is not self-contained.",
+      "related_story_ids": [
+        "BC-067",
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "register now link",
+      "rationale": "This overview requires both training-detail pages (BC-015) for 'full details' and a registration mechanism (BC-067/BC-068) for the 'register now' link, indicating an inherent dependency.",
+      "related_story_ids": [
+        "BC-015",
+        "BC-067",
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "training landing page with an intro section and a list of all training offerings",
+      "rationale": "A landing page listing offerings is a self-contained feature and does not explicitly require other stories to exist beforehand.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "link on the home page to a list of training options",
+      "rationale": "Linking the home page to a training list presumes the list page exists (BC-017); therefore this story depends on BC-017 being implemented.",
+      "related_story_ids": [
+        "BC-017"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "find out where the coding lounge is and what time it is open",
+      "rationale": "Providing lounge location/time information is self-contained and does not reference other stories as prerequisites.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "refund sponsorship money that was processed via stripe",
+      "rationale": "Refunding Stripe payments inherently depends on a payment/charging implementation (e.g., payment page and charging functionality BC-027/BC-030), so it is not self-contained.",
+      "related_story_ids": [
+        "BC-027",
+        "BC-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "find a link on the sponsorships page to become a $350 level sponsor",
+      "rationale": "Providing a link to become a sponsor requires the underlying sponsorship purchase flow (e.g., BC-023 and payment flow BC-027), creating an inherent dependency.",
+      "related_story_ids": [
+        "BC-023",
+        "BC-027"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "See a list of attendees associated with this company",
+      "rationale": "Displaying attendees associated with a sponsor presupposes that attendees are linked to sponsorship profiles (e.g., BC-031 or assignments in BC-028), so this story depends on those link/assignment features.",
+      "related_story_ids": [
+        "BC-031",
+        "BC-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "identify myself as and pay for a $350 company sponsorship",
+      "rationale": "Paying for a sponsorship requires payment processing and a payment page (BC-027/BC-030); thus the story depends on those payment features being available.",
+      "related_story_ids": [
+        "BC-027",
+        "BC-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "create and maintain venues",
+      "rationale": "Venue CRUD is self-contained and does not state a prerequisite backlog item.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "view venue details",
+      "rationale": "Viewing venue details is a standalone consumer-facing feature; it does not explicitly depend on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see a list of the sessions associated with sponsor attendees",
+      "rationale": "Showing sessions associated with sponsor attendees presumes attendees are linked to sponsors or sponsors are assigned to events (BC-031 and BC-028), so it depends on those features.",
+      "related_story_ids": [
+        "BC-031",
+        "BC-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "See a payment page to pay for my individual sponsorships as the third step of the registration process",
+      "rationale": "This payment page is specified in the context of the registration process and thus depends on the registration flow/registration form (BC-067/BC-068) being defined/implemented.",
+      "related_story_ids": [
+        "BC-067",
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "assign sponsors to events, trainings and summits",
+      "rationale": "Sponsor-assignment functionality is described as a standalone admin capability and does not reference another backlog story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see all events, trainings and summits that a sponsor is sponsoring",
+      "rationale": "Displaying events sponsored by a sponsor requires that sponsors have been assigned to events (BC-028), so this story depends on BC-028.",
+      "related_story_ids": [
+        "BC-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "Enter payment information and have my card charged for an individual sponsorship",
+      "rationale": "Charging a card is the execution of a payment flow and typically depends on having the payment page/flow implemented (BC-027); this story is not independent of that flow.",
+      "related_story_ids": [
+        "BC-027"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page",
+      "rationale": "Linking attendees to a sponsorship page can be implemented as a standalone association feature; the story does not explicitly require another backlog item to exist first.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "update my user profile",
+      "rationale": "Profile update is a self-contained action that does not reference other backlog items as preconditions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "sign up for the BADCamp newsletter",
+      "rationale": "Newsletter signup is an independent feature and does not cite any required prior stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "tag my blog posts for consumption by Drupal Planet",
+      "rationale": "Tagging blog posts presumes blog post creation and the blog system exist (BC-035); therefore this depends on BC-035.",
+      "related_story_ids": [
+        "BC-035"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "create blog posts",
+      "rationale": "Creating blog posts is a primary capability and is self-contained; it does not require another backlog story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "read the blog",
+      "rationale": "A blog-reading interface can be implemented independently of admin authoring features; the story does not mandate another backlog story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "sponsor a summit that matches my brand",
+      "rationale": "Sponsoring a summit is a sponsor-side action; the story does not explicitly require another backlog story first (payment or assignment could be needed but are not specified).",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "register for a summit",
+      "rationale": "This story defines a registration action itself and does not reference another backlog story as a prerequisite, so it is considered self-contained.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "get detailed directions to the summit venue",
+      "rationale": "Providing directions is self-contained and does not explicitly depend on other backlog items.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see what summits I'm signed up for",
+      "rationale": "Showing which summits a user is signed up for presupposes a summit registration system (BC-038) exists, so this story depends on BC-038.",
+      "related_story_ids": [
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see a list of attendees signed up for my summit",
+      "rationale": "A coordinator's attendee list requires summit registration functionality (BC-038) to populate the list, so it depends on that story.",
+      "related_story_ids": [
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "list basic information about my summit",
+      "rationale": "Listing summit basic info is self-contained and doesn't explicitly require other backlog items to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "list sponsors for my summit",
+      "rationale": "To list sponsors for a summit the system must support assigning sponsors to events (BC-028); thus this story depends on BC-028.",
+      "related_story_ids": [
+        "BC-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "list an agenda for my summit",
+      "rationale": "Providing an agenda is a standalone content feature and does not explicitly depend on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see how many seats are left for the summit",
+      "rationale": "Seat availability requires capacity tracking tied to registration (BC-038); therefore this story depends on the registration/seat-tracking implementation.",
+      "related_story_ids": [
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "see specific details on summits",
+      "rationale": "Viewing summit details is self-contained; the story does not declare a prerequisite backlog item.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits",
+      "rationale": "Listing summits is a standalone capability and does not explicitly depend on any other story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "learn about sponsorship levels",
+      "rationale": "Providing information about sponsorship levels is self-contained and does not require another backlog item first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "use a WYSIWYG editor for all long-form content",
+      "rationale": "Editor support is a self-contained functionality request and does not explicitly depend on other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "Link to my sponsorship profile from my job listings",
+      "rationale": "Linking job listings to a sponsorship profile presumes the existence of sponsorship profile pages (BC-001/BC-064); thus this depends on sponsor profile features.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-064"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "learn about posting jobs as a sponsor and contact the sponsorship person",
+      "rationale": "An informational page about posting jobs is self-contained and does not require another backlog story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "post a job",
+      "rationale": "Posting a job is a discrete feature; the story does not explicitly depend on other backlog items.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "view the job board",
+      "rationale": "Viewing a job board is a consumer feature that can be implemented independently of job posting stories; no explicit dependency is stated.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "assign a room to a time slot and a location",
+      "rationale": "Room/time-slot assignment is an administrative scheduling feature and is self-contained as described.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see the schedule",
+      "rationale": "A schedule view requires that sessions be assigned to times/rooms (BC-054) and that sessions be accepted/populated (BC-057/BC-058), so it depends on those features.",
+      "related_story_ids": [
+        "BC-054",
+        "BC-057",
+        "BC-058"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see the final list of sessions approved",
+      "rationale": "Presenting an approved sessions list presupposes session acceptance/approval functionality (BC-057/BC-058), so this story depends on those stories.",
+      "related_story_ids": [
+        "BC-057",
+        "BC-058"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "bulk approve sessions as accepted",
+      "rationale": "Bulk-approve functionality is an admin action and is self-contained; it does not explicitly require another backlog story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "mark a session as accepted",
+      "rationale": "Marking a session as accepted is a primary workflow action and is self-contained in the backlog context.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "receive a notification when sessions have been evaluated",
+      "rationale": "Session-evaluation notifications require the evaluation/acceptance workflow (BC-057/BC-058) to exist to trigger notifications, so this depends on those stories.",
+      "related_story_ids": [
+        "BC-057",
+        "BC-058"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "receive a notification when I submit a session",
+      "rationale": "A submission confirmation notification depends on the session submission mechanism (BC-063); without submission implemented the notification has no trigger.",
+      "related_story_ids": [
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "edit my session",
+      "rationale": "Editing a session presumes sessions have been submitted/created (BC-063); it inherently depends on session submission functionality.",
+      "related_story_ids": [
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "register to speak at BADCamp, so that I submit a session",
+      "rationale": "This story describes the action of registering to speak (part of submission flow) and does not explicitly depend on another backlog story to exist first.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "submit a session at BADCAMP",
+      "rationale": "Submitting a session is a primary action and is self-contained; it does not require another backlog item to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "personalize my sponsorship page",
+      "rationale": "Personalization of a sponsorship page presumes sponsorship profile pages exist (BC-001); thus the story depends on sponsor profile/list functionality.",
+      "related_story_ids": [
+        "BC-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits that include when they are",
+      "rationale": "Listing summits with dates is a standalone display feature and does not explicitly require another backlog story first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "Be offered several choices of idividual sponsorship on the second page of registration",
+      "rationale": "Offering sponsorship choices within registration presumes the registration flow and possibly payment page exist (BC-067/BC-027), creating an inherent dependency.",
+      "related_story_ids": [
+        "BC-067",
+        "BC-027"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "find a link in the menu that links to the registration form",
+      "rationale": "A menu link to a registration form presumes the registration form exists (BC-068); this story therefore depends on BC-068.",
+      "related_story_ids": [
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "fill out a user registration form",
+      "rationale": "Implementing the registration form is itself a primary feature and does not require another backlog item to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "find session information",
+      "rationale": "Finding session information is a consumer-facing capability and the story does not explicitly reference another backlog story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

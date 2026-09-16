@@ -1,0 +1,499 @@
+{
+  "metadata": {
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "PlanningPoker",
+    "criterion": "Unique",
+    "run": 1,
+    "temperature": 0,
+    "elapsed_seconds": 387.205
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No other story duplicates the specific creation of a new game with name and optional description.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Inviting estimators by URL is distinct from PP-028, which adds a meaningful 15-estimator limit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Starting a round by entering an item is distinct from adding, selecting, editing, or deleting backlog items.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Moderator view of all items is similar to PP-031, but the different actor is a meaningful difference allowed by the criterion.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "PP-005 contains the re-estimation requirement expressed separately in PP-013, with the same moderator actor and estimation goal.",
+      "related_story_ids": [
+        "PP-013"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Adding an item to the list is distinct from starting a round with an item and from bulk import/copy-paste.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Editing an item is not substantially contained in any other story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Deleting an item is not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Moderator-triggered immediate reveal is distinct from PP-033's automatic reveal after all estimates are in.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Accepting the average is distinct from manual entry or auto-fill for consensus.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Auto-filling when all cards match is a distinct mechanism from accepting an average or entering an agreed estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Manual entry of an agreed estimate is a distinct method from automatic average acceptance.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "This re-estimation requirement is substantially contained in PP-005's 'estimated or re-estimated' selection requirement without a meaningful difference.",
+      "related_story_ids": [
+        "PP-005"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Importing from a spreadsheet is meaningfully different from manual copy/paste in PP-015.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Copy/pasting from a spreadsheet is a different mechanism from structured import in PP-014.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Browsing previous games is distinct from viewing a game transcript and from creating or deleting a game.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing a transcript is distinct from exporting it or browsing previous games.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "HTML export is a distinct output format from CSV export in PP-019.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "CSV export is a distinct output format from HTML export in PP-018.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Deleting a game is distinct from deleting an account or deleting a backlog item.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Account creation is distinct from login, account update, deletion, and password reminder stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Login is distinct from account creation and password reminder stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Changing account details is distinct from account creation, login, deletion, and password reminder.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Deleting an account is distinct from deleting a single game despite both mentioning game removal.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Local timezone display is not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Password reminder by email is distinct from login and account management stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Selecting a card set is not duplicated by any other story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The 15-estimator limit is a meaningful business rule distinguishing it from the general invitation mechanism in PP-002.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Estimator join by name is distinct from moderator invitation stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Estimator view of the current item is distinct from moderator item views and from seeing all items.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Estimator view of all items is similar to PP-004 but has a different actor, which is a meaningful difference.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Immediately seeing that an estimate has been given is distinct from seeing who gave which values in PP-036.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Automatic reveal after all estimates is distinct from moderator-triggered early reveal in PP-009.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "change my estimate up until the last person selects a card and all are shown",
+      "rationale": "This expresses the same requirement as PP-041: a participant changing an estimate before the draw completes.",
+      "related_story_ids": [
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing prior estimates for the current story is related to PP-039, but it is not substantially contained in that broader prior-round history.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing who gave what estimates during the current round is distinct from PP-032's immediate given-status indication.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Starting a countdown timer is distinct from automatic timer reset in PP-038.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Timer reset behavior is distinct from starting the timer in PP-037.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Scrolling back through prior rounds is broader than PP-035's per-story prior estimates and is not a duplicate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Consistent card ordering is not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "This is the same requirement as PP-034: a participant may change an estimate before the draw completes.",
+      "related_story_ids": [
+        "PP-034"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Displaying participant thumbnail photos is not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "XHTML/CSS compliance is distinct from browser compatibility and accessibility stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "A definitions list is not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Database indexes are an implementation-specific performance story, distinct from user-level responsiveness in PP-048.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Browser compatibility is distinct from standards and accessibility compliance stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "W3C accessibility compliance is distinct from XHTML/CSS and browser-compatibility stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "User-perceived responsiveness is distinct from the specific database-index story in PP-045.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Unicode support is not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sensible and predictable URLs are not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Nice error pages are not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Non-identifiable result storage is distinct from PP-053's usage metrics.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Usage metrics are distinct from PP-052's research storage requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "experiment_name": "QUS13_GoldStandard_3PromptStrategies_3ModelFamilies_AQUSA_LLM_Comparison",
+  "primary_prompt_profile": "all_three_profiles",
+  "runs_per_condition": 5,
+  "temperature": 0,
+  "datasets": {
+    "PlanningPoker": "data/canonical/planningpoker.txt",
+    "BADCamp": "data/canonical/badcamp.txt",
+    "Zooniverse": "data/canonical/zooniverse.txt"
+  },
+  "ground_truth_csv": "ground_truth/gold_standard_qus13_final.csv",
+  "models": [
+    {
+      "provider": "openai",
+      "model": "gpt-5-mini",
+      "label": "GPT-5-Mini",
+      "request_options": {
+        "omit_temperature": true
+      }
+    },
+    {
+      "provider": "google",
+      "model": "gemini-3.1-pro-preview",
+      "label": "Gemini-3.1-Pro-Preview"
+    },
+    {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "label": "DeepSeek-V4-Pro"
+    }
+  ],
+  "binary_ground_truth_policy": {
+    "positive_label": "Violation",
+    "negative_label": "No Violation",
+    "exclude_labels_from_primary_metrics": [
+      "Uncertain",
+      "Insufficient Context"
+    ]
+  },
+  "save_raw_requests": true,
+  "save_raw_responses": true,
+  "save_normalized_outputs": true,
+  "fail_on_missing_story": true,
+  "fail_on_duplicate_story": true,
+  "aqusa_supported_criteria_note": "AQUSA is evaluated only on Well-formed, Atomic, Minimal, Unique, and Uniform; direct LLM-vs-AQUSA comparisons use exactly this five-criterion subset.",
+  "aqusa_supported_criteria": [
+    "Well-formed",
+    "Atomic",
+    "Minimal",
+    "Unique",
+    "Uniform"
+  ],
+  "prompt_profiles": [
+    {
+      "id": "zero_shot",
+      "label": "Zero-shot",
+      "template": "prompts/zero_shot.txt",
+      "shots": 0
+    },
+    {
+      "id": "one_shot",
+      "label": "One-shot",
+      "template": "prompts/one_shot.txt",
+      "shots": 1
+    },
+    {
+      "id": "few_shot",
+      "label": "Few-shot",
+      "template": "prompts/few_shot.txt",
+      "shots": 4
+    }
+  ]
+}

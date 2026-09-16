@@ -1,0 +1,640 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "BADCamp",
+    "criterion": "Unique",
+    "run": 5,
+    "temperature": null,
+    "elapsed_seconds": 64.49
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "view a list of sponsors",
+      "rationale": "This requests a general sponsor list view; no other story asks the same list view for sponsors.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "view a list of user profiles",
+      "rationale": "Unique need to view user profiles; no other story duplicates this exact requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "email all the trainers at once from the website",
+      "rationale": "Specific bulk-email action for trainers; no other story expresses this same admin action.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "very clear map where the buildings and rooms are",
+      "rationale": "Map requirement for buildings/rooms is distinct from venue details or directions elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "trainer, I want to edit my training node myself",
+      "rationale": "Allows trainers to edit training node; no other story asks trainers specifically to edit their training node.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "limit to one registration per day per authenticated user",
+      "rationale": "Business rule limiting registrations per day is a distinct constraint not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "admin view that helps track registration status for each attendee",
+      "rationale": "Admin registration-status tracking (attended/refunded/no show) is a particular admin report; not duplicated by other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "be added to a training waitlist",
+      "rationale": "Explicit waitlist functionality is distinct and not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "must accept the cancellation terms with a checkbox",
+      "rationale": "Requires a specific consent checkbox for cancellations; unique business-rule manifestation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "tie in a cancellation deadline to whatever registration / cancellation workflow exists",
+      "rationale": "Specifies a cancellation-deadline tied to workflow; not duplicated by other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "add to \"my schedule\" if there is a schedule feature",
+      "rationale": "Adding items to a personal schedule is a distinct action from viewing or editing registrations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see which trainings I have signed up for",
+      "rationale": "Viewing signed-up trainings is a distinct read function from adding to schedule or admin views.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "trainer, I want to have a view ... that shows all attendee information",
+      "rationale": "Trainer-specific attendee view (including privacy rationale) targets a specific role and use; not duplicated by admin stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "admin view where all trainee information is shown and can be filtered to show a single training session",
+      "rationale": "Admin filtering view for trainee information is role-specific and functionally different from trainer or coordinator views.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "dedicated page for each class ... SEO friendly /training/training-title",
+      "rationale": "Detailed class detail page with SEO path is distinct from listing or schedule stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "training options clearly marked for the following information: day and time ... register now link",
+      "rationale": "Specifies exact fields shown on a training options listing; distinct from other training/listing stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "training landing page with an intro section and a list of all training offerings and promote call for trainings",
+      "rationale": "Landing-page plus promotion/call-for-trainings purpose differentiates it from other listing or detail stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "have a link on the home page to a list of training options",
+      "rationale": "Navigation/link requirement (home→training list) is distinct from the content of the list or detail pages.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "find out where the coding lounge is and what time it is open",
+      "rationale": "Specific info about the coding lounge is a unique informational requirement not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "refund sponsorship money that was processed via stripe",
+      "rationale": "Admin refund via Stripe is a specific payment-operation requirement distinct from other payment stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "find a link on the sponsorships page to become a $350 level sponsor",
+      "rationale": "This asks for a navigation/link affordance on the sponsorships page; while related to sponsorship purchase stories, it focuses on the link itself and is not a duplicate of the payment/checkout stories.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "See a list of attendees associated with this company",
+      "rationale": "Company-specific attendee list is a distinct view requirement not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "identify myself as and pay for a $350 company sponsorship",
+      "rationale": "End-to-end sponsor identification and payment is a transaction story distinct from link/navigation or payment-page UI stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "create and maintain venues",
+      "rationale": "Administrative CRUD for venues is unique and not duplicated by venue-viewing stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "view venue details",
+      "rationale": "Public venue-detail viewing is distinct from admin venue maintenance and other directional stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see a list of the sessions associated with sponsor attendees",
+      "rationale": "Sponsor-attendee-session listing is a specific cross-entity view not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "See a payment page to pay for my individual sponsorships as the third step of the registration process",
+      "rationale": "Specifies payment page in a particular registration step; distinct from raw card entry or other sponsorship flows.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "assign sponsors to events, trainings and summits",
+      "rationale": "Admin assignment of sponsors to items is a distinct management feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see all events, trainings and summits that a sponsor is sponsoring",
+      "rationale": "Sponsor-centric listing of sponsored items is unique and not a duplicate of generic sponsor list or event details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "Enter payment information and have my card charged for an individual sponsorship",
+      "rationale": "Card-entry / charge action is distinct from showing a payment page or link; not duplicated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page",
+      "rationale": "Sponsor-specific linking feature is unique and not repeated by other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "update my user profile",
+      "rationale": "Profile update functionality is a distinct personal-action requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "sign up for the BADCamp newsletter",
+      "rationale": "Newsletter signup is a specific opt-in requirement not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "tag my blog posts for consumption by Drupal Planet",
+      "rationale": "Specific tagging for external consumption (Drupal Planet) is unique.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "create blog posts",
+      "rationale": "Blog post creation is a content-authoring feature distinct from other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "read the blog",
+      "rationale": "Blog reading by anonymous users is a distinct consumption requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "sponsor a summit that matches my brand",
+      "rationale": "Sponsor desire to target a summit by brand-match is a business goal distinct from sponsoring generally.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "register for a summit",
+      "rationale": "Summit registration is a user transaction distinct from other registration or listing stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "get detailed directions to the summit venue",
+      "rationale": "Detailed directions for summit venue is specific and not duplicated by generic venue-detail stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see what summits I'm signed up for",
+      "rationale": "Per-user view of signed-up summits is distinct from summit listing or registration features.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see a list of attendees signed up for my summit",
+      "rationale": "Summit-coordinator attendee list and email-communication need is role-specific and distinct.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "list basic information about my summit",
+      "rationale": "Summit coordinator content listing is specific and not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "list sponsors for my summit",
+      "rationale": "Summit-specific sponsor listing is unique relative to generic sponsor features.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "list an agenda for my summit",
+      "rationale": "Agenda listing for a summit is a specific content requirement distinct from other lists.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see how many seats are left for the summit",
+      "rationale": "Seat-availability display for summits is a unique informational requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see specific details on summits",
+      "rationale": "Detailed summit view requirement is distinct from listing or registration stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits",
+      "rationale": "This is the generic summit-listing story; other summit stories focus on details, times, or registration—so this is the canonical list and is distinct.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "learn about sponsorship levels",
+      "rationale": "Informational sponsorship-levels content is unique and not duplicated by transactional sponsorship stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "use a WYSIWYG editor for all long-form content",
+      "rationale": "Editor preference for authenticated content authors is a unique UI requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "Link to my sponsorship profile from my job listings",
+      "rationale": "Job-listing to sponsorship-profile linking is specific and not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "learn about posting jobs as a sponsor and contact the sponsorship person",
+      "rationale": "Information/contacts for posting jobs is different from actually posting jobs; not duplicated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "post a job",
+      "rationale": "Job-posting capability is a distinct transactional feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "view the job board",
+      "rationale": "Viewing the job board is a distinct read-only feature; not duplicated by posting or linking stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "assign a room to a time slot and a location",
+      "rationale": "Admin scheduling/assignment of rooms is a distinct management action.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see the schedule",
+      "rationale": "General schedule viewing is a unique user-facing requirement (distinct from final list of approved sessions).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see the final list of sessions approved",
+      "rationale": "Final approved-session list is a specific deliverable and not identical to the general schedule viewing story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "bulk approve sessions as accepted",
+      "rationale": "Bulk-approve admin action is different from marking a single session accepted or viewing lists.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "mark a session as accepted",
+      "rationale": "Single-session acceptance is a distinct admin action compared to bulk approval.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "receive a notification when sessions have been evaluated",
+      "rationale": "Notification about evaluation outcome is distinct from submission confirmation or other notifications.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "receive a notification when I submit a session",
+      "rationale": "Submission-confirmation notification is a distinct event from evaluation notifications.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "edit my session",
+      "rationale": "Authenticated users editing their submitted sessions is a distinct capability from trainers editing training nodes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "register to speak at BADCamp",
+      "rationale": "Anonymous submission to speak differs in actor from authenticated session submission; actors differ so not a duplicate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "submit a session at BADCAMP",
+      "rationale": "Authenticated submission of a session targets a different actor context than the anonymous 'register to speak' story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "personalize my sponsorship page",
+      "rationale": "Sponsor personalization is a distinct content/branding requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "see a list of all the summits that include when they are",
+      "rationale": "This duplicates BC-047 (both are anonymous user summit-listing stories with the same goal; BC-065 only adds explicit time inclusion which is not a meaningful difference from BC-047),",
+      "related_story_ids": [
+        "BC-047"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "Be offered several choices of idividual sponsorship on the second page of registration",
+      "rationale": "Specifies offering sponsorship options at a particular step in registration—distinct from general sponsorship or payment stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "easily find a link in the menu that links to the registration form",
+      "rationale": "Navigation/menu link to registration is distinct from the registration form and other sponsoring/payment stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "fill out a user registration form",
+      "rationale": "User registration form submission is distinct; no other story duplicates this exact requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "find session information",
+      "rationale": "Generic session information lookup is distinct from schedule, detail pages, or submission stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

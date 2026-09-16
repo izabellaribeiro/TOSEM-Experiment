@@ -1,0 +1,549 @@
+{
+  "metadata": {
+    "prompt_profile": "few_shot",
+    "prompt_label": "Few-shot",
+    "shots": 4,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "PlanningPoker",
+    "criterion": "Complete",
+    "run": 3,
+    "temperature": 0,
+    "elapsed_seconds": 287.582
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Game creation is present, so no complementary creation gap is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Invitation creation is stated; no missing prerequisite is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Round/item creation behavior is present elsewhere in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Item-list read is supported by item creation stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Selection depends on existing items; item creation is present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "This story creates items; no missing complementary item capability is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Item update is backed by item creation elsewhere in the backlog.",
+      "related_story_ids": [
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Item deletion is backed by item creation stories.",
+      "related_story_ids": [
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "estimates that have been given",
+      "rationale": "The backlog contains estimate-display behavior but no story that lets an estimator give/submit an estimate.",
+      "related_story_ids": [
+        "PP-032",
+        "PP-033",
+        "PP-034",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The average depends on estimates, but the gap is attached to stories exposing the missing estimate-creation behavior; no separate game-level gap is evidenced here.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "all estimators show the same card",
+      "rationale": "The backlog lacks a story enabling an estimator to select/show a card, so this auto-fill behavior relies on missing estimate creation.",
+      "related_story_ids": [
+        "PP-034",
+        "PP-041"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Moderator entry of an agreed estimate is itself a form of estimate finalization; no missing prerequisite is uniquely exposed here.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Re-estimation assumes existing estimation capability, but the explicit missing creation gap is captured by stories that directly expose estimate submission.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Spreadsheet import creates items; no missing complementary item capability is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Copy/paste item creation is covered; no gap exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Browsing previous games is a read supported by game creation.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Transcript viewing is a read behavior; game and estimate history are present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Export is supported by transcript data; no missing creation exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Export is supported by transcript data; no missing creation exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Game deletion is backed by game creation.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Account creation is present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Login is supported by account creation; no gap exposed.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Account update is backed by account creation.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Account deletion is backed by account creation.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Timezone display has no missing CRUD prerequisite evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Password reminder complements existing account creation/login; no set-level gap evidenced.",
+      "related_story_ids": [
+        "PP-021",
+        "PP-022"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Estimation-scale selection has no missing CRUD prerequisite evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Invitation limit complements existing invitation creation.",
+      "related_story_ids": [
+        "PP-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Joining a game is supported by invitation/game creation.",
+      "related_story_ids": [
+        "PP-001",
+        "PP-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing the current item is supported by item selection/creation.",
+      "related_story_ids": [
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing all items is supported by item creation stories.",
+      "related_story_ids": [
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "an estimate has been given",
+      "rationale": "Status visibility relies on an estimate being given, but no story enables an estimator to give an estimate.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-034",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "after all estimators have given their estimate",
+      "rationale": "The set contains estimate-reveal behavior but no initial estimator estimate-submission behavior, creating a completeness gap.",
+      "related_story_ids": [
+        "PP-032",
+        "PP-034",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "change my estimate",
+      "rationale": "Estimate update behavior exists without an initial estimate-creation capability.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Although prior estimates are referenced, the missing estimate-creation gap is already attached to the stories that expose estimate submission directly.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "who gave what estimates",
+      "rationale": "Seeing who gave estimates requires an estimator estimate-giving story, which is absent from the backlog.",
+      "related_story_ids": [
+        "PP-032",
+        "PP-033",
+        "PP-034",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Timer start is self-contained; no missing complementary capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Timer reset complements timer start; no gap exposed.",
+      "related_story_ids": [
+        "PP-037"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Scrolling through prior rounds is a read behavior supported by game/estimate history.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Card ordering is a presentation requirement; no missing CRUD prerequisite evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "change my estimate",
+      "rationale": "Estimate change is an update on an estimate, but no story creates the initial estimate.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-034"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "thumbnail photo displayed",
+      "rationale": "Displaying a participant photo requires a source/upload capability, which is absent from the backlog.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Standards compliance is nonfunctional and has no missing CRUD prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Definition list is a standalone content/developer requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Database indexes are an implementation detail; no missing user-level creation exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Browser compatibility is nonfunctional; no set-level CRUD gap evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Accessibility compliance is nonfunctional; no missing complementary capability exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Performance is a quality requirement, not a CRUD completeness gap.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Unicode support is a quality requirement; no missing complementary capability exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "URL design is a quality requirement; no CRUD gap evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Error pages are a quality requirement; no missing complementary capability exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Non-identifiable storage is a data-handling constraint; no CRUD gap evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Metrics viewing is a read behavior, and no specific missing creation prerequisite is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

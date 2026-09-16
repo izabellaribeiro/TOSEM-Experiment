@@ -1,0 +1,491 @@
+{
+  "metadata": {
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "PlanningPoker",
+    "criterion": "Complete",
+    "run": 2,
+    "temperature": 0,
+    "elapsed_seconds": 309.555
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creates a game; no missing prerequisite creation or complementary capability is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creates the invitation/access URL; no missing complementary capability is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creates an item/round, so it does not expose a missing creation prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Reading items is supported by item creation in PP-003 and PP-006.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Selecting an item is supported by item creation in PP-003 and PP-006.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creates an item; no missing complementary capability is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Editing an item has a creation counterpart in PP-003 and PP-006.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Deleting an item has a creation counterpart in PP-003 and PP-006.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "show all estimates immediately",
+      "rationale": "This story reads/shows estimates, but no story enables estimators to create/submit an initial estimate; the read behavior lacks its required creation counterpart.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "Accepts an average of estimates, but no story enables estimators to create/submit the individual estimates being averaged.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "if all estimators show the same card",
+      "rationale": "Depends on estimators showing/selecting a card, but no story enables that initial card/estimate creation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creates the agreed-upon estimate, so it does not itself expose a missing creation prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Initiates re-estimation of a prior item; it does not directly expose a missing creation/update/read prerequisite under this criterion.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creates items by import; no missing complementary capability is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creates items by copy/paste; no missing complementary capability is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Browsing previous games is supported by game creation in PP-001.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing a transcript depends on a created game, which PP-001 provides.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Exporting a transcript is an output action; no missing complementary requirement is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Exporting a transcript is an output action; no missing complementary requirement is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Deleting a game has a creation counterpart in PP-001.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creates an account; no missing complementary capability is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Login is supported by account creation in PP-021.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Changing account details is supported by account creation in PP-021.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Deleting an account has a creation counterpart in PP-021.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Timezone display does not expose a missing creation/update/read/delete prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Password reminder is supported by account creation with email in PP-021.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Deck selection does not expose a missing creation/update/read/delete prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Invitation limit does not expose a missing complementary requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Joining is supported by game creation in PP-001 and invitation in PP-002.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing the current item is supported by item creation in PP-003 and PP-006.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing all items is supported by item creation in PP-003 and PP-006.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "an estimate has been given by a specific estimator",
+      "rationale": "This story requires an estimate to have been given, but no story enables an estimator to give/submit an initial estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "after all estimators have given their estimate",
+      "rationale": "Assumes all estimators can give estimates, but the backlog lacks the initial estimate submission story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "change my estimate up until the last person selects a card",
+      "rationale": "Changing an estimate is an update action, but no story establishes the initial estimate/card submission to update.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "each estimator's prior estimates",
+      "rationale": "Reads prior estimates, but no story creates those individual estimates.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "Reads current-round estimates, but no story enables those estimates to be created by estimators.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Starting a timer does not expose a missing creation/update/read/delete prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Timer reset behavior does not itself expose a missing creation/update/read/delete prerequisite under this criterion.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Reads prior estimates, but no story creates individual estimates.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Card ordering does not expose a missing creation/update/read/delete prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "Changing an estimate is an update action, but no story establishes the initial estimate submission.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Thumbnail photo placement does not expose a missing creation/update/read/delete prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Standards compliance does not expose a missing functional capability prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Definitions list does not expose a missing functional capability prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Database indexes do not expose a missing functional capability prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Browser compatibility does not expose a missing functional capability prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Accessibility compliance does not expose a missing functional capability prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Performance does not expose a missing creation/update/read/delete prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Unicode support does not expose a missing functional capability prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "URL design does not expose a missing functional capability prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Error pages do not expose a missing functional capability prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Research storage does not itself expose a missing creation/update/read/delete prerequisite under this criterion.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Usage metrics do not expose a missing functional capability prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

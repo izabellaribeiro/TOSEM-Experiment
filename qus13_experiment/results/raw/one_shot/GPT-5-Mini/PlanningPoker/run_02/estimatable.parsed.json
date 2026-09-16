@@ -1,0 +1,494 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "PlanningPoker",
+    "criterion": "Estimatable",
+    "run": 2,
+    "temperature": null,
+    "elapsed_seconds": 47.289
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "create a new game by entering a name and an optional description",
+      "rationale": "Clear, bounded UI action and inputs allow reasonable implementation estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "invite estimators by giving them a URL",
+      "rationale": "Specific deliverable (shareable URL) is sufficiently scoped for estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "start a round by entering an item in a single multi-line text field",
+      "rationale": "Well-scoped UI behaviour; possible edge cases but estimatable without detailed design.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see all items we try to estimate this session",
+      "rationale": "Displays list of items for current session — clear scope for implementation effort.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "Selecting an item is a bounded interaction and can be reasonably estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "add an item to the list of items to be estimated",
+      "rationale": "Adding items to a list is specific enough to plan and estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "edit an item in the list of items to be estimated",
+      "rationale": "Editing an item is a concrete UI operation with estimatable effort.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "delete an item from the list of items to be estimated",
+      "rationale": "Deleting an item is a bounded behaviour that can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "show all estimates immediately",
+      "rationale": "Behaviour is defined (show immediately) and implementable without excessive ambiguity.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "Accepting an average is a concrete calculation and decision rule that can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "have the \"estimate\" field filled in automatically if all estimators show the same card",
+      "rationale": "Clear trigger and behavior; sufficiently specific for estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "enter the agreed-upon estimate",
+      "rationale": "Simple, concrete UI action with no broad ambiguity.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "Re-estimation is a bounded behaviour; implementation effort is estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "import stories from a spreadsheet",
+      "rationale": "Common, bounded integration task; while formats may be specified later, this is estimatable at a feature level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "Specific, limited interaction that can be estimated without detailed design.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "browse through previous games",
+      "rationale": "Browsing previous games is a defined user action (listing/paging/search) and is estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "view a transcript of a game",
+      "rationale": "Viewing/exporting a transcript is a concrete deliverable with estimatable scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a HTML file",
+      "rationale": "Specific export format (HTML) and action allow for reasonable estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a CSV file",
+      "rationale": "CSV export is a bounded implementation task and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "delete a game",
+      "rationale": "Deleting a game and associated data is a discrete operation estimatable in scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "create an account ... entering my name, email address, a password and a username",
+      "rationale": "Account creation inputs and behaviour are well-defined and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "Standard, well-scoped authentication behaviour is estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "change my account details",
+      "rationale": "Updating account details is a bounded feature that can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "delete my account",
+      "rationale": "Account deletion is a concrete operation; complexity is limited and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see dates and times in my local timezone",
+      "rationale": "Timezone display behaviour is well-understood and estimatable despite implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "get a password reminder by email",
+      "rationale": "Password reminder via email is a standard, bounded feature and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "select whether to have the team estimate with {0, 1/2, 1, 2, 3, 5, 8, etc.} or {0, 1, 2, 4, 8, 16, 32, etc.}",
+      "rationale": "The choice of scoring sequences is concrete and implementable; effort to add options is estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "A numeric limit is specified, making the scope bounded and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "join a game by entering my name on the page I received the URL for",
+      "rationale": "User joining flow is clearly described and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "Displaying the current item is a bounded UI task suitable for estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see all items we will try to estimate this session",
+      "rationale": "A list view of upcoming items is concrete and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "immediately see that an estimate has been given by a specific estimator",
+      "rationale": "Real-time indicator of who has given an estimate is specific enough to estimate (e.g., UI + signalling).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "be shown all estimates at the same time after all estimators have given their estimate",
+      "rationale": "Clear trigger and behaviour for showing estimates; bounded and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "be able to change my estimate up until the last person selects a card and all are shown",
+      "rationale": "Well-defined rule for editability; estimatable implementation effort.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see each estimator's prior estimates for the story being estimated",
+      "rationale": "Displaying prior estimates is a defined data-display feature and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "Explicit display requirement with bounded scope, allowing estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "able start a two-minute countdown timer that all participants can see",
+      "rationale": "Timer duration and visibility are specific; implementation is estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "two-minute timer reset itself as soon as we all play an estimate",
+      "rationale": "Clear trigger and behaviour for reset; bounded and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Scrolling/back-navigation functionality is concrete and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "always have the cards in the same order across multiple draws",
+      "rationale": "Deterministic card ordering is a specific requirement that can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "Edit rule is clear and bounded for implementation estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "have a small thumbnail photo displayed near where my cards are played",
+      "rationale": "UI element (thumbnail) and placement are concrete enough for estimating work.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "have written a site which is compliant with XHTML and CSS standards",
+      "rationale": "Standards compliance is a measurable target and can be estimated at feature level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "have a list of definitions for commonly used terms",
+      "rationale": "Creating a definitions list is a bounded deliverable amenable to estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "created database indexes, so that the queries run as fast as possible",
+      "rationale": "'as fast as possible' is an unbounded/ambiguous acceptance criterion that prevents a reasonable implementation estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "function correctly in Internet Explorer 6 and 7, Firefox 1.5 and 2, and Safari 2",
+      "rationale": "Targeted browsers and versions are explicitly listed, making scope clear for estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "site comply with the W3C accessibility guidelines where possible",
+      "rationale": "Although the phrase 'where possible' is slightly subjective, the target (W3C guidelines) is concrete enough to estimate work at a feature level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "have the application respond quickly to my actions",
+      "rationale": "The term 'respond quickly' is vague/unquantified, so implementation effort cannot be reasonably estimated without measurable criteria.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "be able to use Unicode",
+      "rationale": "Supporting Unicode is a clear technical requirement and estimatable in scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see sensible and predictable URLs",
+      "rationale": "Although somewhat subjective, defining a sensible URL scheme is a bounded design task that can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "have nice error pages when something goes wrong",
+      "rationale": "Designing error pages is a concrete UI task; 'nice' is subjective but does not prevent reasonable estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "results to be stored in a non-identifiable way",
+      "rationale": "'Non-identifiable' is ambiguous/legal/technical and may imply broad, complex anonymization requirements making estimation infeasible without clarification.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "be able to see some metrics on use of the game",
+      "rationale": "The phrase 'some metrics' is underspecified (which metrics, granularity, retention), preventing a reliable implementation estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

@@ -1,0 +1,505 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "PlanningPoker",
+    "criterion": "Conflict-free",
+    "run": 4,
+    "temperature": null,
+    "elapsed_seconds": 85.401
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to create a new game by entering a name and an optional description",
+      "rationale": "Creating a game does not impose a behavior or permission that is incompatible with any other story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "invite estimators by giving them a URL",
+      "rationale": "Inviting via URL is compatible with other stories; no conflicting permissions or rules identified.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "start a round by entering an item in a single multi-line text field",
+      "rationale": "How a round is started/form entered does not conflict with other stories' behaviors or constraints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see all items we try to estimate this session",
+      "rationale": "Listing session items is compatible with other stories and does not impose incompatible rules.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "Selecting an item for estimation is not inconsistent with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "add an item to the list of items to be estimated",
+      "rationale": "Adding items does not impose incompatible constraints relative to other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "edit an item in the list of items to be estimated",
+      "rationale": "Editing items is compatible with other stories' behaviors and permissions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "delete an item from the list of items to be estimated",
+      "rationale": "Deleting an item from the session list does not impose an incompatible global rule with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Conflict-free",
+      "decision": "Violation",
+      "evidence": "show all estimates immediately, ... even though not all estimators have given their estimate",
+      "rationale": "This permits revealing estimates before everyone has voted, which is incompatible with PP-033 requiring estimates to be shown only after all estimators have given their estimate.",
+      "related_story_ids": [
+        "PP-033"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "Accepting the average is a decision rule and does not conflict with other stories' permissions or behaviors.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "\"estimate\" field filled in automatically if all estimators show the same card",
+      "rationale": "Auto-filling when all estimators show the same card is compatible with other stories (it presumes unanimity), and not inconsistent with the 'show after all have given' rule.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "enter the agreed-upon estimate",
+      "rationale": "Manual entry of the agreed estimate does not impose a rule incompatible with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "Re-estimating an earlier story does not conflict with any other story constraints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "import stories from a spreadsheet",
+      "rationale": "Importing stories does not impose incompatible permissions or behaviors relative to other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "Copy/paste ingestion is compatible with the rest of the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "browse through previous games",
+      "rationale": "Browsing previous games is compatible with other stories; while deletion may remove specific games, that does not make the requirement inconsistent per se.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "view a transcript of a game",
+      "rationale": "Viewing transcripts is compatible with other stories; no conflicting storage or permission rule forces transcripts to be unavailable in all cases.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a HTML file",
+      "rationale": "Exporting transcripts is compatible with other stories; not inconsistent with deletion/export rules unless combined with explicit contradictory requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a CSV file",
+      "rationale": "Same as PP-018: exporting is not inherently incompatible with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Conflict-free",
+      "decision": "Violation",
+      "evidence": "delete a game, so that stories and estimates for this game are no longer stored",
+      "rationale": "Allowing a moderator to delete a game so its stories/estimates are no longer stored conflicts with PP-052, which requires results to be stored (non-identifiably) for research; these impose incompatible storage rules.",
+      "related_story_ids": [
+        "PP-052"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "create an account ... name, email address, a password and a username",
+      "rationale": "Account creation/storage of profile info does not directly conflict with other stories' behaviors or constraints (research storage can be anonymized separately).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "Authentication behavior is not incompatible with other stories' rules.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "change my account details",
+      "rationale": "Updating account details does not impose incompatible system behavior relative to other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Conflict-free",
+      "decision": "Violation",
+      "evidence": "delete my account, so that account information and games are no longer stored",
+      "rationale": "Deleting account and games so they are no longer stored conflicts with PP-052's requirement to store results non-identifiably for research; these impose incompatible storage policies.",
+      "related_story_ids": [
+        "PP-052"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see dates and times in my local timezone",
+      "rationale": "Timezone presentation does not conflict with other stories' behaviors or permissions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "get a password reminder by email",
+      "rationale": "Password reminder via email is not inconsistent with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "select whether to have the team estimate with {0, 1/2, 1, 2, 3, 5, 8, etc.} or {0, 1, 2, 4, 8, 16, 32, etc.}",
+      "rationale": "Choosing card set is a preference and does not conflict with other system behaviors.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "Limiting number of invited estimators does not impose a behavior incompatible with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "join a game by entering my name on the page I received the URL for",
+      "rationale": "Joining by entering a name is compatible with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "Displaying the item is consistent with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see all items we will try to estimate this session",
+      "rationale": "Showing the session's item list does not conflict with other stories' behaviors.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "immediately see that an estimate has been given by a specific estimator",
+      "rationale": "Showing who has submitted (but not their values) is not directly incompatible with stories that require showing estimate values only after all have given.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Conflict-free",
+      "decision": "Violation",
+      "evidence": "be shown all estimates at the same time after all estimators have given their estimate",
+      "rationale": "This requires estimates be revealed only after everyone has given; that is incompatible with PP-009 which permits revealing estimates immediately before all have given.",
+      "related_story_ids": [
+        "PP-009"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "be able to change my estimate up until the last person selects a card and all are shown",
+      "rationale": "Allowing changes until the last selection complements 'show after all have given' behavior and is not inherently incompatible with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see each estimator's prior estimates for the story being estimated",
+      "rationale": "Displaying prior estimates is compatible with other stories; it doesn't force contradictory system behavior.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "Showing identities with estimates during a round is compatible with session behavior; not in direct conflict with other stories (research/anonymized storage can be handled separately).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "start a two-minute countdown timer that all participants can see",
+      "rationale": "Timer control is not incompatible with other stories' rules.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "two-minute timer reset itself as soon as we all play an estimate",
+      "rationale": "Auto-resetting the timer on all-play is compatible with other behaviors.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Browsing prior rounds' data is consistent with other stories and not in direct conflict with deletion/export requirements.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "always have the cards in the same order across multiple draws",
+      "rationale": "Card ordering requirement does not conflict with other system behaviors.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "This is consistent with change-until-completion stories and does not impose incompatible constraints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "have a small thumbnail photo displayed near where my cards are played",
+      "rationale": "Displaying thumbnails during sessions is compatible with storage/anonymization choices; no direct contradiction found.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "site which is compliant with XHTML and CSS standards",
+      "rationale": "Standards compliance is not in conflict with other stories' behaviors or permissions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "have a list of definitions for commonly used terms",
+      "rationale": "Providing definitions does not impose conflicting system behavior.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "have created database indexes, so that the queries run as fast as possible",
+      "rationale": "Performance-related developer task does not conflict with other stories' behaviors or permissions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "application function correctly in Internet Explorer 6 and 7, Firefox 1.5 and 2, and Safari 2",
+      "rationale": "Browser compatibility requirement is not incompatible with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "site comply with the W3C accessibility guidelines where possible",
+      "rationale": "Accessibility compliance does not impose rules conflicting with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "application respond quickly to my actions",
+      "rationale": "Performance/responsiveness requirement is compatible with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "be able to use Unicode",
+      "rationale": "Unicode support is not incompatible with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see sensible and predictable URLs",
+      "rationale": "URL presentation preference does not conflict with other system behaviors.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "have nice error pages when something goes wrong",
+      "rationale": "Error page design is not in conflict with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Conflict-free",
+      "decision": "Violation",
+      "evidence": "results to be stored in a non-identifiable way",
+      "rationale": "This storage requirement conflicts with PP-020 and PP-024, both of which require that games (and account games) can be deleted so stories/estimates are no longer stored—imposing incompatible storage/retention rules.",
+      "related_story_ids": [
+        "PP-020",
+        "PP-024"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "be able to see some metrics on use of the game",
+      "rationale": "Requesting metrics does not itself conflict with other stories; storage/retention details can be implemented to satisfy both metrics and deletion/anonymization requirements unless explicitly prohibited.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

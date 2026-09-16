@@ -1,0 +1,598 @@
+{
+  "metadata": {
+    "provider": "openai",
+    "model_requested": "gpt-5.2",
+    "model_label": "GPT-5.2",
+    "project": "Zooniverse",
+    "criterion": "Conflict-free",
+    "run": 4,
+    "temperature": 0,
+    "elapsed_seconds": 61.953
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "search and discover music using content identification or fingerprinting",
+      "rationale": "No other story forbids or constrains fingerprint-based search in a way that is incompatible; other discovery methods are additive.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "search and discover music based on my profile",
+      "rationale": "Profile-based discovery does not conflict with other discovery approaches; no incompatible rules are stated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "based on other users similar to myself",
+      "rationale": "Collaborative filtering is compatible with other search/recommendation stories; no story prohibits using other users’ data.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "music or ringback tones similar to a given music video based on content similarity",
+      "rationale": "Content-similarity discovery does not impose constraints that contradict other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "exploiting enriched metadata and image tags",
+      "rationale": "Using metadata/tags for discovery is consistent with other discovery and tagging stories; no incompatible tagging rules exist.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "upload tagged videos and have tags available for all further processing steps",
+      "rationale": "Making tags available downstream does not conflict with any other story; no story states tags must be excluded from processing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "view thumbnail sequences of video segments",
+      "rationale": "Thumbnail viewing is compatible with segmentation and info retrieval stories; no contradictory UI/permission constraints are stated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "get info about similar video items and segments",
+      "rationale": "Requesting similarity info does not contradict other stories; perceptual similarity (ZO-009) is complementary.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "get info about perceptually similar video items and segments",
+      "rationale": "Perceptual similarity is a refinement/variant of similarity and does not conflict with ZO-008 or other requirements.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "receive content recommendations from similar profiles",
+      "rationale": "Recommendations from similar profiles are consistent with other recommendation sources (e.g., news events); no exclusivity is stated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "recommendations based on most relevant news events in my area",
+      "rationale": "Location/news-based recommendations do not contradict profile-based recommendations; both can coexist.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "identify persons in videos, and receive related information",
+      "rationale": "Person identification is compatible with other identification tasks (products/logos/brands) and does not impose conflicting constraints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "identify products in videos",
+      "rationale": "Product identification does not conflict with other identification or filtering stories; no mutually exclusive behavior is specified.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "identify broadcaster logos in videos",
+      "rationale": "Logo identification is compatible with brand/product/person identification; no contradictory rules are stated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "identify brands in videos",
+      "rationale": "Brand identification does not conflict with other stories; it can be implemented alongside other recognition features.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "take a picture or upload an image ... recommended with videos related to that picture",
+      "rationale": "Image-based recommendation is additive to other recommendation/search mechanisms; no story prohibits using images as input.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "access content using a geographical map and be informed if there are videos covering the area",
+      "rationale": "Map-based access does not contradict other access/search stories; no conflicting constraints about location usage are specified.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "search content items using automatic speech recognition",
+      "rationale": "ASR-based search is compatible with other search methods; no story restricts search inputs to exclude speech.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "As an admin, I want to see, validate and edit segmentation of videos.",
+      "rationale": "Admin segmentation editing does not conflict with other admin annotation/filtering tasks; no story forbids editing segmentation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "annotate news video segments and extract a topic for each segment",
+      "rationale": "Topic extraction/annotation is consistent with segmentation (ZO-019) and filtering; no incompatible constraints are stated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "filter and rank videos based on A/V quality aspects",
+      "rationale": "Quality-based ranking does not conflict with other filtering (nudity/copyright/metadata) since no precedence/exclusivity is specified.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "quick assessment of whether audio material has been edited before the upload",
+      "rationale": "Detecting prior edits is compatible with other admin processing; no story requires treating edited audio as unedited or vice versa.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "prefilter nudity content",
+      "rationale": "Nudity prefiltering is compatible with other prefilters/validation; no story mandates allowing nudity or forbids such filtering.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "prefilter content using search based on low­level asset information",
+      "rationale": "Low-level-asset prefiltering is consistent with high-level prefiltering (ZO-026) and other checks; no incompatibility stated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "validated the ingested contents for copyright infringement",
+      "rationale": "Copyright validation does not conflict with other ingestion/prefiltering stories; no story requires bypassing copyright checks.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "prefilter ... high­level asset information such as metadata and tags",
+      "rationale": "High-level prefiltering complements low-level prefiltering (ZO-024) and tagging (ZO-006); no contradictory rule is present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "assess how interesting or appealing or complex a picture is based on automated analysis, citizen annotations, and comments on Talk",
+      "rationale": "Interest/complexity assessment does not conflict with other Zooniverse admin automation stories; no incompatible scoring rule is specified elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "detect when a scientist should be prompted to look at a subject",
+      "rationale": "Prompting scientists based on signals is compatible with other admin/volunteer-interruption/education stories; no story forbids prompting.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "identify volunteer types",
+      "rationale": "Volunteer-type identification supports other volunteer-related decisions (interrupt/educate/weighting) and does not contradict them.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "preclassify the Galaxy Zoo images using simple low­level image features",
+      "rationale": "Galaxy Zoo preclassification is domain-specific and does not conflict with other project-specific automation stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "detect Snapshot Serengeti images with no classifiable animals",
+      "rationale": "Detecting empty/unclassifiable images is compatible with other Snapshot Serengeti preclassification tasks; no contradictory handling is stated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "automatic image series detection ... timestamping malfunction",
+      "rationale": "Series detection for timestamp issues does not conflict with other Snapshot Serengeti automation; it addresses a different concern.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "automatic animal species preclassification in Snapshot Serengeti",
+      "rationale": "Species preclassification is compatible with attribute/number detection (ZO-034/ZO-035); no mutually exclusive outputs are required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "automatic animal attribute preclassification in Snapshot Serengeti",
+      "rationale": "Attribute preclassification complements species/number detection; no conflicting constraints are specified.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "automatic animal number detection in Snapshot Serengeti",
+      "rationale": "Counting animals is compatible with species/attribute preclassification; no story imposes contradictory counting rules.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "automatic segmentation or localization of plankton in Plankton Portal",
+      "rationale": "Segmentation/localization is compatible with later detection of size/orientation/species; no conflicting processing constraints are stated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "detect Plankton Portal images with no classifiable plankton",
+      "rationale": "Empty-image detection does not conflict with segmentation/species detection; it can gate or complement those steps.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "detection of plankton size or orientation",
+      "rationale": "Size/orientation detection is consistent with segmentation and species preclassification; no incompatible rules are stated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "automatic preclassification of plankton species",
+      "rationale": "Species preclassification is compatible with other Plankton Portal automation stories; no contradictory classification constraints exist.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "worm motion analysis to reduce video duration",
+      "rationale": "Reducing duration via motion analysis does not conflict with egg-laying time detection (ZO-041); both can be applied together.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "detect the time ... where the worm lays an egg",
+      "rationale": "Egg-laying event detection is compatible with motion analysis and does not contradict any other story’s behavior.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "detect important features such as areas of flooding, damage, temporary shelters, blocked roads",
+      "rationale": "Satellite feature detection is independent of other domain stories and has no conflicting constraints elsewhere in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "assess the probability/weight of a volunteer’s classification based on their experience",
+      "rationale": "Weighting classifications by experience is consistent with identifying volunteer types (ZO-029) and interruption/education decisions; no opposing rule is stated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "prefiltering of the images to remove artefacts such as bright stars and camera read errors",
+      "rationale": "Artefact removal/prefiltering does not conflict with moving/transient object detection (ZO-045) because no requirement states artefacts must be retained or that removal must not occur.",
+      "related_story_ids": [
+        "ZO-045"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "detect moving and transient objects in the images",
+      "rationale": "Transient-object detection is compatible with artefact prefiltering (ZO-044); the backlog does not specify incompatible processing order or exclusions.",
+      "related_story_ids": [
+        "ZO-044"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "remove background noise and distracting sounds from the audio files",
+      "rationale": "Audio denoising does not conflict with whale-call grouping/counting stories; no story requires raw audio to remain unmodified.",
+      "related_story_ids": [
+        "ZO-047",
+        "ZO-048"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "group whale calls that are similar",
+      "rationale": "Grouping similar calls is compatible with counting whales (ZO-048) and audio denoising (ZO-046); no contradictory rule is stated.",
+      "related_story_ids": [
+        "ZO-046",
+        "ZO-048"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "identify the number of whales heard in a single audio file",
+      "rationale": "Counting whales is compatible with grouping calls (ZO-047) and denoising (ZO-046); no incompatible constraints are specified.",
+      "related_story_ids": [
+        "ZO-046",
+        "ZO-047"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "know when I should interrupt a volunteer",
+      "rationale": "Determining interruption timing does not conflict with education timing/content stories; they address different interventions without exclusivity.",
+      "related_story_ids": [
+        "ZO-051",
+        "ZO-053"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "interrupt a volunteer with text, an image, or a video",
+      "rationale": "Choosing interruption modality is compatible with deciding when to interrupt (ZO-049) and with education modality (ZO-052); no contradictory modality constraints exist.",
+      "related_story_ids": [
+        "ZO-049",
+        "ZO-052"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "know when I should educate a volunteer",
+      "rationale": "Education timing does not conflict with interruption timing (ZO-049) or with selecting education content/modality (ZO-052/ZO-053).",
+      "related_story_ids": [
+        "ZO-049",
+        "ZO-052",
+        "ZO-053"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "educate a volunteer with text, an image, or a video",
+      "rationale": "Education modality selection is compatible with other volunteer intervention stories; no story mandates a single fixed modality.",
+      "related_story_ids": [
+        "ZO-051",
+        "ZO-050"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "know which piece of education I should give to a volunteer",
+      "rationale": "Selecting education content is consistent with deciding when/how to educate (ZO-051/ZO-052); no conflicting education rules are stated.",
+      "related_story_ids": [
+        "ZO-051",
+        "ZO-052"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "know when a volunteer has made an interesting comment on a subject",
+      "rationale": "Detecting interesting comments is compatible with Zoonibot commenting/explaining (ZO-055/ZO-056) and prompting scientists (ZO-028).",
+      "related_story_ids": [
+        "ZO-055",
+        "ZO-056",
+        "ZO-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "know when Zoonibot should comment on a subject",
+      "rationale": "Bot commenting triggers do not conflict with bot explanation triggers (ZO-056) or bot message content (ZO-057); no mutually exclusive behavior is specified.",
+      "related_story_ids": [
+        "ZO-056",
+        "ZO-057"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "know when Zoonibot should give an explanation",
+      "rationale": "Explanation timing is compatible with commenting timing (ZO-055) and message content (ZO-057); no contradictory rules are stated.",
+      "related_story_ids": [
+        "ZO-055",
+        "ZO-057"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "know what Zoonibot should say to a volunteer",
+      "rationale": "Determining bot message content is consistent with deciding when to comment/explain (ZO-055/ZO-056); no conflicting content constraints exist.",
+      "related_story_ids": [
+        "ZO-055",
+        "ZO-056"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "group subjects by similarity",
+      "rationale": "Grouping by similarity does not conflict with other recommendation or classification stories; no incompatible grouping rule is specified.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "recommend different projects to volunteers based on their previous experiences",
+      "rationale": "Project recommendation is compatible with identifying volunteer types (ZO-029) and other volunteer modeling; no conflicting recommendation constraints are stated.",
+      "related_story_ids": [
+        "ZO-029"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see a summary of articles, so that I reuse them",
+      "rationale": "Article summarization/reuse does not conflict with any other story in the backlog; no incompatible permissions or behaviors are specified elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

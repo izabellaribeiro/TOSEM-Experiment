@@ -1,0 +1,88 @@
+{
+  "created_at_utc": "2026-09-01T03:38:42.859353+00:00",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "config": {
+    "experiment_name": "QUS13_GoldStandard_3PromptStrategies_3ModelFamilies_AQUSA_LLM_Comparison",
+    "primary_prompt_profile": "all_three_profiles",
+    "runs_per_condition": 5,
+    "temperature": 0,
+    "datasets": {
+      "PlanningPoker": "data/canonical/planningpoker.txt",
+      "BADCamp": "data/canonical/badcamp.txt",
+      "Zooniverse": "data/canonical/zooniverse.txt"
+    },
+    "ground_truth_csv": "ground_truth/gold_standard_qus13.csv",
+    "models": [
+      {
+        "provider": "openai",
+        "model": "gpt-5-mini",
+        "label": "GPT-5-Mini",
+        "request_options": {
+          "omit_temperature": true
+        }
+      },
+      {
+        "provider": "google",
+        "model": "gemini-3.1-pro-preview",
+        "label": "Gemini-3.1-Pro-Preview"
+      },
+      {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "label": "DeepSeek-V4-Pro"
+      }
+    ],
+    "binary_ground_truth_policy": {
+      "positive_label": "Violation",
+      "negative_label": "No Violation",
+      "exclude_labels_from_primary_metrics": [
+        "Uncertain",
+        "Insufficient Context"
+      ]
+    },
+    "save_raw_requests": true,
+    "save_raw_responses": true,
+    "save_normalized_outputs": true,
+    "fail_on_missing_story": true,
+    "fail_on_duplicate_story": true,
+    "aqusa_supported_criteria_note": "AQUSA is evaluated only on Well-formed, Atomic, Minimal, Unique, and Uniform; direct LLM-vs-AQUSA comparisons use exactly this five-criterion subset.",
+    "aqusa_supported_criteria": [
+      "Well-formed",
+      "Atomic",
+      "Minimal",
+      "Unique",
+      "Uniform"
+    ],
+    "prompt_profiles": [
+      {
+        "id": "zero_shot",
+        "label": "Zero-shot",
+        "template": "prompts/zero_shot.txt",
+        "shots": 0
+      },
+      {
+        "id": "one_shot",
+        "label": "One-shot",
+        "template": "prompts/one_shot.txt",
+        "shots": 1
+      },
+      {
+        "id": "few_shot",
+        "label": "Few-shot",
+        "template": "prompts/few_shot.txt",
+        "shots": 4
+      }
+    ]
+  },
+  "sha256": {
+    "config/experiment.json": "487b0d7086f64d2043fcf02ef42b8720aceddaec0c0a7d59acd9cb929622c1c0",
+    "config/criteria.json": "c030a00985326483a1878257368ba0868104dd9b2e69a25ff81b32031003876a",
+    "config/prompt_examples.json": "f7e27b09ff5fce6d8244ebe463714edd13458769fd1f2e0ca5a2c49c03b22fa1",
+    "prompts/system.txt": "c5c9ee637b83af20b1e73bd7e1a525c9b92083cfc9e30ad006581760b905d4ac",
+    "prompts/zero_shot.txt": "0ae1804aa7c2a44448af3771d6777d3427c403fe7296f49cfb1e6d6deb50354f",
+    "prompts/one_shot.txt": "b095498b2900a5e231dc8bfae244946f20f5af84716cf104df1c23f54d8718e3",
+    "prompts/few_shot.txt": "586777a89fc60d6c6c34d9ccc3934fba9273489ec7e54dfaa783325eae0308a1",
+    "ground_truth/gold_standard_qus13.csv": "62625c0be355a24137994abd721dddd2d3d56b32d53369851b5bf598b0936e76"
+  }
+}

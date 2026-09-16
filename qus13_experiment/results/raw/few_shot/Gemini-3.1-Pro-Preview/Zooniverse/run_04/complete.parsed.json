@@ -1,0 +1,610 @@
+{
+  "metadata": {
+    "prompt_profile": "few_shot",
+    "prompt_label": "Few-shot",
+    "shots": 4,
+    "provider": "google",
+    "model_requested": "gemini-3.1-pro-preview",
+    "model_label": "Gemini-3.1-Pro-Preview",
+    "project": "Zooniverse",
+    "criterion": "Complete",
+    "run": 4,
+    "temperature": 0,
+    "elapsed_seconds": 95.662
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "search and discover music",
+      "rationale": "Searching music does not strictly require a user upload capability if the music database is external or pre-existing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "based on my profile",
+      "rationale": "The story relies on a user profile, but the backlog lacks a complementary capability to create or manage a profile.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "other users similar to myself",
+      "rationale": "The story relies on the existence of other users, but the backlog lacks a user registration capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "search and discover music or ringback tones",
+      "rationale": "Searching content does not strictly require a user upload capability if the database is external.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "search and discover music",
+      "rationale": "Searching content does not strictly require a user upload capability if the database is external.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "upload tagged videos",
+      "rationale": "This story provides the creation/upload capability for videos, which is used by other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "view thumbnail sequences",
+      "rationale": "The backlog contains the necessary video upload capability to support viewing video segments.",
+      "related_story_ids": [
+        "ZO-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "similar video items",
+      "rationale": "The backlog contains the necessary video upload capability.",
+      "related_story_ids": [
+        "ZO-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "perceptually similar video items",
+      "rationale": "The backlog contains the necessary video upload capability.",
+      "related_story_ids": [
+        "ZO-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "similar profiles",
+      "rationale": "The story relies on user profiles, but the backlog lacks a complementary capability to create or manage a profile.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "news events in my area",
+      "rationale": "News events can be fetched from an external API; a creation capability is not strictly required within the system.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify persons in videos",
+      "rationale": "The backlog contains the necessary video upload capability.",
+      "related_story_ids": [
+        "ZO-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify products in videos",
+      "rationale": "The backlog contains the necessary video upload capability.",
+      "related_story_ids": [
+        "ZO-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify broadcaster logos in videos",
+      "rationale": "The backlog contains the necessary video upload capability.",
+      "related_story_ids": [
+        "ZO-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify brands in videos",
+      "rationale": "The backlog contains the necessary video upload capability.",
+      "related_story_ids": [
+        "ZO-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "take a picture or upload an image",
+      "rationale": "This story provides the creation/upload capability for images.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "access content using a geographical map",
+      "rationale": "The backlog contains the necessary content upload capabilities.",
+      "related_story_ids": [
+        "ZO-006",
+        "ZO-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "search content items",
+      "rationale": "The backlog contains the necessary content upload capabilities.",
+      "related_story_ids": [
+        "ZO-006",
+        "ZO-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "edit segmentation of videos",
+      "rationale": "The story allows editing video segmentation, but the backlog lacks a complementary capability to create the initial segmentation for these videos.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "annotate news video segments",
+      "rationale": "This story provides the capability to create annotations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "filter and rank videos",
+      "rationale": "The backlog contains the necessary video upload capability.",
+      "related_story_ids": [
+        "ZO-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "before the upload",
+      "rationale": "The story explicitly mentions the upload of audio material, but the backlog lacks a capability to upload audio.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "prefilter nudity content",
+      "rationale": "The backlog contains the necessary content upload capabilities.",
+      "related_story_ids": [
+        "ZO-006",
+        "ZO-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "prefilter content",
+      "rationale": "The backlog contains the necessary content upload capabilities.",
+      "related_story_ids": [
+        "ZO-006",
+        "ZO-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "ingested contents",
+      "rationale": "The backlog contains upload capabilities (e.g., ZO-006, ZO-016) that serve as ingestion.",
+      "related_story_ids": [
+        "ZO-006",
+        "ZO-016"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "prefilter the content",
+      "rationale": "The backlog contains the necessary content upload capabilities.",
+      "related_story_ids": [
+        "ZO-006",
+        "ZO-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "citizen annotations, and comments on Talk",
+      "rationale": "The story evaluates citizen annotations and comments, but the backlog lacks capabilities for citizens/volunteers to create annotations or comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "annotations and information from Talk comments",
+      "rationale": "The story relies on annotations and comments, but the backlog lacks capabilities for users to create them.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "volunteer types",
+      "rationale": "The story references volunteers, but the backlog lacks a volunteer registration capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "preclassify the Galaxy Zoo images",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story if the dataset is assumed to be pre-existing or ingested via general upload.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detect Snapshot Serengeti images",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "image series detection",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "animal species preclassification",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "animal attribute preclassification",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "animal number detection",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "segmentation or localization of plankton",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detect Plankton Portal images",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detection of plankton size or orientation",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "preclassification of plankton species",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "worm motion analysis",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detect the time in a Worm Watch Lab video",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detect important features ... in the satellite images",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "volunteer’s classification",
+      "rationale": "The story assesses volunteer classifications, but the backlog lacks a capability for volunteers to submit classifications.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "prefiltering of the images",
+      "rationale": "The backlog contains the necessary image upload capability.",
+      "related_story_ids": [
+        "ZO-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detect moving and transient objects in the images",
+      "rationale": "The backlog contains the necessary image upload capability.",
+      "related_story_ids": [
+        "ZO-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "remove background noise ... from the audio files",
+      "rationale": "While audio upload is missing, ZO-022 is the primary story exposing that gap.",
+      "related_story_ids": [
+        "ZO-022"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "group whale calls",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify the number of whales heard",
+      "rationale": "Automated admin tasks on datasets do not strictly require a manual upload story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "interrupt a volunteer",
+      "rationale": "While volunteer registration is missing, ZO-029 is the primary story exposing that gap.",
+      "related_story_ids": [
+        "ZO-029"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "interrupt a volunteer",
+      "rationale": "While volunteer registration is missing, ZO-029 is the primary story exposing that gap.",
+      "related_story_ids": [
+        "ZO-029"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "educate a volunteer",
+      "rationale": "While volunteer registration is missing, ZO-029 is the primary story exposing that gap.",
+      "related_story_ids": [
+        "ZO-029"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "educate a volunteer",
+      "rationale": "While volunteer registration is missing, ZO-029 is the primary story exposing that gap.",
+      "related_story_ids": [
+        "ZO-029"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "piece of education I should give to a volunteer",
+      "rationale": "While volunteer registration is missing, ZO-029 is the primary story exposing that gap.",
+      "related_story_ids": [
+        "ZO-029"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "volunteer has made an interesting comment",
+      "rationale": "The story detects when a volunteer makes a comment, but the backlog lacks a capability for volunteers to create comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "Zoonibot should comment",
+      "rationale": "Zoonibot is an automated agent, so manual comment creation is not required for this specific story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "Zoonibot should give an explanation",
+      "rationale": "Zoonibot is an automated agent.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "what Zoonibot should say",
+      "rationale": "Zoonibot is an automated agent.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "group subjects by similarity",
+      "rationale": "The backlog contains capabilities to upload subjects (images/videos).",
+      "related_story_ids": [
+        "ZO-006",
+        "ZO-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "previous experiences",
+      "rationale": "The story recommends projects based on volunteer experiences, but the backlog lacks capabilities for volunteers to register or participate in projects.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "summary of articles",
+      "rationale": "The story allows viewing a summary of articles, but the backlog lacks a capability to create or import articles.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

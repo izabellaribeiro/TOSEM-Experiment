@@ -1,0 +1,783 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "BADCamp",
+    "criterion": "Complete",
+    "run": 4,
+    "temperature": 0,
+    "elapsed_seconds": 540.843
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sponsor list is readable; sponsor creation/read behavior is covered by BC-021/BC-023.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "User profiles are readable; account/profile creation is covered by BC-068.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Emailing trainers is a supported back-office action; no missing complementary creation capability is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Venue and room creation/maintenance are covered by BC-024, enabling map/directions content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "edit my training node myself",
+      "rationale": "Update capability for a training node exists, but the backlog lacks the required creation capability for training offerings/nodes.",
+      "related_story_ids": [
+        "BC-015",
+        "BC-016",
+        "BC-017",
+        "BC-018"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The missing creation capability for training registration is tracked at BC-012; this constraint story is not the clearest read/update gap.",
+      "related_story_ids": [
+        "BC-012"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "track registration status for each attendee",
+      "rationale": "Reads training registration statuses, but no story creates training registrations.",
+      "related_story_ids": [
+        "BC-006",
+        "BC-008",
+        "BC-009",
+        "BC-010",
+        "BC-012",
+        "BC-013",
+        "BC-014",
+        "BC-015",
+        "BC-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Waitlist behavior depends on missing training registration creation, but that gap is captured at BC-012.",
+      "related_story_ids": [
+        "BC-012"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Cancellation terms acceptance depends on missing cancellation/registration workflow; primary gap is captured at BC-010/BC-012.",
+      "related_story_ids": [
+        "BC-010",
+        "BC-012"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "tie in a cancellation deadline to whatever registration / cancellation workflow exists",
+      "rationale": "References a cancellation workflow that is not specified elsewhere, so a required complementary capability is missing.",
+      "related_story_ids": [
+        "BC-009",
+        "BC-012"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Schedule feature exists via BC-055, so adding to a schedule has a complementary capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "see which trainings I have signed up for",
+      "rationale": "Read behavior for signed-up trainings requires a training registration creation capability, which is absent.",
+      "related_story_ids": [
+        "BC-006",
+        "BC-007",
+        "BC-008",
+        "BC-009",
+        "BC-010",
+        "BC-013",
+        "BC-014",
+        "BC-015",
+        "BC-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "view that is attached to their training node that shows all attendee information",
+      "rationale": "Reads attendee/registration information, but training registration creation is missing.",
+      "related_story_ids": [
+        "BC-012",
+        "BC-007",
+        "BC-014"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "admin view where all trainee information is shown and can be filtered to show a single training session",
+      "rationale": "Reads trainee/registration data whose creation story for training registration is absent.",
+      "related_story_ids": [
+        "BC-012",
+        "BC-007",
+        "BC-013"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "registrations remaining, link to register for class",
+      "rationale": "Assumes both created training offerings and a training registration flow, but neither creation capability is present.",
+      "related_story_ids": [
+        "BC-005",
+        "BC-012"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "number of registrations, remaining registrations, register now link",
+      "rationale": "Assumes training offerings and training registration creation exist, but the backlog lacks those creation stories.",
+      "related_story_ids": [
+        "BC-005",
+        "BC-012"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "list of all training offerings",
+      "rationale": "Reads training offerings, but no story creates or maintains training offerings in the backlog.",
+      "related_story_ids": [
+        "BC-005"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Navigation to the training list is supported by training list/page stories; no independent missing capability is exposed.",
+      "related_story_ids": [
+        "BC-017"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Coding lounge information is display-only and does not evidence a missing complementary creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Refund is complementary to existing Stripe payment processing captured in BC-030.",
+      "related_story_ids": [
+        "BC-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Navigation to become a sponsor is supported by company sponsorship creation/payment in BC-023.",
+      "related_story_ids": [
+        "BC-023"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Reads company attendees; company sponsor and profile data are established elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creation of a company sponsor is explicitly captured here.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Venue creation and maintenance are explicitly captured, supporting venue details and directions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Venue detail read is supported by venue creation/maintenance in BC-024.",
+      "related_story_ids": [
+        "BC-024"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Demonstrates sponsor sessions; sponsor assignments exist via BC-028.",
+      "related_story_ids": [
+        "BC-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Part of the individual sponsorship payment flow, with selection and payment steps captured separately.",
+      "related_story_ids": [
+        "BC-030",
+        "BC-066"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Admin assignment of sponsors to events/trainings/summits is the complementary capability for sponsor detail pages.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Reads sponsor assignments, whose creation is captured in BC-028.",
+      "related_story_ids": [
+        "BC-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Individual sponsorship payment capture is explicitly specified.",
+      "related_story_ids": [
+        "BC-027"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sponsor attends link assumes sponsorship page and attendee data exist elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Profile update has a creation counterpart in user registration BC-068.",
+      "related_story_ids": [
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Newsletter signup is a creation behavior in itself; no missing prerequisite is evident.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Tagging blog posts is supported by blog post creation in BC-035.",
+      "related_story_ids": [
+        "BC-035"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Blog post creation is captured, enabling blog reading and tagging.",
+      "related_story_ids": [
+        "BC-036",
+        "BC-034"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Blog reading is supported by creation capability BC-035.",
+      "related_story_ids": [
+        "BC-035"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sponsor-summit association is covered by sponsor assignment and summit information stories.",
+      "related_story_ids": [
+        "BC-028",
+        "BC-042"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Summit registration creation is explicit, supporting later read/list stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Directions to summit venue use venue/location details supported by BC-024/BC-042.",
+      "related_story_ids": [
+        "BC-024",
+        "BC-042"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Reading signed-up summits is supported by summit registration creation BC-038.",
+      "related_story_ids": [
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Summit coordinator attendee list is supported by summit registration creation BC-038.",
+      "related_story_ids": [
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Summit coordinator listing basic summit information functions as the creation/update capability for summits.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing summit sponsors is supported by sponsor assignment in BC-028.",
+      "related_story_ids": [
+        "BC-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing an agenda is an authoring/creation capability for summit agenda content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seat remaining display can be satisfied by summit capacity entered through summit information management or registration counts.",
+      "related_story_ids": [
+        "BC-042",
+        "BC-038"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Summit detail view is supported by summit information and registration capabilities.",
+      "related_story_ids": [
+        "BC-042",
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Summit list read is supported by summit information in BC-042.",
+      "related_story_ids": [
+        "BC-042"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sponsorship level learning is informational and does not expose a missing creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "WYSIWYG editor is a generic content authoring support; no missing prerequisite is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Link from job listing to sponsorship profile uses existing sponsorship profile and job content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Informational and contact request story; no missing creation capability is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Job posting creation is explicitly captured, supporting job board read.",
+      "related_story_ids": [
+        "BC-053"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Job board read is supported by job posting creation BC-052.",
+      "related_story_ids": [
+        "BC-052"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Assigning rooms to time slots creates schedule entries; it is the population step for schedule read.",
+      "related_story_ids": [
+        "BC-055"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Schedule read is supported by schedule population in BC-054.",
+      "related_story_ids": [
+        "BC-054"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Approved session list is supported by session submission and approval stories.",
+      "related_story_ids": [
+        "BC-062",
+        "BC-063",
+        "BC-057",
+        "BC-058"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Bulk approval is a complementary update behavior to session submission.",
+      "related_story_ids": [
+        "BC-062",
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Single-session approval is a complementary update behavior to session submission.",
+      "related_story_ids": [
+        "BC-062",
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Notification of evaluation is supported by session submission and approval/rejection status workflows in the backlog.",
+      "related_story_ids": [
+        "BC-062",
+        "BC-063",
+        "BC-057",
+        "BC-058"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Submission notification is supported by session submission BC-062/BC-063.",
+      "related_story_ids": [
+        "BC-062",
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Session edit is supported by session submission creation BC-062/BC-063.",
+      "related_story_ids": [
+        "BC-062",
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Speaker registration/submission is the creation capability for sessions.",
+      "related_story_ids": [
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Session submission creation is explicit.",
+      "related_story_ids": [
+        "BC-062"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Personalizing sponsorship page is supported by company sponsorship creation in BC-023.",
+      "related_story_ids": [
+        "BC-023"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Summit list read is supported by summit information BC-042.",
+      "related_story_ids": [
+        "BC-042"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Individual sponsor choice is part of registration/sponsorship flow and is complemented by payment stories.",
+      "related_story_ids": [
+        "BC-027",
+        "BC-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Menu link to registration form is supported by registration creation BC-068.",
+      "related_story_ids": [
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "User registration creation is explicit, supporting account and profile operations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Session information read is supported by session submission and schedule capabilities.",
+      "related_story_ids": [
+        "BC-062",
+        "BC-063",
+        "BC-054",
+        "BC-055"
+      ],
+      "confidence": "High"
+    }
+  ]
+}

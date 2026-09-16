@@ -1,0 +1,557 @@
+{
+  "metadata": {
+    "prompt_profile": "few_shot",
+    "prompt_label": "Few-shot",
+    "shots": 4,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "Zooniverse",
+    "criterion": "Complete",
+    "run": 4,
+    "temperature": 0,
+    "elapsed_seconds": 299.274
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "search and discover music",
+      "rationale": "The story describes a discovery capability and does not expose a missing internal complementary capability within the project scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "search and discover music based on my profile",
+      "rationale": "No missing complementary requirement is evidenced by this profile-based discovery story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "search and discover music based on other users similar to myself",
+      "rationale": "The story is self-contained and does not expose a required missing capability in the set.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "music or ringback tones similar to a given music video",
+      "rationale": "The story relies on a given music video, which is covered by video upload capability; no complementary gap is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "search and discover music by exploiting enriched metadata and image tags",
+      "rationale": "This discovery story does not evidence a missing complementary capability in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "upload tagged videos",
+      "rationale": "The story provides a creation capability for tagged video content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "view thumbnail sequences of video segments",
+      "rationale": "The story is a read/view capability; the segmentation gap, if any, is exposed more directly by the edit-oriented story ZO-019.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "get info about similar video items and segments",
+      "rationale": "No additional missing complementary requirement is evidenced here.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "get info about perceptually similar video items and segments",
+      "rationale": "No separate completeness gap is exposed by this information retrieval story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "receive content recommendations from similar profiles",
+      "rationale": "The recommendation story does not evidence a missing internal creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "receive content recommendations based on most relevant news events in my area",
+      "rationale": "No complementary capability is evidenced as missing by this story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify persons in videos",
+      "rationale": "The story is an analysis feature and does not expose a required creation step missing from the set.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify products in videos",
+      "rationale": "No missing complementary requirement is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify broadcaster logos in videos",
+      "rationale": "No set-level completeness gap is exposed by this story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify brands in videos",
+      "rationale": "The story is self-contained and does not evidence a missing creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "take a picture or upload an image",
+      "rationale": "The story provides a creation/upload capability for images.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "access content using a geographical map",
+      "rationale": "No missing complementary capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "search content items using automatic speech recognition",
+      "rationale": "The story describes a search capability and does not expose a required creation gap.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "edit segmentation of videos",
+      "rationale": "The backlog includes editing/validation of video segmentation but no complementary story that creates or generates the segmentation of videos.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "annotate news video segments and extract a topic for each segment",
+      "rationale": "The missing segmentation-creation gap is attached to the more direct edit-oriented story ZO-019; this annotation story does not add a separate missing complementary requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "filter and rank videos based on A/V quality aspects",
+      "rationale": "Video creation is already covered by ZO-006; no missing complementary capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "audio material has been edited before the upload",
+      "rationale": "The story treats audio material as an existing input; no internal complementary creation gap is exposed within the project scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "prefilter nudity content",
+      "rationale": "No missing complementary capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "prefilter content using search based on low-level asset information",
+      "rationale": "The story does not expose a missing required creation step in the set.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatically validated the ingested contents for copyright infringement",
+      "rationale": "Ingestion is covered for videos/images elsewhere; no complementary gap is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "prefilter the content using search on high-level asset information",
+      "rationale": "No set-level completeness gap is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "citizen annotations, and comments on Talk",
+      "rationale": "The story uses existing platform inputs and does not expose a missing complementary capability within the stated backlog scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "annotations and information from Talk comments",
+      "rationale": "No missing complementary requirement is evidenced by this detection story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify volunteer types",
+      "rationale": "No creation capability is evidenced as missing here.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "preclassify the Galaxy Zoo images",
+      "rationale": "The story operates on existing project images and does not expose a set-level creation gap.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detect Snapshot Serengeti images with no classifiable animals",
+      "rationale": "No missing complementary capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic image series detection",
+      "rationale": "The story is self-contained for the described analysis; no completeness gap is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic animal species preclassification",
+      "rationale": "No missing required complementary requirement is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic animal attribute preclassification",
+      "rationale": "The story does not expose a gap in the set.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic animal number detection",
+      "rationale": "No complementary creation capability is missing for this analysis.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic segmentation or localization of plankton",
+      "rationale": "The story itself creates segmentation/localization for plankton images; no gap is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detect Plankton Portal images with no classifiable plankton",
+      "rationale": "No missing complementary capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic detection of plankton size or orientation",
+      "rationale": "This analysis story does not expose a required creation gap.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic preclassification of plankton species",
+      "rationale": "No set-level completeness gap is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic worm motion analysis",
+      "rationale": "The story operates on existing video material; no missing complementary creation capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detect the time in a Worm Watch Lab video where the worm lays an egg",
+      "rationale": "No missing complementary requirement is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detect important features in the satellite images",
+      "rationale": "The story treats satellite images as existing input; no completeness gap is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "assess the probability/weight of a volunteer’s classification",
+      "rationale": "No missing internal creation capability is evidenced by this assessment story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "prefiltering of the images to remove artefacts",
+      "rationale": "Image upload/creation is covered by ZO-016; no complementary gap is exposed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detect moving and transient objects in the images",
+      "rationale": "No missing complementary capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "remove background noise and distracting sounds from the audio files",
+      "rationale": "The story treats audio files as existing input material; no set-level creation gap is attributed here.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "group whale calls that are similar",
+      "rationale": "No missing complementary requirement is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify the number of whales heard",
+      "rationale": "The story operates on existing audio input and does not expose a missing creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "know when I should interrupt a volunteer",
+      "rationale": "No complementary creation capability is evidenced as missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "interrupt a volunteer with text, an image, or a video",
+      "rationale": "The story does not expose a set-level completeness gap.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "know when I should educate a volunteer",
+      "rationale": "No missing complementary requirement is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "educate a volunteer with text, an image, or a video",
+      "rationale": "No required creation capability is shown to be missing here.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "know which piece of education I should give to a volunteer",
+      "rationale": "The story does not expose a missing complementary capability within the set.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "know when a volunteer has made an interesting comment",
+      "rationale": "No set-level completeness gap is attributed here.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "know when Zoonibot should comment",
+      "rationale": "No missing complementary requirement is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "know when Zoonibot should give an explanation",
+      "rationale": "The story is self-contained and does not expose a completeness gap.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "know what Zoonibot should say to a volunteer",
+      "rationale": "No missing complementary capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "group subjects by similarity",
+      "rationale": "The story operates on existing subjects and does not expose a missing creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "recommend different projects to volunteers",
+      "rationale": "No complementary creation capability is shown to be missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see a summary of articles",
+      "rationale": "The story treats articles as existing content and does not expose a missing internal creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

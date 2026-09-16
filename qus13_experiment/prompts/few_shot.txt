@@ -1,0 +1,25 @@
+QUS CRITERION
+Name: {{criterion_name}}
+Dimension: {{dimension}}
+Scope: {{scope}}
+Definition: {{definition}}
+Operational decision rule: {{decision_rule}}
+
+PROMPTING CONDITION
+Few-shot: four worked examples are provided below (two Violation and two No Violation where the criterion permits it). Demonstrations are synthetic and are not drawn from PlanningPoker, BADCamp, or Zooniverse.
+
+WORKED EXAMPLES
+{{few_shot_demos}}
+
+PROJECT
+{{project_name}}
+
+FULL BACKLOG
+{{backlog_with_ids}}
+
+TASK
+Evaluate EVERY story in the backlog for the single criterion "{{criterion_name}}".
+Do not evaluate any other QUS criterion in this call.
+If the criterion is set-level, compare stories across the full backlog and identify related story IDs when relevant.
+If the criterion is individual-level, do not treat a problem belonging solely to another QUS criterion as evidence for this criterion.
+Return exactly {{story_count}} evaluation objects, one for each story ID.

@@ -1,0 +1,557 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "Zooniverse",
+    "criterion": "Estimatable",
+    "run": 1,
+    "temperature": null,
+    "elapsed_seconds": 68.226
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "search and discover music using content identification or fingerprinting",
+      "rationale": "Specifies a concrete technique (fingerprinting/content identification) and a clear outcome, enabling a reasonable implementation estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "search and discover music based on my profile",
+      "rationale": "Clear goal (profile-based search/recommendation); scope is definable for estimation (features, matching rules).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "search and discover music based on other users similar to myself",
+      "rationale": "Specifies collaborative approach (similar users) which is concrete enough to plan and estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "similar ... based on content similarity",
+      "rationale": "Defines the similarity-based outcome and target artifacts (music/video/ringback tones), so estimation is feasible.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "exploiting enriched metadata and image tags",
+      "rationale": "Specifies data sources (metadata, tags) and desired outcomes (related artists, genres), allowing reasonable scoping and estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "upload tagged videos and have tags available for all further processing steps",
+      "rationale": "Clear, bounded functionality: upload, persist tags, expose for processing — estimatable without design details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "view thumbnail sequences of video segments",
+      "rationale": "Concrete UI/feature (thumbnail sequences for segments); scope is specific enough to estimate effort.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "get info about similar video items and segments",
+      "rationale": "Although 'info' can vary, the feature of retrieving metadata for similar items is a definable, estimatable scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "get info about perceptually similar video items and segments",
+      "rationale": "Defines perceptual similarity as the matching criterion and requests metadata/info, which is sufficiently specific for estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "receive content recommendations from similar profiles",
+      "rationale": "Specifies recommendation source (similar profiles); implementable and estimatable as a discrete feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "recommendations based on most relevant news events in my area",
+      "rationale": "Gives concrete signal (news events in area) for recommendations; can be scoped and estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "identify persons in videos, and receive related information about them",
+      "rationale": "Functionality (person identification + related info lookup) is clear enough to make an implementation estimate, even if technical choices remain.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "identify products in videos, and receive related information about them",
+      "rationale": "Concrete detection/lookup task with definable acceptance criteria; estimatable at story level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "identify broadcaster logos in videos, and receive related information about them",
+      "rationale": "Specific detection + metadata retrieval task; scope is bounded enough for estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "identify brands in videos, and receive related information about them",
+      "rationale": "Clear detection and lookup objective; estimatable without requiring detailed design.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "take a picture or upload an image ... recommended with videos related to that picture or image",
+      "rationale": "Defines input actions and desired output (related video recommendations), which can be scoped and estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "access content using a geographical map and be informed if there are videos covering the area",
+      "rationale": "Specifies map-based discovery and notification about coverage — a discrete feature set that can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "search content items using automatic speech recognition",
+      "rationale": "Defines the technology (ASR) and the user action (search), providing enough detail to estimate work.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see, validate and edit segmentation of videos",
+      "rationale": "Admin UI + edit/validation workflow are concrete functions and can be reasonably estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "annotate news video segments and extract a topic for each segment",
+      "rationale": "Specifies annotation plus topic extraction per segment; scope is defined enough for estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "filter and rank videos based on A/V quality aspects",
+      "rationale": "Clear objective and signals (A/V quality) for filtering and ranking; reasonably estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "quick assessment of whether audio material has been edited before the upload",
+      "rationale": "Defines a detection outcome (edited vs not); while algorithmic, the scope is clear enough to estimate feasibility and effort.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "prefilter nudity content",
+      "rationale": "Specific moderation/detection task with clear acceptance criteria; estimatable as a work item.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "prefilter content using search based on low­level asset information",
+      "rationale": "Specifies using low-level asset data for prefiltering; the approach narrows scope sufficiently to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "automatically validated the ingested contents for copyright infringement",
+      "rationale": "Although legally sensitive, the functional goal (automated copyright validation) is a definable capability that can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "prefilter the content using search on high­level asset information such as metadata and tags",
+      "rationale": "Explicit data sources (metadata, tags) and prefiltering goal provide a clear, estimatable scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "assess how interesting or appealing or complex a picture is",
+      "rationale": "Terms are highly subjective and encompass multiple distinct assessments (interesting, appealing, complex) without acceptance criteria, making reasonable estimation infeasible.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "detect when a scientist should be prompted to look at a subject, based on annotations and information from Talk comments",
+      "rationale": "Specifies inputs (annotations, Talk comments) and the outcome (prompt scientist); implementable rules can be defined to estimate effort.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "identify volunteer types",
+      "rationale": "Volunteer typology can be defined (features, clustering/classification) and scoped for estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "preclassify the Galaxy Zoo images using simple low­level image features",
+      "rationale": "Specifies method (simple low-level features) and outcome (preclassification), so scope is concrete enough to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "automatically detect Snapshot Serengeti images with no classifiable animals in them",
+      "rationale": "Clear detection goal with explicit acceptance condition (no classifiable animals), enabling reasonable estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "perform automatic image series detection for the case of timestamping malfunction",
+      "rationale": "Defines a specific detection scenario (timestamp malfunction) and desired capability, which can be scoped for estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "perform automatic animal species preclassification in Snapshot Serengeti",
+      "rationale": "Task (species preclassification) is concrete and measurable, allowing estimation of implementation effort.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "perform automatic animal attribute preclassification in Snapshot Serengeti",
+      "rationale": "Specific preclassification of attributes is sufficiently bounded for planning and estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "perform automatic animal number detection in Snapshot Serengeti",
+      "rationale": "Detecting animal count is a focused, measurable capability that can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "perform automatic segmentation or localization of plankton in Plankton Portal",
+      "rationale": "Segmentation/localization is a clear technical task with definable scope and estimation possible.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "automatically detect Plankton Portal images with no classifiable plankton in them",
+      "rationale": "Clear detection goal with explicit condition; task is bounded for estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "perform automatic detection of plankton size or orientation in Plankton Portal images",
+      "rationale": "Explicit metrics (size, orientation) define the expected outputs and permit reasonable estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "perform automatic preclassification of plankton species in Plankton Portal images",
+      "rationale": "Species preclassification is a specific ML/processing task with estimatable scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "perform automatic worm motion analysis to reduce video duration in Worm Watch Lab",
+      "rationale": "Defines inputs and intended result (reduce duration by motion analysis); scoped enough to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "automatically detect the time in a Worm Watch Lab video where the worm lays an egg",
+      "rationale": "Specific detection task with a clear outcome (timestamp), enabling estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "detect important features such as areas of flooding, damage, temporary shelters, blocked roads etc in the satellite images",
+      "rationale": "Lists concrete feature types to detect; while multi-faceted, each detection type is definable and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "assess the probability/weight of a volunteer’s classification based on their experience",
+      "rationale": "Specifies input (volunteer experience) and output (probability/weight), which is measurable and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "prefilter of the images to remove artefacts such as bright stars and camera read errors",
+      "rationale": "Concrete artifact types are named and the prefiltering task is bounded for estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "detect moving and transient objects in the images",
+      "rationale": "Clear detection task with definable acceptance criteria; can be reasonably estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "remove background noise and distracting sounds from the audio files",
+      "rationale": "Defines a concrete audio-processing function (noise removal) with measurable outcomes enabling estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "group whale calls that are similar",
+      "rationale": "Clustering/grouping similar calls is a specific signal-processing task that can be scoped and estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "identify the number of whales heard in a single audio file",
+      "rationale": "Clear counting/detection task with a measurable output; estimatable at story level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know when I should interrupt a volunteer",
+      "rationale": "'Know when' is underspecified (no criteria/triggers), making reasonable implementation estimation impossible without further detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know whether I should interrupt a volunteer with text, an image, or a video",
+      "rationale": "Lacks decision criteria and scope for determining interruption modality, so cannot be reasonably estimated as written.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know when I should educate a volunteer",
+      "rationale": "No acceptance criteria or triggers for 'when' to educate; scope is too vague to make a reliable estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know whether I should educate a volunteer with text, an image, or a video",
+      "rationale": "Missing decision rules and criteria for modality selection; underspecified for estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know which piece of education I should give to a volunteer",
+      "rationale": "Open-ended ('which piece') without defined taxonomy or selection criteria, making estimation infeasible.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know when a volunteer has made an interesting comment on a subject",
+      "rationale": "'Interesting' is subjective and no objective criteria are provided, so the story is underspecified for estimating implementation effort.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know when Zoonibot should comment on a subject",
+      "rationale": "No triggers, thresholds, or contextual rules are given for when the bot should comment, leaving scope too vague to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know when Zoonibot should give an explanation",
+      "rationale": "Undefined criteria for when an explanation is required; the lack of objective triggers prevents reliable estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know what Zoonibot should say to a volunteer",
+      "rationale": "Very open-ended (content generation) without constraints or templates; scope is too broad and underspecified to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "group subjects by similarity",
+      "rationale": "Grouping by similarity is a definable clustering/classification task with scoping options for estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "recommend different projects to volunteers based on their previous experiences",
+      "rationale": "Specifies signal (previous experiences) and outcome (project recommendations); can be scoped and estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see a summary of articles, so that I reuse them",
+      "rationale": "Summarization is a concrete functionality with definable outputs (article summaries), enabling reasonable estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

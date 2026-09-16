@@ -1,0 +1,561 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "Zooniverse",
+    "criterion": "Independent",
+    "run": 5,
+    "temperature": null,
+    "elapsed_seconds": 60.198
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "search and discover music using content identification or fingerprinting",
+      "rationale": "The story is self-contained: it requests a search feature and does not explicitly require another backlog story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "search and discover music based on my profile",
+      "rationale": "This requests profile-based search but does not reference any other backlog story that creates profiles; no concrete dependency on another story is present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "search and discover music based on other users similar to myself",
+      "rationale": "The story specifies a feature (collaborative search) but does not cite or depend on any other specific backlog story for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "search and discover music or ringback tones similar to a given music video based on content similarity",
+      "rationale": "This feature can be implemented independently; it does not require another backlog story to exist first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "by exploiting enriched metadata and image tags",
+      "rationale": "This feature explicitly requires availability of image tags/metadata for further processing; it therefore depends on the tag-upload capability provided by ZO-006.",
+      "related_story_ids": [
+        "ZO-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "upload tagged videos and have tags available for all further processing steps",
+      "rationale": "This story provides the tag-upload capability itself and does not require another backlog story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "view thumbnail sequences of video segments",
+      "rationale": "Although it references video segments, the story does not point to any other backlog story that must exist first; no explicit inter-story dependency is stated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "get info about similar video items and segments",
+      "rationale": "This requests similarity information but does not explicitly depend on another specific backlog story that must be implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "get info about perceptually similar video items and segments",
+      "rationale": "The story defines perceptual similarity capability but does not cite any other backlog story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "receive content recommendations from similar profiles",
+      "rationale": "While it depends on profile similarity data conceptually, there is no specific backlog story providing profiles that it explicitly requires, so no concrete inter-story dependency is identified.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "receive content recommendations based on most relevant news events in my area",
+      "rationale": "The story asks for news-based recommendations but does not reference or require any other specific backlog story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "identify persons in videos, and receive related information about them",
+      "rationale": "Although it presumes identity data sources, the story does not cite another backlog story that must exist first; no explicit dependency on another story is present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "identify products in videos, and receive related information about them",
+      "rationale": "Feature requests product recognition but does not explicitly depend on any other backlog story; no concrete inter-story dependency is stated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "identify broadcaster logos in videos, and receive related information about them",
+      "rationale": "This is a standalone detection feature and does not explicitly depend on any other backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "identify brands in videos, and receive related information about them",
+      "rationale": "The story requests brand identification but does not reference another backlog story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "take a picture or upload an image, so that I am recommended with videos related to that picture or image",
+      "rationale": "This image-to-video recommendation feature is self-contained in its request; no concrete dependency on another backlog story is indicated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "walk around, access content using a geographical map and be informed if there are videos covering the area",
+      "rationale": "Geolocation-based discovery is requested without referencing another backlog story as a prior requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "search content items using automatic speech recognition",
+      "rationale": "The story asks for ASR-based search; it does not explicitly depend on any other backlog story being implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "see, validate and edit segmentation of videos",
+      "rationale": "Although it deals with segmentation, the story does not cite a specific backlog story that must produce segmentation first; no explicit inter-story dependency is present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "annotate news video segments and extract a topic for each segment",
+      "rationale": "This annotation and topic extraction story is self-contained and does not reference another backlog story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "filter and rank videos based on A/V quality aspects",
+      "rationale": "This is a standalone ranking/filtering requirement and does not explicitly depend on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "get a quick assessment of whether audio material has been edited before the upload",
+      "rationale": "The request for audio editing assessment stands alone; no other backlog story is explicitly required first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "prefilter nudity content",
+      "rationale": "Nudity prefilter capability is requested without referring to another backlog story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "prefilter content using search based on low­level asset information",
+      "rationale": "This prefiltering feature relies on low-level asset info but does not cite any specific backlog story that must exist first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "automatically validated the ingested contents for copyright infringement",
+      "rationale": "The story requests automatic copyright validation but does not depend on another backlog story explicitly.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "prefilter the content using search on high­level asset information such as metadata and tags either recognized by the system of provided by the user",
+      "rationale": "This prefiltering explicitly requires metadata/tags to be available (recognized or provided), which depends on the upload/tagging capability described in ZO-006.",
+      "related_story_ids": [
+        "ZO-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "assess how interesting or appealing or complex a picture is based on automated analysis, citizen annotations, and comments on Talk",
+      "rationale": "Although it references citizen annotations and Talk comments, it does not reference another backlog story as a required predecessor.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "detect when a scientist should be prompted to look at a subject, based on annotations and information from Talk comments",
+      "rationale": "The story presumes annotation and Talk data but does not explicitly depend on another backlog story that provides them.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "identify volunteer types",
+      "rationale": "This classification request is self-contained and does not explicitly depend on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "preclassify the Galaxy Zoo images using simple low­level image features",
+      "rationale": "The preclassification feature stands alone and does not cite another backlog story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "automatically detect Snapshot Serengeti images with no classifiable animals in them",
+      "rationale": "This automatic detection is specific to a dataset but does not require another backlog story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "perform automatic image series detection for the case of timestamping malfunction in Snapshot Serengeti images",
+      "rationale": "The image-series detection functionality is self-contained; it does not explicitly depend on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "perform automatic animal species preclassification in Snapshot Serengeti",
+      "rationale": "This preclassification request is standalone and does not reference another specific backlog story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "perform automatic animal attribute preclassification in Snapshot Serengeti",
+      "rationale": "The attribute preclassification is specified without depending on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "perform automatic animal number detection in Snapshot Serengeti",
+      "rationale": "This detection feature is self-contained and does not explicitly rely on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "perform automatic segmentation or localization of plankton in Plankton Portal",
+      "rationale": "This domain-specific segmentation story stands on its own and does not reference other backlog stories as prerequisites.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "automatically detect Plankton Portal images with no classifiable plankton in them",
+      "rationale": "This detection requirement is self-contained and does not depend on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "perform automatic detection of plankton size or orientation in Plankton Portal images",
+      "rationale": "The story requests a detection capability but does not explicitly require another backlog story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "perform automatic preclassification of plankton species in Plankton Portal images",
+      "rationale": "This preclassification feature is self-contained; no explicit dependency on another backlog story is present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "perform automatic worm motion analysis to reduce video duration in Worm Watch Lab",
+      "rationale": "The motion analysis request is domain-specific and does not explicitly depend on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "automatically detect the time in a Worm Watch Lab video where the worm lays an egg",
+      "rationale": "This detection story stands alone and does not reference a required prior story in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "detect important features such as areas of flooding, damage, temporary shelters, blocked roads etc in the satellite images",
+      "rationale": "This image-analysis requirement does not explicitly depend on any other backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "assess the probability/weight of a volunteer’s classification based on their experience",
+      "rationale": "Although it presumes tracking volunteer experience, the story does not cite a specific backlog story that must be implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "perform prefiltering of the images to remove artefacts such as bright stars and camera read errors",
+      "rationale": "This prefiltering capability is self-contained and does not explicitly depend on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "detect moving and transient objects in the images",
+      "rationale": "The detection feature does not reference another backlog story as a required dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "remove background noise and distracting sounds from the audio files",
+      "rationale": "This audio cleaning feature stands alone and does not explicitly require another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "group whale calls that are similar",
+      "rationale": "This grouping feature is domain-specific and does not reference another backlog story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "identify the number of whales heard in a single audio file",
+      "rationale": "The story requests an independent detection/counting capability and does not depend on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "know when I should interrupt a volunteer",
+      "rationale": "The interruption-timing requirement does not explicitly depend on another specific backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "know whether I should interrupt a volunteer with text, an image, or a video",
+      "rationale": "This decision about interruption modality is self-contained and does not reference another story as prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "know when I should educate a volunteer",
+      "rationale": "The education-timing feature is self-contained and does not explicitly depend on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "know whether I should educate a volunteer with text, an image, or a video",
+      "rationale": "This is a modality decision for education and does not explicitly require another backlog story first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "know which piece of education I should give to a volunteer",
+      "rationale": "Selection of educational content is not explicitly dependent on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "know when a volunteer has made an interesting comment on a subject",
+      "rationale": "This monitoring feature does not explicitly reference another backlog story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "know when Zoonibot should comment on a subject",
+      "rationale": "The story describes a trigger for Zoonibot but does not require another backlog story to exist first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "know when Zoonibot should give an explanation",
+      "rationale": "This is a decision rule for Zoonibot and does not explicitly depend on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "know what Zoonibot should say to a volunteer",
+      "rationale": "Defining Zoonibot responses is self-contained and does not cite a required prior backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "group subjects by similarity",
+      "rationale": "Grouping by similarity is a standalone requirement and does not explicitly depend on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "recommend different projects to volunteers based on their previous experiences",
+      "rationale": "While it presumes tracking of previous experiences, the story does not explicitly reference another backlog story that must exist first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "see a summary of articles, so that I reuse them",
+      "rationale": "The summary-of-articles feature is self-contained and does not explicitly depend on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

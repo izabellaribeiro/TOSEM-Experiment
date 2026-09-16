@@ -1,0 +1,494 @@
+{
+  "metadata": {
+    "prompt_profile": "few_shot",
+    "prompt_label": "Few-shot",
+    "shots": 4,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "PlanningPoker",
+    "criterion": "Complete",
+    "run": 4,
+    "temperature": 0,
+    "elapsed_seconds": 337.188
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "create a new game",
+      "rationale": "This story provides the game-creation capability, so later game read/delete stories do not expose a missing creation gap.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "invite estimators by giving them a URL",
+      "rationale": "This story creates an invitation/access path, so joining via URL has a complementary creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "start a round by entering an item",
+      "rationale": "This story creates a round/item, so later item reading and editing stories have a creation counterpart.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see all items we try to estimate this session",
+      "rationale": "Item creation exists via PP-003 and PP-006, so this read story does not expose a completeness gap.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "Item selection depends on items, and item creation/add/import stories are present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "add an item to the list of items to be estimated",
+      "rationale": "This is an item-creation story, filling the creation need for later item update/delete behavior.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "edit an item in the list of items",
+      "rationale": "Item update has a creation counterpart via PP-006 and import stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete an item from the list of items",
+      "rationale": "Item deletion has a creation counterpart via PP-006 and import stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "show all estimates immediately",
+      "rationale": "This story reads/reveals estimates, but the backlog has no story for an estimator or participant to cast/give an initial estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "Accepting an average requires a set of individual estimates, but the backlog lacks a story for creating them.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "if all estimators show the same card",
+      "rationale": "Auto-filling the estimate field depends on the missing capability of estimators showing/playing a card.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "enter the agreed-upon estimate",
+      "rationale": "This story creates the final agreed estimate and does not itself expose a missing required creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "Re-estimation assumes a prior estimate exists, but no story enables the original casting of estimates.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "import stories from a spreadsheet",
+      "rationale": "This is another item-creation path, so item-related capabilities are complete.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "This is another item-creation path, so item-related capabilities are complete.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "browse through previous games",
+      "rationale": "Game read behavior has a game-creation counterpart in PP-001.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "view a transcript of a game",
+      "rationale": "Transcripts derive from game data, and game creation exists.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a HTML file",
+      "rationale": "Transcript viewing/export does not expose a missing creation capability for games or transcripts.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a CSV file",
+      "rationale": "Transcript viewing/export does not expose a missing creation capability for games or transcripts.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete a game",
+      "rationale": "Game deletion has game creation in PP-001, so no completeness gap is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "create an account",
+      "rationale": "This is the account-creation story, supporting later account update/delete behavior.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "Account creation exists, so login does not expose a missing complementary creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "change my account details",
+      "rationale": "Account update has a creation counterpart in PP-021.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete my account",
+      "rationale": "Account deletion has a creation counterpart in PP-021.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see dates and times in my local timezone",
+      "rationale": "This is a presentation preference and does not expose a missing feature-level complement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "get a password reminder by email",
+      "rationale": "Account creation and login exist; this story does not expose a necessary missing creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "select whether to have the team estimate with",
+      "rationale": "This configures the estimation scale and does not expose a missing creation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "This constrains invitation capacity; the invitation capability itself exists in PP-002.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "join a game by entering my name",
+      "rationale": "Game and invitation creation exist, so joining does not evidence a completeness gap.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "Item creation exists, so this read story is complete in context.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see all items we will try to estimate",
+      "rationale": "Item creation exists, so this read story is complete in context.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "immediately see that an estimate has been given",
+      "rationale": "This reads estimate status, but no story enables an estimator to give an initial estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "after all estimators have given their estimate",
+      "rationale": "The backlog reveals estimates after they are given but lacks a story for giving them.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "change my estimate up until the last person selects a card",
+      "rationale": "Changing an estimate is update behavior, but the required initial estimate-casting story is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "see each estimator's prior estimates for the story",
+      "rationale": "This reads prior estimates, but no story creates the original individual estimates.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "This reads individual estimates given in a round, but the giving capability is missing from the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "start a two-minute countdown timer",
+      "rationale": "The timer is a self-contained moderation capability and does not expose a missing creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "as soon as we all play an estimate",
+      "rationale": "The timer reset depends on all participants playing an estimate, but no story enables playing/casting an estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "This reads prior estimates, but the backlog lacks the estimate-casting story those prior estimates would originate from.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "always have the cards in the same order",
+      "rationale": "Card ordering is a UI consistency requirement and does not expose a missing creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "This is estimate update behavior, but no story provides the initial estimate-creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "thumbnail photo displayed near where my cards are played",
+      "rationale": "This is a personalization/UI story; it does not itself evidence a crucial missing creation flow.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "compliant with XHTML and CSS standards",
+      "rationale": "Non-functional technical requirement; no feature-level creation gap is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "list of definitions for commonly used terms",
+      "rationale": "Self-contained documentation glossary; no missing complementary feature creation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "created database indexes",
+      "rationale": "Non-functional database optimization; no feature-level completeness gap.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "function correctly in Internet Explorer 6 and 7",
+      "rationale": "Non-functional compatibility requirement; no missing feature creation flow.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "comply with the W3C accessibility guidelines",
+      "rationale": "Non-functional accessibility requirement; no feature-level completeness gap.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "application respond quickly to my actions",
+      "rationale": "Non-functional performance requirement; no missing feature creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "use Unicode",
+      "rationale": "Non-functional internationalization requirement; no feature-level completeness issue.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "sensible and predictable URLs",
+      "rationale": "Non-functional usability/design requirement; no missing feature creation flow.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "nice error pages when something goes wrong",
+      "rationale": "Self-contained error-handling requirement; no feature-level completeness gap.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "results to be stored in a non-identifiable way",
+      "rationale": "Research data-storage requirement; does not expose a missing feature creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see some metrics on use of the game",
+      "rationale": "Metrics/read story about application usage; no necessary complementary creation flow is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

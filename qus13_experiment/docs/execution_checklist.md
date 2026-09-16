@@ -1,0 +1,23 @@
+# Execution checklist
+
+- [ ] Freeze the Gold Standard and record its hash.
+- [ ] Confirm 53 PlanningPoker, 69 BADCamp, and 60 Zooniverse stories.
+- [ ] Confirm 13 QUS criteria and 2,366 story×criterion units before exclusions.
+- [ ] Freeze `config/criteria.json`, `config/prompt_examples.json`, `prompts/system.txt`, `prompts/zero_shot.txt`, `prompts/one_shot.txt`, and `prompts/few_shot.txt`.
+- [ ] Confirm the API model IDs on the execution date.
+- [ ] Record the actual model/version returned by each provider whenever available.
+- [ ] Keep provider-specific generation parameters fixed across the three prompt strategies.
+- [ ] Execute 5 independent runs per `prompt profile × model × project × criterion` condition.
+- [ ] Do not reuse conversational/session state between runs.
+- [ ] Preserve raw requests and raw responses.
+- [ ] Verify that each response contains exactly one evaluation per story ID.
+- [ ] Execute AQUSA once per canonical backlog.
+- [ ] Normalize AQUSA only for the five supported criteria.
+- [ ] Run `metrics.py` only after all required outputs are normalized.
+- [ ] Report TP, FP, FN, TN, Precision, Recall, F1, and complementary metrics.
+- [ ] Report mean and standard deviation across the five runs.
+- [ ] Report local variability and cross-run overlap.
+- [ ] Report majority vote separately.
+- [ ] Report the number of units excluded due to `Uncertain` or `Insufficient Context` Gold Standard labels.
+- [ ] Audit a qualitative sample of TP, TN, FP, and FN cases and preserve rationales for qualitative analysis.
+- [ ] Create a final manifest containing hashes and execution date.

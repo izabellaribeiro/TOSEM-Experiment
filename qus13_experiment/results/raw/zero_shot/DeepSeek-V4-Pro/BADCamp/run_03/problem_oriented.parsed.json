@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "BADCamp",
+    "criterion": "Problem-oriented",
+    "run": 3,
+    "temperature": 0,
+    "elapsed_seconds": 159.962
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "view a list of sponsors",
+      "rationale": "The story prescribes a concrete list presentation rather than only the need to know who sponsors are.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "view a list of user profiles",
+      "rationale": "The story prescribes a list UI rather than the underlying need to know attendees.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "email all the trainers at once from the website",
+      "rationale": "The story prescribes the mechanism of emailing from the website instead of focusing only on the communication need.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "very clear map where the buildings and rooms are",
+      "rationale": "A map is a concrete UI solution; the underlying need is finding rooms on time.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "edit my training node myself... and links to slides",
+      "rationale": "The story includes Drupal implementation detail 'node' and a solution artifact 'links to slides'.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "limit to one registration per day per authenticated user",
+      "rationale": "The story states a business rule/need to prevent duplicate spaces rather than a concrete UI or technical solution.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "admin view that helps track registration status",
+      "rationale": "The story prescribes an admin view UI rather than only the stakeholder need to track registration status.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "added to a training waitlist",
+      "rationale": "A waitlist is a specific solution mechanism rather than only the need to be considered when a class is full.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "accept the cancellation terms with a checkbox",
+      "rationale": "The story prescribes a concrete UI widget, a checkbox, rather than only the need for accountability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "tie in a cancellation deadline to whatever registration / cancellation workflow exists",
+      "rationale": "The story describes workflow integration and mechanism rather than only the business need to avoid lost money or spots.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "add to \"my schedule\"",
+      "rationale": "The story prescribes a specific UI feature, a schedule component, rather than only the need to plan the event experience.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see which trainings I have signed up for",
+      "rationale": "The story expresses an informational need without prescribing a concrete UI or technical solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "view that is attached to their training node",
+      "rationale": "The story includes Drupal-specific implementation language 'training node' and a prescribed view.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "admin view where all trainee information is shown and can be filtered",
+      "rationale": "The story prescribes an admin view and filtering UI rather than only the need to understand trainee information.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "dedicated page... URL path should be SEO friendly /training/training-title",
+      "rationale": "The story heavily prescribes page structure, content widgets, and URL design rather than only the need to evaluate classes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "register now link... one page",
+      "rationale": "The story prescribes page-level UI and specific links rather than only the need to compare training offerings.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "training landing page with an intro section and a list",
+      "rationale": "The story prescribes a specific page layout and list presentation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "link on the home page to a list of training options",
+      "rationale": "The story prescribes specific navigation and list UI rather than only the need to find training.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "find out where the coding lounge is and what time it is open",
+      "rationale": "The story expresses an informational need without prescribing a concrete UI or technical mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "refund sponsorship money that was processed via stripe",
+      "rationale": "The story prescribes a specific payment technology provider, Stripe, rather than only the need to refund sponsors.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "find a link on the sponsorships page to become a $350 level sponsor",
+      "rationale": "The story prescribes navigation and page-level UI rather than only the need to become a sponsor.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "See a list of attendees associated with this company",
+      "rationale": "The story prescribes a list presentation rather than only the need to know which attendees are associated with a sponsor.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "identify myself as and pay for a $350 company sponsorship",
+      "rationale": "The story states the need to self-identify and pay without prescribing a concrete UI or technical mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "create and maintain venues",
+      "rationale": "The story states a direct stakeholder need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "view venue details",
+      "rationale": "The story expresses an informational need without prescribing implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "see a list of the sessions associated with sponsor attendees",
+      "rationale": "The story prescribes a list presentation rather than only the need to know where sponsors are engaged.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "See a payment page... third step of the registration process",
+      "rationale": "The story prescribes a page and process step rather than only the need to pay for sponsorship.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "assign sponsors to events, trainings and summits",
+      "rationale": "The story states an administrative need without concrete implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see all events, trainings and summits that a sponsor is sponsoring",
+      "rationale": "The story expresses an informational need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "Enter payment information and have my card charged",
+      "rationale": "The story prescribes a payment UI/mechanism rather than only the need to pay for sponsorship.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page",
+      "rationale": "The story prescribes linking and a sponsorship page rather than only the need to show attendance.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "update my user profile",
+      "rationale": "The story states a direct need without prescribing UI or technical implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "sign up for the BADCamp newsletter",
+      "rationale": "The story expresses a direct need to stay informed without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "tag my blog posts for consumption by Drupal Planet",
+      "rationale": "The story prescribes a tagging mechanism and external platform integration rather than only the need to share blog content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "create blog posts",
+      "rationale": "The story states the need to share information without prescribing implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "read the blog",
+      "rationale": "The story expresses an informational need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "sponsor a summit that matches my brand",
+      "rationale": "The story states a sponsorship need without prescribing UI or technical implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "register for a summit",
+      "rationale": "The story states a direct user need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "get detailed directions to the summit venue",
+      "rationale": "The story expresses an informational need without prescribing a map or UI mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see what summits I'm signed up for",
+      "rationale": "The story expresses an informational need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "see a list of attendees signed up for my summit",
+      "rationale": "The story prescribes a list presentation rather than only the need to know and communicate with attendees.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "list basic information about my summit",
+      "rationale": "The story states the need to inform attendees without prescribing a concrete UI or technical mechanism.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "list sponsors for my summit",
+      "rationale": "The story states the need to show sponsors rather than prescribing specific UI or implementation.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "list an agenda for my summit",
+      "rationale": "The story states a content need rather than prescribing a concrete widget or technical mechanism.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see how many seats are left for the summit",
+      "rationale": "The story expresses an informational need without prescribing UI.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see specific details on summits",
+      "rationale": "The story expresses an informational need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "see a list of all the summits",
+      "rationale": "The story prescribes a list presentation rather than only the need to determine which summits to attend.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "learn about sponsorship levels",
+      "rationale": "The story expresses an informational need without prescribing UI or technical solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "use a WYSIWYG editor for all long-form content",
+      "rationale": "The story prescribes a concrete UI widget rather than only the need to edit content without HTML knowledge.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "Link to my sponsorship profile from my job listings",
+      "rationale": "The story prescribes a link and page relationship rather than only the need for recruits to learn about the organization.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "learn about posting jobs as a sponsor and contact the sponsorship person",
+      "rationale": "The story expresses the need for information and contact without prescribing implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "post a job",
+      "rationale": "The story states a direct need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "view the job board",
+      "rationale": "The story prescribes a job board UI component rather than only the need to find job opportunities.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "assign a room to a time slot and a location",
+      "rationale": "The story states an administrative need without concrete UI or technical mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see the schedule",
+      "rationale": "The story expresses an informational need without prescribing implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "see the final list of sessions approved",
+      "rationale": "The story prescribes a list presentation rather than only the need to know what is happening.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "bulk approve sessions as accepted",
+      "rationale": "The story prescribes a bulk processing mechanism rather than only the need to save time when accepting sessions.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "mark a session as accepted",
+      "rationale": "The story states an administrative need without prescribed UI or technical implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "receive a notification when sessions have been evaluated",
+      "rationale": "The story expresses a communication need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "receive a notification when I submit a session",
+      "rationale": "The story expresses a communication need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "edit my session",
+      "rationale": "The story states a direct need without prescribing UI or technical mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "register to speak at BADCamp",
+      "rationale": "The story states a direct need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "submit a session at BADCAMP",
+      "rationale": "The story states a direct need without prescribed implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "personalize my sponsorship page",
+      "rationale": "The story prescribes a page UI rather than only the need to promote the brand.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "see a list of all the summits",
+      "rationale": "The story prescribes a list presentation rather than only the need to determine which summit to attend.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "Be offered several choices... on the second page of registration",
+      "rationale": "The story prescribes a page and process step rather than only the need to choose a sponsorship level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "find a link in the menu that links to the registration form",
+      "rationale": "The story prescribes specific navigation UI rather than only the need to easily register.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "fill out a user registration form",
+      "rationale": "The story prescribes a form UI rather than only the need to register and get an account.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "find session information",
+      "rationale": "The story expresses an informational need without prescribing UI or technical solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

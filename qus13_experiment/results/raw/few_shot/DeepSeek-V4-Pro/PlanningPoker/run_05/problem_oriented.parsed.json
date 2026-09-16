@@ -1,0 +1,494 @@
+{
+  "metadata": {
+    "prompt_profile": "few_shot",
+    "prompt_label": "Few-shot",
+    "shots": 4,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "PlanningPoker",
+    "criterion": "Problem-oriented",
+    "run": 5,
+    "temperature": 0,
+    "elapsed_seconds": 209.766
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "create a new game by entering a name and an optional description",
+      "rationale": "States the capability and required data without prescribing a concrete UI widget or technical mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "by giving them a URL",
+      "rationale": "A URL is a concrete access mechanism rather than only a statement of the invitation need.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "single multi-line text field",
+      "rationale": "Prescribes a concrete UI widget for entering the item.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see all items we try to estimate this session",
+      "rationale": "States the stakeholder need without implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "States the need without prescribing a UI solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "add an item to the list of items to be estimated",
+      "rationale": "States the need for flexibility without implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "edit an item in the list of items to be estimated",
+      "rationale": "States the need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "delete an item from the list of items to be estimated",
+      "rationale": "States the need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "show all estimates immediately",
+      "rationale": "Expresses the need to reveal estimates without prescribing a mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "Prescribes a specific aggregation algorithm instead of only stating the need to finalize an estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "estimate field filled in automatically if all estimators show the same card",
+      "rationale": "Prescribes UI field behavior and automation rather than just the need to speed up acceptance.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "enter the agreed-upon estimate",
+      "rationale": "States the need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "States a re-estimation need without implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "from a spreadsheet",
+      "rationale": "Spreadsheet prescribes a specific input format rather than only the need to bulk import stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "Prescribes concrete data-entry interaction and an input format.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "browse through previous games",
+      "rationale": "States the need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "view a transcript of a game",
+      "rationale": "States a viewing need without technical implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "as a HTML file",
+      "rationale": "Prescribes a specific output file format.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "as a CSV file",
+      "rationale": "Prescribes a specific output file format.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "delete a game",
+      "rationale": "States the need without implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "create an account for the application by entering my name, email address, a password and a username",
+      "rationale": "Lists required account data but does not prescribe a concrete widget or technical mechanism.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "States the authentication need without implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "change my account details",
+      "rationale": "States the need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "delete my account",
+      "rationale": "States the need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see dates and times in my local timezone",
+      "rationale": "States the user need without prescribing a technical conversion mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "by email",
+      "rationale": "Email prescribes a delivery mechanism instead of only stating the password recovery need.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "select whether to have the team estimate with {0, 1/2, 1, 2, 3, 5, 8, etc.} or {0, 1, 2, 4, 8, 16, 32, etc.}",
+      "rationale": "States a domain configuration need, not a technical implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "States a business rule for team size without implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "by entering my name on the page I received the URL for",
+      "rationale": "Prescribes a concrete page/URL access mechanism and UI entry interaction.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "States the need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see all items we will try to estimate this session",
+      "rationale": "States the need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "immediately see that an estimate has been given by a specific estimator",
+      "rationale": "States the need for status visibility without implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "be shown all estimates at the same time after all estimators have given their estimate",
+      "rationale": "States the need for independent simultaneous reveal without technical detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "be able to change my estimate up until the last person selects a card and all are shown",
+      "rationale": "Expresses a timing need using domain terms, not a concrete solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see each estimator's prior estimates for the story being estimated",
+      "rationale": "States the need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "States the need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "start a two-minute countdown timer that all participants can see",
+      "rationale": "Prescribes a concrete timer UI and behavior rather than only the need to limit discussion time.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "have the two-minute timer reset itself as soon as we all play an estimate",
+      "rationale": "Continues to prescribe timer-based solution behavior rather than the underlying need for readiness.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Scroll is a concrete UI interaction; the underlying need is to review prior rounds.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "always have the cards in the same order across multiple draws",
+      "rationale": "States a comparability need in domain terms without technical implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "States a timing need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "small thumbnail photo displayed near where my cards are played",
+      "rationale": "Prescribes concrete UI elements and layout rather than only the need for personalization.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "compliant with XHTML and CSS standards",
+      "rationale": "Prescribes technical standards rather than only the user access need.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "have a list of definitions for commonly used terms",
+      "rationale": "States a shared vocabulary need without technical implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "created database indexes",
+      "rationale": "Database indexes are a concrete technical performance mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "Internet Explorer 6 and 7, Firefox 1.5 and 2, and Safari 2",
+      "rationale": "Prescribes specific browser platforms rather than only the need for broad access.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "comply with the W3C accessibility guidelines",
+      "rationale": "Prescribes a technical standard rather than only the accessibility need.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "application respond quickly to my actions",
+      "rationale": "States a performance need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "use Unicode",
+      "rationale": "Unicode is a technical encoding choice rather than only the need to use any language.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "sensible and predictable URLs",
+      "rationale": "Prescribes URL behavior and design rather than only the need for a logical and transparent application.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "nice error pages",
+      "rationale": "Prescribes a concrete UI solution rather than only the need for trust and error communication.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "results to be stored in a non-identifiable way",
+      "rationale": "States a privacy need without a concrete storage format or technical mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see some metrics on use of the game",
+      "rationale": "States an analytics need without solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

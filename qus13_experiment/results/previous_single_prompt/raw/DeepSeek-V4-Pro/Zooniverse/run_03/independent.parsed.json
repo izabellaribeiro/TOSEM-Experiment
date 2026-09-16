@@ -1,0 +1,576 @@
+{
+  "metadata": {
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "Zooniverse",
+    "criterion": "Independent",
+    "run": 3,
+    "temperature": 0,
+    "elapsed_seconds": 427.665
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No concrete requirement-level dependency on another story in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "References a profile but no profile-creation story exists in the backlog; no dependency on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Uses similar users but no explicit dependency on another story in the backlog for similar-user identification.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Content similarity for a given music video is not concretely dependent on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "enriched metadata and image tags",
+      "rationale": "The story depends on tags being available for further processing, which is provided by ZO-006.",
+      "related_story_ids": [
+        "ZO-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "This story enables tag availability and does not depend on another story in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "thumbnail sequences of video segments",
+      "rationale": "Viewing segment thumbnails inherently requires video segmentation, which is related to ZO-019.",
+      "related_story_ids": [
+        "ZO-019"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "similar video items and segments",
+      "rationale": "The requested segment-related information depends on video segmentation capability represented by ZO-019.",
+      "related_story_ids": [
+        "ZO-019"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "perceptually similar video items and segments",
+      "rationale": "This segment-based feature depends on video segmentation capability represented by ZO-019.",
+      "related_story_ids": [
+        "ZO-019"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Similar profiles are referenced, but no concrete profile-similarity story exists as a prerequisite in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No concrete dependency on another story in the backlog for news-event-based recommendations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Identifies persons in videos but does not depend on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Identifies products in videos; no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Identifies broadcaster logos; no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Identifies brands; no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Image-based video recommendation does not concretely depend on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Map-based content access does not depend on another story in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "ASR-based search has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Segmentation validation and editing do not depend on another story in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "annotate news video segments and extract a topic for each segment",
+      "rationale": "Annotating and extracting topics from news video segments depends on segmentation capability represented by ZO-019.",
+      "related_story_ids": [
+        "ZO-019"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "A/V quality filtering and ranking has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Audio edit assessment has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Nudity prefiltering has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Low-level asset information search has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Copyright infringement validation has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "metadata and tags either recognized by the system of provided by the user",
+      "rationale": "Searching over high-level tags depends on tags being made available, which is covered by ZO-006.",
+      "related_story_ids": [
+        "ZO-006"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Uses Talk comments and annotations, but those are not other backlog stories with dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No concrete dependency on another story in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Identifying volunteer types has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Galaxy Zoo preclassification has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Detecting empty Snapshot Serengeti images has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Image series detection has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Species preclassification does not concretely depend on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Attribute preclassification has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Animal number detection has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Plankton segmentation/localization is a source capability and has no backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Detecting empty Plankton Portal images has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "detection of plankton size or orientation",
+      "rationale": "Measuring plankton size or orientation inherently depends on plankton localization provided by ZO-036.",
+      "related_story_ids": [
+        "ZO-036"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "preclassification of plankton species",
+      "rationale": "Species classification of plankton depends on first localizing/segmenting the plankton, as in ZO-036.",
+      "related_story_ids": [
+        "ZO-036"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Worm motion analysis has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Detecting egg-laying time has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Satellite image feature detection has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Classification weighting based on experience is not concretely dependent on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Image prefiltering to remove artefacts has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Detecting moving and transient objects has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Audio noise removal has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Grouping similar whale calls has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Counting whales in an audio file is not concretely dependent on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Knowing when to interrupt a volunteer has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "whether I should interrupt a volunteer with text, an image, or a video",
+      "rationale": "Choosing an interruption modality inherently depends on first knowing when to interrupt, as specified in ZO-049.",
+      "related_story_ids": [
+        "ZO-049"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Knowing when to educate a volunteer has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "whether I should educate a volunteer with text, an image, or a video",
+      "rationale": "Choosing an education modality depends on the education timing decision from ZO-051.",
+      "related_story_ids": [
+        "ZO-051"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "which piece of education I should give",
+      "rationale": "Selecting the specific education content depends on the timing decision that an education intervention is needed, as in ZO-051.",
+      "related_story_ids": [
+        "ZO-051"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Detecting interesting comments has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Zoonibot comment timing has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Zoonibot explanation timing has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Determining what Zoonibot should say has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Grouping subjects by similarity has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Project recommendations based on previous experience have no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Summarizing articles has no concrete backlog dependency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

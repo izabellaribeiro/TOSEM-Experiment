@@ -1,0 +1,787 @@
+{
+  "metadata": {
+    "provider": "openai",
+    "model_requested": "gpt-5.2",
+    "model_label": "GPT-5.2",
+    "project": "BADCamp",
+    "criterion": "Conflict-free",
+    "run": 5,
+    "temperature": 0,
+    "elapsed_seconds": 61.36
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "view a list of sponsors",
+      "rationale": "No other story forbids anonymous users from viewing sponsors or imposes incompatible access/behavior for sponsor listing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "anonymoususer... view a list of user profiles",
+      "rationale": "No other story states profiles must be hidden from anonymous users; other profile stories focus on updating profiles and do not contradict viewing.",
+      "related_story_ids": [
+        "BC-032"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "email all the trainers at once",
+      "rationale": "No other story prohibits bulk emailing trainers or assigns that capability exclusively to another role.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "very clear map where the buildings and rooms are",
+      "rationale": "No other story imposes incompatible mapping/directions behavior; other location stories are complementary.",
+      "related_story_ids": [
+        "BC-039"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "trainer... edit my training node myself",
+      "rationale": "No other story states trainers cannot edit their training nodes; coordinator/admin views do not conflict with trainer self-editing.",
+      "related_story_ids": [
+        "BC-014",
+        "BC-007"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "limit to one registration per day per authenticated user",
+      "rationale": "No other story requires multiple registrations per day per user; waitlist and schedule features can coexist with this constraint.",
+      "related_story_ids": [
+        "BC-008",
+        "BC-011",
+        "BC-012"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "admin view that helps track registration status",
+      "rationale": "No other story defines an incompatible registration-status tracking rule or denies coordinators such visibility.",
+      "related_story_ids": [
+        "BC-014"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "be added to a training waitlist",
+      "rationale": "No other story forbids waitlisting; registration limits and cancellation terms do not contradict having a waitlist.",
+      "related_story_ids": [
+        "BC-006",
+        "BC-010"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "must accept the cancellation terms with a checkbox",
+      "rationale": "No other story states cancellation terms acceptance is optional or disallowed; aligns with cancellation workflow needs.",
+      "related_story_ids": [
+        "BC-010"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "tie in a cancellation deadline to whatever registration / cancellation workflow exists",
+      "rationale": "No other story mandates cancellation without deadlines; complements cancellation-terms acceptance.",
+      "related_story_ids": [
+        "BC-009"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "add to \"my schedule\"",
+      "rationale": "No other story prohibits personal scheduling; complements viewing signed-up trainings and summit schedule confirmation.",
+      "related_story_ids": [
+        "BC-012",
+        "BC-040"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see which trainings I have signed up for",
+      "rationale": "No other story contradicts trainees being able to view their own training registrations.",
+      "related_story_ids": [
+        "BC-011"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "Trainers can see all class attendance at first",
+      "rationale": "No other story explicitly restricts trainer visibility to only their own class attendees or forbids trainer access to attendee info; coordinator/admin views are compatible.",
+      "related_story_ids": [
+        "BC-014",
+        "BC-007"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "admin view where all trainee information is shown",
+      "rationale": "No other story denies coordinators access to trainee information; trainer view story does not conflict with coordinator having broader access.",
+      "related_story_ids": [
+        "BC-013",
+        "BC-007"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "dedicated page for each class... The following information must be shown",
+      "rationale": "No other story specifies incompatible training detail content or forbids SEO-friendly URLs; complements training list/landing stories.",
+      "related_story_ids": [
+        "BC-016",
+        "BC-017"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "training options clearly marked... on one page",
+      "rationale": "No other story requires training options not be shown on one page; complements dedicated class pages and landing page.",
+      "related_story_ids": [
+        "BC-015",
+        "BC-017"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "training landing page... list of all training offerings",
+      "rationale": "No other story conflicts with having a landing page; aligns with training list and home-page link stories.",
+      "related_story_ids": [
+        "BC-016",
+        "BC-018"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "link on the home page to a list of training options",
+      "rationale": "No other story forbids such a link; complements training landing/list stories.",
+      "related_story_ids": [
+        "BC-017"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "find out where the coding lounge is and what time it is open",
+      "rationale": "No other story imposes incompatible information disclosure about coding lounge location/hours.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "administrator... refund sponsorship money... via stripe",
+      "rationale": "No other story prohibits refunds or mandates non-refundable sponsorship payments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "link on the sponsorships page to become a $350 level sponsor",
+      "rationale": "No other story contradicts offering a $350 sponsorship option; aligns with paying for company sponsorship.",
+      "related_story_ids": [
+        "BC-023"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "anonymoususer... See a list of attendees associated with this company",
+      "rationale": "No other story explicitly restricts company-attendee association visibility to authenticated users only; sponsor-related listing stories are compatible.",
+      "related_story_ids": [
+        "BC-031"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "identify myself as and pay for a $350 company sponsorship",
+      "rationale": "No other story forbids self-service company sponsorship purchase; complements link-to-become-sponsor story.",
+      "related_story_ids": [
+        "BC-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "administrator... create and maintain venues",
+      "rationale": "No other story assigns venue maintenance to a different role exclusively or forbids admin venue management.",
+      "related_story_ids": [
+        "BC-025"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "anonymoususer... view venue details",
+      "rationale": "No other story restricts venue details from anonymous users; complements admin venue maintenance.",
+      "related_story_ids": [
+        "BC-024"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see a list of the sessions associated with sponsor attendees",
+      "rationale": "No other story prohibits exposing sessions associated with sponsor attendees; compatible with sponsor engagement discovery.",
+      "related_story_ids": [
+        "BC-029"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "See a payment page... third step of the registration process",
+      "rationale": "No other story defines an incompatible step ordering for individual sponsorship payment; complements entering payment info and sponsorship choices.",
+      "related_story_ids": [
+        "BC-030",
+        "BC-066"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "assign sponsors to events, trainings and summits",
+      "rationale": "No other story forbids sponsor assignment; complements viewing sponsored items.",
+      "related_story_ids": [
+        "BC-029"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see all events, trainings and summits that a sponsor is sponsoring",
+      "rationale": "No other story contradicts showing sponsorship associations; depends on sponsor assignment but not conflicting.",
+      "related_story_ids": [
+        "BC-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "Enter payment information and have my card charged for an individual sponsorship",
+      "rationale": "No other story prohibits charging cards for individual sponsorships; aligns with payment page story.",
+      "related_story_ids": [
+        "BC-027"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page",
+      "rationale": "No other story forbids linking attendees to sponsorship pages; compatible with anonymous viewing of company attendees.",
+      "related_story_ids": [
+        "BC-022"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "authenticateduser... update my user profile",
+      "rationale": "No other story prohibits authenticated users from updating their own profiles; compatible with profile viewing.",
+      "related_story_ids": [
+        "BC-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "sign up for the BADCamp newsletter",
+      "rationale": "No other story forbids newsletter signup or restricts it to authenticated users only.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "tag my blog posts for consumption by Drupal Planet",
+      "rationale": "No other story imposes incompatible blog tagging/publication behavior.",
+      "related_story_ids": [
+        "BC-035",
+        "BC-036"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "administrator... create blog posts",
+      "rationale": "No other story contradicts admin blog creation; complements anonymous reading.",
+      "related_story_ids": [
+        "BC-036"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "anonymoususer... read the blog",
+      "rationale": "No other story restricts blog reading to authenticated users; compatible with admin creating posts.",
+      "related_story_ids": [
+        "BC-035"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "sponsor a summit",
+      "rationale": "No other story forbids summit sponsorship; complements summit sponsor listing and attendee registration.",
+      "related_story_ids": [
+        "BC-043"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "attendee... register for a summit",
+      "rationale": "No other story prohibits summit registration; seat-count visibility and attendee lists are compatible.",
+      "related_story_ids": [
+        "BC-045",
+        "BC-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "get detailed directions to the summit venue",
+      "rationale": "No other story imposes incompatible directions/location behavior; complements venue/map needs.",
+      "related_story_ids": [
+        "BC-004",
+        "BC-025"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see what summits I'm signed up for",
+      "rationale": "No other story contradicts attendees viewing their own summit registrations; complements avoiding double-booking.",
+      "related_story_ids": [
+        "BC-011"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "summit coordinator... see a list of attendees signed up for my summit",
+      "rationale": "No other story forbids coordinators from viewing their summit attendee list; compatible with attendee registration.",
+      "related_story_ids": [
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "list basic information about my summit",
+      "rationale": "No other story imposes incompatible summit information publication rules.",
+      "related_story_ids": [
+        "BC-046"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "list sponsors for my summit",
+      "rationale": "No other story forbids listing summit sponsors; compatible with sponsors sponsoring summits.",
+      "related_story_ids": [
+        "BC-037"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "list an agenda for my summit",
+      "rationale": "No other story contradicts publishing a summit agenda; complements summit details viewing.",
+      "related_story_ids": [
+        "BC-046"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see how many seats are left for the summit",
+      "rationale": "No other story requires seat counts be hidden or conflicts with summit registration behavior.",
+      "related_story_ids": [
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see specific details on summits",
+      "rationale": "No other story imposes incompatible summit detail visibility; aligns with coordinator-provided info, agenda, and directions.",
+      "related_story_ids": [
+        "BC-042",
+        "BC-044",
+        "BC-039"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits",
+      "rationale": "No other story contradicts listing summits; complements summit details and list-with-dates story.",
+      "related_story_ids": [
+        "BC-065"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "learn about sponsorship levels",
+      "rationale": "No other story conflicts with exposing sponsorship levels; complements $350 sponsorship stories.",
+      "related_story_ids": [
+        "BC-021",
+        "BC-023"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "use a WYSIWYG editor for all long-form content",
+      "rationale": "No other story mandates HTML-only editing or forbids WYSIWYG usage.",
+      "related_story_ids": [
+        "BC-035",
+        "BC-034"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "Link to my sponsorship profile from my job listings",
+      "rationale": "No other story forbids linking job listings to sponsorship profiles; compatible with sponsor job posting.",
+      "related_story_ids": [
+        "BC-052"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "learn about posting jobs as a sponsor",
+      "rationale": "No other story contradicts providing information/contact for sponsor job posting.",
+      "related_story_ids": [
+        "BC-052"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "sponsor... post a job",
+      "rationale": "No other story forbids sponsors from posting jobs; job board viewing is compatible.",
+      "related_story_ids": [
+        "BC-053",
+        "BC-051"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "authenticateduser... view the job board",
+      "rationale": "No other story requires the job board be anonymous-only or hidden from authenticated users; compatible with sponsor job posting.",
+      "related_story_ids": [
+        "BC-052"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "assign a room to a time slot and a location",
+      "rationale": "No other story imposes incompatible schedule population rules; complements anonymous schedule viewing.",
+      "related_story_ids": [
+        "BC-055"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "anonymoususer... see the schedule",
+      "rationale": "No other story restricts schedule visibility; compatible with admin schedule population and session acceptance.",
+      "related_story_ids": [
+        "BC-054",
+        "BC-058"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see the final list of sessions approved",
+      "rationale": "No other story contradicts publishing the final approved sessions list; aligns with acceptance marking/approval.",
+      "related_story_ids": [
+        "BC-057",
+        "BC-058"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "bulk approve sessions as accepted",
+      "rationale": "No other story forbids bulk acceptance; compatible with single-session acceptance marking.",
+      "related_story_ids": [
+        "BC-058"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "mark a session as accepted",
+      "rationale": "No other story imposes incompatible acceptance behavior; complements bulk acceptance and schedule population.",
+      "related_story_ids": [
+        "BC-057",
+        "BC-055"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "receive a notification when sessions have been evaluated",
+      "rationale": "No other story forbids notifications; compatible with submission notification and acceptance workflow.",
+      "related_story_ids": [
+        "BC-060"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "receive a notification when I submit a session",
+      "rationale": "No other story contradicts sending submission notifications; compatible with evaluation notifications.",
+      "related_story_ids": [
+        "BC-059"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "authenticateduser... edit my session",
+      "rationale": "No other story states sessions cannot be edited after submission; submission and registration-to-speak stories are compatible.",
+      "related_story_ids": [
+        "BC-063"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "anonymoususer... register to speak... submit a session",
+      "rationale": "Potential overlap with authenticated submission, but not an explicit incompatibility (could allow anonymous registration step leading to authenticated submission). No direct contradictory rule is stated.",
+      "related_story_ids": [
+        "BC-063"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "authenticateduser... submit a session",
+      "rationale": "Does not explicitly conflict with anonymous 'register to speak' story; both can coexist as different stages/paths.",
+      "related_story_ids": [
+        "BC-062"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "personalize my sponsorship page",
+      "rationale": "No other story forbids sponsor personalization; compatible with linking attendees and job listings to sponsorship profile.",
+      "related_story_ids": [
+        "BC-031",
+        "BC-050"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits that include when they are",
+      "rationale": "No other story contradicts listing summits with dates; complements general summit list story.",
+      "related_story_ids": [
+        "BC-047"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "offered several choices of idividual sponsorship on the second page of registration",
+      "rationale": "No other story mandates sponsorship choices occur on a different page; payment page as third step can follow choices on second step without conflict.",
+      "related_story_ids": [
+        "BC-027"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "find a link in the menu that links to the registration form",
+      "rationale": "No other story forbids a menu link to registration; compatible with registration form story.",
+      "related_story_ids": [
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "fill out a user registration form",
+      "rationale": "No other story contradicts allowing anonymous users to register for an account; compatible with menu link to registration.",
+      "related_story_ids": [
+        "BC-067"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "find session information",
+      "rationale": "No other story restricts session information from anonymous users; compatible with schedule and approved sessions list visibility.",
+      "related_story_ids": [
+        "BC-055",
+        "BC-056"
+      ],
+      "confidence": "High"
+    }
+  ]
+}

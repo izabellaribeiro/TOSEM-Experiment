@@ -1,0 +1,738 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "BADCamp",
+    "criterion": "Independent",
+    "run": 2,
+    "temperature": 0,
+    "elapsed_seconds": 431.244
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "view a list of sponsors",
+      "rationale": "Depends on sponsor records existing, which are created by BC-023.",
+      "related_story_ids": [
+        "BC-023"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "view a list of user profiles",
+      "rationale": "Depends on user profiles existing, which are created by BC-068.",
+      "related_story_ids": [
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No concrete story in the backlog creates trainer records; the story can use existing or assumed trainer data.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "map where the buildings and rooms are",
+      "rationale": "Depends on venue and room data created by BC-024.",
+      "related_story_ids": [
+        "BC-024"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No concrete story in the backlog creates the training node to be edited.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No concrete story in the backlog creates the training registration flow that this constraint would depend on.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No concrete story in the backlog creates the training registration status data needed for this admin view.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No concrete story in the backlog creates the training class or registration data required for a waitlist.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The cancellation-terms checkbox can be implemented independently as part of a cancellation flow.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "whatever registration / cancellation workflow exists",
+      "rationale": "Explicitly depends on an existing cancellation workflow, such as the cancellation terms in BC-009.",
+      "related_story_ids": [
+        "BC-009"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "if there is a schedule feature on the site",
+      "rationale": "Explicitly depends on a schedule feature, implemented by BC-054/BC-055.",
+      "related_story_ids": [
+        "BC-054",
+        "BC-055"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No concrete story in the backlog creates training sign-up/registration data to list.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No concrete story in the backlog creates the training node or training attendance data needed here.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No concrete story in the backlog creates the training sessions or trainee registration data needed for this filterable view.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No concrete story in the backlog creates the underlying training/class offerings.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "link to full details of the training",
+      "rationale": "The list links to the full training detail page, which is provided by BC-015.",
+      "related_story_ids": [
+        "BC-015"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No concrete story in the backlog creates the training offerings listed on the landing page.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "link on the home page to a list of training options",
+      "rationale": "Depends on a training options list page, provided by BC-016.",
+      "related_story_ids": [
+        "BC-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "where the coding lounge is",
+      "rationale": "The coding lounge is a venue/location, and venue data is created by BC-024.",
+      "related_story_ids": [
+        "BC-024"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "refund sponsorship money that was processed via stripe",
+      "rationale": "Depends on prior sponsorship payment processing from BC-023 and BC-030.",
+      "related_story_ids": [
+        "BC-023",
+        "BC-030"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "link on the sponsorships page to become a $350 level sponsor",
+      "rationale": "The link depends on the sponsorships page from BC-048 and the $350 sponsorship action from BC-023.",
+      "related_story_ids": [
+        "BC-048",
+        "BC-023"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "list of attendees associated with this company",
+      "rationale": "Depends on sponsor-attendee association created by BC-031.",
+      "related_story_ids": [
+        "BC-031"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Self-contained: it creates the company sponsorship and includes payment.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Self-contained: it creates venue data.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "view venue details",
+      "rationale": "Depends on venue data created by BC-024.",
+      "related_story_ids": [
+        "BC-024"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No concrete story defines the sponsor-attendee session associations needed for this view.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "third step of the registration process",
+      "rationale": "Depends on the registration flow from BC-068 and the second-page sponsorship choices from BC-066.",
+      "related_story_ids": [
+        "BC-068",
+        "BC-066"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "assign sponsors to events, trainings and summits",
+      "rationale": "Depends on sponsor records from BC-023 and summit records from BC-042.",
+      "related_story_ids": [
+        "BC-023",
+        "BC-042"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see all events, trainings and summits that a sponsor is sponsoring",
+      "rationale": "Depends on sponsor-event/training/summit assignments created by BC-028.",
+      "related_story_ids": [
+        "BC-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "have my card charged for an individual sponsorship",
+      "rationale": "Depends on individual sponsorship selection/options provided by BC-066.",
+      "related_story_ids": [
+        "BC-066"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page",
+      "rationale": "Depends on a sponsorship page from BC-023 and attendee records from BC-068.",
+      "related_story_ids": [
+        "BC-023",
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "update my user profile",
+      "rationale": "Depends on an existing user profile, created by BC-068.",
+      "related_story_ids": [
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Self-contained newsletter signup feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "tag my blog posts",
+      "rationale": "Depends on blog posts created by BC-035.",
+      "related_story_ids": [
+        "BC-035"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Self-contained: it creates blog post content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "read the blog",
+      "rationale": "Depends on blog posts created by BC-035.",
+      "related_story_ids": [
+        "BC-035"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "sponsor a summit",
+      "rationale": "Depends on summit records created by BC-042.",
+      "related_story_ids": [
+        "BC-042"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "register for a summit",
+      "rationale": "Depends on summit records created by BC-042.",
+      "related_story_ids": [
+        "BC-042"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "detailed directions to the summit venue",
+      "rationale": "Depends on summit venue/location data from BC-042 and venue data from BC-024.",
+      "related_story_ids": [
+        "BC-042",
+        "BC-024"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see what summits I'm signed up for",
+      "rationale": "Depends on summit registrations from BC-038.",
+      "related_story_ids": [
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see a list of attendees signed up for my summit",
+      "rationale": "Depends on summit registrations from BC-038.",
+      "related_story_ids": [
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Self-contained: it creates summit information.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "list sponsors for my summit",
+      "rationale": "Depends on sponsor-summit associations created by BC-037.",
+      "related_story_ids": [
+        "BC-037"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "list an agenda for my summit",
+      "rationale": "Depends on summit records created by BC-042.",
+      "related_story_ids": [
+        "BC-042"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see how many seats are left for the summit",
+      "rationale": "Depends on summit capacity from BC-042 and registrations from BC-038.",
+      "related_story_ids": [
+        "BC-042",
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see specific details on summits",
+      "rationale": "Depends on summit details created by BC-042.",
+      "related_story_ids": [
+        "BC-042"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see a list of all the summits",
+      "rationale": "Depends on summit records created by BC-042.",
+      "related_story_ids": [
+        "BC-042"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Self-contained informational content about sponsorship levels.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Self-contained WYSIWYG editor feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "Link to my sponsorship profile from my job listings",
+      "rationale": "Depends on job listings from BC-052 and a sponsorship profile/page from BC-023.",
+      "related_story_ids": [
+        "BC-052",
+        "BC-023"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Self-contained informational and contact feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Self-contained job posting creation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "view the job board",
+      "rationale": "Depends on job postings created by BC-052.",
+      "related_story_ids": [
+        "BC-052"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "assign a room to a time slot and a location",
+      "rationale": "Depends on venue/room data from BC-024.",
+      "related_story_ids": [
+        "BC-024"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see the schedule",
+      "rationale": "Depends on schedule data populated by BC-054.",
+      "related_story_ids": [
+        "BC-054"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "final list of sessions approved",
+      "rationale": "Depends on session approval performed by BC-057/BC-058.",
+      "related_story_ids": [
+        "BC-057",
+        "BC-058"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "bulk approve sessions as accepted",
+      "rationale": "Depends on session submissions from BC-063.",
+      "related_story_ids": [
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "mark a session as accepted",
+      "rationale": "Depends on session submissions from BC-063.",
+      "related_story_ids": [
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "receive a notification when sessions have been evaluated",
+      "rationale": "Depends on the session evaluation/approval workflow, such as BC-058.",
+      "related_story_ids": [
+        "BC-058"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "receive a notification when I submit a session",
+      "rationale": "Depends on session submission from BC-063.",
+      "related_story_ids": [
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "edit my session",
+      "rationale": "Depends on session submission from BC-063.",
+      "related_story_ids": [
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Self-contained speaker registration feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Self-contained session submission feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "personalize my sponsorship page",
+      "rationale": "Depends on a sponsorship page/record created by BC-023.",
+      "related_story_ids": [
+        "BC-023"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "list of all the summits that include when they are",
+      "rationale": "Depends on summit records created by BC-042.",
+      "related_story_ids": [
+        "BC-042"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "second page of registration",
+      "rationale": "Depends on the registration process/form from BC-068.",
+      "related_story_ids": [
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "link in the menu that links to the registration form",
+      "rationale": "Depends on the registration form from BC-068.",
+      "related_story_ids": [
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Self-contained user registration form.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "find session information",
+      "rationale": "Depends on approved session information from BC-056.",
+      "related_story_ids": [
+        "BC-056"
+      ],
+      "confidence": "High"
+    }
+  ]
+}

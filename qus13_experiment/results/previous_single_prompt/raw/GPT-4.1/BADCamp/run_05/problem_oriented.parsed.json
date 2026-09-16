@@ -1,0 +1,635 @@
+{
+  "metadata": {
+    "provider": "openai",
+    "model_requested": "gpt-4.1",
+    "model_label": "GPT-4.1",
+    "project": "BADCamp",
+    "criterion": "Problem-oriented",
+    "run": 5,
+    "temperature": 0,
+    "elapsed_seconds": 30.887
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "view a list of sponsors",
+      "rationale": "Specifies the stakeholder need (viewing sponsors) without prescribing a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "view a list of user profiles",
+      "rationale": "States the need to know who is attending, not how it is implemented.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "email all the trainers at once from the website",
+      "rationale": "Describes the need to email trainers easily, not the technical solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "have a very clear map where the buildings and rooms are",
+      "rationale": "States the need for a clear map, not how it should be implemented.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "edit my training node myself",
+      "rationale": "Focuses on the need for trainers to edit their own content, not the solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "limit to one registration per day per authenticated user",
+      "rationale": "Expresses a business rule/need, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "have an admin view that helps track registration status",
+      "rationale": "Describes the need to track registration status, not how to implement the view.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "be added to a training waitlist",
+      "rationale": "States the need to be considered for a class, not the mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "must accept the cancellation terms with a checkbox",
+      "rationale": "Prescribes a specific UI widget (checkbox) rather than just the need for acceptance.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "tie in a cancellation deadline to whatever registration / cancellation workflow exists",
+      "rationale": "Describes a business rule, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "add to 'my schedule' if there is a schedule feature",
+      "rationale": "States the need to schedule events, not how to do it.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see which trainings I have signed up for",
+      "rationale": "Expresses a need, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "have a view that is attached to their training node that shows all attendee information",
+      "rationale": "While it mentions a 'view', it does not prescribe implementation details or UI widgets.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "have an admin view where all trainee information is shown and can be filtered",
+      "rationale": "Describes the need for information and filtering, not the technical solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "The following information must be shown: Logo, title, trainers, location, possibly a map view, datetime, skill level, registrations remaining, link to register for class. The URL path should be SEO friendly /training/training-title",
+      "rationale": "Prescribes specific data fields, a map view, and a URL format, which are solution details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "The following information: day and time of training, title, short summary, trainers, level, number of registrations, remaining registrations, location of training, link to full details of the training, register now link",
+      "rationale": "Prescribes specific data fields and links, which are solution details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "have a training landing page with an intro section and a list of all training offerings and promote call for trainings",
+      "rationale": "Describes the need for a landing page and call for trainings, not how to implement them.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "have a link on the home page to a list of training options",
+      "rationale": "States the need for discoverability, not the technical solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "find out where the coding lounge is and what time it is open",
+      "rationale": "Expresses an informational need, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "refund sponsorship money that was processed via stripe",
+      "rationale": "Specifies the technical mechanism (Stripe) for refunds, which is a solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "find a link on the sponsorships page to become a $350 level sponsor",
+      "rationale": "Prescribes the presence of a link on a specific page, which is a solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "See a list of attendees associated with this company",
+      "rationale": "States the need to know who is attending from a sponsor, not how to display it.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "identify myself as and pay for a $350 company sponsorship",
+      "rationale": "Describes the need to become a sponsor, not the technical solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "create and maintain venues",
+      "rationale": "States the need to manage venues, not how to do so.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "view venue details",
+      "rationale": "Expresses a need for information, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see a list of the sessions associated with sponsor attendees",
+      "rationale": "States the need for information, not the solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "See a payment page to pay for my individual sponsorships as the third step of the registration process",
+      "rationale": "Prescribes a specific UI (payment page) and process step, which are solution details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "assign sponsors to events, trainings and summits",
+      "rationale": "Describes the need to associate sponsors, not how to do it.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see all events, trainings and summits that a sponsor is sponsoring",
+      "rationale": "States the need for information, not the solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "Enter payment information and have my card charged for an individual sponsorship",
+      "rationale": "Describes the need to pay, not the technical solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page",
+      "rationale": "States the need to show off attendance, not how to implement the link.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "update my user profile",
+      "rationale": "Expresses a need, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "sign up for the BADCamp newsletter",
+      "rationale": "States the need to receive communications, not how to sign up.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "tag my blog posts for consumption by Drupal Planet",
+      "rationale": "Describes the need for syndication, not the technical solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "create blog posts",
+      "rationale": "Expresses a need, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "read the blog",
+      "rationale": "States the need for information, not the solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "sponsor a summit that matches my brand",
+      "rationale": "Describes the need to sponsor, not how to do it.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "register for a summit",
+      "rationale": "Expresses a need, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "get detailed directions to the summit venue",
+      "rationale": "States the need for directions, not how to provide them.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see what summits I'm signed up for",
+      "rationale": "Expresses a need, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see a list of attendees signed up for my summit",
+      "rationale": "States the need for information, not the solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "list basic information about my summit",
+      "rationale": "Describes the need to inform, not how to do it.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "list sponsors for my summit",
+      "rationale": "States the need to show sponsors, not how to do it.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "list an agenda for my summit",
+      "rationale": "Describes the need for an agenda, not the solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see how many seats are left for the summit",
+      "rationale": "States the need for information, not the solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see specific details on summits",
+      "rationale": "Expresses a need for information, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits",
+      "rationale": "States the need for information, not the solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "learn about sponsorship levels",
+      "rationale": "Expresses a need for information, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "use a WYSIWYG editor for all long-form content",
+      "rationale": "Prescribes a specific UI widget (WYSIWYG editor), which is a solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "Link to my sponsorship profile from my job listings",
+      "rationale": "States the need for cross-linking, not how to implement it.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "learn about posting jobs as a sponsor and contact the sponsorship person",
+      "rationale": "Expresses a need for information and contact, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "post a job",
+      "rationale": "States the need to post jobs, not how to do it.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "view the job board",
+      "rationale": "Expresses a need for information, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "assign a room to a time slot and a location",
+      "rationale": "Describes a scheduling need, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see the schedule",
+      "rationale": "States the need for information, not the solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see the final list of sessions approved",
+      "rationale": "Expresses a need for information, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "bulk approve sessions as accepted",
+      "rationale": "Describes a process need, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "mark a session as accepted",
+      "rationale": "States the need for session status, not the solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "receive a notification when sessions have been evaluated",
+      "rationale": "Expresses a need for notification, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "receive a notification when I submit a session",
+      "rationale": "States the need for confirmation, not the solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "edit my session",
+      "rationale": "Expresses a need, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "register to speak at BADCamp",
+      "rationale": "States the need to submit a session, not how to do it.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "submit a session at BADCAMP",
+      "rationale": "Expresses a need, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "personalize my sponsorship page",
+      "rationale": "States the need for personalization, not the solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits that include when they are",
+      "rationale": "Expresses a need for information, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "Be offered several choices of idividual sponsorship on the second page of registration",
+      "rationale": "Prescribes a specific process step (second page), which is a solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "easily find a link in the menu that links to the registration form",
+      "rationale": "Prescribes a specific UI element (menu link), which is a solution detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "fill out a user registration form",
+      "rationale": "States the need to register, not how the form is presented.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "find session information",
+      "rationale": "Expresses a need for information, not a solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

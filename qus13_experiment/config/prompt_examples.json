@@ -1,0 +1,145 @@
+{
+  "Well-formed": {
+    "one_shot": [
+      {"context": [], "story_id": "DEMO-WF-1", "story": "I want to receive an error message after an invalid upload.", "decision": "Violation", "evidence": "I want to receive an error message", "rationale": "The requested functionality is identifiable, but no stakeholder role is stated.", "related_story_ids": [], "confidence": "High"}
+    ],
+    "few_shot": [
+      {"context": [], "story_id": "DEMO-WF-1", "story": "I want to receive an error message after an invalid upload.", "decision": "Violation", "evidence": "I want to receive an error message", "rationale": "The requested functionality is identifiable, but no stakeholder role is stated.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-WF-2", "story": "As an editor, so that published pages remain accurate.", "decision": "Violation", "evidence": "As an editor, so that published pages remain accurate", "rationale": "A stakeholder role and rationale are present, but the requested functionality (means) is missing.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-WF-3", "story": "As an editor, I want to update an article, so that I can correct mistakes.", "decision": "No Violation", "evidence": "As an editor, I want to update an article", "rationale": "Both the stakeholder role and the requested functionality are identifiable.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-WF-4", "story": "As a visitor, I want to view the event schedule.", "decision": "No Violation", "evidence": "As a visitor, I want to view the event schedule", "rationale": "The story clearly states a role and a means; an ends clause is optional for Well-formed.", "related_story_ids": [], "confidence": "High"}
+    ]
+  },
+  "Atomic": {
+    "one_shot": [
+      {"context": [], "story_id": "DEMO-AT-1", "story": "As a traveler, I want to select a station on a map and see nearby hotels, so that I can plan my stay.", "decision": "Violation", "evidence": "select a station on a map and see nearby hotels", "rationale": "Selecting a station and displaying nearby hotels are independently implementable features.", "related_story_ids": [], "confidence": "High"}
+    ],
+    "few_shot": [
+      {"context": [], "story_id": "DEMO-AT-1", "story": "As a traveler, I want to select a station on a map and see nearby hotels, so that I can plan my stay.", "decision": "Violation", "evidence": "select a station on a map and see nearby hotels", "rationale": "Selecting a station and displaying nearby hotels are independently implementable features.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-AT-2", "story": "As an admin, I want to create a user and send that user a welcome email.", "decision": "Violation", "evidence": "create a user and send that user a welcome email", "rationale": "Creating an account and sending an email are separate features that can be implemented and tested independently.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-AT-3", "story": "As a shopper, I want to see a product's name, price, and availability.", "decision": "No Violation", "evidence": "name, price, and availability", "rationale": "These are attributes presented by one product-view feature rather than separate independently valuable features.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-AT-4", "story": "As a reader, I want to bookmark an article, so that I can return to it later.", "decision": "No Violation", "evidence": "bookmark an article", "rationale": "The story requests one feature.", "related_story_ids": [], "confidence": "High"}
+    ]
+  },
+  "Minimal": {
+    "one_shot": [
+      {"context": [], "story_id": "DEMO-MI-1", "story": "As a shopper, I want to save an item for later, so that I can revisit it. Note: use a star icon and store the flag in local storage.", "decision": "Violation", "evidence": "Note: use a star icon and store the flag in local storage", "rationale": "The story contains implementation notes beyond role, means, and optional ends.", "related_story_ids": [], "confidence": "High"}
+    ],
+    "few_shot": [
+      {"context": [], "story_id": "DEMO-MI-1", "story": "As a shopper, I want to save an item for later, so that I can revisit it. Note: use a star icon and store the flag in local storage.", "decision": "Violation", "evidence": "Note: use a star icon and store the flag in local storage", "rationale": "The story contains implementation notes beyond role, means, and optional ends.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-MI-2", "story": "As a moderator, I want to create a room by entering a title and selecting a blue template, so that members can join. QA: test with 20 users.", "decision": "Violation", "evidence": "selecting a blue template; QA: test with 20 users", "rationale": "UI/testing details add information that should be external to the core story.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-MI-3", "story": "As a shopper, I want to save an item for later, so that I can revisit it.", "decision": "No Violation", "evidence": "As a shopper, I want to save an item for later, so that I can revisit it", "rationale": "The text contains only role, means, and rationale.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-MI-4", "story": "As an analyst, I want to export a report.", "decision": "No Violation", "evidence": "As an analyst, I want to export a report", "rationale": "The story contains only role and means, which is minimal.", "related_story_ids": [], "confidence": "High"}
+    ]
+  },
+  "Conceptually sound": {
+    "one_shot": [
+      {"context": [], "story_id": "DEMO-CS-1", "story": "As a visitor, I want to open the city map, so that I can display all restaurant markers.", "decision": "Violation", "evidence": "so that I can display all restaurant markers", "rationale": "The ends clause introduces another requested feature instead of explaining the value of opening the map.", "related_story_ids": [], "confidence": "High"}
+    ],
+    "few_shot": [
+      {"context": [], "story_id": "DEMO-CS-1", "story": "As a visitor, I want to open the city map, so that I can display all restaurant markers.", "decision": "Violation", "evidence": "so that I can display all restaurant markers", "rationale": "The ends clause introduces another requested feature instead of explaining the value of opening the map.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-CS-2", "story": "As a member, I want an easy experience, so that I can reset my password.", "decision": "Violation", "evidence": "I want an easy experience", "rationale": "The means does not state a concrete feature, while the ends contains the actual requested functionality.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-CS-3", "story": "As a visitor, I want to open the city map, so that I can orient myself downtown.", "decision": "No Violation", "evidence": "open the city map; orient myself downtown", "rationale": "The means is a feature and the ends explains its stakeholder value.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-CS-4", "story": "As a member, I want to reset my password, so that I can regain access to my account.", "decision": "No Violation", "evidence": "reset my password; regain access to my account", "rationale": "The means states the feature and the ends states the rationale.", "related_story_ids": [], "confidence": "High"}
+    ]
+  },
+  "Problem-oriented": {
+    "one_shot": [
+      {"context": [], "story_id": "DEMO-PO-1", "story": "As an employee, I want to submit an expense claim using a green Save button in the upper-right corner, so that I can request reimbursement.", "decision": "Violation", "evidence": "using a green Save button in the upper-right corner", "rationale": "The story prescribes a concrete UI solution rather than only the stakeholder need.", "related_story_ids": [], "confidence": "High"}
+    ],
+    "few_shot": [
+      {"context": [], "story_id": "DEMO-PO-1", "story": "As an employee, I want to submit an expense claim using a green Save button in the upper-right corner, so that I can request reimbursement.", "decision": "Violation", "evidence": "using a green Save button in the upper-right corner", "rationale": "The story prescribes a concrete UI solution rather than only the stakeholder need.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-PO-2", "story": "As a subscriber, I want alerts stored in a Redis queue and delivered by a cron job, so that I know when my report is ready.", "decision": "Violation", "evidence": "stored in a Redis queue and delivered by a cron job", "rationale": "Technical mechanisms are prescribed unnecessarily.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-PO-3", "story": "As an employee, I want to submit an expense claim, so that I can request reimbursement.", "decision": "No Violation", "evidence": "submit an expense claim", "rationale": "The story states the stakeholder need without prescribing a concrete implementation.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-PO-4", "story": "As a subscriber, I want to be notified when my report is ready.", "decision": "No Violation", "evidence": "be notified when my report is ready", "rationale": "The requirement is expressed as a needed capability, not an implementation choice.", "related_story_ids": [], "confidence": "High"}
+    ]
+  },
+  "Unambiguous": {
+    "one_shot": [
+      {"context": [], "story_id": "DEMO-UA-1", "story": "As an editor, I want to update content, so that the page stays current.", "decision": "Violation", "evidence": "content", "rationale": "The term 'content' is underspecified and can refer to materially different information types.", "related_story_ids": [], "confidence": "High"}
+    ],
+    "few_shot": [
+      {"context": [], "story_id": "DEMO-UA-1", "story": "As an editor, I want to update content, so that the page stays current.", "decision": "Violation", "evidence": "content", "rationale": "The term 'content' is underspecified and can refer to materially different information types.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-UA-2", "story": "As a manager, I want important customers highlighted, so that I can prioritize them.", "decision": "Violation", "evidence": "important customers", "rationale": "The word 'important' has no defined meaning and permits materially different interpretations.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-UA-3", "story": "As an editor, I want to update the article title and abstract, so that the page stays current.", "decision": "No Violation", "evidence": "article title and abstract", "rationale": "The target information is specifically identified.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-UA-4", "story": "As a manager, I want customers with overdue invoices highlighted, so that I can prioritize collection.", "decision": "No Violation", "evidence": "customers with overdue invoices", "rationale": "The condition for highlighting is explicit rather than vague.", "related_story_ids": [], "confidence": "High"}
+    ]
+  },
+  "Conflict-free": {
+    "one_shot": [
+      {"context": [{"story_id":"DEMO-CF-A","story":"As an editor, I want to edit any published article."}], "story_id": "DEMO-CF-B", "story": "As an editor, I want to edit only articles that I created.", "decision": "Violation", "evidence": "edit only articles that I created", "rationale": "The target story restricts editing in a way that conflicts with DEMO-CF-A, which permits editing any published article.", "related_story_ids": ["DEMO-CF-A"], "confidence": "High"}
+    ],
+    "few_shot": [
+      {"context": [{"story_id":"DEMO-CF-A","story":"As an editor, I want to edit any published article."}], "story_id": "DEMO-CF-B", "story": "As an editor, I want to edit only articles that I created.", "decision": "Violation", "evidence": "edit only articles that I created", "rationale": "The target story conflicts with DEMO-CF-A's broader editing permission.", "related_story_ids": ["DEMO-CF-A"], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-CF-C","story":"As a member, I want cancelled bookings to remain visible for 30 days."}], "story_id": "DEMO-CF-D", "story": "As a member, I want cancelled bookings deleted immediately.", "decision": "Violation", "evidence": "deleted immediately", "rationale": "Immediate deletion is incompatible with retaining cancelled bookings for 30 days.", "related_story_ids": ["DEMO-CF-C"], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-CF-E","story":"As an editor, I want to edit articles that I created."}], "story_id": "DEMO-CF-F", "story": "As an admin, I want to edit any article.", "decision": "No Violation", "evidence": "As an admin", "rationale": "Different permissions for different roles are compatible and do not impose contradictory rules on the same actor.", "related_story_ids": [], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-CF-G","story":"As a member, I want to cancel a future booking."}], "story_id": "DEMO-CF-H", "story": "As a member, I want to view my cancelled bookings.", "decision": "No Violation", "evidence": "view my cancelled bookings", "rationale": "The two capabilities are complementary rather than inconsistent.", "related_story_ids": [], "confidence": "High"}
+    ]
+  },
+  "Full sentence": {
+    "one_shot": [
+      {"context": [], "story_id": "DEMO-FS-1", "story": "Server configuration for administrators", "decision": "Violation", "evidence": "Server configuration for administrators", "rationale": "The text is a noun phrase rather than a complete sentence.", "related_story_ids": [], "confidence": "High"}
+    ],
+    "few_shot": [
+      {"context": [], "story_id": "DEMO-FS-1", "story": "Server configuration for administrators", "decision": "Violation", "evidence": "Server configuration for administrators", "rationale": "The text is a fragment rather than a complete sentence.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-FS-2", "story": "As a visitor, ability to search the catalog.", "decision": "Violation", "evidence": "ability to search the catalog", "rationale": "The text is grammatically incomplete and does not form a full sentence.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-FS-3", "story": "As a visitor, I want to search the catalog.", "decision": "No Violation", "evidence": "As a visitor, I want to search the catalog.", "rationale": "The story is a complete sentence.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-FS-4", "story": "As an admin, I want to recieve alerts when a job fails.", "decision": "No Violation", "evidence": "As an admin, I want to recieve alerts when a job fails.", "rationale": "The typo does not prevent the text from being a complete sentence.", "related_story_ids": [], "confidence": "High"}
+    ]
+  },
+  "Estimatable": {
+    "one_shot": [
+      {"context": [], "story_id": "DEMO-ES-1", "story": "As a driver, I want to see my route information, so that I can plan my day.", "decision": "Violation", "evidence": "route information", "rationale": "The scope is too vague to estimate because 'route information' could denote several substantially different capabilities.", "related_story_ids": [], "confidence": "High"}
+    ],
+    "few_shot": [
+      {"context": [], "story_id": "DEMO-ES-1", "story": "As a driver, I want to see my route information, so that I can plan my day.", "decision": "Violation", "evidence": "route information", "rationale": "The scope is too vague to support a reasonable estimate.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-ES-2", "story": "As a manager, I want a complete analytics solution for all business activity.", "decision": "Violation", "evidence": "complete analytics solution for all business activity", "rationale": "The requirement is too broad and underspecified for a reasonable implementation estimate.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-ES-3", "story": "As a driver, I want to see the ordered list of stops assigned to today's route.", "decision": "No Violation", "evidence": "ordered list of stops assigned to today's route", "rationale": "The scope and expected behavior are sufficiently bounded for estimation without detailed design.", "related_story_ids": [], "confidence": "High"},
+      {"context": [], "story_id": "DEMO-ES-4", "story": "As a manager, I want to export the monthly sales summary as a CSV file.", "decision": "No Violation", "evidence": "export the monthly sales summary as a CSV file", "rationale": "The requested behavior is specific enough for a reasonable estimate.", "related_story_ids": [], "confidence": "High"}
+    ]
+  },
+  "Unique": {
+    "one_shot": [
+      {"context": [{"story_id":"DEMO-UQ-A","story":"As a reader, I want to view a list of news articles."}], "story_id": "DEMO-UQ-B", "story": "As a reader, I want to see the list of news articles.", "decision": "Violation", "evidence": "see the list of news articles", "rationale": "The target story expresses the same requirement as DEMO-UQ-A without a meaningful difference.", "related_story_ids": ["DEMO-UQ-A"], "confidence": "High"}
+    ],
+    "few_shot": [
+      {"context": [{"story_id":"DEMO-UQ-A","story":"As a reader, I want to view a list of news articles."}], "story_id": "DEMO-UQ-B", "story": "As a reader, I want to see the list of news articles.", "decision": "Violation", "evidence": "see the list of news articles", "rationale": "The target story duplicates DEMO-UQ-A.", "related_story_ids": ["DEMO-UQ-A"], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-UQ-C","story":"As a member, I want to update my mailing address."}], "story_id": "DEMO-UQ-D", "story": "As a member, I want to change my mailing address.", "decision": "Violation", "evidence": "change my mailing address", "rationale": "The same actor and goal are expressed with equivalent wording.", "related_story_ids": ["DEMO-UQ-C"], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-UQ-E","story":"As a member, I want to view my billing history."}], "story_id": "DEMO-UQ-F", "story": "As an accountant, I want to view a customer's billing history.", "decision": "No Violation", "evidence": "As an accountant", "rationale": "The role and access context differ meaningfully, so thematic similarity is not duplication.", "related_story_ids": [], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-UQ-G","story":"As a reader, I want to list news articles."}], "story_id": "DEMO-UQ-H", "story": "As a reader, I want to open a news article to read its full text.", "decision": "No Violation", "evidence": "open a news article to read its full text", "rationale": "Listing and viewing details are related but distinct requirements.", "related_story_ids": [], "confidence": "High"}
+    ]
+  },
+  "Uniform": {
+    "one_shot": [
+      {"context": [{"story_id":"DEMO-UN-A","story":"As a visitor, I want to search events."},{"story_id":"DEMO-UN-B","story":"As a visitor, I want to view event details."}], "story_id": "DEMO-UN-C", "story": "Visitors receive event reminders by email.", "decision": "Violation", "evidence": "Visitors receive event reminders by email", "rationale": "The target materially deviates from the dominant 'As a ..., I want to ...' template in the demo backlog.", "related_story_ids": ["DEMO-UN-A","DEMO-UN-B"], "confidence": "High"}
+    ],
+    "few_shot": [
+      {"context": [{"story_id":"DEMO-UN-A","story":"As a visitor, I want to search events."},{"story_id":"DEMO-UN-B","story":"As a visitor, I want to view event details."}], "story_id": "DEMO-UN-C", "story": "Visitors receive event reminders by email.", "decision": "Violation", "evidence": "Visitors receive event reminders by email", "rationale": "The target deviates from the dominant template.", "related_story_ids": ["DEMO-UN-A","DEMO-UN-B"], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-UN-D","story":"Role: editor | Need: publish article"},{"story_id":"DEMO-UN-E","story":"Role: editor | Need: archive article"}], "story_id": "DEMO-UN-F", "story": "As an editor, I want to restore an article.", "decision": "Violation", "evidence": "As an editor, I want to restore an article", "rationale": "The target uses a different structure from the dominant 'Role: ... | Need: ...' template.", "related_story_ids": ["DEMO-UN-D","DEMO-UN-E"], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-UN-G","story":"As a visitor, I want to search events."},{"story_id":"DEMO-UN-H","story":"As an editor, I want to publish an event."}], "story_id": "DEMO-UN-I", "story": "As an admin, I want to archive an event.", "decision": "No Violation", "evidence": "As an admin, I want to archive an event", "rationale": "The target follows the dominant backlog template.", "related_story_ids": [], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-UN-J","story":"Role: visitor | Need: search events"},{"story_id":"DEMO-UN-K","story":"Role: editor | Need: publish event"}], "story_id": "DEMO-UN-L", "story": "Role: admin | Need: archive event", "decision": "No Violation", "evidence": "Role: admin | Need: archive event", "rationale": "The target uses the same dominant template as the rest of the demo backlog.", "related_story_ids": [], "confidence": "High"}
+    ]
+  },
+  "Independent": {
+    "one_shot": [
+      {"context": [{"story_id":"DEMO-IN-A","story":"As an admin, I want to create a customer profile."}], "story_id": "DEMO-IN-B", "story": "As a clerk, I want to view a customer's profile, so that I can assist the customer.", "decision": "Violation", "evidence": "view a customer's profile", "rationale": "The target inherently depends on customer profiles existing, which is established by DEMO-IN-A.", "related_story_ids": ["DEMO-IN-A"], "confidence": "High"}
+    ],
+    "few_shot": [
+      {"context": [{"story_id":"DEMO-IN-A","story":"As an admin, I want to create a customer profile."}], "story_id": "DEMO-IN-B", "story": "As a clerk, I want to view a customer's profile, so that I can assist the customer.", "decision": "Violation", "evidence": "view a customer's profile", "rationale": "The target inherently depends on customer profiles existing.", "related_story_ids": ["DEMO-IN-A"], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-IN-C","story":"As an organizer, I want to create an event."}], "story_id": "DEMO-IN-D", "story": "As an organizer, I want to cancel an existing event.", "decision": "Violation", "evidence": "cancel an existing event", "rationale": "Cancellation inherently requires an event to have been created first.", "related_story_ids": ["DEMO-IN-C"], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-IN-E","story":"As a member, I want to update my profile."}], "story_id": "DEMO-IN-F", "story": "As a member, I want to search the public catalog.", "decision": "No Violation", "evidence": "search the public catalog", "rationale": "No concrete requirement-level dependency on DEMO-IN-E is inherent in the target feature.", "related_story_ids": [], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-IN-G","story":"As an admin, I want to export audit logs."}], "story_id": "DEMO-IN-H", "story": "As a visitor, I want to read the help page.", "decision": "No Violation", "evidence": "read the help page", "rationale": "The target is self-contained with respect to the other demo story.", "related_story_ids": [], "confidence": "High"}
+    ]
+  },
+  "Complete": {
+    "one_shot": [
+      {"context": [{"story_id":"DEMO-CO-A","story":"As an editor, I want to update an existing category."},{"story_id":"DEMO-CO-B","story":"As an editor, I want to delete an existing category."}], "story_id": "DEMO-CO-B", "story": "As an editor, I want to delete an existing category.", "decision": "Violation", "evidence": "existing category", "rationale": "The demo backlog operates on existing categories but contains no capability to create a category, exposing a missing complementary requirement.", "related_story_ids": ["DEMO-CO-A"], "confidence": "High"}
+    ],
+    "few_shot": [
+      {"context": [{"story_id":"DEMO-CO-A","story":"As an editor, I want to update an existing category."}], "story_id": "DEMO-CO-B", "story": "As an editor, I want to delete an existing category.", "decision": "Violation", "evidence": "existing category", "rationale": "The backlog manipulates categories but provides no category-creation capability.", "related_story_ids": ["DEMO-CO-A"], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-CO-C","story":"As a member, I want to approve a pending invitation."}], "story_id": "DEMO-CO-D", "story": "As a member, I want to decline a pending invitation.", "decision": "Violation", "evidence": "pending invitation", "rationale": "The backlog exposes actions on invitations but no requirement that creates/sends an invitation, indicating a completeness gap.", "related_story_ids": ["DEMO-CO-C"], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-CO-E","story":"As an editor, I want to create a category."},{"story_id":"DEMO-CO-F","story":"As an editor, I want to update a category."}], "story_id": "DEMO-CO-G", "story": "As an editor, I want to delete a category.", "decision": "No Violation", "evidence": "delete a category", "rationale": "The demo backlog includes the complementary creation capability, so this target does not expose the illustrated completeness gap.", "related_story_ids": [], "confidence": "High"},
+      {"context": [{"story_id":"DEMO-CO-H","story":"As an organizer, I want to send an invitation."},{"story_id":"DEMO-CO-I","story":"As a member, I want to approve an invitation."}], "story_id": "DEMO-CO-J", "story": "As a member, I want to decline an invitation.", "decision": "No Violation", "evidence": "decline an invitation", "rationale": "The demo backlog contains the necessary invitation-creation capability.", "related_story_ids": [], "confidence": "High"}
+    ]
+  }
+}

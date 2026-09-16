@@ -1,0 +1,541 @@
+{
+  "metadata": {
+    "provider": "openai",
+    "model_requested": "gpt-5.2",
+    "model_label": "GPT-5.2",
+    "project": "PlanningPoker",
+    "criterion": "Unique",
+    "run": 1,
+    "temperature": 0,
+    "elapsed_seconds": 51.407
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "create a new game by entering a name and an optional description",
+      "rationale": "No other story duplicates creating a game with name/description.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "invite estimators by giving them a URL where they can access the game",
+      "rationale": "Distinct from joining (PP-029) and from invite-limit (PP-028); no other story expresses the same invite-by-URL requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "start a round by entering an item in a single multi-line text field",
+      "rationale": "Not duplicated elsewhere; other item stories concern list management/selection rather than starting a round via entry field.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see all items we try to estimate this session",
+      "rationale": "Similar theme to PP-031 (estimators see all items) but different actor/role; not a duplicate per QUS guidance.",
+      "related_story_ids": [
+        "PP-031"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "Distinct from re-estimating earlier items (PP-013) and from CRUD on items (PP-006/7/8).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "add an item to the list of items to be estimated",
+      "rationale": "Unique CRUD action; not duplicated by PP-003 (start round) or PP-007/PP-008 (edit/delete).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "edit an item in the list of items to be estimated",
+      "rationale": "Unique CRUD action; no other story repeats editing items.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "delete an item from the list of items to be estimated",
+      "rationale": "Unique CRUD action; not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "show all estimates immediately ... even though not all estimators have given their estimate",
+      "rationale": "Different from PP-033 which shows estimates only after all have estimated; not a duplicate.",
+      "related_story_ids": [
+        "PP-033"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "Distinct from entering an agreed estimate (PP-012) and auto-fill when unanimous (PP-011).",
+      "related_story_ids": [
+        "PP-011",
+        "PP-012"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "estimate field filled in automatically if all estimators show the same card",
+      "rationale": "Specific automation rule; not duplicated by PP-010 (average) or PP-012 (manual entry).",
+      "related_story_ids": [
+        "PP-010",
+        "PP-012"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "enter the agreed-upon estimate",
+      "rationale": "Manual entry differs meaningfully from accepting average (PP-010) and auto-fill (PP-011).",
+      "related_story_ids": [
+        "PP-010",
+        "PP-011"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "Re-estimation capability is distinct from selecting an item (PP-005) and from viewing prior rounds (PP-039).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "import stories from a spreadsheet",
+      "rationale": "Substantially overlaps with PP-015 (copy/paste stories from a spreadsheet); both express bringing stories from a spreadsheet into the system with no clear meaningful difference in goal/business rule beyond method wording.",
+      "related_story_ids": [
+        "PP-015"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "Duplicates PP-014 at the requirement level (getting stories from a spreadsheet into the game); one is substantially contained in the other without a clear distinct rule/context.",
+      "related_story_ids": [
+        "PP-014"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "browse through previous games",
+      "rationale": "Different from viewing/exporting a specific game transcript (PP-017/18/19).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "view a transcript of a game",
+      "rationale": "Distinct from exporting transcripts (PP-018/PP-019) and from browsing games (PP-016).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a HTML file",
+      "rationale": "Different export format and requirement than CSV export (PP-019) and viewing transcript (PP-017).",
+      "related_story_ids": [
+        "PP-019"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a CSV file",
+      "rationale": "Different export format and requirement than HTML export (PP-018).",
+      "related_story_ids": [
+        "PP-018"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "delete a game",
+      "rationale": "Distinct from deleting an account (PP-024) and deleting an item (PP-008).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "create an account ... entering my name, email address, a password and a username",
+      "rationale": "Unique account-creation requirement; not duplicated by login/change/delete/password reminder stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "Unique authentication action; not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "change my account details",
+      "rationale": "Distinct from account creation (PP-021), deletion (PP-024), and password reminder (PP-026).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "delete my account",
+      "rationale": "Distinct from deleting a game (PP-020) and other account operations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see dates and times in my local timezone",
+      "rationale": "No other story covers timezone localization.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "get a password reminder by email",
+      "rationale": "Unique password recovery requirement; not duplicated by other account stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "select whether to have the team estimate with {0, 1/2, 1, 2, 3, 5, 8, etc.} or {0, 1, 2, 4, 8, 16, 32, etc.}",
+      "rationale": "Unique configuration requirement; not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "Adds a specific constraint (limit) not present in PP-002; not a duplicate requirement.",
+      "related_story_ids": [
+        "PP-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "join a game by entering my name on the page I received the URL for",
+      "rationale": "Distinct from moderator inviting via URL (PP-002).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "Unique to showing current item; not duplicated by viewing all items (PP-031/PP-004).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see all items we will try to estimate this session",
+      "rationale": "Similar to PP-004 but different actor/role; allowed as separate per criterion guidance.",
+      "related_story_ids": [
+        "PP-004"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "immediately see that an estimate has been given by a specific estimator",
+      "rationale": "Different from seeing the actual estimates (PP-033/PP-036); this is about status/acknowledgement of submission.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-036"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "shown all estimates at the same time after all estimators have given their estimate",
+      "rationale": "Distinct from PP-009 (show early) and from PP-036 (who gave what during current round) in intent/timing.",
+      "related_story_ids": [
+        "PP-009",
+        "PP-036"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "be able to change my estimate up until the last person selects a card and all are shown",
+      "rationale": "Substantially the same requirement as PP-041 (change estimate until draw completed); no meaningful difference in actor/context/goal.",
+      "related_story_ids": [
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see each estimator's prior estimates for the story being estimated",
+      "rationale": "Distinct from PP-039 (scroll back through stories/estimates from prior rounds) because this is per-estimator history for the current story.",
+      "related_story_ids": [
+        "PP-039"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "Different from PP-032 (who has estimated) and PP-033 (simultaneous reveal rule).",
+      "related_story_ids": [
+        "PP-032",
+        "PP-033"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "start a two-minute countdown timer that all participants can see",
+      "rationale": "Distinct from PP-038 which is about automatic reset behavior.",
+      "related_story_ids": [
+        "PP-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "two-minute timer reset itself as soon as we all play an estimate",
+      "rationale": "Adds separate automation behavior beyond starting the timer (PP-037).",
+      "related_story_ids": [
+        "PP-037"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Not duplicated; overlaps thematically with PP-035 but covers general prior-round navigation rather than per-estimator prior estimates for the same story.",
+      "related_story_ids": [
+        "PP-035"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "always have the cards in the same order across multiple draws",
+      "rationale": "No other story specifies card ordering consistency.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "Duplicates PP-034 (change estimate until reveal/draw completion) with no meaningful difference.",
+      "related_story_ids": [
+        "PP-034"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "small thumbnail photo displayed near where my cards are played",
+      "rationale": "Unique personalization requirement; not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "compliant with XHTML and CSS standards",
+      "rationale": "Distinct from accessibility (PP-047) and browser compatibility (PP-046).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "list of definitions for commonly used terms",
+      "rationale": "No other story covers glossary/definitions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "created database indexes",
+      "rationale": "Unique technical requirement; not duplicated by general performance story (PP-048).",
+      "related_story_ids": [
+        "PP-048"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "function correctly in Internet Explorer 6 and 7, Firefox 1.5 and 2, and Safari 2",
+      "rationale": "Unique cross-browser compatibility requirement; not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "comply with the W3C accessibility guidelines where possible",
+      "rationale": "Distinct from XHTML/CSS compliance (PP-043) and browser compatibility (PP-046).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "application respond quickly to my actions",
+      "rationale": "General performance requirement; not a duplicate of PP-045 (specific indexing approach).",
+      "related_story_ids": [
+        "PP-045"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "be able to use Unicode",
+      "rationale": "No other story covers Unicode/language support.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see sensible and predictable URLs",
+      "rationale": "Unique requirement about URL structure; not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "nice error pages when something goes wrong",
+      "rationale": "No other story duplicates error-page requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "results to be stored in a non-identifiable way",
+      "rationale": "Unique data anonymization/storage requirement; not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "see some metrics on use of the game",
+      "rationale": "Unique analytics/metrics requirement; not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

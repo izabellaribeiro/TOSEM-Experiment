@@ -1,0 +1,647 @@
+{
+  "metadata": {
+    "provider": "openai",
+    "model_requested": "gpt-5.2",
+    "model_label": "GPT-5.2",
+    "project": "PlanningPoker",
+    "criterion": "Complete",
+    "run": 5,
+    "temperature": 0,
+    "elapsed_seconds": 54.577
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "create a new game",
+      "rationale": "Backlog includes complementary capabilities for games (invite/join, run rounds, browse/view/export/delete), so game creation is supported.",
+      "related_story_ids": [
+        "PP-002",
+        "PP-016",
+        "PP-017",
+        "PP-018",
+        "PP-019",
+        "PP-020",
+        "PP-029"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "invite estimators by giving them a URL",
+      "rationale": "Complementary capability exists for estimators to use the URL to join the game.",
+      "related_story_ids": [
+        "PP-029"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "start a round by entering an item",
+      "rationale": "Backlog includes viewing/selecting items and participant estimation behaviors needed to run a round.",
+      "related_story_ids": [
+        "PP-004",
+        "PP-005",
+        "PP-030",
+        "PP-033"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see all items we try to estimate this session",
+      "rationale": "Items are created/added via other stories, so listing them is supported.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006",
+        "PP-014",
+        "PP-015"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "Backlog includes item creation and re-estimation support, so selecting an existing item is feasible.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006",
+        "PP-013"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "add an item to the list of items",
+      "rationale": "Complementary read/update/delete behaviors for items exist, indicating a complete CRUD set for items.",
+      "related_story_ids": [
+        "PP-004",
+        "PP-007",
+        "PP-008"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "edit an item in the list",
+      "rationale": "Editing presumes item creation, which is covered by starting a round/adding/importing items.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006",
+        "PP-014",
+        "PP-015"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete an item from the list",
+      "rationale": "Deletion presumes items exist; creation/addition/import is present in the backlog.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006",
+        "PP-014",
+        "PP-015"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "show all estimates immediately",
+      "rationale": "Backlog includes participants giving estimates and the default behavior of showing after all have estimated; this story complements that flow.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-032"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "Requires that estimates exist and are visible/collectable; backlog includes estimate submission and reveal behaviors.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-036"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "estimate field filled in automatically if all estimators show the same card",
+      "rationale": "Depends on estimate submission and reveal; those capabilities are present.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-036"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "enter the agreed-upon estimate",
+      "rationale": "Complements other acceptance mechanisms (average/auto-fill) and presumes estimates exist, which is covered.",
+      "related_story_ids": [
+        "PP-010",
+        "PP-011",
+        "PP-033"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "Re-estimation presumes prior rounds/items exist; backlog includes creating rounds/items and selecting items to re-estimate.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-005"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "import stories from a spreadsheet",
+      "rationale": "Imported stories become items; backlog includes listing/selecting/editing/deleting items, completing the lifecycle.",
+      "related_story_ids": [
+        "PP-004",
+        "PP-005",
+        "PP-007",
+        "PP-008"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "Same as import: provides creation path for items that are then managed by other item stories.",
+      "related_story_ids": [
+        "PP-004",
+        "PP-005",
+        "PP-007",
+        "PP-008"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "browse through previous games",
+      "rationale": "Games can be created and stored; transcript viewing/exporting provides complementary access to past game content.",
+      "related_story_ids": [
+        "PP-001",
+        "PP-017",
+        "PP-018",
+        "PP-019"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "view a transcript of a game",
+      "rationale": "Transcript presumes games/rounds/items/estimates exist; backlog includes creating games, running rounds, and capturing estimates.",
+      "related_story_ids": [
+        "PP-001",
+        "PP-003",
+        "PP-033",
+        "PP-036"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a HTML file",
+      "rationale": "Export complements transcript viewing; transcript creation is supported by gameplay stories.",
+      "related_story_ids": [
+        "PP-017",
+        "PP-001",
+        "PP-003"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a CSV file",
+      "rationale": "Export complements transcript viewing; transcript creation is supported by gameplay stories.",
+      "related_story_ids": [
+        "PP-017",
+        "PP-001",
+        "PP-003"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete a game",
+      "rationale": "Deletion presumes games exist; game creation is present.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "create an account",
+      "rationale": "Backlog includes complementary account lifecycle actions (login, change details, delete, password reminder).",
+      "related_story_ids": [
+        "PP-022",
+        "PP-023",
+        "PP-024",
+        "PP-026"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "Login presumes account creation, which is present; password reminder supports recovery.",
+      "related_story_ids": [
+        "PP-021",
+        "PP-026"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "change my account details",
+      "rationale": "Account update presumes account creation, which is present.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete my account",
+      "rationale": "Account deletion presumes account creation; also aligns with game deletion/storage concerns in backlog.",
+      "related_story_ids": [
+        "PP-021",
+        "PP-020"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see dates and times in my local timezone",
+      "rationale": "This is a cross-cutting display capability and does not expose a missing complementary CRUD/flow requirement in the backlog.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "get a password reminder by email",
+      "rationale": "Password reminder presumes accounts exist and complements login; account creation/login are present.",
+      "related_story_ids": [
+        "PP-021",
+        "PP-022"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "select whether to have the team estimate with {…} or {…}",
+      "rationale": "Card-set selection complements the estimation flow; estimation and reveal behaviors exist.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-034",
+        "PP-041"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "This refines inviting/joining; complementary join capability exists.",
+      "related_story_ids": [
+        "PP-002",
+        "PP-029"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "join a game ... received the URL for",
+      "rationale": "Joining presumes invitation/URL exists; backlog includes moderator invitation by URL and game creation.",
+      "related_story_ids": [
+        "PP-001",
+        "PP-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "Items are created/selected by moderator stories, enabling participants to view them.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-005"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see all items we will try to estimate this session",
+      "rationale": "Items are created/added/imported and can be listed by moderator; participant view complements that.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006",
+        "PP-014",
+        "PP-015",
+        "PP-004"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "see that an estimate has been given by a specific estimator",
+      "rationale": "Backlog lacks an explicit story for participants/estimators to submit/play an estimate (select a card). Without estimate entry, showing that an estimate was given is incomplete.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-034",
+        "PP-041",
+        "PP-036"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "after all estimators have given their estimate",
+      "rationale": "Requires the capability for estimators to give/submit an estimate (play a card), but no user story specifies estimate submission. This exposes a missing complementary creation/action capability.",
+      "related_story_ids": [
+        "PP-032",
+        "PP-034",
+        "PP-041",
+        "PP-036"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "be able to change my estimate",
+      "rationale": "Changing an estimate presumes an estimate can be initially submitted, but the backlog has no explicit story for submitting/playing an estimate.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-032",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "see each estimator's prior estimates for the story being estimated",
+      "rationale": "Viewing prior estimates presumes estimates are captured via an estimate-submission capability, which is not explicitly present in the backlog.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-036",
+        "PP-032"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "Requires that participants can submit estimates; backlog does not include a story for playing/submitting an estimate, creating a completeness gap.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-032"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "start a two-minute countdown timer that all participants can see",
+      "rationale": "Timer start is complemented by a reset behavior story; no missing prerequisite capability is implied beyond being in a game/round.",
+      "related_story_ids": [
+        "PP-038"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "timer reset itself as soon as we all play an estimate",
+      "rationale": "Reset trigger depends on the capability to 'play an estimate' (submit an estimate), which is not explicitly covered by any story, exposing a missing complementary capability.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-032",
+        "PP-036"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Backlog includes running rounds and transcript viewing, which supports retaining and viewing prior-round information (assuming estimates exist).",
+      "related_story_ids": [
+        "PP-017",
+        "PP-003"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "cards in the same order across multiple draws",
+      "rationale": "This is a UI consistency requirement and does not imply a missing complementary CRUD/flow story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "Changing an estimate presumes initial estimate submission ('play/select a card'), which is not explicitly present in the backlog.",
+      "related_story_ids": [
+        "PP-034",
+        "PP-033",
+        "PP-032"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "have a small thumbnail photo displayed near where my cards are played",
+      "rationale": "Displaying a participant photo implies a way to provide/upload/set that photo, but no story covers adding/managing participant photos.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "compliant with XHTML and CSS standards",
+      "rationale": "Non-functional compliance story does not expose a missing complementary functional capability in the backlog.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "list of definitions for commonly used terms",
+      "rationale": "Standalone documentation capability; no complementary CRUD/flow requirement is implied as missing.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "created database indexes",
+      "rationale": "Implementation/quality task; does not imply missing complementary user-facing capability.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "function correctly in Internet Explorer 6 and 7, Firefox 1.5 and 2, and Safari 2",
+      "rationale": "Compatibility requirement; does not expose a missing complementary functional story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "comply with the W3C accessibility guidelines",
+      "rationale": "Accessibility requirement; does not imply a missing complementary functional capability.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "respond quickly to my actions",
+      "rationale": "Performance requirement; does not reveal a missing complementary functional step.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "be able to use Unicode",
+      "rationale": "Internationalization requirement; does not expose a missing complementary functional capability.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see sensible and predictable URLs",
+      "rationale": "Usability/architecture requirement; does not imply a missing complementary functional story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "nice error pages when something goes wrong",
+      "rationale": "Error-handling requirement; does not expose a missing complementary functional capability.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "results to be stored in a non-identifiable way",
+      "rationale": "Requires collecting/storing identifiable participant identity (e.g., mapping 'estimator A' to a person) and then de-identifying it, but backlog lacks any explicit capability to manage participant identities beyond entering a name to join; no story covers anonymization/pseudonym assignment or identity management needed to support non-identifiable storage.",
+      "related_story_ids": [
+        "PP-029",
+        "PP-035"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "see some metrics on use of the game",
+      "rationale": "Metrics require capturing/aggregating usage events/data, but backlog contains no complementary stories to define what usage data is recorded or how it is collected for metrics.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    }
+  ]
+}

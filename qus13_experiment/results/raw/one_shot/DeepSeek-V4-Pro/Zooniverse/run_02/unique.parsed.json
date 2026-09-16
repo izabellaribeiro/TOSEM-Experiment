@@ -1,0 +1,561 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "Zooniverse",
+    "criterion": "Unique",
+    "run": 2,
+    "temperature": 0,
+    "elapsed_seconds": 225.6
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "No other story expresses the same requirement or substantially contains it with no meaningful difference.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Search and discovery based on the user's own profile is distinct from other search/recommendation stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Search and discovery based on similar other users is related to but meaningfully different from profile-based or recommendation stories.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Input type, music/ringback output, and video-based content similarity differ enough from ZO-001 and other search stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Metadata and image tag exploitation is a distinct discovery mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Uploading tagged videos for further processing is not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing thumbnail sequences of video segments is unique in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "get info about similar video items and segments",
+      "rationale": "ZO-009 expresses substantially the same requirement with only the word 'perceptually' added, without a meaningful difference in actor, context, goal, permission, or business rule.",
+      "related_story_ids": [
+        "ZO-009"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "get info about perceptually similar video items and segments",
+      "rationale": "This story is substantially contained in ZO-008; 'perceptually similar' does not create a meaningful difference from 'similar video items and segments'.",
+      "related_story_ids": [
+        "ZO-008"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Receiving content recommendations from similar profiles is a distinct recommendation use case, not a duplicate of active search stories.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "News-event-based recommendations are distinct from other recommendation stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Person identification in videos is a distinct object from products, logos, and brands.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Product identification is distinct from person, broadcaster logo, and brand identification.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Broadcaster logos are a specific object of identification, distinct from general brands.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Brand identification is a meaningful business object distinct from broadcaster logos and products.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Picture/upload-based video recommendation is not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Geographical map-based content access is unique in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Automatic speech recognition search is a distinct retrieval mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Admin segmentation validation and editing is distinct from annotation and topic extraction.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Annotating news segments and extracting topics is distinct from segmentation editing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "A/V quality filtering and ranking is not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Audio edit detection before upload is unique.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Nudity prefiltering is distinct from other content prefiltering stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Low-level asset information search prefiltering is distinct from high-level metadata/tag prefiltering.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Copyright infringement validation is not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "High-level metadata/tag prefiltering is meaningfully different from low-level asset search prefiltering.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Assessing image appeal/complexity is distinct from other admin stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Detecting when a scientist should be prompted is distinct from volunteer interruption or education stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Volunteer type identification is not duplicated by other volunteer-related stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Galaxy Zoo image preclassification is project- and task-specific.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Detecting empty Snapshot Serengeti images is domain-specific and distinct from Plankton Portal empty-image detection.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Timestamping malfunction image series detection is unique.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Animal species preclassification for Snapshot Serengeti is domain-specific and not duplicated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Animal attribute preclassification is distinct from species preclassification and other project-specific tasks.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Animal number detection in Snapshot Serengeti is domain-specific and distinct from whale counting.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Plankton segmentation/localization is distinct from Plankton Portal empty-image detection and other plankton tasks.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Detecting empty Plankton Portal images is domain-specific and distinct from Snapshot Serengeti empty-image detection.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Plankton size/orientation detection is distinct from other plankton and animal attribute stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Plankton species preclassification is domain-specific and distinct from Snapshot Serengeti species preclassification.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Worm motion analysis for video duration reduction is distinct from egg-laying time detection.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Detecting worm egg-laying time is distinct from worm motion analysis.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Satellite image feature detection is not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Assessing volunteer classification probability/weight is distinct from identifying volunteer types.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Removing image artefacts is distinct from audio background noise removal and object detection.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Detecting moving and transient objects is not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Removing audio background noise is distinct from image artefact removal and other audio tasks.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Grouping similar whale calls is domain-specific and distinct from grouping subjects by similarity.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Counting whales in audio is distinct from animal number detection in images.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Knowing when to interrupt a volunteer is a distinct action and timing concern from educating or choosing medium.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Choosing interruption medium is distinct from interruption timing and education medium.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Knowing when to educate a volunteer is distinct from knowing when to interrupt.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Choosing education medium is distinct from interruption medium and education timing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Selecting the specific education piece is distinct from timing, medium, and generic Zoonibot speech content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Detecting interesting volunteer comments is distinct from Zoonibot commenting decisions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Knowing when Zoonibot should comment is distinct from knowing when it should explain or what it should say.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Giving an explanation is a meaningfully distinct communication goal from generic commenting.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Deciding what Zoonibot should say is a content decision, distinct from timing or medium decisions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Grouping subjects by similarity is distinct from grouping whale calls and from video similarity retrieval.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Recommending projects to volunteers based on experience is distinct from content recommendations to users.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Admin article summary for reuse is not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

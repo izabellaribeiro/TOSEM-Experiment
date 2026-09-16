@@ -1,0 +1,591 @@
+{
+  "metadata": {
+    "provider": "openai",
+    "model_requested": "gpt-5.2",
+    "model_label": "GPT-5.2",
+    "project": "Zooniverse",
+    "criterion": "Independent",
+    "run": 2,
+    "temperature": 0,
+    "elapsed_seconds": 58.678
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "search and discover music using content identification or fingerprinting",
+      "rationale": "Can be implemented as a standalone search capability; no other backlog story is a prerequisite at the requirement level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "search and discover music based on my profile",
+      "rationale": "Requires the existence of a user profile to base search on, which is not provided by this story and is only meaningful if profile-based capabilities exist elsewhere.",
+      "related_story_ids": [
+        "ZO-010"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "based on other users similar to myself",
+      "rationale": "Inherently depends on having user profiles/behavior data to compute similarity between users.",
+      "related_story_ids": [
+        "ZO-002",
+        "ZO-010"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "similar to a given music video based on content similarity",
+      "rationale": "Defines a self-contained similarity search given an input video; no explicit prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "exploiting enriched metadata and image tags",
+      "rationale": "Can be delivered as a search feature assuming metadata/tags exist in the system; no specific other story is stated as required first.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "upload tagged videos and have tags available for all further processing steps",
+      "rationale": "Self-contained ingestion requirement; it provides foundational data rather than depending on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "view thumbnail sequences of video segments",
+      "rationale": "Requires videos to be segmented into segments before thumbnail sequences of segments can be shown.",
+      "related_story_ids": [
+        "ZO-019"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "get info about similar video items and segments",
+      "rationale": "Depends on having video segments available (segmentation) and similarity computation; segmentation is explicitly covered elsewhere.",
+      "related_story_ids": [
+        "ZO-019"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "info about perceptually similar video items and segments",
+      "rationale": "Depends on the existence of segments (and their perceptual features) to compare; segmentation is a prerequisite capability in the backlog.",
+      "related_story_ids": [
+        "ZO-019"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "recommendations from similar profiles",
+      "rationale": "Inherently requires user profiles to exist and be comparable; profile-based search is captured in another story.",
+      "related_story_ids": [
+        "ZO-002"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "recommendations based on most relevant news events in my area",
+      "rationale": "Can be implemented as a standalone recommendation feature using location and news-event relevance; no explicit prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "identify persons in videos, and receive related information about them",
+      "rationale": "Self-contained feature: person identification plus information retrieval; no other story is a stated prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "identify products in videos, and receive related information about them",
+      "rationale": "Self-contained identification and info retrieval capability; no inherent dependency on another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "identify broadcaster logos in videos, and receive related information about them",
+      "rationale": "Self-contained recognition and information feature; no explicit prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "identify brands in videos, and receive related information about them",
+      "rationale": "Self-contained recognition and info retrieval; no inherent dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "take a picture or upload an image, so that I am recommended with videos related to that picture",
+      "rationale": "Defines an end-to-end input-to-recommendation feature; no other story is required as a prerequisite at the requirement level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "access content using a geographical map and be informed if there are videos covering the area",
+      "rationale": "Standalone map-based discovery feature; does not inherently require another backlog story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "search content items using automatic speech recognition",
+      "rationale": "Self-contained search modality; no explicit prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "see, validate and edit segmentation of videos",
+      "rationale": "Defines an admin capability around segmentation; it does not inherently depend on another story being implemented first.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "annotate news video segments",
+      "rationale": "Requires video segments to exist before they can be annotated; segmentation capability is covered elsewhere.",
+      "related_story_ids": [
+        "ZO-019"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "filter and rank videos based on A/V quality aspects",
+      "rationale": "Standalone filtering/ranking feature; no inherent dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "quick assessment of whether audio material has been edited before the upload",
+      "rationale": "Self-contained analysis requirement; does not require another story as a prerequisite.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "prefilter nudity content",
+      "rationale": "Standalone prefiltering capability; no explicit prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "prefilter content using search based on low­level asset information",
+      "rationale": "Self-contained prefilter/search feature; no inherent dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "validated the ingested contents for copyright infringement",
+      "rationale": "Self-contained validation feature; does not inherently require another story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "search on high­level asset information such as metadata and tags ... provided by the user",
+      "rationale": "Can be implemented as a standalone search/prefilter feature; while it uses metadata/tags, no specific prerequisite story is required by the backlog.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "based on automated analysis, citizen annotations, and comments on Talk",
+      "rationale": "Inherently depends on the existence of citizen annotations and Talk comments data to assess interestingness using those inputs.",
+      "related_story_ids": [
+        "ZO-028",
+        "ZO-054"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "based on annotations and information from Talk comments",
+      "rationale": "Requires annotations and Talk comments to exist before prompting logic can use them.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-054"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "identify volunteer types",
+      "rationale": "Self-contained classification/segmentation of volunteers; no explicit prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "preclassify the Galaxy Zoo images using simple low­level image features",
+      "rationale": "Standalone preclassification feature; no inherent dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "detect Snapshot Serengeti images with no classifiable animals",
+      "rationale": "Self-contained detection feature; no prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "automatic image series detection ... timestamping malfunction",
+      "rationale": "Standalone detection/correction feature; no inherent dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "automatic animal species preclassification in Snapshot Serengeti",
+      "rationale": "Self-contained preclassification feature; no explicit prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "automatic animal attribute preclassification in Snapshot Serengeti",
+      "rationale": "Standalone preclassification feature; no inherent dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "automatic animal number detection in Snapshot Serengeti",
+      "rationale": "Self-contained detection feature; no prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "automatic segmentation or localization of plankton in Plankton Portal",
+      "rationale": "Standalone segmentation/localization feature; no inherent dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "detect Plankton Portal images with no classifiable plankton",
+      "rationale": "Self-contained detection feature; no prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "detection of plankton size or orientation",
+      "rationale": "Standalone analysis feature; no inherent dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "preclassification of plankton species",
+      "rationale": "Self-contained preclassification feature; no prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "worm motion analysis to reduce video duration",
+      "rationale": "Standalone analysis/transformation feature; no inherent dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "detect the time ... where the worm lays an egg",
+      "rationale": "Self-contained detection feature; no prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "detect important features ... in the satellite images",
+      "rationale": "Standalone detection feature; no inherent dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "assess the probability/weight of a volunteer’s classification based on their experience",
+      "rationale": "Self-contained scoring feature; does not inherently require another story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "prefiltering of the images to remove artefacts",
+      "rationale": "Standalone prefiltering/cleanup feature; no prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "detect moving and transient objects in the images",
+      "rationale": "Self-contained detection feature; no inherent dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "remove background noise and distracting sounds from the audio files",
+      "rationale": "Standalone audio processing feature; no prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "group whale calls that are similar",
+      "rationale": "Self-contained clustering/grouping feature; no inherent dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "identify the number of whales heard in a single audio file",
+      "rationale": "Standalone counting/detection feature; no prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "know when I should interrupt a volunteer",
+      "rationale": "Depends on having a mechanism/logic for interruptions and related content selection, which is elaborated in other interruption stories.",
+      "related_story_ids": [
+        "ZO-050"
+      ],
+      "confidence": "Low"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "interrupt a volunteer with text, an image, or a video",
+      "rationale": "Inherently depends on the base capability of deciding when to interrupt a volunteer.",
+      "related_story_ids": [
+        "ZO-049"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "know when I should educate a volunteer",
+      "rationale": "Depends on having an education intervention mechanism/logic, which is further specified by related education-format stories.",
+      "related_story_ids": [
+        "ZO-052",
+        "ZO-053"
+      ],
+      "confidence": "Low"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "educate a volunteer with text, an image, or a video",
+      "rationale": "Inherently depends on the base capability of deciding when to educate a volunteer.",
+      "related_story_ids": [
+        "ZO-051"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "which piece of education I should give to a volunteer",
+      "rationale": "Depends on having an education intervention context (when to educate and available formats/content) to choose among.",
+      "related_story_ids": [
+        "ZO-051",
+        "ZO-052"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "when a volunteer has made an interesting comment on a subject",
+      "rationale": "Self-contained detection/notification requirement about comments; it does not inherently require another story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "when Zoonibot should comment on a subject",
+      "rationale": "Depends on having the capability to determine/comment content for Zoonibot (what it should say), which is specified elsewhere.",
+      "related_story_ids": [
+        "ZO-057"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "when Zoonibot should give an explanation",
+      "rationale": "Depends on having the capability to generate/select the explanation content (what Zoonibot should say).",
+      "related_story_ids": [
+        "ZO-057"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "know what Zoonibot should say to a volunteer",
+      "rationale": "Self-contained content-selection/generation requirement; it can exist independently of the triggers for when to speak.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "group subjects by similarity",
+      "rationale": "Standalone grouping/clustering feature; no inherent dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "recommend different projects to volunteers based on their previous experiences",
+      "rationale": "Self-contained recommendation feature; does not inherently require another story to be implemented first.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "see a summary of articles, so that I reuse them",
+      "rationale": "Standalone summarization/view feature; no explicit prerequisite story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

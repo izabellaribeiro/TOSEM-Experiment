@@ -1,0 +1,500 @@
+{
+  "metadata": {
+    "prompt_profile": "few_shot",
+    "prompt_label": "Few-shot",
+    "shots": 4,
+    "provider": "google",
+    "model_requested": "gemini-3.1-pro-preview",
+    "model_label": "Gemini-3.1-Pro-Preview",
+    "project": "PlanningPoker",
+    "criterion": "Conceptually sound",
+    "run": 4,
+    "temperature": 0,
+    "elapsed_seconds": 111.959
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Conceptually sound",
+      "decision": "Violation",
+      "evidence": "so that I can start inviting estimators",
+      "rationale": "The ends clause introduces another requested feature (inviting estimators, which is PP-002) instead of explaining the value of creating a new game.",
+      "related_story_ids": [
+        "PP-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Conceptually sound",
+      "decision": "Violation",
+      "evidence": "so that we can start the game",
+      "rationale": "The ends clause introduces another requested feature (starting the game/round, which is PP-003) instead of explaining the value of inviting estimators.",
+      "related_story_ids": [
+        "PP-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Conceptually sound",
+      "decision": "Violation",
+      "evidence": "so that we can estimate it",
+      "rationale": "The ends clause introduces another requested feature (estimating the item) instead of explaining the underlying value of starting a round.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can answer questions about the current story such as \"does this include ___\"",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Conceptually sound",
+      "decision": "Violation",
+      "evidence": "so that the team sees that item and can estimate it",
+      "rationale": "The ends clause introduces other requested features (seeing the item, which is PP-030, and estimating it) instead of explaining the value of selecting an item.",
+      "related_story_ids": [
+        "PP-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that we can be flexible and accommodate situations where we think of a new story while playing",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can make it better reflect the team's understanding of the item",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that we can remove it and not estimate it",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can decide to show the estimates that have been given even though not all estimators have given their estimate",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that we can move on to the next item when we agree",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can accept it more quickly",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that we can move on to the next item when we agree",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that we can give a new estimate if we feel different about the story after estimating other related stories",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I don't have to copy and paste each individual story",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can get started more quickly",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can find the previous game I'm looking for",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can see the stories and estimates",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can save the stories and estimates locally",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can further process the stories and estimates",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that stories and estimates for this game are no longer stored",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can start using the application",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can start using the application",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can keep my account details up-to-date",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that account information and games are no longer stored",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I don't have to do timezone conversion myself",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can get back to using the application when I've forgotten my password",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that the team can use either the modified Fibonacci sequence or powers of 2",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that we can play with large but not immense teams",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can participate",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I know what I'm giving an estimate for",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I have a feel for the sizes of the various items",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I know who has already given an estimate and who we're still waiting for",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can be sure estimates are independent and not influenced by other estimates given in the same draw",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can change my mind based on information I hear",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can see how his or her opinion has changed so I can ask questions",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I know this when we're discussing the estimates",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can limit the time spent discussing the estimates when I think we've talked long enough",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that it's ready for use on the next round",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can use this information when I estimate the item of the current round",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that it's easy to compare estimates",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can change my mind",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that the game is more personal because I see who I'm estimating with",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that as many people as possible can access the site and view it as intended",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that everyone working on the project can understand each other more easily",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that the queries run as fast as possible",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that as many people as possible can fully use the application",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that people with accessibility issues can use the application",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I don't get bored",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can use any language I like",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that the application feels logical and transparent",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can trust the system and its developers",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can study the data to see things like whether estimates converged around the first opinion given by \"estimator A\" for example",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "so that I can see how much it is being used",
+      "rationale": "The means states a feature and the ends explains its stakeholder value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

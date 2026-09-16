@@ -1,0 +1,494 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "PlanningPoker",
+    "criterion": "Estimatable",
+    "run": 3,
+    "temperature": 0,
+    "elapsed_seconds": 201.208
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "create a new game by entering a name and an optional description",
+      "rationale": "The action and inputs are specific and bounded, allowing a reasonable implementation estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "invite estimators by giving them a URL",
+      "rationale": "The behavior is concrete and limited to providing access via URL.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "start a round by entering an item in a single multi-line text field",
+      "rationale": "The story describes a specific input and behavior, supporting estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see all items we try to estimate this session",
+      "rationale": "The scope is a clear read-only list of session items.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "The interaction is specific and bounded.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "add an item to the list of items to be estimated",
+      "rationale": "The action is clear and small in scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "edit an item in the list of items to be estimated",
+      "rationale": "The behavior is specific enough for a reasonable estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "delete an item from the list of items to be estimated",
+      "rationale": "The action is clear and bounded.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "show all estimates immediately",
+      "rationale": "The behavior is specific despite the moderator-triggered early reveal.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "The story defines a concrete calculation and acceptance action.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "fill in the estimate field automatically if all estimators show the same card",
+      "rationale": "The condition and behavior are specific enough to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "enter the agreed-upon estimate",
+      "rationale": "The story describes a clear input action.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "The behavior is specific and bounded to re-estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "import stories from a spreadsheet",
+      "rationale": "Although format details are not specified, the action is clear enough for a meaningful estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "The interaction is specific and estimable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "browse through previous games",
+      "rationale": "The story has a clear browsing objective and can be scoped reasonably.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "view a transcript of a game",
+      "rationale": "The scope is specific and read-only.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a HTML file",
+      "rationale": "The output format and action are explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a CSV file",
+      "rationale": "The output format and action are explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "delete a game",
+      "rationale": "The action is concrete and bounded.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "create an account by entering my name, email address, a password and a username",
+      "rationale": "The required inputs and action are clearly specified.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "The behavior is specific and standard.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "change my account details",
+      "rationale": "The scope is limited to account detail editing and is estimable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "delete my account",
+      "rationale": "The action is clear and bounded.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see dates and times in my local timezone",
+      "rationale": "The behavior is specific and technically clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "get a password reminder by email",
+      "rationale": "The behavior is specific and bounded.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "select whether to have the team estimate with {0, 1/2, 1, 2, 3, 5, 8, etc.} or {0, 1, 2, 4, 8, 16, 32, etc.}",
+      "rationale": "The alternatives are explicit, making the story estimable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "The limit and behavior are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "join a game by entering my name on the page I received the URL for",
+      "rationale": "The input and action are specific.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "The behavior is specific and read-only.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see all items we will try to estimate this session",
+      "rationale": "The story describes a specific list view.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "immediately see that an estimate has been given by a specific estimator",
+      "rationale": "The behavior is concrete and bounded.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "be shown all estimates at the same time after all estimators have given their estimate",
+      "rationale": "The timing and behavior are specified clearly.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "change my estimate up until the last person selects a card and all are shown",
+      "rationale": "The deadline condition is specific enough to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see each estimator's prior estimates for the story being estimated",
+      "rationale": "The data and view are specific.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "The behavior is clear and limited to the current round.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "start a two-minute countdown timer that all participants can see",
+      "rationale": "The functionality and duration are explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "have the two-minute timer reset itself as soon as we all play an estimate",
+      "rationale": "The trigger and behavior are specific.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "The story describes a clear historical view.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "always have the cards in the same order across multiple draws",
+      "rationale": "The requirement is clear and easy to scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "The condition and action are specific.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "have a small thumbnail photo displayed near where my cards are played",
+      "rationale": "The visual behavior is specific enough for estimation.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "compliant with XHTML and CSS standards",
+      "rationale": "The technical standards are explicit, permitting a bounded estimate even if cross-cutting.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "have a list of definitions for commonly used terms",
+      "rationale": "The deliverable is a bounded glossary/list and is estimable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "have created database indexes",
+      "rationale": "The technical action is concrete enough to estimate despite an open performance benefit.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "function correctly in Internet Explorer 6 and 7, Firefox 1.5 and 2, and Safari 2",
+      "rationale": "The target browsers are explicitly listed, making the compatibility scope estimable even if large.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "comply with the W3C accessibility guidelines where possible",
+      "rationale": "The qualifier 'where possible' and unspecified guideline scope make the requirement too open-ended for a reasonable estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "respond quickly to my actions",
+      "rationale": "The performance target 'quickly' is vague and unbounded, preventing meaningful estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "be able to use Unicode",
+      "rationale": "Unicode support is a concrete technical requirement and can be scoped for estimation.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "sensible and predictable URLs",
+      "rationale": "The terms 'sensible and predictable' are subjective and not objectively scoped, making estimation difficult.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "nice error pages when something goes wrong",
+      "rationale": "'Nice' and 'something goes wrong' are vague and unbounded, leaving implementation scope unclear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "results to be stored in a non-identifiable way",
+      "rationale": "The anonymization scope and criteria are underspecified, making this too broad to estimate reliably.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "see some metrics on use of the game",
+      "rationale": "'Some metrics' is vague and does not define what must be built, preventing reliable estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

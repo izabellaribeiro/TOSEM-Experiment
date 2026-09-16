@@ -1,0 +1,657 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "PlanningPoker",
+    "criterion": "Complete",
+    "run": 2,
+    "temperature": 0,
+    "elapsed_seconds": 231.088
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "create a new game by entering a name and an optional description",
+      "rationale": "The story creates the game entity; no missing complementary capability is evidenced for this story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "invite estimators by giving them a URL",
+      "rationale": "Invitation depends on an existing game, and game creation is provided by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "start a round by entering an item",
+      "rationale": "The story creates or introduces an item to be estimated; no missing complement is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see all items we try to estimate this session",
+      "rationale": "Item creation exists through PP-003 and PP-006, so this read capability has its required complement.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "Item creation exists through PP-003 and PP-006, so selection has the required complement.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "add an item to the list of items to be estimated",
+      "rationale": "The story creates an item; no missing complementary capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "edit an item in the list of items to be estimated",
+      "rationale": "Item creation exists via PP-006, so the update behavior has its required complement.",
+      "related_story_ids": [
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete an item from the list of items to be estimated",
+      "rationale": "Item creation exists via PP-006, so the delete behavior has its required complement.",
+      "related_story_ids": [
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "show all estimates immediately",
+      "rationale": "The story reads estimates, but the backlog has no story for an estimator to submit an initial estimate; the required creation capability is missing.",
+      "related_story_ids": [
+        "PP-010",
+        "PP-011",
+        "PP-013",
+        "PP-032",
+        "PP-033",
+        "PP-034",
+        "PP-035",
+        "PP-036",
+        "PP-039",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "Accepting an average depends on existing estimates, but the backlog has no story for submitting an initial estimate; the required creation capability is missing.",
+      "related_story_ids": [
+        "PP-009",
+        "PP-011",
+        "PP-013",
+        "PP-032",
+        "PP-033",
+        "PP-034",
+        "PP-035",
+        "PP-036",
+        "PP-039",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "if all estimators show the same card",
+      "rationale": "The story assumes estimators can show cards, but the backlog lacks a story for submitting an initial estimate; required creation is missing.",
+      "related_story_ids": [
+        "PP-009",
+        "PP-010",
+        "PP-013",
+        "PP-032",
+        "PP-033",
+        "PP-034",
+        "PP-035",
+        "PP-036",
+        "PP-039",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "enter the agreed-upon estimate",
+      "rationale": "This story creates the final agreed estimate and does not itself expose a missing required complementary creation capability.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "Re-estimation presumes an initial estimate capability, but the backlog has no story for submitting an initial estimate.",
+      "related_story_ids": [
+        "PP-009",
+        "PP-010",
+        "PP-011",
+        "PP-032",
+        "PP-033",
+        "PP-034",
+        "PP-035",
+        "PP-036",
+        "PP-039",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "import stories from a spreadsheet",
+      "rationale": "This provides an alternative item creation path; no missing necessary complement is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "This provides an alternative item creation path; no missing necessary complement is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "browse through previous games",
+      "rationale": "Reading previous games is supported by game creation in PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "view a transcript of a game",
+      "rationale": "The game entity exists via PP-001, so transcript viewing has its required complement.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a HTML file",
+      "rationale": "Transcript viewing exists via PP-017, so export has its required read/creation complement.",
+      "related_story_ids": [
+        "PP-017"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a CSV file",
+      "rationale": "Transcript viewing exists via PP-017, so export has its required read/creation complement.",
+      "related_story_ids": [
+        "PP-017"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete a game",
+      "rationale": "Game creation exists via PP-001, so delete behavior has its required complement.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "create an account for the application",
+      "rationale": "The story creates the account entity; no missing complementary capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "Login depends on account creation, which exists via PP-021.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "change my account details",
+      "rationale": "Account creation exists via PP-021, so update behavior has its required complement.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete my account",
+      "rationale": "Account creation exists via PP-021, so delete behavior has its required complement.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see dates and times in my local timezone",
+      "rationale": "No missing complementary capability is evidenced for this presentation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "get a password reminder by email",
+      "rationale": "Account creation with email exists via PP-021, so password reminder has its required complement.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "select whether to have the team estimate with {0, 1/2, ...} or {0, 1, 2, ...}",
+      "rationale": "No missing complementary capability is evidenced for deck selection.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "The invitation mechanism is established by PP-002; this story only constrains its size.",
+      "related_story_ids": [
+        "PP-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "join a game by entering my name",
+      "rationale": "Joining depends on an existing invitation and game, both supported by PP-001 and PP-002.",
+      "related_story_ids": [
+        "PP-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "Item creation and selection exist via PP-003/PP-006 and PP-005, so read capability has its complement.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-005"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see all items we will try to estimate this session",
+      "rationale": "Item creation exists via PP-003 and PP-006, so this read capability has its required complement.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "an estimate has been given by a specific estimator",
+      "rationale": "The story reads estimate status, but the backlog lacks a story for an estimator to submit an initial estimate.",
+      "related_story_ids": [
+        "PP-009",
+        "PP-010",
+        "PP-011",
+        "PP-013",
+        "PP-033",
+        "PP-034",
+        "PP-035",
+        "PP-036",
+        "PP-039",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "all estimates at the same time after all estimators have given their estimate",
+      "rationale": "The story reads estimates, but no companion story exists for submitting an initial estimate.",
+      "related_story_ids": [
+        "PP-009",
+        "PP-010",
+        "PP-011",
+        "PP-013",
+        "PP-032",
+        "PP-034",
+        "PP-035",
+        "PP-036",
+        "PP-039",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "change my estimate",
+      "rationale": "Update behavior for estimates presumes an initial estimate capability, which is absent from the backlog.",
+      "related_story_ids": [
+        "PP-009",
+        "PP-010",
+        "PP-011",
+        "PP-013",
+        "PP-032",
+        "PP-033",
+        "PP-035",
+        "PP-036",
+        "PP-039",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "see each estimator's prior estimates",
+      "rationale": "The story reads historical estimates, but no initial estimate submission story exists.",
+      "related_story_ids": [
+        "PP-009",
+        "PP-010",
+        "PP-011",
+        "PP-013",
+        "PP-032",
+        "PP-033",
+        "PP-034",
+        "PP-036",
+        "PP-039",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "The story reads estimates, but the required creation capability for individual estimates is missing.",
+      "related_story_ids": [
+        "PP-009",
+        "PP-010",
+        "PP-011",
+        "PP-013",
+        "PP-032",
+        "PP-033",
+        "PP-034",
+        "PP-035",
+        "PP-039",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "start a two-minute countdown timer",
+      "rationale": "No missing complementary capability is evidenced for the timer feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "two-minute timer reset itself",
+      "rationale": "Timer reset depends on the timer introduced in PP-037, which exists.",
+      "related_story_ids": [
+        "PP-037"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "The story reads prior estimates, but no story exists for submitting an initial estimate.",
+      "related_story_ids": [
+        "PP-009",
+        "PP-010",
+        "PP-011",
+        "PP-013",
+        "PP-032",
+        "PP-033",
+        "PP-034",
+        "PP-035",
+        "PP-036",
+        "PP-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "always have the cards in the same order across multiple draws",
+      "rationale": "This is a presentation consistency requirement and does not expose a missing complementary capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "Update behavior for estimates presumes an initial estimate capability, which is absent from the backlog.",
+      "related_story_ids": [
+        "PP-009",
+        "PP-010",
+        "PP-011",
+        "PP-013",
+        "PP-032",
+        "PP-033",
+        "PP-034",
+        "PP-035",
+        "PP-036",
+        "PP-039"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "small thumbnail photo displayed near where my cards are played",
+      "rationale": "No missing necessary complementary capability is clearly evidenced by this presentation-oriented story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "site compliant with XHTML and CSS standards",
+      "rationale": "No missing complementary capability is evidenced for this developer constraint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "list of definitions for commonly used terms",
+      "rationale": "No missing complementary capability is evidenced for this glossary story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "created database indexes",
+      "rationale": "No missing complementary capability is evidenced for this technical story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "application function correctly in Internet Explorer 6 and 7, Firefox 1.5 and 2, and Safari 2",
+      "rationale": "No missing complementary capability is evidenced for this compatibility constraint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "site comply with the W3C accessibility guidelines",
+      "rationale": "No missing complementary capability is evidenced for this accessibility constraint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "application respond quickly to my actions",
+      "rationale": "No missing complementary capability is evidenced for this performance requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "be able to use Unicode",
+      "rationale": "No missing complementary capability is evidenced for this internationalization requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see sensible and predictable URLs",
+      "rationale": "No missing complementary capability is evidenced for this usability requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "nice error pages when something goes wrong",
+      "rationale": "No missing complementary capability is evidenced for this error-handling story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "results stored in a non-identifiable way",
+      "rationale": "No missing complementary capability is clearly evidenced for this data-storage requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see some metrics on use of the game",
+      "rationale": "No missing necessary complementary capability is clearly evidenced for this reporting story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    }
+  ]
+}

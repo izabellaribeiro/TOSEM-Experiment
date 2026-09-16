@@ -1,0 +1,550 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "google",
+    "model_requested": "gemini-3.1-pro-preview",
+    "model_label": "Gemini-3.1-Pro-Preview",
+    "project": "PlanningPoker",
+    "criterion": "Independent",
+    "run": 5,
+    "temperature": 0,
+    "elapsed_seconds": 112.797
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "create a new game",
+      "rationale": "This story establishes a core entity (a game) and does not inherently depend on any other story being implemented first.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "invite estimators by giving them a URL where they can access the game",
+      "rationale": "Inviting estimators to a game via a URL inherently depends on the ability to create a game first.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "start a round by entering an item",
+      "rationale": "While it implies a game context, starting a round by entering an item can be implemented as a standalone core feature without strictly requiring the game creation story first.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see all items we try to estimate this session",
+      "rationale": "Viewing a list of items inherently depends on the ability to add or import items to the session first.",
+      "related_story_ids": [
+        "PP-006",
+        "PP-014",
+        "PP-015"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "Selecting an item from a list inherently depends on the ability to add items to that list first.",
+      "related_story_ids": [
+        "PP-006",
+        "PP-014",
+        "PP-015"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "add an item to the list of items to be estimated",
+      "rationale": "Adding an item is a foundational action that does not inherently depend on other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "edit an item in the list of items to be estimated",
+      "rationale": "Editing an item inherently depends on the ability to add an item first.",
+      "related_story_ids": [
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "delete an item from the list of items to be estimated",
+      "rationale": "Deleting an item inherently depends on the ability to add an item first.",
+      "related_story_ids": [
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "show all estimates immediately",
+      "rationale": "This feature can be implemented independently (e.g., using mock data), as there is no explicit story for giving an estimate to depend on.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "This feature can be implemented independently without strictly requiring another specific story in the backlog.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "have the \"estimate\" field filled in automatically",
+      "rationale": "This automation feature can be implemented independently without strictly requiring another specific story in the backlog.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "enter the agreed-upon estimate",
+      "rationale": "This feature can be implemented independently without strictly requiring another specific story in the backlog.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "Re-estimating a story inherently depends on the ability to estimate a story for the first time.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-005"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "import stories from a spreadsheet",
+      "rationale": "This is an independent method of adding items to the system.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "This is an independent method of adding items to the system.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "browse through previous games",
+      "rationale": "Browsing previous games inherently depends on the ability to create games first.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "view a transcript of a game",
+      "rationale": "Viewing a game transcript inherently depends on the ability to create and play a game.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "export a transcript of a game as a HTML file",
+      "rationale": "Exporting a transcript inherently depends on the ability to generate or view a transcript first.",
+      "related_story_ids": [
+        "PP-017"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "export a transcript of a game as a CSV file",
+      "rationale": "Exporting a transcript inherently depends on the ability to generate or view a transcript first.",
+      "related_story_ids": [
+        "PP-017"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "delete a game",
+      "rationale": "Deleting a game inherently depends on the ability to create a game first.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "create an account for the application",
+      "rationale": "Creating an account is a foundational feature that does not depend on other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "Logging in inherently depends on the ability to create an account first.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "change my account details",
+      "rationale": "Changing account details inherently depends on the ability to create an account first.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "delete my account",
+      "rationale": "Deleting an account inherently depends on the ability to create an account first.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "see dates and times in my local timezone",
+      "rationale": "This is a cross-cutting formatting feature that does not inherently depend on one specific story to be implemented.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "get a password reminder by email",
+      "rationale": "A password reminder inherently depends on the ability to create an account first.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "select whether to have the team estimate with {0, 1/2, 1, 2, 3, 5, 8, etc.} or {0, 1, 2, 4, 8, 16, 32, etc.}",
+      "rationale": "Configuring the estimation sequence for a game inherently depends on the ability to create a game.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "Setting a limit on invitations inherently depends on the base feature of inviting estimators.",
+      "related_story_ids": [
+        "PP-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "join a game by entering my name on the page I received the URL for",
+      "rationale": "Joining via a received URL inherently depends on the feature that generates and sends that invitation URL.",
+      "related_story_ids": [
+        "PP-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "Seeing the item currently being estimated inherently depends on the ability to enter or select an item for estimation.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-005"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see all items we will try to estimate this session",
+      "rationale": "Viewing a list of items inherently depends on the ability to add or import items to the session first.",
+      "related_story_ids": [
+        "PP-006",
+        "PP-014",
+        "PP-015"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "immediately see that an estimate has been given",
+      "rationale": "This feature can be implemented independently (e.g., using mock data), as there is no explicit story for giving an estimate to depend on.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "be shown all estimates at the same time",
+      "rationale": "This feature can be implemented independently (e.g., using mock data), as there is no explicit story for giving an estimate to depend on.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "change my estimate up until the last person selects a card",
+      "rationale": "This feature can be implemented independently, as there is no explicit story for giving an initial estimate to depend on.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see each estimator's prior estimates for the story being estimated",
+      "rationale": "Viewing prior estimates for a story inherently depends on the ability to re-estimate a story.",
+      "related_story_ids": [
+        "PP-013"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "This feature can be implemented independently (e.g., using mock data), as there is no explicit story for giving an estimate to depend on.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "start a two-minute countdown timer",
+      "rationale": "The timer is a standalone feature that does not inherently depend on other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "have the two-minute timer reset itself",
+      "rationale": "Resetting the timer inherently depends on the existence of the timer feature.",
+      "related_story_ids": [
+        "PP-037"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Scrolling through prior rounds inherently depends on the ability to start and complete rounds.",
+      "related_story_ids": [
+        "PP-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "always have the cards in the same order across multiple draws",
+      "rationale": "This is a UI consistency feature that does not inherently depend on another specific story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "This feature can be implemented independently, as there is no explicit story for giving an initial estimate to depend on.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "have a small thumbnail photo displayed",
+      "rationale": "Displaying a thumbnail photo does not inherently depend on another specific story in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "compliant with XHTML and CSS standards",
+      "rationale": "This is a non-functional requirement that applies globally and does not depend on a specific story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "list of definitions for commonly used terms",
+      "rationale": "This is a documentation task that does not depend on any functional story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "created database indexes",
+      "rationale": "This is a technical performance task that does not depend on a specific functional story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "function correctly in Internet Explorer 6 and 7, Firefox 1.5 and 2, and Safari 2",
+      "rationale": "This is a non-functional requirement that applies globally and does not depend on a specific story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "comply with the W3C accessibility guidelines",
+      "rationale": "This is a non-functional requirement that applies globally and does not depend on a specific story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "respond quickly to my actions",
+      "rationale": "This is a non-functional requirement that applies globally and does not depend on a specific story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "be able to use Unicode",
+      "rationale": "This is a non-functional requirement that applies globally and does not depend on a specific story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "see sensible and predictable URLs",
+      "rationale": "This is a non-functional requirement that applies globally and does not depend on a specific story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "have nice error pages",
+      "rationale": "This is a non-functional requirement that applies globally and does not depend on a specific story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "results to be stored in a non-identifiable way",
+      "rationale": "This is a non-functional requirement that applies globally and does not depend on a specific story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see some metrics on use of the game",
+      "rationale": "Viewing metrics on the use of the game inherently depends on the game existing and being playable.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    }
+  ]
+}

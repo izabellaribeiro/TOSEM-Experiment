@@ -1,0 +1,635 @@
+{
+  "metadata": {
+    "provider": "openai",
+    "model_requested": "gpt-4.1",
+    "model_label": "GPT-4.1",
+    "project": "BADCamp",
+    "criterion": "Uniform",
+    "run": 5,
+    "temperature": 0,
+    "elapsed_seconds": 29.282
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to view...",
+      "rationale": "Follows the dominant 'As a <role>, I want to <goal>, so that <reason>' template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to view...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainingcoordinator, I want to email...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to have...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainer, I want to edit...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainee, I want to limit...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainingcoordinator, I want to have...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to be added...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainee, I want to must accept...",
+      "rationale": "Follows the dominant template, despite awkward wording.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainingcoordinator, I want to tie in...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainee, I want to add to...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainee, I want to see...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Uniform",
+      "decision": "Violation",
+      "evidence": "As a trainer, I want to have a view that is attached to their training node that shows all attendee information Trainers can see all class attendance at first because there are so little trainers and they are trusted with privacy, so that the training coordinator doesn't have to do all the work to get login info for environment setup.",
+      "rationale": "Materially deviates from the dominant template by embedding additional requirements and rationale in the middle of the story, breaking the standard structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainingcoordinator, I want to have an admin view where all trainee information is shown and can be filtered to show a single training session, so that I can see WTF is happening.",
+      "rationale": "Follows the dominant template, despite informal language.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Uniform",
+      "decision": "Violation",
+      "evidence": "As a anonymoususer, I want to have a dedicated page for each class to learn more about the offering The following information must be shown: Logo, title, trainers, location, possibly a map view, datetime, skill level, registrations remaining, link to register for class. The URL path should be SEO friendly /training/training-title, so that I can choose the right class, AND the trainer can tweet and promote their class.",
+      "rationale": "Materially deviates from the dominant template by embedding acceptance criteria and requirements in the middle of the story, breaking the standard structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Uniform",
+      "decision": "Violation",
+      "evidence": "As a anonymoususer, I want to have the training options clearly marked for the following information: day and time of training, title, short summary, trainers, level, number of registrations, remaining registrations, location of training, link to full details of the training, register now link, so that I can shop for training all with one page AND find their class on on one page.",
+      "rationale": "Materially deviates from the dominant template by embedding a list of requirements in the middle of the story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to have a training landing page with an intro section and a list of all training offerings and promote call for trainings, so that I can shop for training all with one page and we can have a call for trainings for selection.",
+      "rationale": "Follows the dominant template, though the goal is compound.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to have a link on the home page...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to find out where the coding lounge is...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to refund sponsorship money...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to find a link...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Uniform",
+      "decision": "Violation",
+      "evidence": "As a anonymoususer, I want to See a list of attendees associated with this company, so that I know who from this sponsor organization is attending.",
+      "rationale": "Materially deviates from the dominant template by capitalizing 'See' in the middle of the sentence, which is inconsistent with the majority template.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to identify myself as and pay for a $350 company sponsorship...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to create and maintain venues...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to view venue details...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see a list of the sessions...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Uniform",
+      "decision": "Violation",
+      "evidence": "As a authenticateduser, I want to See a payment page to pay for my individual sponsorships as the third step of the registration process so that pay for my sponsorship.",
+      "rationale": "Materially deviates from the dominant template by capitalizing 'See' and omitting a comma before 'so that'.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Uniform",
+      "decision": "Violation",
+      "evidence": "As a administrator, I want to assign sponsors to events, trainings and summits so that They will be featured on the sponsor detail page.",
+      "rationale": "Materially deviates from the dominant template by capitalizing 'They' in the 'so that' clause.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see all events, trainings and summits that a sponsor is sponsoring so that I know where I can engage with this sponsor and where they are thought leaders.",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Uniform",
+      "decision": "Violation",
+      "evidence": "As a authenticateduser, I want to Enter payment information and have my card charged for an individual sponsorship, so that I can pay for an individual sponsorship.",
+      "rationale": "Materially deviates from the dominant template by capitalizing 'Enter' in the middle of the sentence.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a sponsor, I want to link BADCamp attendees to my sponsorship page...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to update my user profile...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to sign up for the BADCamp newsletter...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to tag my blog posts...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to create blog posts...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to read the blog...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a sponsor, I want to sponsor a summit...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to register for a summit...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to get detailed directions to the summit venue...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to see what summits I'm signed up for...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a summit coordinator, I want to see a list of attendees signed up for my summit...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a summit coordinator, I want to list basic information about my summit...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a summit coordinator, I want to list sponsors for my summit...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a summit coordinator, I want to list an agenda for my summit...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see how many seats are left for the summit...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see specific details on summits...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see a list of all the summits...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to learn about sponsorship levels...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to use a WYSIWYG editor for all long-form content...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Uniform",
+      "decision": "Violation",
+      "evidence": "As a sponsor, I want to Link to my sponsorship profile from my job listings, so that recruits can learn more about my organization.",
+      "rationale": "Materially deviates from the dominant template by capitalizing 'Link' in the middle of the sentence.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to learn about posting jobs as a sponsor and contact the sponsorship person...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a sponsor, I want to post a job...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to view the job board...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to assign a room to a time slot and a location...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see the schedule...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see the final list of sessions approved...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to bulk approve sessions as accepted...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to mark a session as accepted...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to receive a notification when sessions have been evaluated...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to receive a notification when I submit a session...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to edit my session...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to register to speak at BADCamp...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to submit a session at BADCAMP...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a sponsor, I want to personalize my sponsorship page...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see a list of all the summits that include when they are...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Uniform",
+      "decision": "Violation",
+      "evidence": "As a authenticateduser, I want to Be offered several choices of idividual sponsorship on the second page of registration, so that I can be awesome and financially support the camp.",
+      "rationale": "Materially deviates from the dominant template by capitalizing 'Be' in the middle of the sentence.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to easily find a link in the menu that links to the registration form...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to fill out a user registration form...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to find session information...",
+      "rationale": "Follows the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

@@ -1,0 +1,491 @@
+{
+  "metadata": {
+    "provider": "openai",
+    "model_requested": "gpt-5.2",
+    "model_label": "GPT-5.2",
+    "project": "PlanningPoker",
+    "criterion": "Atomic",
+    "run": 3,
+    "temperature": 0,
+    "elapsed_seconds": 38.931
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "create a new game by entering a name and an optional description",
+      "rationale": "Entering name/optional description are attributes of the single feature 'create game', not separate independently prioritizable features.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "invite estimators by giving them a URL where they can access the game",
+      "rationale": "Single feature: inviting estimators via a URL.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "start a round by entering an item in a single multi-line text field",
+      "rationale": "Single feature: starting a round with an entered item; the multi-line field is an attribute of that feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see all items we try to estimate this session",
+      "rationale": "Single feature: viewing the session’s items list; the example question is just motivation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "Selecting an item (whether first-time or re-estimate) is one feature: choosing the active item for estimation.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "add an item to the list of items to be estimated",
+      "rationale": "Single feature: adding an item to the estimation list.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "edit an item in the list of items to be estimated",
+      "rationale": "Single feature: editing an item.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "delete an item from the list of items to be estimated",
+      "rationale": "Single feature: deleting an item.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "show all estimates immediately",
+      "rationale": "Single feature: revealing estimates before all have voted.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "Single feature: accepting the computed average as the estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "have the \"estimate\" field filled in automatically if all estimators show the same card",
+      "rationale": "Single feature: auto-fill estimate under a specific condition.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "enter the agreed-upon estimate",
+      "rationale": "Single feature: manually entering the final agreed estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "Single feature: re-estimating a previously estimated story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "import stories from a spreadsheet",
+      "rationale": "Single feature: importing stories from a spreadsheet.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "Single feature: adding stories via copy/paste from a spreadsheet.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "browse through previous games",
+      "rationale": "Single feature: browsing previous games (finding is the purpose).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "view a transcript of a game",
+      "rationale": "Single feature: viewing a game transcript.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a HTML file",
+      "rationale": "Single feature: exporting transcript in HTML format.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "export a transcript of a game as a CSV file",
+      "rationale": "Single feature: exporting transcript in CSV format.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "delete a game",
+      "rationale": "Single feature: deleting a game; the rest is consequence.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "create an account ... by entering my name, email address, a password and a username",
+      "rationale": "Single feature: account creation; the multiple fields are attributes of that one feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "Single feature: logging in.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "change my account details",
+      "rationale": "“Account details” bundles multiple independently changeable features (e.g., change email, change password, change username) into one story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "delete my account",
+      "rationale": "Single feature: deleting the user account (data deletion is outcome).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see dates and times in my local timezone",
+      "rationale": "Single feature: displaying dates/times in local timezone.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "get a password reminder by email",
+      "rationale": "Single feature: password reminder via email.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "select whether to have the team estimate with {…} or {…}",
+      "rationale": "Single feature: choosing between two card/scale sets; the two options are alternatives within one configuration feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "Single feature: enforcing/supporting an invitation limit of 15.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "join a game by entering my name",
+      "rationale": "Single feature: joining a game with a name entry.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "Single feature: displaying the current item.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see all items we will try to estimate this session",
+      "rationale": "Single feature: viewing the list of items for the session.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see that an estimate has been given by a specific estimator",
+      "rationale": "Single feature: showing per-estimator submission status (not the estimate value).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "be shown all estimates at the same time after all estimators have given their estimate",
+      "rationale": "Single feature: simultaneous reveal of estimates after all votes are in.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "be able to change my estimate up until the last person selects a card and all are shown",
+      "rationale": "Single feature: allowing estimate changes until the reveal condition is met.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see each estimator's prior estimates for the story being estimated",
+      "rationale": "Single feature: displaying prior estimates per estimator for the current story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "Single feature: showing mapping of estimator to estimate for the round.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "be able start a two-minute countdown timer that all participants can see",
+      "rationale": "Single feature: starting a shared visible two-minute timer.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "have the two-minute timer reset itself as soon as we all play an estimate",
+      "rationale": "Single feature: automatic timer reset triggered by all estimates being played.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Single feature: reviewing prior rounds’ stories/estimates (scrolling/back navigation).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "always have the cards in the same order across multiple draws",
+      "rationale": "Single feature: consistent card ordering across draws.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "Single feature: allowing estimate changes until draw completion.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "have a small thumbnail photo displayed near where my cards are played",
+      "rationale": "Single feature: displaying a participant thumbnail near their played cards.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "compliant with XHTML and CSS standards",
+      "rationale": "Combines two independently checkable compliance targets (XHTML compliance and CSS compliance) rather than a single feature.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "have a list of definitions for commonly used terms",
+      "rationale": "Single feature: providing a glossary/list of definitions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "have created database indexes",
+      "rationale": "Single feature: adding database indexes (even if multiple indexes, they serve one cohesive performance feature).",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "function correctly in Internet Explorer 6 and 7, Firefox 1.5 and 2, and Safari 2",
+      "rationale": "Bundles multiple independently testable compatibility targets (different browsers/versions) into one story; each could be prioritized/tested separately.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "comply with the W3C accessibility guidelines where possible",
+      "rationale": "Single feature/goal: accessibility compliance (guidelines are part of one compliance target).",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "application respond quickly to my actions",
+      "rationale": "Single quality requirement: responsiveness/performance.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "be able to use Unicode",
+      "rationale": "Single feature: Unicode support.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see sensible and predictable URLs",
+      "rationale": "Single feature/goal: predictable URL scheme.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "have nice error pages when something goes wrong",
+      "rationale": "Single feature: user-friendly error pages.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "results to be stored in a non-identifiable way",
+      "rationale": "Single feature/requirement: non-identifiable storage of results; the example analysis use is motivation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "see some metrics on use of the game",
+      "rationale": "\"Some metrics\" implies multiple distinct metrics/features (e.g., counts, trends, retention) that are independently implementable and prioritizable, making the story non-atomic.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    }
+  ]
+}

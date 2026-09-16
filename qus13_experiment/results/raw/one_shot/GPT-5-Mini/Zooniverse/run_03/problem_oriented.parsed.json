@@ -1,0 +1,557 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "Zooniverse",
+    "criterion": "Problem-oriented",
+    "run": 3,
+    "temperature": null,
+    "elapsed_seconds": 86.528
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "using content identification or fingerprinting",
+      "rationale": "The story prescribes specific technical mechanisms (content identification/fingerprinting) instead of stating the stakeholder need only.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story states a stakeholder need (search based on my profile) without prescribing implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Asking for discovery based on other users similar to myself expresses a need for peer-based recommendations rather than prescribing a concrete algorithm or mechanism.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "based on content similarity",
+      "rationale": "Specifying that recommendations should be similar to a given video describes the desired behavior, not a concrete technical implementation.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "by exploiting enriched metadata and image tags",
+      "rationale": "The story prescribes using specific data sources (enriched metadata and image tags) as the mechanism for discovery, which is an implementation choice.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "upload tagged videos and have tags available for all further processing steps",
+      "rationale": "This states the need for tags to be available after upload; it does not mandate a specific storage format or implementation mechanism.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "view thumbnail sequences of video segments",
+      "rationale": "The story requests a viewing capability without prescribing UI widgets or technical implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "get info about similar video items and segments",
+      "rationale": "This expresses a need to obtain information about similar items without specifying how similarity must be computed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "perceptually similar",
+      "rationale": "Requesting info about perceptual similarity describes the stakeholder need (perceptual match) rather than a technical algorithm.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "receive content recommendations from similar profiles",
+      "rationale": "This indicates the desired basis for recommendations (similar profiles) but does not prescribe a specific algorithm or implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "based on most relevant news events in my area",
+      "rationale": "Specifies the source/context for recommendations (news events) as a stakeholder need, not a technical mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "identify persons in videos, and receive related information about them",
+      "rationale": "The story asks for person identification functionality, which is a stakeholder need rather than a prescribed implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "identify products in videos, and receive related information about them",
+      "rationale": "The requirement expresses the need to identify products and get info, without specifying how to do so.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "identify broadcaster logos in videos",
+      "rationale": "This asks for logo identification as a capability, not a specific technical solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "identify brands in videos",
+      "rationale": "The story states the need to identify brands without prescribing detection algorithms or implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "take a picture or upload an image, so that I am recommended with videos related to that picture or image",
+      "rationale": "This describes the user interaction and desired outcome but does not require specific implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "access content using a geographical map",
+      "rationale": "The story prescribes a specific UI mechanism (geographical map) rather than stating the underlying stakeholder need generically.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "using automatic speech recognition",
+      "rationale": "The story prescribes a concrete technical mechanism (automatic speech recognition) for searching, which is an implementation choice.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see, validate and edit segmentation of videos",
+      "rationale": "This describes administrative capabilities needed (view/edit segmentation) without prescribing how segmentation must be implemented.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "annotate news video segments and extract a topic for each segment",
+      "rationale": "Requesting topic extraction describes a desired outcome; it does not mandate a specific algorithm or technical format.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "filter and rank videos based on A/V quality aspects",
+      "rationale": "Specifying filtering/ranking by quality states the desired behavior without prescribing technical implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "get a quick assessment of whether audio material has been edited before the upload",
+      "rationale": "This asks for an assessment capability (detect edits) but does not prescribe the detection method.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "prefilter nudity content",
+      "rationale": "The story states the need to prefilter certain content but does not specify concrete technical mechanisms.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "using search based on low­level asset information",
+      "rationale": "The story prescribes a specific technical approach (search on low-level asset information), which is an implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "automatically validated the ingested contents for copyright infringement",
+      "rationale": "Specifying automatic validation prescribes an implementation choice (automation) rather than only the stakeholder need.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "prefilter the content using search on high­level asset information such as metadata and tags either recognized by the system of provided by the user",
+      "rationale": "This story prescribes the data sources and search-based mechanism for prefiltering, which are implementation specifics.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "based on automated analysis, citizen annotations, and comments on Talk",
+      "rationale": "The story explicitly requires automated analysis and specific data sources as the mechanism for assessing images, which prescribes solutions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "detect when a scientist should be prompted to look at a subject, based on annotations and information from Talk comments",
+      "rationale": "This expresses the desired trigger condition and data sources for prompting but does not mandate a specific algorithm or implementation detail.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "identify volunteer types",
+      "rationale": "Stating the need to identify volunteer types is a stakeholder requirement, not a prescription of a technical solution.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "using simple low­level image features",
+      "rationale": "The story prescribes the use of specific features/technique (low-level image features) for preclassification, which is an implementation choice.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "automatically detect Snapshot Serengeti images",
+      "rationale": "Specifying automatic detection prescribes an implementation mechanism rather than only the stakeholder need.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "perform automatic image series detection",
+      "rationale": "The story prescribes automatic detection as the solution for timestamping malfunction, which is an implementation decision.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "perform automatic animal species preclassification",
+      "rationale": "This prescribes automated preclassification as the method, i.e., a technical solution rather than just the stakeholder need.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "perform automatic animal attribute preclassification",
+      "rationale": "The story prescribes automatic preclassification (an implementation detail) instead of only stating the needed outcome.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "perform automatic animal number detection",
+      "rationale": "Specifying automatic detection of animal counts prescribes a technical mechanism rather than just the requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "perform automatic segmentation or localization of plankton",
+      "rationale": "The story prescribes automatic segmentation/localization (implementation detail) instead of framing the stakeholder need generically.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "automatically detect Plankton Portal images with no classifiable plankton",
+      "rationale": "Specifying automatic detection is a technical solution choice rather than solely stating the need.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "perform automatic detection of plankton size or orientation",
+      "rationale": "The story prescribes automatic detection for specific attributes, which is an implementation-level detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "perform automatic preclassification of plankton species",
+      "rationale": "This prescribes automatic preclassification (a solution choice) rather than only expressing the stakeholder need.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "perform automatic worm motion analysis",
+      "rationale": "The story requires automatic motion analysis, prescribing an implementation approach rather than a pure stakeholder need.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Problem-oriented",
+      "decision": "Violation",
+      "evidence": "automatically detect the time ... where the worm lays an egg",
+      "rationale": "Specifying automatic detection prescribes a technical method instead of describing the needed outcome only.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "detect important features such as areas of flooding, damage, temporary shelters, blocked roads etc in the satellite images",
+      "rationale": "This expresses the need to find certain important features in images; it does not mandate a specific algorithm or implementation detail.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "assess the probability/weight of a volunteer’s classification based on their experience",
+      "rationale": "Specifying that classification should be weighted by experience states the desired behavior/metric, not a concrete technical implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "perform prefiltering of the images to remove artefacts such as bright stars and camera read errors",
+      "rationale": "The story asks for prefiltering to remove artifacts but does not prescribe a specific technical method or algorithm to do so.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "detect moving and transient objects in the images",
+      "rationale": "This requests detection capability but does not specify how detection must be implemented, so it remains problem-oriented.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "remove background noise and distracting sounds from the audio files",
+      "rationale": "The story describes the desired outcome (clean audio) without prescribing the specific signal-processing techniques to use.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "group whale calls that are similar",
+      "rationale": "This states the desired grouping behavior (similar calls) but does not mandate a particular clustering algorithm or implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "identify the number of whales heard in a single audio file",
+      "rationale": "The story expresses the required capability without prescribing the technical means to count whales in audio.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "know when I should interrupt a volunteer",
+      "rationale": "This expresses a decision-support need rather than prescribing specific algorithms or UI elements.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "know whether I should interrupt a volunteer with text, an image, or a video",
+      "rationale": "Specifying the type of interruption (text/image/video) expresses desired options rather than mandating implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "know when I should educate a volunteer",
+      "rationale": "This is a stakeholder need for education timing and does not prescribe technical solutions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "know whether I should educate a volunteer with text, an image, or a video",
+      "rationale": "Specifying content modalities for education outlines desired options without forcing a specific implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "know which piece of education I should give to a volunteer",
+      "rationale": "This states the need to select appropriate educational content, not how to implement the selection.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "know when a volunteer has made an interesting comment on a subject",
+      "rationale": "The story expresses the need to detect notable comments but does not prescribe the detection mechanism.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "know when Zoonibot should comment on a subject",
+      "rationale": "This defines a decision point for Zoonibot behavior, not a required implementation approach.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "know when Zoonibot should give an explanation",
+      "rationale": "Specifies the need for explanation timing without prescribing the technical mechanism to determine it.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "know what Zoonibot should say to a volunteer",
+      "rationale": "Requests desired content for Zoonibot responses but does not mandate how the content is generated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "group subjects by similarity",
+      "rationale": "This expresses the need to group similar subjects without specifying particular similarity metrics or algorithms.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "recommend different projects to volunteers based on their previous experiences",
+      "rationale": "Specifying recommendation based on prior experience states the desired basis for suggestions, not a technical implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Problem-oriented",
+      "decision": "No Violation",
+      "evidence": "see a summary of articles, so that I reuse them",
+      "rationale": "The story asks for summaries for reuse without prescribing how summaries must be produced or stored.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "metadata": {
+    "prompt_profile": "few_shot",
+    "prompt_label": "Few-shot",
+    "shots": 4,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "PlanningPoker",
+    "criterion": "Unambiguous",
+    "run": 4,
+    "temperature": 0,
+    "elapsed_seconds": 263.7
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "name and an optional description",
+      "rationale": "The required game-creation inputs are specifically named.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "by giving them a URL where they can access the game",
+      "rationale": "Invitation mechanism is explicitly identified.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "single multi-line text field",
+      "rationale": "The entry method and the item to be estimated are clear in the planning-poker context.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "all items we try to estimate this session",
+      "rationale": "Session item list is explicitly referenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "Action and object are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "add an item to the list of items to be estimated",
+      "rationale": "Action and target list are explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "edit an item in the list",
+      "rationale": "Action is specific; rationale wording does not make the requirement ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "delete an item from the list",
+      "rationale": "Action and target are explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "show all estimates immediately ... even though not all estimators have given their estimate",
+      "rationale": "The rationale clarifies that current estimates can be revealed early.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "average of all estimates",
+      "rationale": "Average is used in the common arithmetic-mean sense.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "if all estimators show the same card",
+      "rationale": "Condition is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "agreed-upon estimate",
+      "rationale": "The value to enter is the team-agreed estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "Target story and timing are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "import stories from a spreadsheet",
+      "rationale": "Spreadsheet is a common, sufficiently clear source.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "Action and source are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "browse through previous games",
+      "rationale": "Browsing previous games is a clear navigation intent.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "view a transcript of a game ... stories and estimates",
+      "rationale": "Transcript content is explicitly defined.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "export ... as a HTML file",
+      "rationale": "Export format is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "export ... as a CSV file",
+      "rationale": "Export format is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "delete a game",
+      "rationale": "Action and object are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "name, email address, a password and a username",
+      "rationale": "Account creation fields are enumerated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "account name",
+      "rationale": "Login credential is not clearly defined and can be read as username, email, or another account identifier.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "account details",
+      "rationale": "The details to change are underspecified, allowing different fields to be in scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "delete my account",
+      "rationale": "Action and object are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "dates and times in my local timezone",
+      "rationale": "Timezone conversion requirement is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "password reminder by email",
+      "rationale": "Delivery mechanism and purpose are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "modified Fibonacci sequence or powers of 2",
+      "rationale": "The named card sequences clarify the alternatives containing 'etc.'",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "Numeric limit is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "by entering my name on the page I received the URL for",
+      "rationale": "Join action and entry are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "Displayed object is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "all items we will try to estimate this session",
+      "rationale": "Item list scope is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "estimate has been given by a specific estimator ... who has already given",
+      "rationale": "The visibility requirement is clear despite timing wording.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "shown all estimates at the same time after all estimators have given their estimate",
+      "rationale": "Timing and independence goal are explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "change my estimate up until the last person selects a card",
+      "rationale": "Deadline for changes is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "each estimator's prior estimates for the story being estimated",
+      "rationale": "Scope of prior estimates is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "who gave what estimates during the current round",
+      "rationale": "Current-round attribution is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "two-minute countdown timer that all participants can see",
+      "rationale": "Duration and visibility are explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "two-minute timer reset itself as soon as we all play an estimate",
+      "rationale": "Trigger and timer duration are explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Content to review is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "cards in the same order across multiple draws",
+      "rationale": "Ordering requirement is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "Condition is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "small thumbnail photo displayed near where my cards are played",
+      "rationale": "It is unclear whose thumbnail is shown and exactly where, leading to materially different UI interpretations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "compliant with XHTML and CSS standards",
+      "rationale": "Standards are specifically named.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "commonly used terms",
+      "rationale": "The set of terms is unspecified and can be interpreted differently.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "as fast as possible",
+      "rationale": "Performance target is vague and unmeasurable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "Internet Explorer 6 and 7, Firefox 1.5 and 2, and Safari 2",
+      "rationale": "Target browsers are explicitly enumerated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "where possible",
+      "rationale": "The exception condition is vague and allows arbitrary noncompliance.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "respond quickly",
+      "rationale": "Quickly is undefined and permits different responsiveness requirements.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "use Unicode",
+      "rationale": "Unicode is an explicit standard and language requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "sensible and predictable URLs",
+      "rationale": "Sensible and predictable are subjective terms with multiple interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "nice error pages",
+      "rationale": "Nice is subjective and underspecified.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "non-identifiable way",
+      "rationale": "The anonymization/privacy requirement is underspecified and could mean different technical approaches.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "some metrics",
+      "rationale": "The specific metrics are not defined, leaving scope ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

@@ -1,0 +1,635 @@
+{
+  "metadata": {
+    "provider": "openai",
+    "model_requested": "gpt-5.2",
+    "model_label": "GPT-5.2",
+    "project": "BADCamp",
+    "criterion": "Estimatable",
+    "run": 5,
+    "temperature": 0,
+    "elapsed_seconds": 50.059
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "view a list of sponsors",
+      "rationale": "A straightforward, bounded UI/listing feature with clear scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "view a list of user profiles",
+      "rationale": "Clearly a list view; implementation effort can be reasonably estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "email all the trainers at once from the website",
+      "rationale": "Bulk email capability to a defined group is a bounded feature suitable for estimation.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "have a very clear map where the buildings and rooms are",
+      "rationale": "“Very clear map” is underspecified (static image vs interactive map, level of detail, wayfinding), making effort hard to estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "edit my training node myself ... and links to slides",
+      "rationale": "Scope is unclear (which fields, permissions/workflow, what “links to slides” entails), making estimation difficult.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "limit to one registration per day per authenticated user",
+      "rationale": "A specific business rule/constraint that can be estimated without major ambiguity.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "have an admin view that helps track registration status for each attendee ... attendend, refunded, no show",
+      "rationale": "“Admin view that helps track” is broad (what actions, statuses, workflows, reporting), making scope hard to size.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "be added to a training waitlist",
+      "rationale": "Waitlist behavior is underspecified (ordering, notifications, auto-promotion, limits), so effort is hard to estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "must accept the cancellation terms with a checkbox",
+      "rationale": "A simple, well-bounded UI/validation requirement that is readily estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "tie in a cancellation deadline to whatever registration / cancellation workflow exists",
+      "rationale": "Depends on unspecified existing workflow and unclear enforcement/behavior, making estimation difficult.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "add to \"my schedule\" if there is a schedule feature on the site",
+      "rationale": "Conditional and underspecified (what schedule feature, what “add” means, data model/UI), making scope hard to estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see which trainings I have signed up for",
+      "rationale": "A clear, bounded “my registrations” view that can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "have a view ... shows all attendee information",
+      "rationale": "“All attendee information” is overly broad and undefined (which fields, privacy rules, export/actions), making estimation difficult.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "admin view where all trainee information is shown and can be filtered to show a single training session",
+      "rationale": "Despite informal wording, it specifies a view plus a filter by training session; scope is reasonably bounded for estimation.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "The following information must be shown: Logo, title, trainers, location, possibly a map view, datetime, skill level, registrations remaining, link to register for class. The URL path should be SEO friendly",
+      "rationale": "Provides a concrete list of fields and URL requirement; overall page scope is estimatable (map is optional but noted).",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "training options clearly marked for ... day and time ... title ... summary ... trainers ... remaining registrations ... location ... links",
+      "rationale": "Defines a single-page listing with explicit displayed attributes and links; can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "training landing page with an intro section and a list of all training offerings and promote call for trainings",
+      "rationale": "“Promote call for trainings” and landing-page content/behavior are vague (what components, CTAs, submission flow), making scope hard to estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "have a link on the home page to a list of training options",
+      "rationale": "A simple navigation/link addition with clear scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "find out where the coding lounge is and what time it is open",
+      "rationale": "A bounded information display requirement (location + hours) that can be estimated.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "refund sponsorship money that was processed via stripe",
+      "rationale": "Specific integration action (Stripe refund) with clear intent; estimatable.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "find a link on the sponsorships page to become a $350 level sponsor",
+      "rationale": "A clear, small navigation/UI change.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "See a list of attendees associated with this company",
+      "rationale": "A defined list view filtered by company; scope is reasonably clear.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "identify myself as and pay for a $350 company sponsorship",
+      "rationale": "Combines identification, payment, and role/sponsorship creation without specifying flow, fields, or outcomes; too broad to estimate well.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "create and maintain venues",
+      "rationale": "“Create and maintain” is coarse-grained (CRUD, fields, permissions, relationships), making estimation difficult.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "view venue details ... and see the events happening there",
+      "rationale": "Venue details plus associated events listing is not defined (which details, which event types, filtering), making scope hard to estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "see a list of the sessions associated with sponsor attendees",
+      "rationale": "“Associated with sponsor attendees” is ambiguous (sessions attended? presented? by employees?), making behavior hard to estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "See a payment page ... as the third step of the registration process",
+      "rationale": "Defines a specific page in a specific step; scope is bounded enough to estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "assign sponsors to events, trainings and summits",
+      "rationale": "A clear association/assignment feature across defined entity types; estimatable.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see all events, trainings and summits that a sponsor is sponsoring",
+      "rationale": "A bounded listing/filtering requirement based on sponsorship relationship.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "Enter payment information and have my card charged for an individual sponsorship",
+      "rationale": "A standard payment capture/charge behavior with clear intent; estimatable.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page",
+      "rationale": "“Link attendees” is ambiguous (display attendee list? endorsements? tracking links?), making scope hard to estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "update my user profile",
+      "rationale": "Common, bounded capability; can be estimated based on existing profile fields.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "sign up for the BADCamp newsletter",
+      "rationale": "A clear subscription feature; scope is reasonably bounded.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "tag my blog posts for consumption by Drupal Planet",
+      "rationale": "A specific tagging/metadata requirement with clear purpose; estimatable.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "create blog posts",
+      "rationale": "A standard content creation feature; scope is clear enough to estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "read the blog",
+      "rationale": "A straightforward viewing/browsing requirement; estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "sponsor a summit that matches my brand",
+      "rationale": "“Matches my brand” implies undefined matching/selection logic and sponsorship flow; too vague to estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "register for a summit",
+      "rationale": "A bounded registration capability for a defined entity; estimatable.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "get detailed directions to the summit venue",
+      "rationale": "“Detailed directions” is underspecified (static text vs maps, routing, transit options), making estimation difficult.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see what summits I'm signed up for",
+      "rationale": "A clear “my registrations” listing; estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see a list of attendees signed up for my summit",
+      "rationale": "A bounded list view for a coordinator; can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "list basic information about my summit",
+      "rationale": "“Basic information” is undefined (which fields, editing vs display), making scope too vague for reliable estimation.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "list sponsors for my summit",
+      "rationale": "A specific listing/association display; estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "list an agenda for my summit",
+      "rationale": "Agenda could range from simple text to structured schedule items with times/speakers; behavior is underspecified, hindering estimation.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see how many seats are left for the summit",
+      "rationale": "A clear computed value/display based on capacity and registrations; estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "see specific details on summits ... learn more ... register ... get day-of knowledge to help me get to the location",
+      "rationale": "Combines multiple broad capabilities (details, registration, directions/day-of info) without specifying content/behavior; too coarse-grained to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits",
+      "rationale": "A straightforward list page; estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "learn about sponsorship levels",
+      "rationale": "Could mean a static info page, dynamic pricing table, comparison, or purchase flow; too vague to estimate reliably.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "use a WYSIWYG editor for all long-form content",
+      "rationale": "“All long-form content” is broad across the system (which content types/fields, roles, configurations), making it hard to size.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "Link to my sponsorship profile from my job listings",
+      "rationale": "A specific linking/display requirement between two entities; estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "learn about posting jobs as a sponsor and contact the sponsorship person",
+      "rationale": "Mixes informational content and “contact” capability without specifying mechanism (form, email link, workflow), making scope unclear.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "post a job",
+      "rationale": "A standard create-job-listing feature; estimatable at story level.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "view the job board",
+      "rationale": "A bounded viewing/listing feature; estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "assign a room to a time slot and a location",
+      "rationale": "A specific scheduling assignment action; scope is clear enough to estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "see the schedule",
+      "rationale": "“The schedule” is underspecified (views, filters, formats, personalization, printing/export), making estimation difficult.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see the final list of sessions approved",
+      "rationale": "A clear listing of approved sessions; estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "bulk approve sessions as accepted",
+      "rationale": "A specific admin bulk action; estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "mark a session as accepted",
+      "rationale": "A specific state change action; estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "receive a notification when sessions have been evaluated",
+      "rationale": "Notification channel and triggering conditions are underspecified (email/site, per session vs batch), making effort hard to estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "receive a notification when I submit a session",
+      "rationale": "Notification mechanism/content is not specified (email vs on-site, templates), making estimation less reliable.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "edit my session",
+      "rationale": "A standard edit capability for an existing entity; estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "register to speak at BADCamp ... submit a session",
+      "rationale": "A bounded capability to register/submit as a speaker; can be estimated at story level.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "submit a session at BADCAMP",
+      "rationale": "A clear submission action; estimatable.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "personalize my sponsorship page",
+      "rationale": "“Personalize” is broad and undefined (what elements, layout, media, approvals), making estimation difficult.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits that include when they are",
+      "rationale": "A list view with dates/times; scope is clear and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "Be offered several choices of idividual sponsorship on the second page of registration",
+      "rationale": "Defines a specific step and outcome (choices presented); estimatable.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "find a link in the menu that links to the registration form",
+      "rationale": "A simple navigation/menu addition; estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "fill out a user registration form",
+      "rationale": "User registration can vary widely (fields, verification, approvals, integrations); without specifics it is too broad to estimate well.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "find session information",
+      "rationale": "Too vague and potentially broad (search, filters, detail pages, schedule integration), making estimation difficult.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

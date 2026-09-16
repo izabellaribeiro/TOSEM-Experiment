@@ -1,0 +1,557 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "google",
+    "model_requested": "gemini-3.1-pro-preview",
+    "model_label": "Gemini-3.1-Pro-Preview",
+    "project": "Zooniverse",
+    "criterion": "Atomic",
+    "run": 2,
+    "temperature": 0,
+    "elapsed_seconds": 57.044
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "search and discover music using content identification or fingerprinting",
+      "rationale": "Search and discover is a single conceptual feature, and content identification/fingerprinting are synonymous mechanisms.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "search and discover music based on my profile",
+      "rationale": "Expresses a single feature for profile-based music discovery.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "search and discover music based on other users similar to myself",
+      "rationale": "Expresses a single feature for collaborative filtering-based music discovery.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "search and discover music or ringback tones",
+      "rationale": "Music and ringback tones are merely attributes/types of content for a single discovery feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "search and discover music by exploiting enriched metadata and image tags",
+      "rationale": "Metadata and image tags are attributes used by a single search feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "upload tagged videos and have tags available for all further processing steps",
+      "rationale": "Uploading tagged videos and making those tags available is a single cohesive workflow.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "view thumbnail sequences of video segments",
+      "rationale": "Expresses a single feature for viewing thumbnail sequences.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "get info about similar video items and segments",
+      "rationale": "Expresses a single feature for retrieving information about similar videos.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "get info about perceptually similar video items and segments",
+      "rationale": "Expresses a single feature for retrieving information about perceptually similar videos.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "receive content recommendations from similar profiles",
+      "rationale": "Expresses a single feature for receiving recommendations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "receive content recommendations based on most relevant news events in my area",
+      "rationale": "Expresses a single feature for location/news-based recommendations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "identify persons in videos, and receive related information about them",
+      "rationale": "Combines two independently implementable features: identifying persons (computer vision) and retrieving related information (database lookup).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "identify products in videos, and receive related information about them",
+      "rationale": "Combines two independently implementable features: identifying products and retrieving related information.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "identify broadcaster logos in videos, and receive related information about them",
+      "rationale": "Combines two independently implementable features: identifying logos and retrieving related information.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "identify brands in videos, and receive related information about them",
+      "rationale": "Combines two independently implementable features: identifying brands and retrieving related information.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "take a picture or upload an image",
+      "rationale": "Taking a picture (camera integration) and uploading an image (file system access) are two independently implementable input features.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "access content using a geographical map and be informed if there are videos covering the area",
+      "rationale": "Combines a map-based content access interface with a location-based notification/alert system.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "search content items using automatic speech recognition",
+      "rationale": "Expresses a single feature for voice search.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "see, validate and edit segmentation of videos",
+      "rationale": "Viewing, validating, and editing are distinct operations that can be prioritized and implemented independently.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "annotate news video segments and extract a topic for each segment",
+      "rationale": "Annotating segments and extracting topics are two distinct features (manual annotation vs. automatic extraction).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "filter and rank videos based on A/V quality aspects",
+      "rationale": "Filtering (excluding items) and ranking (ordering items) are two distinct operations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "get a quick assessment of whether audio material has been edited before the upload",
+      "rationale": "Expresses a single feature for audio edit detection.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "prefilter nudity content",
+      "rationale": "Expresses a single feature for content filtering.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "prefilter content using search based on low­level asset information",
+      "rationale": "Expresses a single feature for prefiltering content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "automatically validated the ingested contents for copyright infringement",
+      "rationale": "Expresses a single feature for copyright validation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "prefilter the content using search on high­level asset information",
+      "rationale": "Expresses a single feature for prefiltering content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "based on automated analysis, citizen annotations, and comments on Talk",
+      "rationale": "Combines three distinct data sources (automated analysis, annotations, comments) that require independent integration efforts.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "based on annotations and information from Talk comments",
+      "rationale": "Combines two distinct data sources (annotations and Talk comments) that require independent integration efforts.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "identify volunteer types",
+      "rationale": "Expresses a single feature for identifying volunteer types.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "preclassify the Galaxy Zoo images using simple low­level image features",
+      "rationale": "Expresses a single feature for image preclassification.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "automatically detect Snapshot Serengeti images with no classifiable animals in them",
+      "rationale": "Expresses a single feature for empty image detection.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "perform automatic image series detection for the case of timestamping malfunction",
+      "rationale": "Expresses a single feature for image series detection.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "perform automatic animal species preclassification",
+      "rationale": "Expresses a single feature for species preclassification.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "perform automatic animal attribute preclassification",
+      "rationale": "Expresses a single feature for attribute preclassification.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "perform automatic animal number detection",
+      "rationale": "Expresses a single feature for animal counting.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "perform automatic segmentation or localization of plankton",
+      "rationale": "Segmentation and localization are synonymous/tightly coupled computer vision tasks representing a single feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "automatically detect Plankton Portal images with no classifiable plankton in them",
+      "rationale": "Expresses a single feature for empty image detection.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "perform automatic detection of plankton size or orientation",
+      "rationale": "Size detection and orientation detection are two distinct measurements/algorithms that can be implemented independently.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "perform automatic preclassification of plankton species",
+      "rationale": "Expresses a single feature for species preclassification.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "perform automatic worm motion analysis to reduce video duration",
+      "rationale": "Expresses a single feature for motion analysis.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "automatically detect the time in a Worm Watch Lab video where the worm lays an egg",
+      "rationale": "Expresses a single feature for event detection.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "detect important features such as areas of flooding, damage, temporary shelters, blocked roads etc",
+      "rationale": "Detecting multiple distinct classes of objects/events (flooding, damage, shelters, roads) requires different models and can be prioritized independently.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "assess the probability/weight of a volunteer’s classification based on their experience",
+      "rationale": "Expresses a single feature for weighting classifications.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Atomic",
+      "decision": "Violation",
+      "evidence": "remove artefacts such as bright stars and camera read errors",
+      "rationale": "Removing bright stars and removing camera read errors are two distinct artefact removal algorithms.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "detect moving and transient objects in the images",
+      "rationale": "Moving and transient objects are typically detected by a single difference imaging pipeline.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "remove background noise and distracting sounds from the audio files",
+      "rationale": "Background noise and distracting sounds are handled by a single audio processing feature.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "group whale calls that are similar",
+      "rationale": "Expresses a single feature for grouping/clustering.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "identify the number of whales heard in a single audio file",
+      "rationale": "Expresses a single feature for counting.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "know when I should interrupt a volunteer",
+      "rationale": "Expresses a single feature for timing interruptions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "know whether I should interrupt a volunteer with text, an image, or a video",
+      "rationale": "Expresses a single feature for determining the medium of interruption.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "know when I should educate a volunteer",
+      "rationale": "Expresses a single feature for timing education.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "know whether I should educate a volunteer with text, an image, or a video",
+      "rationale": "Expresses a single feature for determining the medium of education.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "know which piece of education I should give to a volunteer",
+      "rationale": "Expresses a single feature for selecting educational content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "know when a volunteer has made an interesting comment on a subject",
+      "rationale": "Expresses a single feature for detecting interesting comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "know when Zoonibot should comment on a subject",
+      "rationale": "Expresses a single feature for bot comment timing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "know when Zoonibot should give an explanation",
+      "rationale": "Expresses a single feature for bot explanation timing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "know what Zoonibot should say to a volunteer",
+      "rationale": "Expresses a single feature for determining bot dialogue.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "group subjects by similarity",
+      "rationale": "Expresses a single feature for grouping subjects.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "recommend different projects to volunteers based on their previous experiences",
+      "rationale": "Expresses a single feature for project recommendation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see a summary of articles, so that I reuse them",
+      "rationale": "Expresses a single feature for viewing article summaries.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

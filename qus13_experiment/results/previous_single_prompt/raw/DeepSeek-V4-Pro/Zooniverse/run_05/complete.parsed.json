@@ -1,0 +1,607 @@
+{
+  "metadata": {
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "Zooniverse",
+    "criterion": "Complete",
+    "run": 5,
+    "temperature": 0,
+    "elapsed_seconds": 323.072
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "search and discover music using content identification or fingerprinting",
+      "rationale": "The backlog has no story that creates or uploads music content or enrolls audio fingerprints, so this search/read capability lacks the required creation capability.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "based on my profile",
+      "rationale": "No story creates or maintains a user profile, so profile-based music discovery operates on a missing content/creation capability.",
+      "related_story_ids": [
+        "ZO-003",
+        "ZO-010"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "other users similar to myself",
+      "rationale": "No story creates user similarity profiles or user profile data, so this search capability depends on missing complement creation.",
+      "related_story_ids": [
+        "ZO-002",
+        "ZO-010"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "similar to a given music video based on content similarity",
+      "rationale": "No story creates content-similarity relations for music or ringback tones, leaving this discovery/read story without the necessary similarity-creation capability.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "exploiting enriched metadata and image tags",
+      "rationale": "Image tags have creation via ZO-006, but enriched metadata has no creation/enrichment story, so this search story exposes a missing complementary capability.",
+      "related_story_ids": [
+        "ZO-006"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "This story establishes the upload and tag-availability creation capability for video content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "view thumbnail sequences of video segments",
+      "rationale": "No story creates video segments or thumbnail sequences, so this view/read capability is missing the required creation capability.",
+      "related_story_ids": [
+        "ZO-019",
+        "ZO-020"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "get info about similar video items and segments",
+      "rationale": "No story creates or computes similarity relations between video items and segments, leaving the get-info capability without its required creation/computation step.",
+      "related_story_ids": [
+        "ZO-009"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "perceptually similar video items and segments",
+      "rationale": "No story creates perceptual similarity relations, so this read capability exposes a missing similarity-creation requirement.",
+      "related_story_ids": [
+        "ZO-008"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "recommendations from similar profiles",
+      "rationale": "No story creates similar profiles or profile similarity data, so recommendation based on them is incomplete.",
+      "related_story_ids": [
+        "ZO-002",
+        "ZO-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "news events in my area",
+      "rationale": "No story creates or ingests geolocated news events, leaving this recommendation story without the underlying event content creation capability.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained identification capability and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained product identification capability and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained broadcaster-logo identification capability and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained brand identification capability and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story includes image upload creation and a recommendation action, without exposing a clear missing complementary creation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "access content using a geographical map",
+      "rationale": "No story geotags videos or associates content with locations, so map-based access operates on missing geospatial creation capability.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "search content items using automatic speech recognition",
+      "rationale": "No story creates or stores ASR transcripts or speech-recognition indices, so this search story lacks a required creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "see, validate and edit segmentation of videos",
+      "rationale": "The backlog has no story that creates video segmentation; this story only reads and edits existing segmentation, exposing a missing creation step.",
+      "related_story_ids": [
+        "ZO-007",
+        "ZO-020"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "annotate news video segments",
+      "rationale": "This story assumes news video segments already exist, but no story creates those segments, so annotation/extraction lacks a necessary prerequisite.",
+      "related_story_ids": [
+        "ZO-019"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "filter and rank videos based on A/V quality aspects",
+      "rationale": "No story creates A/V quality measurements or scores, so filtering/ranking based on them is missing a required creation capability.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "audio material has been edited before the upload",
+      "rationale": "No story establishes upload or ingestion of audio material, so this pre-upload assessment story operates on missing audio ingestion capability.",
+      "related_story_ids": [
+        "ZO-046",
+        "ZO-047",
+        "ZO-048"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained content filtering capability and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained prefiltering capability using asset information and does not expose a clear missing creation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained validation capability for ingested content and does not expose a clear missing creation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained prefiltering capability, and tags needed as input are created via ZO-006.",
+      "related_story_ids": [
+        "ZO-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "citizen annotations, and comments on Talk",
+      "rationale": "No story creates citizen annotations or Talk comments, so this assessment story operates on user-generated content without the required creation capability.",
+      "related_story_ids": [
+        "ZO-028",
+        "ZO-043",
+        "ZO-054"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "annotations and information from Talk comments",
+      "rationale": "No story creates the annotations or Talk comments used as input, exposing a missing complementary content-creation requirement.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-043",
+        "ZO-054"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained volunteer-type identification capability and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained preclassification analysis and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained detection analysis and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained image-series detection analysis and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained preclassification analysis and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained attribute preclassification analysis and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained detection analysis and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained segmentation/localization capability and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained detection analysis and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained detection analysis and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained preclassification analysis and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained video motion analysis capability and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained detection capability and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained feature detection capability and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "volunteer’s classification",
+      "rationale": "No story creates volunteer classifications, so assessing their probability/weight operates on missing classification-creation capability.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-028",
+        "ZO-054"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained prefiltering capability and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained detection capability and does not expose a missing necessary creation step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "audio files",
+      "rationale": "No story creates or uploads audio files, so noise removal from audio operates on missing audio ingestion capability.",
+      "related_story_ids": [
+        "ZO-047",
+        "ZO-048"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "whale calls that are similar",
+      "rationale": "No story creates or uploads whale-call audio, so grouping those calls depends on missing audio ingestion capability.",
+      "related_story_ids": [
+        "ZO-046",
+        "ZO-048"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "single audio file",
+      "rationale": "No story creates or uploads audio files, so identifying the number of whales in an audio file depends on missing audio ingestion capability.",
+      "related_story_ids": [
+        "ZO-046",
+        "ZO-047"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained decision-support capability and does not expose a clear missing creation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained decision-support capability and does not expose a clear missing creation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained decision-support capability and does not expose a clear missing creation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained decision-support capability and does not expose a clear missing creation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "which piece of education I should give",
+      "rationale": "No story creates or manages education content, so selecting which piece of education to give lacks the required creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "interesting comment on a subject",
+      "rationale": "No story creates volunteer comments, so detecting an interesting comment operates on missing comment-creation capability.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained decision-support capability and does not expose a clear missing creation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained decision-support capability and does not expose a clear missing creation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained generation/decision capability and does not expose a clear missing creation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained grouping capability and does not expose a clear missing creation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story describes a self-contained recommendation capability and does not expose a clear missing creation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "see a summary of articles, so that I reuse them",
+      "rationale": "No story creates or imports articles or article summaries, so this read/reuse story lacks the required article-creation capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

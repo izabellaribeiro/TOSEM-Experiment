@@ -1,0 +1,33 @@
+# Local credentials (keep the configuration template)
+.env
+.env.*
+!.env.example
+
+# Provider error logs can contain API credentials in request URLs
+*.error.txt
+
+# Python virtual environments
+.venv/
+.venv-*/
+.vev-tosem/
+venv/
+env/
+
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+
+# Operating-system and editor temporary files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+~$*

@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "prompt_profile": "few_shot",
+    "prompt_label": "Few-shot",
+    "shots": 4,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "BADCamp",
+    "criterion": "Unambiguous",
+    "run": 1,
+    "temperature": 0,
+    "elapsed_seconds": 313.072
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "view a list of sponsors",
+      "rationale": "The requested list type is explicit; 'awesome' is stylistic and does not change the requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "view a list of user profiles",
+      "rationale": "The requested list type is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "email all the trainers at once from the website",
+      "rationale": "The target recipients and action are clear; rationale wording is not material.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "very clear map",
+      "rationale": "'Very clear' is subjective and undefined, allowing materially different map quality or design interpretations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "and links to slides",
+      "rationale": "The trailing phrase is unclear in relation to editing the training node, allowing different scope interpretations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "one registration per day per authenticated user",
+      "rationale": "The restriction is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "registration status for each attendee... attendend, refunded, no show",
+      "rationale": "Status categories are identifiable; the typo does not create material ambiguity.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "added to a training waitlist",
+      "rationale": "The requested action is concrete.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "accept the cancellation terms with a checkbox",
+      "rationale": "The acceptance mechanism is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "whatever registration / cancellation workflow exists",
+      "rationale": "The integration target is undefined and left to interpretation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "if there is a schedule feature on the site",
+      "rationale": "A conditional dependency on an undefined feature creates ambiguity about whether to build or integrate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see which trainings I have signed up for",
+      "rationale": "The requested list is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "all attendee information",
+      "rationale": "The scope of attendee information is undefined and can mean materially different data.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "all trainee information",
+      "rationale": "The scope of trainee information is undefined; filtering does not remove the data ambiguity.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "Logo, title, trainers, location... link to register for class",
+      "rationale": "Required page contents are explicitly enumerated; the optional map does not create material ambiguity.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "day and time of training, title, short summary, trainers, level...",
+      "rationale": "The training option fields are explicitly listed.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "intro section and promote call for trainings",
+      "rationale": "These terms are underspecified and could be realized as materially different content and features.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "link on the home page to a list of training options",
+      "rationale": "The navigation requirement is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "find out where the coding lounge is and what time it is open",
+      "rationale": "The information sought is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "refund sponsorship money that was processed via stripe",
+      "rationale": "The action and payment method are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "link on the sponsorships page to become a $350 level sponsor",
+      "rationale": "The link and sponsorship level are specific.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "list of attendees associated with this company",
+      "rationale": "The list scope is understandable in the sponsor-page context.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "identify myself as and pay for a $350 company sponsorship",
+      "rationale": "The desired action and sponsorship type are explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "create and maintain venues",
+      "rationale": "Standard CRUD action with a clear entity.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "view venue details",
+      "rationale": "The entity and purpose are sufficiently clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "sessions associated with sponsor attendees",
+      "rationale": "The association type is unclear (presented by, attended by, or sponsored by), materially changing the list.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "payment page to pay for my individual sponsorships as the third step",
+      "rationale": "The page and process step are explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "assign sponsors to events, trainings and summits",
+      "rationale": "The action and target entities are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see all events, trainings and summits that a sponsor is sponsoring",
+      "rationale": "The list criterion is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "Enter payment information and have my card charged for an individual sponsorship",
+      "rationale": "The payment action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page",
+      "rationale": "'Link' is overloaded and could mean association, listing, or hyperlinks, materially changing the requirement.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "update my user profile",
+      "rationale": "The entity and action are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "sign up for the BADCamp newsletter",
+      "rationale": "The action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "tag my blog posts for consumption by Drupal Planet",
+      "rationale": "Clear enough in the Drupal context.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "create blog posts",
+      "rationale": "The action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "read the blog",
+      "rationale": "The action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "matches my brand",
+      "rationale": "The matching criterion is subjective and undefined, allowing materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "register for a summit",
+      "rationale": "The action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "get detailed directions to the summit venue",
+      "rationale": "The action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see what summits I'm signed up for",
+      "rationale": "The requested list is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see a list of attendees signed up for my summit",
+      "rationale": "The list is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "basic information about my summit",
+      "rationale": "'Basic information' is underspecified and can materially vary in content.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "list sponsors for my summit",
+      "rationale": "The list content is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "list an agenda for my summit",
+      "rationale": "The content type is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see how many seats are left for the summit",
+      "rationale": "The metric is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "specific details on summits",
+      "rationale": "'Specific details' is not enumerated and can materially differ.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits",
+      "rationale": "The list is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "learn about sponsorship levels",
+      "rationale": "The information topic is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "all long-form content",
+      "rationale": "'Long-form content' is an undefined category, leaving the scope unclear.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "Link to my sponsorship profile from my job listings",
+      "rationale": "The navigation link is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "learn about posting jobs as a sponsor and contact the sponsorship person",
+      "rationale": "The actions are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "post a job",
+      "rationale": "The action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "view the job board",
+      "rationale": "The action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "assign a room to a time slot and a location",
+      "rationale": "The scheduling action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see the schedule",
+      "rationale": "The action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see the final list of sessions approved",
+      "rationale": "The list is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "bulk approve sessions as accepted",
+      "rationale": "The action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "mark a session as accepted",
+      "rationale": "The action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "receive a notification when sessions have been evaluated",
+      "rationale": "The trigger and purpose are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "receive a notification when I submit a session",
+      "rationale": "The trigger is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "edit my session",
+      "rationale": "The action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "register to speak at BADCamp",
+      "rationale": "The action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "submit a session at BADCAMP",
+      "rationale": "The action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "personalize my sponsorship page",
+      "rationale": "'Personalize' is broad and underspecified; materially different customization features could be intended.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits that include when they are",
+      "rationale": "The list and date/time information are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "offered several choices of idividual sponsorship on the second page",
+      "rationale": "The offering and page are explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "link in the menu that links to the registration form",
+      "rationale": "The navigation requirement is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "fill out a user registration form",
+      "rationale": "The action is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "find session information",
+      "rationale": "'Session information' is underspecified and can include materially different content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

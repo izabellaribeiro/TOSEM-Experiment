@@ -1,0 +1,110 @@
+{
+  "framework": "Quality User Story (QUS)",
+  "source": "Lucassen, Dalpiaz, van der Werf, Brinkkemper. Improving Agile Requirements: The Quality User Story Framework and Tool. Requirements Engineering, 2016.",
+  "criteria": [
+    {
+      "name": "Well-formed",
+      "dimension": "Syntactic",
+      "scope": "individual",
+      "definition": "A user story includes at least a role and a means (the expected functionality).",
+      "decision_rule": "Violation when either the stakeholder role or the requested functionality cannot be identified from the core story text.",
+      "lucassen_example": "A requirement that only says the user wants to see an error after uploading an article, but omits who the user is, violates Well-formed because the role is missing."
+    },
+    {
+      "name": "Atomic",
+      "dimension": "Syntactic",
+      "scope": "individual",
+      "definition": "A user story expresses a requirement for exactly one feature.",
+      "decision_rule": "Violation when the story combines two or more independently implementable, testable, or prioritizable features. Do not flag conjunctions that merely enumerate attributes of one feature.",
+      "lucassen_example": "A story that combines clicking a map location with displaying landmarks associated with that location contains two features and should be split."
+    },
+    {
+      "name": "Minimal",
+      "dimension": "Syntactic",
+      "scope": "individual",
+      "definition": "A user story contains nothing more than role, means, and optional ends/rationale.",
+      "decision_rule": "Violation when the core story includes comments, mock-up notes, implementation/testing hints, procedural notes, or other information that should be external to the story sentence.",
+      "lucassen_example": "A story followed by mock-up notes and step-by-step validation instructions violates Minimal because those notes are extra to role, means, and ends."
+    },
+    {
+      "name": "Conceptually sound",
+      "dimension": "Semantic",
+      "scope": "individual",
+      "definition": "The means expresses a feature and the ends expresses a rationale for that feature.",
+      "decision_rule": "Violation when the means does not state a feature, or when the ends introduces another required feature instead of explaining why the means is valuable.",
+      "lucassen_example": "A story whose means is to open an interactive map and whose end is to see landmark locations may make the end function as another feature/dependency rather than a rationale."
+    },
+    {
+      "name": "Problem-oriented",
+      "dimension": "Semantic",
+      "scope": "individual",
+      "definition": "A user story specifies the problem or stakeholder need, not the solution to it.",
+      "decision_rule": "Violation when the story unnecessarily prescribes concrete UI widgets, technical mechanisms, implementation details, algorithms, storage formats, or other solution choices instead of the stakeholder need.",
+      "lucassen_example": "A reimbursement story that additionally instructs developers to add a save button at the top right prescribes the solution and violates Problem-oriented."
+    },
+    {
+      "name": "Unambiguous",
+      "dimension": "Semantic",
+      "scope": "individual",
+      "definition": "A user story avoids terms or abstractions that lead to multiple materially different interpretations.",
+      "decision_rule": "Violation when vague, underspecified, overloaded, or unclear terms allow materially different requirements interpretations. Do not flag harmless stylistic variation.",
+      "lucassen_example": "A story that says a user can edit 'content' without clarifying what content means is ambiguous when the backlog distinguishes video, photo, and audio content."
+    },
+    {
+      "name": "Conflict-free",
+      "dimension": "Semantic",
+      "scope": "set",
+      "definition": "A user story is not inconsistent with another user story in the same specification.",
+      "decision_rule": "Violation when two stories impose incompatible permissions, behaviors, constraints, states, or rules. Similarity alone is not a conflict.",
+      "lucassen_example": "One story allowing editing of any landmark can conflict with another rule that restricts operations to landmarks created by the current user."
+    },
+    {
+      "name": "Full sentence",
+      "dimension": "Pragmatic",
+      "scope": "individual",
+      "definition": "A user story is a well-formed full sentence.",
+      "decision_rule": "Violation when the text is a fragment, grammatically incomplete, or malformed enough that it does not read as a complete sentence. Minor typos that do not break sentence completeness should not automatically be defects.",
+      "lucassen_example": "A fragment such as 'Server configuration' is not a complete user-story sentence."
+    },
+    {
+      "name": "Estimatable",
+      "dimension": "Pragmatic",
+      "scope": "individual",
+      "definition": "A story does not denote a coarse-grained requirement that is difficult to plan and prioritize.",
+      "decision_rule": "Violation when scope or behavior is so broad, vague, or underspecified that a reasonable implementation estimate cannot be made. Do not require detailed design before estimation.",
+      "lucassen_example": "A request to 'see my route list' can be hard to estimate because it could mean a simple list, route optimization, a map, or several combined capabilities."
+    },
+    {
+      "name": "Unique",
+      "dimension": "Pragmatic",
+      "scope": "set",
+      "definition": "Every user story is unique; duplicate requirements are avoided.",
+      "decision_rule": "Violation when another story expresses the same requirement or one is substantially contained in another without a meaningful difference in actor, context, goal, permission, or business rule. Thematic similarity is not enough.",
+      "lucassen_example": "An epic and a story that both express the same requirement to view a list of news items are duplicates. Lucassen also notes that the same functionality for different roles can legitimately remain separate."
+    },
+    {
+      "name": "Uniform",
+      "dimension": "Pragmatic",
+      "scope": "set",
+      "definition": "All user stories in a specification employ the same template.",
+      "decision_rule": "Violation when a story materially deviates from the dominant user-story template used by its backlog. Compare with the backlog majority rather than enforcing a universal template independent of the dataset.",
+      "lucassen_example": "If the backlog predominantly uses 'I want to', a story written as 'I receive an email notification...' may be non-uniform even if its meaning is understandable."
+    },
+    {
+      "name": "Independent",
+      "dimension": "Pragmatic",
+      "scope": "set",
+      "definition": "The user story is self-contained and has no inherent dependencies on other stories.",
+      "decision_rule": "Violation when the requested feature inherently depends on another story being implemented first. Do not infer arbitrary technical dependencies; identify a concrete requirement-level dependency and cite the related story.",
+      "lucassen_example": "A story for viewing a person's profile depends on a capability for creating a person/profile first, so the dependency should be made explicit."
+    },
+    {
+      "name": "Complete",
+      "dimension": "Pragmatic",
+      "scope": "set",
+      "definition": "Implementing the set of user stories creates a feature-complete application; crucial steps are not missing.",
+      "decision_rule": "Violation when the backlog evidences a necessary complementary capability that is absent, such as update/read/delete behavior whose required creation capability is missing. Attach the violation to the story that exposes the gap and explain the missing complementary requirement.",
+      "lucassen_example": "Lucassen illustrates that a story operating on existing content can reveal a completeness gap when no story establishes the creation of that content."
+    }
+  ]
+}

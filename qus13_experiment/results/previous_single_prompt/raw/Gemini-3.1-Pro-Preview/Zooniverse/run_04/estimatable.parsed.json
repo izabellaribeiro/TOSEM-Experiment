@@ -1,0 +1,554 @@
+{
+  "metadata": {
+    "provider": "google",
+    "model_requested": "gemini-3.1-pro-preview",
+    "model_label": "Gemini-3.1-Pro-Preview",
+    "project": "Zooniverse",
+    "criterion": "Estimatable",
+    "run": 4,
+    "temperature": 0,
+    "elapsed_seconds": 137.104
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "search and discover music using content identification",
+      "rationale": "The scope of 'search and discover' combined with 'content identification' represents a massive, coarse-grained epic (similar to building Shazam) rather than an estimatable story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "based on my profile",
+      "rationale": "The phrase 'based on my profile' is vague and underspecified, making it impossible to estimate the complexity of the recommendation logic.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "based on other users similar to myself",
+      "rationale": "This implies building a collaborative filtering recommendation engine, which is a broad, coarse-grained epic.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "similar to a given music video based on content similarity",
+      "rationale": "Cross-format 'content similarity' (video to music/ringback tones) is a broad, research-heavy epic that is difficult to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "exploiting enriched metadata and image tags, so that I find related artists, new genre, or other relevant listening path",
+      "rationale": "The terms 'exploiting enriched metadata' and 'relevant listening path' are highly vague and broad, preventing a reasonable implementation estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "upload tagged videos and have tags available for all further processing steps",
+      "rationale": "This is a clear, well-defined CRUD and storage requirement that can be easily estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "view thumbnail sequences of video segments",
+      "rationale": "Generating and displaying thumbnail sequences is a specific, well-understood UI and processing task.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "similar video items and segments",
+      "rationale": "The definition of 'similar' is vague and underspecified, making the underlying recommendation/search logic hard to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "perceptually similar video items",
+      "rationale": "'Perceptually similar' implies a complex, undefined computer vision research task that is too broad to estimate as a single story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "content recommendations from similar profiles",
+      "rationale": "Building a recommendation engine based on profile similarity is a coarse-grained epic.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "based on most relevant news events in my area",
+      "rationale": "Integrating location data, news feeds, and relevance ranking is a broad, coarse-grained epic.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "identify persons in videos, and receive related information about them",
+      "rationale": "Facial recognition and entity linking for arbitrary 'persons' is a massive, open-ended epic.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "identify products in videos",
+      "rationale": "General product recognition in videos is a broad, coarse-grained epic.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "identify broadcaster logos in videos",
+      "rationale": "Logo recognition across arbitrary videos is a broad, coarse-grained epic.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "identify brands in videos",
+      "rationale": "Brand recognition in videos is a broad, coarse-grained epic.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "recommended with videos related to that picture or image",
+      "rationale": "Image-to-video recommendation based on vague 'relatedness' is a broad and underspecified epic.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "walk around, access content using a geographical map and be informed if there are videos covering the area",
+      "rationale": "This describes a complete location-based AR/map application, which is a coarse-grained epic.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "search content items using automatic speech recognition",
+      "rationale": "This is ambiguous (could mean voice search UI or transcribing all video audio for text search) and represents a broad epic.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "see, validate and edit segmentation of videos",
+      "rationale": "Providing an admin UI to view and edit video segments is a clear, estimatable requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "extract a topic for each segment",
+      "rationale": "It is ambiguous whether 'extract a topic' refers to manual data entry or automated NLP topic modeling, making estimation difficult.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "based on A/V quality aspects",
+      "rationale": "'A/V quality aspects' is vague and underspecified; without knowing which metrics to evaluate, it cannot be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "quick assessment of whether audio material has been edited",
+      "rationale": "Detecting arbitrary audio editing is a broad, open-ended audio forensics research task.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "prefilter nudity content",
+      "rationale": "Nudity detection is a specific, well-defined binary classification task that can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "search based on low­level asset information",
+      "rationale": "'Low-level asset information' is vague and underspecified, making the search implementation impossible to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "automatically validated the ingested contents for copyright infringement",
+      "rationale": "Building an automated copyright infringement detection system (like Content ID) is a massive, coarse-grained epic.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "search on high­level asset information such as metadata and tags",
+      "rationale": "Searching based on metadata and tags is a standard, well-understood, and estimatable feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "assess how interesting or appealing or complex a picture is",
+      "rationale": "The criteria 'interesting or appealing or complex' are highly subjective and vague, making algorithmic assessment impossible to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "detect when a scientist should be prompted to look at a subject",
+      "rationale": "The logic for 'when a scientist should be prompted' is completely underspecified.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "identify volunteer types",
+      "rationale": "'Volunteer types' is undefined and vague, making the classification task impossible to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "preclassify the Galaxy Zoo images using simple low­level image features",
+      "rationale": "The story is underspecified because it does not state what the images are being preclassified into.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "automatically detect Snapshot Serengeti images with no classifiable animals in them",
+      "rationale": "This is a specific, well-defined binary classification task (empty vs. non-empty image) that can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "automatic image series detection for the case of timestamping malfunction",
+      "rationale": "This defines a specific algorithmic task to solve a known edge case (timestamp malfunction), making it estimatable.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "automatic animal species preclassification in Snapshot Serengeti",
+      "rationale": "This is a specific, well-defined multi-class image classification task.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "automatic animal attribute preclassification",
+      "rationale": "'Animal attribute' is vague and underspecified; without knowing which attributes, the task cannot be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "automatic animal number detection in Snapshot Serengeti",
+      "rationale": "This is a specific, well-defined object counting/detection task.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "automatic segmentation or localization of plankton in Plankton Portal",
+      "rationale": "This is a specific, well-defined computer vision segmentation task.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "automatically detect Plankton Portal images with no classifiable plankton in them",
+      "rationale": "This is a specific, well-defined binary classification task.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "automatic detection of plankton size or orientation in Plankton Portal images",
+      "rationale": "This is a specific, well-defined image measurement task.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "automatic preclassification of plankton species in Plankton Portal images",
+      "rationale": "This is a specific, well-defined multi-class classification task.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "automatic worm motion analysis to reduce video duration",
+      "rationale": "'Motion analysis' is a broad and underspecified approach, making the exact implementation hard to estimate.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "automatically detect the time in a Worm Watch Lab video where the worm lays an egg",
+      "rationale": "This is a highly specific event detection task with a clear goal, making it estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "important features such as areas of flooding, damage, temporary shelters, blocked roads etc",
+      "rationale": "The use of 'such as' and 'etc' makes the list of features to detect open-ended and impossible to estimate accurately.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "assess the probability/weight of a volunteer’s classification based on their experience",
+      "rationale": "Implementing a weighting algorithm based on user history is a specific, estimatable backend task.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "artefacts such as bright stars and camera read errors",
+      "rationale": "The phrase 'such as' implies an open-ended list of artifacts to remove, making the scope underspecified.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "detect moving and transient objects in the images",
+      "rationale": "Detecting moving objects is a specific, well-understood computer vision task (e.g., difference imaging).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "distracting sounds",
+      "rationale": "'Distracting sounds' is subjective and vague, making the noise reduction task impossible to estimate accurately.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "group whale calls that are similar",
+      "rationale": "The definition of 'similar' is vague and underspecified, making the clustering logic hard to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "identify the number of whales heard in a single audio file",
+      "rationale": "This is a specific, well-defined audio counting/source separation task.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know when I should interrupt a volunteer",
+      "rationale": "The logic and rules for 'when I should interrupt' are completely undefined.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know whether I should interrupt a volunteer with text, an image, or a video",
+      "rationale": "The decision logic for choosing the interruption medium is completely undefined.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know when I should educate a volunteer",
+      "rationale": "The logic and rules for 'when I should educate' are completely undefined.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know whether I should educate a volunteer with text, an image, or a video",
+      "rationale": "The decision logic for choosing the education medium is completely undefined.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know which piece of education I should give to a volunteer",
+      "rationale": "The logic for selecting educational content is completely undefined.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know when a volunteer has made an interesting comment",
+      "rationale": "The definition of an 'interesting comment' is subjective and undefined.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know when Zoonibot should comment on a subject",
+      "rationale": "The trigger logic for the bot to comment is completely undefined.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know when Zoonibot should give an explanation",
+      "rationale": "The trigger logic for the bot to give an explanation is completely undefined.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "know what Zoonibot should say to a volunteer",
+      "rationale": "The logic for generating or selecting bot dialogue is completely undefined.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "group subjects by similarity",
+      "rationale": "The criteria for 'similarity' are vague and underspecified.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "recommend different projects to volunteers based on their previous experiences",
+      "rationale": "Building a cross-project recommendation engine is a broad, coarse-grained epic.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "see a summary of articles",
+      "rationale": "It is ambiguous whether this requires an automated NLP summarization engine (an epic) or just displaying a pre-existing summary field.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    }
+  ]
+}

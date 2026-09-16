@@ -1,0 +1,579 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "PlanningPoker",
+    "criterion": "Independent",
+    "run": 2,
+    "temperature": 0,
+    "elapsed_seconds": 348.736
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creates a new game and does not depend on any prior story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "access the game",
+      "rationale": "Inviting estimators depends on an existing game, created by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "start a round",
+      "rationale": "A round can only start within an existing game created by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "all items we try to estimate this session",
+      "rationale": "Displaying session items depends on item entry/add from PP-003 and PP-006.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "select an item to be estimated",
+      "rationale": "Selecting an item depends on an existing item list supplied by PP-003/PP-006.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "add an item to the list of items to be estimated",
+      "rationale": "Adding to the item list assumes an ongoing game/session created by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "edit an item in the list",
+      "rationale": "Editing an item depends on existing item list entries from PP-003/PP-006.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "delete an item from the list",
+      "rationale": "Deleting an item depends on existing item list entries from PP-003/PP-006.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "show all estimates immediately",
+      "rationale": "Displaying estimates depends on an active estimation round/item established by PP-003.",
+      "related_story_ids": [
+        "PP-003"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "Accepting an average estimate depends on estimates for the current item/round from PP-003.",
+      "related_story_ids": [
+        "PP-003"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "estimate field filled in automatically if all estimators show the same card",
+      "rationale": "Auto-filling the estimate depends on an active round/item established by PP-003.",
+      "related_story_ids": [
+        "PP-003"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "enter the agreed-upon estimate",
+      "rationale": "Entering an agreed estimate depends on an item/round being estimated, established by PP-003/PP-005.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-005"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "Re-estimating depends on an earlier estimation of an item from PP-003/PP-005.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-005"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "import stories from a spreadsheet",
+      "rationale": "Importing stories into a session assumes an existing game/session created by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "Copying/pasting stories into a session assumes an existing game/session created by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "browse through previous games",
+      "rationale": "Browsing previous games depends on games existing, created by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "view a transcript of a game",
+      "rationale": "Viewing a game transcript depends on a game existing, created by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "export a transcript of a game",
+      "rationale": "Exporting a game transcript depends on a game/transcript existing, created by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "export a transcript of a game as a CSV file",
+      "rationale": "Exporting a game transcript depends on a game/transcript existing, created by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "delete a game",
+      "rationale": "Deleting a game depends on a game existing, created by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creates an account and does not depend on any prior story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "Logging in depends on an account existing, created by PP-021.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "change my account details",
+      "rationale": "Changing account details depends on an existing account from PP-021.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "delete my account",
+      "rationale": "Deleting an account depends on an existing account from PP-021.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Cross-cutting timezone display preference; no dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "get a password reminder by email",
+      "rationale": "Password reminder depends on an existing account with email/password from PP-021.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "have the team estimate",
+      "rationale": "Selecting the estimation sequence assumes an existing team/game created by PP-001.",
+      "related_story_ids": [
+        "PP-001"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "This extends the invitation functionality defined by PP-002.",
+      "related_story_ids": [
+        "PP-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "the page I received the URL for",
+      "rationale": "Joining via received URL depends on the invitation URL created by PP-002.",
+      "related_story_ids": [
+        "PP-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "The current item is entered/selected in PP-003/PP-005.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-005"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see all items we will try to estimate",
+      "rationale": "The item list is supplied by PP-003/PP-006.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "an estimate has been given by a specific estimator",
+      "rationale": "Identifying a specific estimator and estimate assumes estimators have joined via PP-029 and an active round from PP-003.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-029"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "after all estimators have given their estimate",
+      "rationale": "Showing estimates after all estimators have given depends on estimators joining via PP-029 and a current round/item from PP-003.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-029"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "all are shown",
+      "rationale": "The behavior 'all are shown' depends on the estimate reveal behavior defined by PP-033.",
+      "related_story_ids": [
+        "PP-033"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "prior estimates for the story being estimated",
+      "rationale": "Seeing prior estimates depends on a story being estimated after PP-003 and prior estimation activity such as PP-013.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-013"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "Depends on an active round from PP-003 and the estimate reveal information from PP-033.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-003"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Starting a countdown timer can be implemented independently of other listed stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "have the two-minute timer reset itself",
+      "rationale": "Depends on the timer introduced in PP-037.",
+      "related_story_ids": [
+        "PP-037"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Requires prior rounds/stories/estimates, established by PP-003 and recorded in transcript/history such as PP-017.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-017"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Card ordering is a standalone presentation rule.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Independent",
+      "decision": "Violation",
+      "evidence": "as long as the draw has not been completed",
+      "rationale": "Depends on the draw/reveal completion behavior defined by PP-033.",
+      "related_story_ids": [
+        "PP-033"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Thumbnail photo display is a standalone personalization feature with no clear dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Cross-cutting standards compliance requirement; no dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Definitions list is self-contained.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Technical cross-cutting story; no clear requirement-level dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Cross-cutting browser compatibility requirement; no dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Cross-cutting accessibility guideline; no dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Cross-cutting performance requirement; no dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Cross-cutting Unicode support; no dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Cross-cutting URL design; no dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Cross-cutting error pages; no dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Data storage privacy requirement; no concrete dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Independent",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Metrics dashboard; no concrete requirement-level dependency on another story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    }
+  ]
+}

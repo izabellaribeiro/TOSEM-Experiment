@@ -1,0 +1,497 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "PlanningPoker",
+    "criterion": "Complete",
+    "run": 2,
+    "temperature": null,
+    "elapsed_seconds": 74.014
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "create a new game",
+      "rationale": "Creation of games is present and complementary capabilities (invite, start round, delete, browse, export) exist in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "invite estimators",
+      "rationale": "Inviting estimators is supported and matched by joining (PP-029) and invite limits (PP-028).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "start a round",
+      "rationale": "Starting a round is supported alongside item management (add/edit/delete/select) and estimation features.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see all items we try to estimate",
+      "rationale": "Story list viewing complements item creation, editing, deletion stories (PP-006, PP-007, PP-008).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "select an item to be estimated",
+      "rationale": "Selection is supported with item lifecycle stories present (add/edit/delete).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "add an item to the list",
+      "rationale": "Addition of items is present and paired with edit/delete/select and display features.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "edit an item in the list",
+      "rationale": "Editing items is complemented by creation (PP-006) and deletion (PP-008).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete an item from the list",
+      "rationale": "Deletion references existing items but creation and listing capabilities are present (PP-006, PP-004).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "show all estimates immediately",
+      "rationale": "Feature to reveal estimates early is self-contained and complements estimate-gathering behavior.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "Accepting an average complements estimate display and agreement workflows; necessary estimate collection stories exist.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "\"estimate\" field filled in automatically",
+      "rationale": "Auto-fill behavior is an enhancement of estimate handling; core estimate collection is covered elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "enter the agreed-upon estimate",
+      "rationale": "Recording agreed estimate complements display and acceptance stories and is otherwise self-contained.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "estimate a story we estimated earlier",
+      "rationale": "Re-estimation relies on stored history and navigation features (PP-039, PP-017) present in backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "import stories from a spreadsheet",
+      "rationale": "Importing stories is complementary to story management features (add/edit/delete) and no dependent capability is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "Bulk paste complements other story input methods; no missing complementary capability is evident.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "browse through previous games",
+      "rationale": "Browsing previous games is supported by viewing/exporting transcripts and game deletion; necessary read capabilities exist.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "view a transcript of a game",
+      "rationale": "Viewing transcripts is coherent with browsing/exporting and with game creation/persistence stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "export a transcript as a HTML file",
+      "rationale": "Export capability complements transcript viewing (PP-017); no missing complement is evident.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "export a transcript as a CSV file",
+      "rationale": "CSV export complements transcript storage and analysis features; required transcript data exists.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete a game",
+      "rationale": "Game deletion references stored games but creation and listing features are present (PP-001, PP-016).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "create an account",
+      "rationale": "Account creation is present; related account lifecycle stories (login, change, delete, password reminder) also exist.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "Login complements account creation (PP-021) and password reminder (PP-026); no missing complementary capability found.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "change my account details",
+      "rationale": "Changing account details complements create/login/delete account stories; the backlog contains the account lifecycle.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete my account",
+      "rationale": "Account deletion is supported and balanced by account creation and related account management stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see dates and times in my local timezone",
+      "rationale": "Timezone display is a self-contained presentation requirement; no missing complementary capability is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "get a password reminder by email",
+      "rationale": "Password reminder is supported by account creation capturing email (PP-021); requisite data and flow are present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "select whether to have the team estimate with ...",
+      "rationale": "Deck selection is self-contained and does not expose missing complementary capabilities.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "Invite limit complements invitation and join stories (PP-002, PP-029); required join capability exists.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "join a game by entering my name",
+      "rationale": "Join is matched with invitation (PP-002) and estimator-related display stories; no missing complement detected.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "Displaying the current item is supported by item selection and listing stories; no required complement is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see all items we will try to estimate this session",
+      "rationale": "Session item overview complements item creation and navigation; necessary capabilities are present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "immediately see that an estimate has been given by a specific estimator",
+      "rationale": "Estimator presence indicators are supported by join (PP-029) and estimate display stories (PP-033); no missing complement found.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "shown all estimates at the same time after all estimators have given their estimate",
+      "rationale": "Simultaneous reveal is consistent with estimate collection and display stories; complementary pieces exist.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "change my estimate up until the last person selects a card",
+      "rationale": "Ability to change estimate is supported by estimate collection and reveal mechanics; no missing complementary capability is evident.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see each estimator's prior estimates for the story being estimated",
+      "rationale": "Viewing prior estimates relies on stored history and navigation features (PP-039, PP-017), which are present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "Attribution of estimates is supported by join and display stories; no missing complementary capability detected.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "start a two-minute countdown timer that all participants can see",
+      "rationale": "Shared timer feature is self-contained; the backlog includes related timer reset behavior (PP-038).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "two-minute timer reset itself as soon as we all play an estimate",
+      "rationale": "Timer reset complements timer start and estimate collection; required triggers are present in other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Historical navigation exists alongside transcript and browse features (PP-017, PP-016); no complementary capability missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "always have the cards in the same order across multiple draws",
+      "rationale": "Consistent card ordering is a presentation requirement and does not expose a missing complementary story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "Estimate change is supported by other estimate lifecycle stories; necessary complementary behaviors are present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "have a small thumbnail photo displayed",
+      "rationale": "Displaying a thumbnail photo requires a complementary capability to provide/upload or manage that photo; the backlog contains no explicit story to upload/set user photos (account creation PP-021 and change details PP-023 do not explicitly include avatar/photo management).",
+      "related_story_ids": [
+        "PP-023",
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "compliant with XHTML and CSS standards",
+      "rationale": "Standards compliance is a non-functional requirement and does not expose a missing complementary functional capability in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "have a list of definitions for commonly used terms",
+      "rationale": "Glossary requirement is self-contained; no missing complementary capability is required for completeness.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "created database indexes",
+      "rationale": "Performance-related developer story is an implementation detail and does not indicate a missing functional capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "function correctly in Internet Explorer ... Firefox ... Safari ...",
+      "rationale": "Browser compatibility is non-functional; it does not expose missing functional complements in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "site comply with the W3C accessibility guidelines",
+      "rationale": "Accessibility compliance is non-functional and self-contained; no missing complementary functional story is required.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "application respond quickly to my actions",
+      "rationale": "Performance requirement complements developer stories (PP-045) and does not reveal a missing functional capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "be able to use Unicode",
+      "rationale": "Unicode support is a technical/internationalization requirement and doesn't imply a missing complementary story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see sensible and predictable URLs",
+      "rationale": "URL design is a presentation/UX requirement and does not expose a missing functional complement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "have nice error pages",
+      "rationale": "Error page UX is self-contained and does not reveal a missing complementary functional capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "results to be stored in a non-identifiable way",
+      "rationale": "Data anonymization/storage requirement is explicit; it does not require an additional complementary story to be implementable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see some metrics on use of the game",
+      "rationale": "Metrics story stands alone and is compatible with stored transcripts and browsing features; no essential complement is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

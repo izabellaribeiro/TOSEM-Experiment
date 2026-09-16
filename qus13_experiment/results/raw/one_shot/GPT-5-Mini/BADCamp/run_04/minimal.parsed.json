@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "BADCamp",
+    "criterion": "Minimal",
+    "run": 4,
+    "temperature": null,
+    "elapsed_seconds": 88.611
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Contains only role, means, and rationale without implementation or procedural notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Simple role-means-rationale, no external comments or implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Expresses desire to email trainers from the website; no implementation/testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Only role, means and rationale; no extra procedural or implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "and links to slides",
+      "rationale": "Includes an extra implementation/content note ('links to slides') beyond the core story sentence.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Clear role-means-rationale; no procedural or implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Contains role, means and rationale only despite minor repetition; no external notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Standard user story structure with no implementation or procedural notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "with a checkbox",
+      "rationale": "Specifies an implementation detail ('with a checkbox') that should be external to the story sentence.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Describes tying a deadline to workflow but stays within role-means-rationale without extra procedural comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "if there is a schedule feature on the site",
+      "rationale": "Contains a conditional/procedural note about existing features, which is external to a minimal story sentence.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Simple role-means-rationale; no extra implementation or commentary.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Although verbose, it remains role (trainer), means (view attached to training node) and rationale; extra explanation about trust/privacy is rationale rather than an implementation note.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Specifies an admin view and purpose; contains no implementation hints or external comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "The following information must be shown: Logo, title, trainers, location, possibly a map view, datetime, skill level, registrations remaining, link to register for class. The URL path should be SEO friendly /training/training-title",
+      "rationale": "Includes a detailed UI spec and an explicit implementation/URL requirement that should be external to a minimal story sentence.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "have the training options clearly marked for the following information: day and time of training, title, short summary, trainers, level, number of registrations, remaining registrations, location of training, link to full details of the training, register now link",
+      "rationale": "Contains a detailed list of fields/UI elements (mock-up/spec detail) beyond a minimal user story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Expresses desire for a landing page and purpose without additional implementation or procedural notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Simple, minimal story (link on home page to list of training options).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Clear role-means-rationale; no extraneous implementation or mock-up notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "processed via stripe",
+      "rationale": "Names a specific payment processor ('stripe'), an implementation detail that should be external to a minimal story sentence.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Specifies a link and purpose; no implementation/testing or procedural notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Standard role-means-rationale with no extra comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Includes business detail ($350) but no implementation/procedural hints; remains a minimal story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Role, means and rationale only; no extraneous content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Simple user story without additional implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Contains only role, means and rationale; no external commentary.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "as the third step of the registration process",
+      "rationale": "Includes a procedural note about ordering in a process ('third step'), which is external to a minimal story sentence.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Assigning sponsors to events is stated as means; no implementation or mock-up notes present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Standard role-means-rationale with no extraneous implementation comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Payment intent is described generally; no implementation/testing notes included.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Simple link behavior and rationale; no extra notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Profile update desire with clear rationale; no implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Newsletter signup described without implementation or mock-up details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Tagging for Drupal Planet is a business integration need but not an implementation/testing hint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creating blog posts is a straightforward role-means-rationale story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Reading the blog is a minimal story with no extraneous notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sponsor wanting to sponsor a summit is role-means-rationale; no implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Registering for a summit is a simple story; no extraneous content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Detailed directions requested but no implementation or testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Standard role-means-rationale with no extra implementation or procedural notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Describes a coordinator need and purpose without implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Lists information to be provided; stays within acceptable role-means-rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing sponsors is a clear story; no external commentary or implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Describes desire to list an agenda and why; no extraneous implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Simple informational need; no procedural or implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Specific details requested but expressed as ends/rationale only, no implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Standard minimal story; no extra commentary.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Learning about sponsorship levels is a business requirement but not an implementation note.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Specifies use of a WYSIWYG editor (a means); this is a permissible part of a story's means.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Linking from job listings is a straightforward need without implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Describes learning and contacting for job postings; no extraneous implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Posting a job is expressed succinctly as role-means-rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing the job board is a minimal story with no extra content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Assigning a room to a slot is a straight functional need; no implementation/test notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing the schedule is expressed without procedural or implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing the final list of sessions is a simple informational story; no extra notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Bulk approve as a desire to save time is acceptable as role-means-rationale; no implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Marking a session as accepted is a minimal functional need without extra notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Notification on evaluation results is a standard story; no implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Notification on submission is role-means-rationale only.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Editing a session is expressed simply with a rationale; no extra notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Registering to speak is a minimal story without extraneous details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Submitting a session is a standard role-means-rationale; no implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Personalizing sponsorship page is a simple need and contains no external comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing summits with times is an informational need and remains a minimal story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "on the second page of registration",
+      "rationale": "Specifies a procedural placement ('second page of registration') which is external to a minimal story sentence.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Finding a link in the menu is a standard role-means-rationale with no extra implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Filling out a registration form is a minimal story without implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Finding session information is a simple role-means-rationale with no extra commentary.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}
