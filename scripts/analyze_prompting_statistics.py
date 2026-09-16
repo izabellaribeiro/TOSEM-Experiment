@@ -4,7 +4,7 @@ Prompting-strategy statistical analysis for the QUS-13 experiment.
 
 Designed for the project layout:
 
-qus13_experiment/
+TOSEM-Experiment/
 ├── results/
 │   ├── metrics/
 │   │   └── effectiveness_by_run.csv
@@ -200,7 +200,7 @@ def load_and_prepare(path: Path, metric: str) -> tuple[pd.DataFrame, pd.DataFram
     if not path.exists():
         raise FileNotFoundError(
             f"Input file not found: {path}\n"
-            "Run this script from the qus13_experiment project root, or pass --input."
+            "Run this script from the TOSEM-Experiment repository root, or pass --input."
         )
 
     df = pd.read_csv(path)

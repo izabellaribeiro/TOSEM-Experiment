@@ -2,11 +2,14 @@
 
 This project compares three LLMs under zero-shot, one-shot, and few-shot prompting against a human Gold Standard for 13 QUS criteria. AQUSA provides a rule-based baseline for five criteria.
 
-Run every command below from `qus13_experiment/`. If your terminal starts in `TOSEM-Experiment/`, first run:
+Clone the repository and enter its root directory before running the commands below:
 
 ```text
-cd qus13_experiment
+git clone https://github.com/izabellaribeiro/TOSEM-Experiment.git
+cd TOSEM-Experiment
 ```
+
+If you already have a local copy, open a terminal in `TOSEM-Experiment/`, alongside this README. The repository is private, so cloning requires an authorized GitHub account.
 
 ## 1. Experimental inputs and expected scale
 
