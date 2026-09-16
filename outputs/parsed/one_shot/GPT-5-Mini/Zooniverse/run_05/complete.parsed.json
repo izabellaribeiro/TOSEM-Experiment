@@ -1,0 +1,753 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "Zooniverse",
+    "criterion": "Complete",
+    "run": 5,
+    "temperature": null,
+    "elapsed_seconds": 88.958
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Search/discovery stories are supported by upload/ingest and metadata/tagging stories (e.g., ZO-006, ZO-005), so no complementary capability is visibly missing for this story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "based on my profile",
+      "rationale": "Profile-based search is present as a user goal and other backlog items reference profile-driven features; no absent complementary capability is evidenced in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "based on other users similar to myself",
+      "rationale": "Collaborative filtering / similar-user recommendations are represented elsewhere (e.g., recommendation stories), so no missing complementary capability is apparent.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "based on content similarity",
+      "rationale": "Content-similarity based discovery is supported by other similarity and recommendation stories in the backlog (e.g., ZO-009, ZO-058), so no required complementary capability is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "enriched metadata and image tags",
+      "rationale": "The backlog includes upload (ZO-006) and other metadata/tagging processing stories, so exploiting enriched metadata is supported without an evident missing complementary capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "upload tagged videos",
+      "rationale": "Uploading tagged videos is self-contained and subsequent processing steps are represented in the backlog (segmentation, identification, prefiltering), so no complementary capability is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "thumbnail sequences of video segments",
+      "rationale": "Segmentation and segment-related admin stories (e.g., ZO-019) exist, indicating capability to produce and edit segments for thumbnails; no missing complementary capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "info about similar video items and segments",
+      "rationale": "Similarity and perceptual-similarity stories are present (ZO-004, ZO-009, ZO-058), providing complementary capabilities needed for this story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "perceptually similar video items and segments",
+      "rationale": "Perceptual similarity features are supported by other similarity and grouping stories (e.g., ZO-058), so no necessary complementary capability is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "content recommendations from similar profiles",
+      "rationale": "Recommendation and profile-based stories exist (ZO-002, ZO-059), so complementary recommendation infrastructure is indicated in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "based on most relevant news events in my area",
+      "rationale": "News/event-based recommendation is self-contained; no missing complementary capability is evident in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify persons in videos",
+      "rationale": "Identification and retrieval of related information can be implemented using system recognition and external data; backlog contains other identification tasks (brands, products), so no explicit missing complementary capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify products in videos",
+      "rationale": "Product identification and related info retrieval parallels other recognition stories (brands, logos); no necessary complementary capability is clearly absent from the backlog.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify broadcaster logos in videos",
+      "rationale": "Logo/brand recognition is consistent with other automated detection stories and does not expose a missing complementary capability in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify brands in videos",
+      "rationale": "Brand identification is aligned with other recognition stories; complementary capabilities for recognition are present in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "take a picture or upload an image",
+      "rationale": "Image upload and image-to-video recommendation have supporting recommendation and similarity stories (ZO-004, ZO-010), so no missing complementary capability is evident.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "access content using a geographical map",
+      "rationale": "Geo-based discovery is self-contained; the backlog contains related discovery/search capabilities and no complementary capability is evidently missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "search content items using automatic speech recognition",
+      "rationale": "ASR-based search is a specific retrieval method; no complementary capability required elsewhere is missing in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "validate and edit segmentation of videos",
+      "rationale": "Segmentation-related admin capabilities exist across project-specific stories; while segmentation creation may be automated in other domain stories, the backlog contains segmentation tasks (e.g., domain-specific segmentation) so no clear missing capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "annotate news video segments and extract a topic",
+      "rationale": "Annotation and topic extraction are administrative tasks and the backlog includes other analysis and tagging features; no complementary capability is visibly missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "filter and rank videos based on A/V quality",
+      "rationale": "AV quality assessment is an automated admin feature and no complementary capability is obviously absent from the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "quick assessment of whether audio material has been edited",
+      "rationale": "Audio forensic assessment can be implemented with the other admin and processing stories present; no missing complementary capability is evidenced.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "prefilter nudity content",
+      "rationale": "Content prefiltering is supported by other automated prefilter and metadata/tagging stories; no complementary capability is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "prefilter content using search based on low­level asset information",
+      "rationale": "Low-level prefiltering is an automated capability; the backlog contains various prefiltering and analysis stories, so no required complementary capability is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatically validated the ingested contents for copyright infringement",
+      "rationale": "Ingestion/upload (ZO-006) exists and other automated validation tasks are present; no complementary capability required by this story is absent.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "prefilter the content using search on high­level asset information",
+      "rationale": "High-level metadata/tag based prefiltering is supported by tagging/upload stories and by other admin tasks, so no missing complementary capability is apparent.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "citizen annotations",
+      "rationale": "The story explicitly depends on citizen annotations and Talk comments, but the backlog contains no volunteer-facing stories that enable volunteers to make annotations or comments (i.e., no 'As a volunteer, I want to classify/annotate subjects' or 'post comments on Talk' story).",
+      "related_story_ids": [
+        "ZO-028",
+        "ZO-029",
+        "ZO-043",
+        "ZO-049",
+        "ZO-050",
+        "ZO-051",
+        "ZO-052",
+        "ZO-053",
+        "ZO-054",
+        "ZO-055",
+        "ZO-056",
+        "ZO-057",
+        "ZO-059"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "annotations and information from Talk comments",
+      "rationale": "This detection relies on volunteer annotations and Talk comments, but the backlog lacks stories enabling volunteers to perform those annotations/comments (no volunteer annotation/comment creation capability is present).",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-029",
+        "ZO-043",
+        "ZO-049",
+        "ZO-050",
+        "ZO-051",
+        "ZO-052",
+        "ZO-053",
+        "ZO-054",
+        "ZO-055",
+        "ZO-056",
+        "ZO-057",
+        "ZO-059"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "identify volunteer types",
+      "rationale": "Identifying volunteer types requires volunteer activity data (classifications/annotations/interactions), but the backlog has no volunteer-facing stories to create such annotations/interactions, exposing a missing complementary capability.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-028",
+        "ZO-043",
+        "ZO-049",
+        "ZO-050",
+        "ZO-051",
+        "ZO-052",
+        "ZO-053",
+        "ZO-054",
+        "ZO-055",
+        "ZO-056",
+        "ZO-057",
+        "ZO-059"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "preclassify the Galaxy Zoo images",
+      "rationale": "Automated preclassification is a standalone admin capability; the backlog contains other automation tasks and no complementary capability is missing for this story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatically detect Snapshot Serengeti images with no classifiable animals",
+      "rationale": "Automated detection of empty images is self-contained; no missing complementary capability is apparent.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic image series detection",
+      "rationale": "Project-specific automated detection capabilities are present; no complementary capabilities required by this story are missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic animal species preclassification",
+      "rationale": "Automated preclassification is supported by other analysis stories; no missing complementary capability is evident.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic animal attribute preclassification",
+      "rationale": "Attribute preclassification is consistent with other automated capabilities in backlog; no complementary capability is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic animal number detection",
+      "rationale": "Automated counting/detection is self-contained and supported by other analysis features; no missing complementary capability is evident.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic segmentation or localization of plankton",
+      "rationale": "Project-specific automated segmentation exists in the backlog; this provides the complementary capability for plankton tasks, so no missing capability is evident.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detect Plankton Portal images with no classifiable plankton",
+      "rationale": "Automated detection of unclassifiable images is present and self-contained; no complementary capability is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic detection of plankton size or orientation",
+      "rationale": "Automated analysis story is self-contained; no required complementary capability is absent from the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic preclassification of plankton species",
+      "rationale": "Automated preclassification exists and does not expose a missing complementary capability in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "automatic worm motion analysis",
+      "rationale": "Automated video analysis capabilities are present; no complementary capability necessary for this story is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detect the time in a Worm Watch Lab video where the worm lays an egg",
+      "rationale": "Domain-specific automated detection stories exist; no missing complementary capability is evident.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detect important features in satellite images",
+      "rationale": "Automated detection for remote sensing is present and self-contained; no complementary capability is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "assess the probability/weight of a volunteer’s classification",
+      "rationale": "This requires volunteer classifications and experience data, but the backlog contains no volunteer-facing stories to create classifications or record experience, so the complementary capability is missing.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-028",
+        "ZO-029",
+        "ZO-049",
+        "ZO-050",
+        "ZO-051",
+        "ZO-052",
+        "ZO-053",
+        "ZO-054",
+        "ZO-055",
+        "ZO-056",
+        "ZO-057",
+        "ZO-059"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "prefiltering of the images to remove artefacts",
+      "rationale": "Automated prefiltering is a standalone capability and other preprocessing stories exist, so no complementary capability is clearly missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "detect moving and transient objects",
+      "rationale": "Automated detection functionality is supported by the backlog; no missing complementary capability is apparent.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "remove background noise and distracting sounds",
+      "rationale": "Audio cleaning is an automated admin/processing feature and other audio tasks are present; no complementary capability is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "group whale calls that are similar",
+      "rationale": "Clustering/grouping audio events is supported by other analysis stories; no required complementary capability is absent from the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify the number of whales heard in a single audio file",
+      "rationale": "Audio analysis stories exist and this is self-contained; no complementary capability is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "know when I should interrupt a volunteer",
+      "rationale": "Determining interruption timing depends on volunteer interaction data, but the backlog lacks volunteer-facing stories to produce those interactions/activities, so a complementary capability is missing.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-028",
+        "ZO-029",
+        "ZO-043",
+        "ZO-050",
+        "ZO-051",
+        "ZO-052",
+        "ZO-053",
+        "ZO-054",
+        "ZO-055",
+        "ZO-056",
+        "ZO-057",
+        "ZO-059"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "interrupt a volunteer with text, an image, or a video",
+      "rationale": "Choosing interrupt content presumes volunteer interaction and presence data; the backlog contains no volunteer-facing stories to generate those interactions, so the complementary capability is missing.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-028",
+        "ZO-029",
+        "ZO-043",
+        "ZO-049",
+        "ZO-051",
+        "ZO-052",
+        "ZO-053",
+        "ZO-054",
+        "ZO-055",
+        "ZO-056",
+        "ZO-057",
+        "ZO-059"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "know when I should educate a volunteer",
+      "rationale": "This requires monitoring volunteer behavior/answers, but the backlog lacks stories enabling volunteers to perform the tasks that would generate that data (no volunteer annotation/classification stories), exposing a missing complementary capability.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-028",
+        "ZO-029",
+        "ZO-043",
+        "ZO-049",
+        "ZO-050",
+        "ZO-052",
+        "ZO-053",
+        "ZO-054",
+        "ZO-055",
+        "ZO-056",
+        "ZO-057",
+        "ZO-059"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "whether I should educate a volunteer with text, an image, or a video",
+      "rationale": "Deciding education modality depends on volunteer behavior and responses; the backlog lacks volunteer-facing stories to generate those responses (annotations/classifications/comments), so the complementary capability is missing.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-028",
+        "ZO-029",
+        "ZO-043",
+        "ZO-049",
+        "ZO-050",
+        "ZO-051",
+        "ZO-053",
+        "ZO-054",
+        "ZO-055",
+        "ZO-056",
+        "ZO-057",
+        "ZO-059"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "which piece of education I should give to a volunteer",
+      "rationale": "Selecting education content depends on volunteer actions/skill data; no volunteer-facing stories are present to create such data (no annotation/classification/comment creation), so the complementary capability is missing.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-028",
+        "ZO-029",
+        "ZO-043",
+        "ZO-049",
+        "ZO-050",
+        "ZO-051",
+        "ZO-052",
+        "ZO-054",
+        "ZO-055",
+        "ZO-056",
+        "ZO-057",
+        "ZO-059"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "when a volunteer has made an interesting comment on a subject",
+      "rationale": "Detecting interesting volunteer comments requires volunteers to post comments; the backlog contains no volunteer-facing stories enabling comment creation (no 'post on Talk' or comment story), so this complementary capability is missing.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-028",
+        "ZO-029",
+        "ZO-043",
+        "ZO-049",
+        "ZO-050",
+        "ZO-051",
+        "ZO-052",
+        "ZO-053",
+        "ZO-055",
+        "ZO-056",
+        "ZO-057",
+        "ZO-059"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "when Zoonibot should comment on a subject",
+      "rationale": "Triggering Zoonibot comments often responds to volunteer comments/annotations; backlog lacks volunteer-facing comment/annotation creation stories, so the complementary capability to generate triggers is missing.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-028",
+        "ZO-029",
+        "ZO-043",
+        "ZO-049",
+        "ZO-050",
+        "ZO-051",
+        "ZO-052",
+        "ZO-053",
+        "ZO-054",
+        "ZO-056",
+        "ZO-057",
+        "ZO-059"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "when Zoonibot should give an explanation",
+      "rationale": "Zoonibot explanations are driven by volunteer interactions (annotations/comments); without volunteer-facing stories to create such interactions, a complementary capability is missing in the backlog.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-028",
+        "ZO-029",
+        "ZO-043",
+        "ZO-049",
+        "ZO-050",
+        "ZO-051",
+        "ZO-052",
+        "ZO-053",
+        "ZO-054",
+        "ZO-055",
+        "ZO-057",
+        "ZO-059"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "what Zoonibot should say to a volunteer",
+      "rationale": "Determining Zoonibot messages depends on volunteer behavior/content; the backlog omits volunteer-facing annotation/comment creation stories that would provide that behavior data, so the complementary capability is missing.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-028",
+        "ZO-029",
+        "ZO-043",
+        "ZO-049",
+        "ZO-050",
+        "ZO-051",
+        "ZO-052",
+        "ZO-053",
+        "ZO-054",
+        "ZO-055",
+        "ZO-056",
+        "ZO-059"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "group subjects by similarity",
+      "rationale": "Grouping by similarity can be implemented via automated analysis and is supported by other similarity/analysis stories; no complementary capability is evidently missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "based on their previous experiences",
+      "rationale": "Recommending projects based on volunteer previous experiences requires volunteer activity/history, but the backlog contains no volunteer-facing stories to generate or record those experiences (no annotation/classification/comment creation), so the complementary capability is missing.",
+      "related_story_ids": [
+        "ZO-027",
+        "ZO-028",
+        "ZO-029",
+        "ZO-043",
+        "ZO-049",
+        "ZO-050",
+        "ZO-051",
+        "ZO-052",
+        "ZO-053",
+        "ZO-054",
+        "ZO-055",
+        "ZO-056",
+        "ZO-057"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see a summary of articles, so that I reuse them",
+      "rationale": "Summarizing and reusing articles is an administrative capability and does not depend on a missing complementary capability in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

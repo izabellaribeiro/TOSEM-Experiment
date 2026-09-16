@@ -1,0 +1,202 @@
+{
+  "Well-formed": [
+    {
+      "context": [],
+      "story_id": "DEMO-WF-1",
+      "story": "I want to receive an error message after an invalid upload.",
+      "decision": "Violation",
+      "evidence": "I want to receive an error message",
+      "rationale": "The requested functionality is identifiable, but no stakeholder role is stated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ],
+  "Atomic": [
+    {
+      "context": [],
+      "story_id": "DEMO-AT-1",
+      "story": "As a traveler, I want to select a station on a map and see nearby hotels, so that I can plan my stay.",
+      "decision": "Violation",
+      "evidence": "select a station on a map and see nearby hotels",
+      "rationale": "Selecting a station and displaying nearby hotels are independently implementable features.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ],
+  "Minimal": [
+    {
+      "context": [],
+      "story_id": "DEMO-MI-1",
+      "story": "As a shopper, I want to save an item for later, so that I can revisit it. Note: use a star icon and store the flag in local storage.",
+      "decision": "Violation",
+      "evidence": "Note: use a star icon and store the flag in local storage",
+      "rationale": "The story contains implementation notes beyond role, means, and optional ends.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ],
+  "Conceptually sound": [
+    {
+      "context": [],
+      "story_id": "DEMO-CS-1",
+      "story": "As a visitor, I want to open the city map, so that I can display all restaurant markers.",
+      "decision": "Violation",
+      "evidence": "so that I can display all restaurant markers",
+      "rationale": "The ends clause introduces another requested feature instead of explaining the value of opening the map.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ],
+  "Problem-oriented": [
+    {
+      "context": [],
+      "story_id": "DEMO-PO-1",
+      "story": "As an employee, I want to submit an expense claim using a green Save button in the upper-right corner, so that I can request reimbursement.",
+      "decision": "Violation",
+      "evidence": "using a green Save button in the upper-right corner",
+      "rationale": "The story prescribes a concrete UI solution rather than only the stakeholder need.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ],
+  "Unambiguous": [
+    {
+      "context": [],
+      "story_id": "DEMO-UA-1",
+      "story": "As an editor, I want to update content, so that the page stays current.",
+      "decision": "Violation",
+      "evidence": "content",
+      "rationale": "The term 'content' is underspecified and can refer to materially different information types.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ],
+  "Conflict-free": [
+    {
+      "context": [
+        {
+          "story_id": "DEMO-CF-A",
+          "story": "As an editor, I want to edit any published article."
+        }
+      ],
+      "story_id": "DEMO-CF-B",
+      "story": "As an editor, I want to edit only articles that I created.",
+      "decision": "Violation",
+      "evidence": "edit only articles that I created",
+      "rationale": "The target story restricts editing in a way that conflicts with DEMO-CF-A, which permits editing any published article.",
+      "related_story_ids": [
+        "DEMO-CF-A"
+      ],
+      "confidence": "High"
+    }
+  ],
+  "Full sentence": [
+    {
+      "context": [],
+      "story_id": "DEMO-FS-1",
+      "story": "Server configuration for administrators",
+      "decision": "Violation",
+      "evidence": "Server configuration for administrators",
+      "rationale": "The text is a noun phrase rather than a complete sentence.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ],
+  "Estimatable": [
+    {
+      "context": [],
+      "story_id": "DEMO-ES-1",
+      "story": "As a driver, I want to see my route information, so that I can plan my day.",
+      "decision": "Violation",
+      "evidence": "route information",
+      "rationale": "The scope is too vague to estimate because 'route information' could denote several substantially different capabilities.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ],
+  "Unique": [
+    {
+      "context": [
+        {
+          "story_id": "DEMO-UQ-A",
+          "story": "As a reader, I want to view a list of news articles."
+        }
+      ],
+      "story_id": "DEMO-UQ-B",
+      "story": "As a reader, I want to see the list of news articles.",
+      "decision": "Violation",
+      "evidence": "see the list of news articles",
+      "rationale": "The target story expresses the same requirement as DEMO-UQ-A without a meaningful difference.",
+      "related_story_ids": [
+        "DEMO-UQ-A"
+      ],
+      "confidence": "High"
+    }
+  ],
+  "Uniform": [
+    {
+      "context": [
+        {
+          "story_id": "DEMO-UN-A",
+          "story": "As a visitor, I want to search events."
+        },
+        {
+          "story_id": "DEMO-UN-B",
+          "story": "As a visitor, I want to view event details."
+        }
+      ],
+      "story_id": "DEMO-UN-C",
+      "story": "Visitors receive event reminders by email.",
+      "decision": "Violation",
+      "evidence": "Visitors receive event reminders by email",
+      "rationale": "The target materially deviates from the dominant 'As a ..., I want to ...' template in the demo backlog.",
+      "related_story_ids": [
+        "DEMO-UN-A",
+        "DEMO-UN-B"
+      ],
+      "confidence": "High"
+    }
+  ],
+  "Independent": [
+    {
+      "context": [
+        {
+          "story_id": "DEMO-IN-A",
+          "story": "As an admin, I want to create a customer profile."
+        }
+      ],
+      "story_id": "DEMO-IN-B",
+      "story": "As a clerk, I want to view a customer's profile, so that I can assist the customer.",
+      "decision": "Violation",
+      "evidence": "view a customer's profile",
+      "rationale": "The target inherently depends on customer profiles existing, which is established by DEMO-IN-A.",
+      "related_story_ids": [
+        "DEMO-IN-A"
+      ],
+      "confidence": "High"
+    }
+  ],
+  "Complete": [
+    {
+      "context": [
+        {
+          "story_id": "DEMO-CO-A",
+          "story": "As an editor, I want to update an existing category."
+        },
+        {
+          "story_id": "DEMO-CO-B",
+          "story": "As an editor, I want to delete an existing category."
+        }
+      ],
+      "story_id": "DEMO-CO-B",
+      "story": "As an editor, I want to delete an existing category.",
+      "decision": "Violation",
+      "evidence": "existing category",
+      "rationale": "The demo backlog operates on existing categories but contains no capability to create a category, exposing a missing complementary requirement.",
+      "related_story_ids": [
+        "DEMO-CO-A"
+      ],
+      "confidence": "High"
+    }
+  ]
+}

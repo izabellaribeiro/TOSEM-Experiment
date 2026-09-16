@@ -1,11 +1,15 @@
-# Three-prompt protocol
+# Frozen prompting conditions
 
-All conditions use criterion-wise backlog evaluation and the same system prompt/output schema.
+`system.txt` is shared by all conditions. Templates are preserved byte-for-byte from the original package:
 
-- `zero_shot.txt`: 0 worked demonstrations.
-- `one_shot.txt`: 1 criterion-specific synthetic worked demonstration.
-- `few_shot.txt`: 4 criterion-specific synthetic demonstrations (2 Violation + 2 No Violation whenever applicable).
+| Profile | Template | Demonstrations |
+| --- | --- | --- |
+| `zero_shot` | `zero_shot/template.txt` | None |
+| `one_shot` | `one_shot/template.txt` | `one_shot/examples.json`: one per criterion |
+| `few_shot` | `few_shot/template.txt` | `few_shot/examples.json`: four per criterion |
 
-Demonstrations are defined in `config/prompt_examples.json` and are deliberately external to PlanningPoker, BADCamp and Zooniverse to avoid label leakage.
+The new per-profile JSONs are exact extractions of the original demonstration values in `combined_examples_original.json`, which is retained unchanged for provenance. `python -m scripts.verify_package` verifies equality. The execution runner reads the separated files and reconstructs the original criterion-wise rendering inputs.
 
-The experimental manipulation is the number of demonstrations. Definitions, operational rules, dataset context, temperature, task, and output schema remain fixed.
+Demonstrations are synthetic and external to the evaluated projects. Definitions and operational rules come from `config/criteria.json`; dataset IDs/paths and profile selection come from `config/experiment.json`. This organization does not change the prompt text or add demonstrations. Existing requests in `outputs/raw/` preserve the rendered experimental prompts.
+
+The common inputs support RQ1–RQ4; the controlled comparison between profiles addresses RQ2 specifically. See [traceability](../docs/TRACEABILITY.md).

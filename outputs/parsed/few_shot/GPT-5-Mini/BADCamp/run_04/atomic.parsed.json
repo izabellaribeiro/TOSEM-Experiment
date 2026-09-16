@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "prompt_profile": "few_shot",
+    "prompt_label": "Few-shot",
+    "shots": 4,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "BADCamp",
+    "criterion": "Atomic",
+    "run": 4,
+    "temperature": null,
+    "elapsed_seconds": 100.661
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "view a list of sponsors",
+      "rationale": "Single feature: presenting a list of sponsors.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "view a list of user profiles",
+      "rationale": "Single feature: listing user profiles.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "email all the trainers at once from the website",
+      "rationale": "Single feature: bulk emailing trainers (one implementable action).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "have a very clear map where the buildings and rooms are",
+      "rationale": "Single feature: providing a clear map of buildings and rooms.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "edit my training node myself",
+      "rationale": "Single feature: allowing trainers to edit their training node (links to slides are attributes of that feature).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "limit to one registration per day per authenticated user",
+      "rationale": "Single feature: enforcing a registration limit constraint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "have an admin view that helps track registration status for each attendee",
+      "rationale": "Single feature: an admin view showing registration statuses (filtering or statuses are attributes).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "be added to a training waitlist",
+      "rationale": "Single feature: join the waitlist for a training.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "must accept the cancellation terms with a checkbox",
+      "rationale": "Single feature: require acceptance via a checkbox.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "tie in a cancellation deadline to whatever registration / cancellation workflow exists",
+      "rationale": "Single feature: integrate a cancellation deadline into the workflow (one cohesive requirement).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "add to \"my schedule\"",
+      "rationale": "Single feature: add an item to a user's schedule (conditional clause is not a separate feature).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see which trainings I have signed up for",
+      "rationale": "Single feature: viewing a user's registered trainings.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "have a view that is attached to their training node that shows all attendee information",
+      "rationale": "Single feature: a training-node-attached view showing attendee info (one view feature).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "have an admin view where all trainee information is shown and can be filtered",
+      "rationale": "Single feature: admin trainee information view with filtering as an attribute, not a separate feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "have a dedicated page for each class ... Logo, title, trainers, location, possibly a map view, datetime, skill level, registrations remaining, link to register",
+      "rationale": "Single feature: dedicated class detail page with multiple presentation attributes; not multiple independent features.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "have the training options clearly marked for the following information: day and time ... register now link",
+      "rationale": "Single feature: a listings page presenting training attributes (enumeration of attributes is not multiple features).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "have a training landing page with an intro section and a list of all training offerings and promote call for trainings",
+      "rationale": "Single feature: a training landing page containing sections (one composite page feature).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "have a link on the home page to a list of training options",
+      "rationale": "Single feature: adding a homepage link to training options.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "find out where the coding lounge is and what time it is open",
+      "rationale": "Single feature: provide location and opening times (attributes of an info feature).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "refund sponsorship money that was processed via stripe",
+      "rationale": "Single feature: process refunds for Stripe payments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "find a link on the sponsorships page to become a $350 level sponsor",
+      "rationale": "Single feature: provide a link for a specific sponsorship level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "See a list of attendees associated with this company",
+      "rationale": "Single feature: display attendees for a company.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "identify myself as and pay for a $350 company sponsorship",
+      "rationale": "Treated as one cohesive purchase flow (select/identify sponsorship and complete payment) rather than two independently prioritizable features.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "create and maintain venues",
+      "rationale": "Venue management (create/maintain) is a single admin management feature rather than multiple independent features.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "view venue details",
+      "rationale": "Single feature: viewing venue details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see a list of the sessions associated with sponsor attendees",
+      "rationale": "Single feature: listing sessions related to sponsor attendees.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "See a payment page to pay for my individual sponsorships as the third step of the registration process",
+      "rationale": "Single feature: a payment page in the registration flow (one implementable feature).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "assign sponsors to events, trainings and summits",
+      "rationale": "Single admin feature: assigning sponsors to items (the multiple target types are attributes of the operation).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see all events, trainings and summits that a sponsor is sponsoring",
+      "rationale": "Single feature: viewing the items a sponsor supports (list with multiple item types is still one feature).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "Enter payment information and have my card charged for an individual sponsorship",
+      "rationale": "Single feature: the payment transaction flow (entering info and charging are steps of one feature).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page",
+      "rationale": "Single feature: linking attendees to a sponsorship page.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "update my user profile",
+      "rationale": "Single feature: profile update capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "sign up for the BADCamp newsletter",
+      "rationale": "Single feature: newsletter signup.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "tag my blog posts for consumption by Drupal Planet",
+      "rationale": "Single feature: tagging posts for external consumption.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "create blog posts",
+      "rationale": "Single feature: blog post creation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "read the blog",
+      "rationale": "Single feature: reading blog content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "sponsor a summit that matches my brand",
+      "rationale": "Single feature: sponsoring a summit (selection criteria is part of the feature).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "register for a summit",
+      "rationale": "Single feature: summit registration.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "get detailed directions to the summit venue",
+      "rationale": "Single feature: provide detailed venue directions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see what summits I'm signed up for",
+      "rationale": "Single feature: view user's summit registrations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see a list of attendees signed up for my summit",
+      "rationale": "Single feature: viewing attendee list (communication by email is the rationale, not a separate requested feature).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "list basic information about my summit",
+      "rationale": "Single feature: summit basic info listing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "list sponsors for my summit",
+      "rationale": "Single feature: listing sponsors for a summit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "list an agenda for my summit",
+      "rationale": "Single feature: agenda listing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see how many seats are left for the summit",
+      "rationale": "Single feature: display remaining seat count.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see specific details on summits",
+      "rationale": "Single feature: viewing summit details for multiple purposes (single information feature).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits",
+      "rationale": "Single feature: listing all summits.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "learn about sponsorship levels",
+      "rationale": "Single feature: information about sponsorship levels.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "use a WYSIWYG editor for all long-form content",
+      "rationale": "Single feature: provide WYSIWYG editor capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "Link to my sponsorship profile from my job listings",
+      "rationale": "Single feature: add a link from job listings to sponsorship profile.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "learn about posting jobs as a sponsor and contact the sponsorship person",
+      "rationale": "Single feature: a page providing how-to information and contact details (information page with contact element is one feature).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "post a job",
+      "rationale": "Single feature: job posting capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "view the job board",
+      "rationale": "Single feature: viewing the job board.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "assign a room to a time slot and a location",
+      "rationale": "Single scheduling feature: assigning room-to-slot/location is one operation, not separate features.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see the schedule",
+      "rationale": "Single feature: viewing the schedule.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see the final list of sessions approved",
+      "rationale": "Single feature: viewing the final approved sessions list.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "bulk approve sessions as accepted",
+      "rationale": "Single feature: bulk approval action for sessions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "mark a session as accepted",
+      "rationale": "Single feature: marking a session accepted.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "receive a notification when sessions have been evaluated",
+      "rationale": "Single feature: notification on evaluation outcome.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "receive a notification when I submit a session",
+      "rationale": "Single feature: submission confirmation notification.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "edit my session",
+      "rationale": "Single feature: allow session editing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "register to speak at BADCamp",
+      "rationale": "Single feature: registration to speak/submit a session (one user action).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "submit a session at BADCAMP",
+      "rationale": "Single feature: session submission.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "personalize my sponsorship page",
+      "rationale": "Single feature: sponsorship page personalization.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits that include when they are",
+      "rationale": "Single feature: listing summits with dates (attributes of the list).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "Be offered several choices of idividual sponsorship on the second page of registration",
+      "rationale": "Single feature: present sponsorship choices during registration (one UI step).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "easily find a link in the menu that links to the registration form",
+      "rationale": "Single feature: add/find a registration link in the menu.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "fill out a user registration form",
+      "rationale": "Single feature: user registration form completion.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Atomic",
+      "decision": "No Violation",
+      "evidence": "find session information",
+      "rationale": "Single feature: locating session information.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "prompt_profile": "few_shot",
+    "prompt_label": "Few-shot",
+    "shots": 4,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "BADCamp",
+    "criterion": "Conceptually sound",
+    "run": 3,
+    "temperature": null,
+    "elapsed_seconds": 123.012
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "view a list of sponsors; so that I can thank all the awesome sponsors",
+      "rationale": "Means states a concrete feature (view a list of sponsors) and the ends gives the stakeholder rationale (to thank sponsors).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "view a list of user profiles; so that I know who is attending the conference",
+      "rationale": "Means is a feature and ends explains the value (know who is attending).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "email all the trainers at once from the website; so that It is easier to use",
+      "rationale": "Means describes a concrete feature and the ends expresses a (admittedly vague) rationale (makes it easier to use).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "have a very clear map where the buildings and rooms are; so that I can make it to class on time",
+      "rationale": "Means is a feature (clear map) and ends states the user benefit (arrive on time).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Conceptually sound",
+      "decision": "Violation",
+      "evidence": "so that the training coordinators don't have to and links to slides",
+      "rationale": "The ends clause introduces another required feature ('links to slides') instead of purely explaining why editing the training node is valuable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "limit to one registration per day per authenticated user; so that we don't have duplicate spaces",
+      "rationale": "Means is a concrete constraint/feature and ends gives the rationale (avoid duplicate spaces).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "have an admin view that helps track registration status for each attendee; so that we can see if attendend, refunded, no show",
+      "rationale": "Means describes a feature and the ends explains its value (see attendee registration statuses).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "be added to a training waitlist; so that they can be considered for a class",
+      "rationale": "Means is a feature and ends explains the benefit (consideration for class).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "accept the cancellation terms with a checkbox; so that they can be accountable",
+      "rationale": "Means is a concrete UI action and ends gives the accountability rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "tie in a cancellation deadline to whatever registration / cancellation workflow exists; so that we don't loose money or spots",
+      "rationale": "Means defines a feature (tie cancellation deadline) and ends states the reason (avoid losing money/spots).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "add to \"my schedule\" if there is a schedule feature on the site; so that they can schedule their event experience",
+      "rationale": "Means is a feature (add to my schedule) and ends explains the user benefit (schedule their experience).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "see which trainings I have signed up for; so that they can schedule their event experience",
+      "rationale": "Means is a feature and ends gives its purpose (help schedule).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "have a view ... that shows all attendee information; so that the training coordinator doesn't have to do all the work to get login info for environment setup",
+      "rationale": "Means specifies the feature (view with attendee info) and ends explains the benefit (reduces coordinator work).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "have an admin view where all trainee information is shown and can be filtered; so that I can see WTF is happening",
+      "rationale": "Means is a concrete admin view feature and ends gives the rationale (understand what's happening).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "have a dedicated page for each class ... The URL path should be SEO friendly /training/training-title; so that I can choose the right class, AND the trainer can tweet and promote their class",
+      "rationale": "Means lists concrete features for a class page and ends states the stakeholder benefits (choose class, enable promotion).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "have the training options clearly marked for the following information ...; so that I can shop for training ... AND find their class on one page",
+      "rationale": "Means specifies the feature (clearly marked training options) and ends explains the user benefits.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "have a training landing page with an intro section and a list of all training offerings and promote call for trainings; so that I can shop for training ... and we can have a call for trainings for selection",
+      "rationale": "Means describes the landing page features and the ends give the intended benefits (shop and enable call for trainings).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "have a link on the home page to a list of training options; so that I can take training",
+      "rationale": "Means is a concrete navigational feature and ends states the user's goal (take training).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "find out where the coding lounge is and what time it is open; so that I can code with my friends",
+      "rationale": "Means describes the feature and ends gives the rationale (code with friends).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "refund sponsorship money that was processed via stripe; so that people get their monies back",
+      "rationale": "Means is a concrete feature and ends states the reason (refund money to people).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "find a link on the sponsorships page to become a $350 level sponsor; so that I can pay for and become a sponsor role",
+      "rationale": "Means is a feature (link to sponsorship) and ends explains the benefit (become a sponsor).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "See a list of attendees associated with this company; so that I know who from this sponsor organization is attending",
+      "rationale": "Means is a clear feature and ends states its value (know who is attending).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "identify myself as and pay for a $350 company sponsorship; so that I can easily become a sponsor at this level without having to interface with badcamp personnel",
+      "rationale": "Means describes the sponsorship/payment feature and ends explains the user benefit (self-service sponsorship).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "create and maintain venues; so that I can provide location details to help users find what they're looking for",
+      "rationale": "Means is a feature and ends gives the rationale (provide location details).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "view venue details; so that I can get a sense of the location and see the events happening there",
+      "rationale": "Means is a feature and ends explains the user benefit (understand location and events).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "see a list of the sessions associated with sponsor attendees; so that I know where I can engage with this sponsor and where they are thought leaders",
+      "rationale": "Means states a feature and ends gives the rationale (engage with sponsor / identify thought leadership).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "See a payment page to pay for my individual sponsorships as the third step of the registration process; so that pay for my sponsorship",
+      "rationale": "Means is a payment page feature and ends (though awkward) expresses the purpose (pay for sponsorship).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "assign sponsors to events, trainings and summits; so that They will be featured on the sponsor detail page",
+      "rationale": "Means describes the assignment feature and ends explains its outcome (featured on sponsor page).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "see all events, trainings and summits that a sponsor is sponsoring; so that I know where I can engage with this sponsor and where they are thought leaders",
+      "rationale": "Means is a feature and ends provides the rationale (engage with sponsor / identify thought leadership).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Enter payment information and have my card charged for an individual sponsorship; so that I can pay for an individual sponsorship",
+      "rationale": "Means is the payment/charge feature and ends states the clear purpose (pay for sponsorship).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page; so that I can show off our level of attendance",
+      "rationale": "Means is a linking feature and ends gives the sponsor's rationale (show attendance).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "update my user profile; so that I can connect with other Drupalists at BADCamp",
+      "rationale": "Means is a concrete feature and ends explains its value (connect with others).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "sign up for the BADCamp newsletter; so that I can stay up to date with the latest communications about BADCamp",
+      "rationale": "Means is a subscription feature and ends explains the benefit (stay up to date).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "tag my blog posts for consumption by Drupal Planet; so that they will be listed on the Drupal Planet blog",
+      "rationale": "Means states the tagging feature and ends explains the expected outcome (listed on Drupal Planet).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "create blog posts; so that I can share the latest information about BADCamp with the public",
+      "rationale": "Means is a content creation feature and ends gives the rationale (share information).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "read the blog; so that I can stay informed about all the latest happenings with BADCamp",
+      "rationale": "Means is the ability to read the blog and ends explains the user's benefit (stay informed).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "sponsor a summit that matches my brand; so that I can get exposure to potential customers and otherwise tout my Drupal credentials",
+      "rationale": "Means describes the sponsorship action and ends gives the sponsor's rationale (exposure / credentials).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "register for a summit; so that I can reserve my seat at the summit",
+      "rationale": "Means is a registration feature and ends explains the benefit (reserve seat).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "get detailed directions to the summit venue; so that I can get to the summit easily on the day of the event",
+      "rationale": "Means is a directions feature and ends gives its practical value (arrive easily).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "see what summits I'm signed up for; so that I can confirm my attendence and prevent myself from accidentally double-booking",
+      "rationale": "Means is a feature and ends describes the rationale (confirm attendance / avoid double-booking).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "see a list of attendees signed up for my summit; so that I can communicate with my attendees by email prior to the event",
+      "rationale": "Means is a feature (attendee list) and ends explains the benefit (email communication).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "list basic information about my summit; so that I can inform potential attendees on why they should attend my summit",
+      "rationale": "Means states the listing feature and ends provides the rationale (inform potential attendees).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "list sponsors for my summit; so that I can make sure sponsors feel rewarded and will be interested in sponsoring in future years",
+      "rationale": "Means is the sponsor-listing feature and ends explains the organizer's rationale (reward sponsors / encourage future sponsorship).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "list an agenda for my summit; so that I can entice attendees and give positive feedback to presenters to encourage participation",
+      "rationale": "Means is the agenda-listing feature and ends gives the purpose (entice attendees / encourage presenters).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "see how many seats are left for the summit; so that I can make sure to register in-time to reserve my spot",
+      "rationale": "Means is a seat-availability feature and ends states the user's rationale (register in time).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "see specific details on summits; so that I can learn more about the summit ... register for the event, and get day-of knowledge",
+      "rationale": "Means describes viewing summit details and ends lists the user benefits (determine fit, register, get day-of info).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits; so that I can determine which summit I might be interested and able to attend",
+      "rationale": "Means is a listing feature and ends gives the user's rationale (choose a summit to attend).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "learn about sponsorship levels; so that I can determine the right level of sponsorship for my organization",
+      "rationale": "Means is an informational feature and ends explains the user's purpose (determine sponsorship level).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "use a WYSIWYG editor for all long-form content; so that I don't have to know HTML to update my content",
+      "rationale": "Means is a concrete editor feature and ends gives the clear rationale (avoid needing HTML).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Link to my sponsorship profile from my job listings; so that recruits can learn more about my organization",
+      "rationale": "Means is a linking feature and ends explains the benefit (recruits learn more).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "learn about posting jobs as a sponsor and contact the sponsorship person; so that I have the opportunty to post my job listing on the BADCamp site",
+      "rationale": "Means lists features (learn/contact) and ends gives the intended outcome (opportunity to post job).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "post a job; so that I can hire top-tier Drupal talent",
+      "rationale": "Means is a posting feature and ends explains the hiring rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "view the job board; so that I can look for an interesting Drupal gig",
+      "rationale": "Means is a viewing feature and ends gives the user's purpose (find a job).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "assign a room to a time slot and a location; so that I can populate the schedule",
+      "rationale": "Means is a scheduling assignment feature and ends states the benefit (populate schedule).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "see the schedule; so that I can plan my day and figure out where to go",
+      "rationale": "Means is a schedule-viewing feature and ends gives the rationale (plan the day).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "see the final list of sessions approved; so that I can see what's going on at BADCamp",
+      "rationale": "Means is a feature (view final approved sessions) and ends explains the user's benefit (understand event).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "bulk approve sessions as accepted; so that I can save time",
+      "rationale": "Means is a bulk-approve feature and ends gives the rationale (save time).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "mark a session as accepted; so that I can populate the schedule",
+      "rationale": "Means is the accept/mark feature and ends explains its purpose (populate schedule).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "receive a notification when sessions have been evaluated; so that I know whether I've been accepted or rejected",
+      "rationale": "Means is the notification feature and ends states the expected informational value.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "receive a notification when I submit a session; so that know that my session went through ok",
+      "rationale": "Means is a submission-notification feature and ends explains the user's reassurance benefit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "edit my session; so that if I make a mistake, I can correct it",
+      "rationale": "Means is an edit feature and ends gives the direct rationale (correct mistakes).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Conceptually sound",
+      "decision": "Violation",
+      "evidence": "so that I submit a session",
+      "rationale": "The ends clause states another required action (submit a session) rather than explaining why registering to speak is valuable—ends repeats/introduces functionality instead of giving rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "submit a session at BADCAMP; so that I can get my session evaluated",
+      "rationale": "Means is the submission feature and ends gives the purpose (get evaluated).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "personalize my sponsorship page; so that I can promote my brand",
+      "rationale": "Means is a personalization feature and ends explains the sponsor's rationale (promote brand).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits that include when they are; so that I can determine which summit I want to attend",
+      "rationale": "Means is a listing feature and ends states the user's rationale (choose a summit).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Be offered several choices of idividual sponsorship on the second page of registration; so that I can be awesome and financially support the camp",
+      "rationale": "Means is the offering of sponsorship choices and ends explains the user's purpose (support the camp).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "easily find a link in the menu that links to the registration form; so that I can easily register for the camp",
+      "rationale": "Means is a navigational feature and ends provides the clear rationale (register easily).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "fill out a user registration form; so that I can register for the camp and get an account on the website",
+      "rationale": "Means is the registration form feature and ends gives the outcome (register and obtain account).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "find session information; so that I can go to a session",
+      "rationale": "Means is an information-finding feature and ends explains the user's goal (attend a session).",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

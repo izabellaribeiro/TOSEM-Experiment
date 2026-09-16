@@ -1,0 +1,494 @@
+{
+  "metadata": {
+    "prompt_profile": "few_shot",
+    "prompt_label": "Few-shot",
+    "shots": 4,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "PlanningPoker",
+    "criterion": "Minimal",
+    "run": 1,
+    "temperature": null,
+    "elapsed_seconds": 58.185
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to create a new game by entering a name and an optional description, so that I can start inviting estimators.",
+      "rationale": "Contains only role, means (create a new game by entering fields), and rationale; no implementation/testing/procedural notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to invite estimators by giving them a URL where they can access the game, so that we can start the game.",
+      "rationale": "Describes role, means and goal; no extraneous implementation/testing comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "entering an item in a single multi-line text field",
+      "rationale": "Specifies a UI implementation detail ('single multi-line text field') that should be external to the core story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to see all items we try to estimate this session, so that I can answer questions about the current story",
+      "rationale": "Contains only role, means and rationale without extraneous implementation/testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to select an item to be estimated or re-estimated, so that the team sees that item and can estimate it.",
+      "rationale": "Straightforward role, means and goal; no external comments or implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to add an item to the list of items to be estimated, so that so that we can be flexible",
+      "rationale": "Only role, action, and rationale are present (typo doesn't add implementation detail).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to edit an item in the list of items to be estimated, so that I can make it better reflect the team's understanding",
+      "rationale": "Contains only role, means and rationale; no extra procedural or implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to delete an item from the list of items to be estimated, so that we can remove it and not estimate it.",
+      "rationale": "Role, means and goal only; no implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to show all estimates immediately, so that I can decide to show the estimates that have been given",
+      "rationale": "Functional behaviour described without extraneous implementation or testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to accept the average of all estimates, so that we can move on to the next item when we agree.",
+      "rationale": "Only role, means and rationale present; no external comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "have the \"estimate\" field filled in automatically if all estimators show the same card",
+      "rationale": "Describes desired automatic behaviour; it's a functional requirement rather than an implementation/testing note.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to enter the agreed-upon estimate, so that we can move on to the next item when we agree.",
+      "rationale": "Contains only role, means and rationale with no extraneous implementation information.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to estimate a story we estimated earlier in the session again, so that we can give a new estimate",
+      "rationale": "Only role, means and rationale present; no external implementation/testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to import stories from a spreadsheet, so that I don't have to copy and paste each individual story.",
+      "rationale": "Specifies means (import from spreadsheet) and rationale without extra procedural or implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to copy/paste stories from a spreadsheet, so that I can get started more quickly.",
+      "rationale": "Role, means, and goal only — no extra notes or testing instructions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to browse through previous games, so that I can find the previous game I'm looking for.",
+      "rationale": "Contains only role, means and rationale; no implementation or testing comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to view a transcript of a game, so that I can see the stories and estimates.",
+      "rationale": "Straightforward role, means and rationale without extraneous information.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to export a transcript of a game as a HTML file, so that I can save the stories and estimates locally.",
+      "rationale": "Specifying a file format is part of the requirement, not an extraneous implementation note.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to export a transcript of a game as a CSV file, so that I can further process the stories and estimates.",
+      "rationale": "Like PP-018, format is a valid part of the requirement; no extraneous implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to delete a game, so that stories and estimates for this game are no longer stored.",
+      "rationale": "Only role, means and rationale; no external procedural or implementation comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "entering my name, email address, a password and a username",
+      "rationale": "Lists required account fields as part of the means; this is core requirement content rather than an implementation/testing note.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to log in using my account name and password, so that I can start using the application.",
+      "rationale": "Contains only role, means and purpose; no extraneous implementation or testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to change my account details, so that I can keep my account details up-to-date.",
+      "rationale": "Only role, means and rationale present; no external comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to delete my account, so that account information and games are no longer stored.",
+      "rationale": "Role, means and goal only; no extraneous implementation/testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to see dates and times in my local timezone, so that I don't have to do timezone conversion myself.",
+      "rationale": "Requirement includes a locale preference but no implementation/mock-up/testing details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a moderator, I want to get a password reminder by email, so that I can get back to using the application when I've forgotten my password.",
+      "rationale": "Functional requirement; no extraneous procedural or testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "select whether to have the team estimate with {0, 1/2, 1, 2, 3, 5, 8, etc.} or {0, 1, 2, 4, 8, 16, 32, etc.}",
+      "rationale": "Includes detailed implementation/configuration options (specific card value sets) which are finer-grained implementation details beyond the core story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "A numeric limit is part of the requirement (capacity constraint), not an extraneous implementation/testing note.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "join a game by entering my name on the page I received the URL for",
+      "rationale": "Describes the means of joining; no extra implementation/testing comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As an estimator, I want to see the item we're estimating, so that I know what I'm giving an estimate for.",
+      "rationale": "Simple role, means and rationale with no extraneous details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As an estimator, I want to see all items we will try to estimate this session, so that I have a feel for the sizes",
+      "rationale": "Contains only role, means and rationale; no implementation/testing notes present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a participant, I want to immediately see that an estimate has been given by a specific estimator",
+      "rationale": "'Immediately' is a timing requirement, but not an extraneous implementation or testing note; the story remains minimal.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "be shown all estimates at the same time after all estimators have given their estimate",
+      "rationale": "Functional behaviour described; no external implementation/testing comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "be able to change my estimate up until the last person selects a card and all are shown",
+      "rationale": "Describes allowed user action and condition (not an implementation hint); stays within role/means/goal.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "be able to see each estimator's prior estimates for the story being estimated",
+      "rationale": "Requirement describes needed visibility; no implementation or testing notes included.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "want to see who gave what estimates during the current round",
+      "rationale": "Role, means and rationale only; no extraneous mock-ups or procedural instructions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "want to be able start a two-minute countdown timer that all participants can see",
+      "rationale": "Specifying a duration is part of the requirement; it is not an implementation/testing note.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "two-minute timer reset itself as soon as we all play an estimate",
+      "rationale": "Describes functional trigger behavior; not an extraneous implementation or testing comment.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Only role, means and rationale are present; no separate implementation/testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "always have the cards in the same order across multiple draws",
+      "rationale": "Requirement describes consistent behaviour; no extraneous comments or mock-ups.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "Describes allowed user action and condition; stays within minimal story content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "have a small thumbnail photo displayed near where my cards are played",
+      "rationale": "UI preference (small thumbnail) is part of the feature description; not a separate implementation note.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "have written a site which is compliant with XHTML and CSS standards, so that as many people as possible can access the site",
+      "rationale": "Specifying compliance goals is part of the requirement; contains no extraneous mock-up or testing instructions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "have a list of definitions for commonly used terms",
+      "rationale": "Simple role and means; no implementation or procedural notes included.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "have created database indexes, so that the queries run as fast as possible",
+      "rationale": "Developer-focused technical requirement; although implementation-oriented, it is stated as the core means and rationale, not as an external comment.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "function correctly in Internet Explorer 6 and 7, Firefox 1.5 and 2, and Safari 2",
+      "rationale": "Lists detailed browser/version compatibility targets—an environmental/implementation constraint that is finer-grained than the core story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "have the site comply with the W3C accessibility guidelines where possible",
+      "rationale": "Accessibility compliance is a requirement-level goal rather than an extraneous implementation or testing note.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "have the application respond quickly to my actions, so that I don't get bored",
+      "rationale": "Performance expectation stated as goal; no external procedural or testing instructions included.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "be able to use Unicode, so that I can use any language I like",
+      "rationale": "Functional requirement about supported characters; not an implementation/testing note.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "see sensible and predictable URLs, so that the application feels logical and transparent",
+      "rationale": "Describes a user-facing requirement; no extraneous comments or implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "have nice error pages when something goes wrong",
+      "rationale": "User-facing requirement wording only; no mock-ups, implementation hints, or testing notes included.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "want results to be stored in a non-identifiable way",
+      "rationale": "Privacy requirement expressed as means; not an extraneous implementation/testing comment.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "want to be able to see some metrics on use of the game",
+      "rationale": "Simple role and means with implied rationale; contains no implementation/testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

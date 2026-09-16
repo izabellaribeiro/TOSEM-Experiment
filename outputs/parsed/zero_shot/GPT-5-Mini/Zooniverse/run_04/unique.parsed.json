@@ -1,0 +1,576 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "Zooniverse",
+    "criterion": "Unique",
+    "run": 4,
+    "temperature": null,
+    "elapsed_seconds": 60.848
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to search and discover music using content identification or fingerprinting.",
+      "rationale": "Distinct search method (content identification/fingerprinting) not substantially contained in any other story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to search and discover music based on my profile.",
+      "rationale": "Search-by-profile is a distinct requirement compared to other discovery methods.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to search and discover music based on other users similar to myself.",
+      "rationale": "Collaborative/user-similarity based discovery differs materially from other search stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to search and discover music or ringback tones similar to a given music video based on content similarity.",
+      "rationale": "Specific goal (find music/ringback tones similar to a given music video) is distinct from other discovery stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to search and discover music by exploiting enriched metadata and image tags",
+      "rationale": "Search-by-enriched-metadata/image-tags is a distinct technique/scope from other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to upload tagged videos and have tags available for all further processing steps.",
+      "rationale": "Upload-and-propagate-tags is a distinct ingestion/metadata requirement not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to view thumbnail sequences of video segments.",
+      "rationale": "UI need (view thumbnail sequences) is unique and not repeated in backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "As a user, I want to get info about similar video items and segments.",
+      "rationale": "Substantially duplicates ZO-009 which requests info about 'perceptually similar' items—no meaningful difference in actor/context/goal.",
+      "related_story_ids": [
+        "ZO-009"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "As a user, I want to get info about perceptually similar video items and segments.",
+      "rationale": "Substantially contained in / duplicates ZO-008 (both request info about similar items/segments; 'perceptually' is a narrower subtype, not a meaningful actor/context/goal change).",
+      "related_story_ids": [
+        "ZO-008"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to receive content recommendations from similar profiles.",
+      "rationale": "Distinct recommendation source (similar profiles) not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to receive content recommendations based on most relevant news events in my area.",
+      "rationale": "Recommendation based on local news/events is a distinct trigger and goal.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to identify persons in videos, and receive related information about them.",
+      "rationale": "Person identification and related-info requirement is specific and not duplicated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to identify products in videos, and receive related information about them.",
+      "rationale": "Product identification is a different object type than other identification stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to identify broadcaster logos in videos, and receive related information about them.",
+      "rationale": "Logo identification is a specific detection need distinct from other items.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to identify brands in videos, and receive related information about them.",
+      "rationale": "Brand identification differs in target from other identification stories; thematic similarity alone doesn't imply duplication.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to take a picture or upload an image, so that I am recommended with videos related to that picture or image.",
+      "rationale": "Image-to-video recommendation is a distinct interaction and goal.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to walk around, access content using a geographical map and be informed if there are videos covering the area, monuments or any other relevant point of interest.",
+      "rationale": "Geo-map discovery requirement is unique in scope and context.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a user, I want to search content items using automatic speech recognition.",
+      "rationale": "ASR-based search is a unique search modality not repeated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As an admin, I want to see, validate and edit segmentation of videos.",
+      "rationale": "Admin segmentation validation/editing is a specific administrative task not duplicated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As an admin, I want to annotate news video segments and extract a topic for each segment.",
+      "rationale": "News-segment annotation and topic extraction is a distinct admin function.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As an admin, I want to filter and rank videos based on A/V quality aspects.",
+      "rationale": "Filtering/ranking by A/V quality is a distinct requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As an admin, I want to get a quick assessment of whether audio material has been edited before the upload.",
+      "rationale": "Edited-audio detection is a specific validation need not duplicated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As an admin, I want to prefilter nudity content.",
+      "rationale": "Nudity prefiltering is a specific content-moderation requirement distinct from others.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As an admin, I want to prefilter content using search based on low­level asset information.",
+      "rationale": "Prefiltering based on low-level asset info is distinguished from high-level tag/metadata prefiltering (ZO-026).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As an admin, I want to automatically validated the ingested contents for copyright infringement.",
+      "rationale": "Automatic copyright validation is a unique legal/validation requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As an admin, I want to prefilter the content using search on high­level asset information such as metadata and tags",
+      "rationale": "Prefiltering based on high-level metadata/tags differs materially from low-level asset prefiltering (ZO-024).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to assess how interesting or appealing or complex a picture is based on automated analysis, citizen annotations, and comments on Talk.",
+      "rationale": "Assessment of picture 'interestingness' using combined signals is a specific analytic requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to detect when a scientist should be prompted to look at a subject, based on annotations and information from Talk comments.",
+      "rationale": "Prompting scientists based on annotations/Talk is a distinct detection trigger and goal.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to identify volunteer types.",
+      "rationale": "Volunteer type identification is a unique classification requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to preclassify the Galaxy Zoo images using simple low­level image features.",
+      "rationale": "Galaxy Zoo preclassification is project-specific and distinct from other preclassification stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to automatically detect Snapshot Serengeti images with no classifiable animals in them.",
+      "rationale": "Project-specific detection (Snapshot Serengeti) differs from other project-specific requirements.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to perform automatic image series detection for the case of timestamping malfunction in Snapshot Serengeti images.",
+      "rationale": "Specific detection for timestamping malfunction is a unique technical requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to perform automatic animal species preclassification in Snapshot Serengeti.",
+      "rationale": "Species preclassification for Snapshot Serengeti is project- and goal-specific and not duplicated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to perform automatic animal attribute preclassification in Snapshot Serengeti.",
+      "rationale": "Attribute preclassification (e.g., age/sex/etc.) differs from species/number detection; not a duplicate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to perform automatic animal number detection in Snapshot Serengeti.",
+      "rationale": "Animal count detection is a distinct analytic goal from other Snapshot Serengeti tasks.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to perform automatic segmentation or localization of plankton in Plankton Portal.",
+      "rationale": "Plankton segmentation/localization is a project-specific vision task not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to automatically detect Plankton Portal images with no classifiable plankton in them.",
+      "rationale": "Project-specific 'no classifiable plankton' detection differs from Snapshot Serengeti equivalent (ZO-031).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to perform automatic detection of plankton size or orientation in Plankton Portal images.",
+      "rationale": "Size/orientation detection is a specific analytic requirement distinct from other plankton stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to perform automatic preclassification of plankton species in Plankton Portal images.",
+      "rationale": "Plankton species preclassification is a specific classification task not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to perform automatic worm motion analysis to reduce video duration in Worm Watch Lab.",
+      "rationale": "Worm motion analysis for video reduction is project- and purpose-specific and unique.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to automatically detect the time in a Worm Watch Lab video where the worm lays an egg.",
+      "rationale": "Event detection (egg-laying) is a distinct requirement from general motion analysis (ZO-040).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to detect important features such as areas of flooding, damage, temporary shelters, blocked roads etc in the satellite images.",
+      "rationale": "Satellite imagery feature detection is a unique task not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to assess the probability/weight of a volunteer’s classification based on their experience.",
+      "rationale": "Assessing classification weight by experience is a specific analytics requirement distinct from other backlog items.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to perform prefiltering of the images to remove artefacts such as bright stars and camera read errors.",
+      "rationale": "Artefact removal is a specific prefiltering goal not duplicated by other image prefilter stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to detect moving and transient objects in the images.",
+      "rationale": "Moving/transient object detection is a distinct vision requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to remove background noise and distracting sounds from the audio files.",
+      "rationale": "Audio denoising is a specific processing need distinct from filtering/ranking tasks.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to group whale calls that are similar.",
+      "rationale": "Whale-call grouping is a domain-specific clustering task not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to identify the number of whales heard in a single audio file.",
+      "rationale": "Counting whales in audio is a distinct detection/estimation task separate from grouping (ZO-047).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to know when I should interrupt a volunteer.",
+      "rationale": "Decision to interrupt is a distinct control/timing requirement not duplicated by other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to know whether I should interrupt a volunteer with text, an image, or a video.",
+      "rationale": "Modality-choice for interruption is a specific aspect tied to interruption (ZO-049) but not a duplicate since it addresses modality.",
+      "related_story_ids": [
+        "ZO-049"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to know when I should educate a volunteer.",
+      "rationale": "'When to educate' differs in goal (education) from 'when to interrupt' or other moderation actions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to know whether I should educate a volunteer with text, an image, or a video.",
+      "rationale": "Modality-choice for education is distinct from modality-choice for interruption (ZO-050) and addresses a different goal.",
+      "related_story_ids": [
+        "ZO-051",
+        "ZO-050"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin,I want to know which piece of education I should give to a volunteer.",
+      "rationale": "Selecting the specific educational content is a distinct decision from timing or modality questions.",
+      "related_story_ids": [
+        "ZO-051",
+        "ZO-052"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to know when a volunteer has made an interesting comment on a subject.",
+      "rationale": "Detecting interesting volunteer comments is a unique signal-detection requirement not duplicated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "As a Zooniverse admin, I want to know when Zoonibot should comment on a subject.",
+      "rationale": "Substantially duplicates ZO-056 ('when Zoonibot should give an explanation') — timing of Zoonibot comments and timing of explanations are not meaningfully different actors/contexts/goals.",
+      "related_story_ids": [
+        "ZO-056"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Unique",
+      "decision": "Violation",
+      "evidence": "As a Zooniverse admin, I want to know when Zoonibot should give an explanation.",
+      "rationale": "Substantially contained in / duplicates ZO-055 (both concern when Zoonibot should interject; 'explanation' is a type of comment rather than a meaningful change in goal/context).",
+      "related_story_ids": [
+        "ZO-055"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to know what Zoonibot should say to a volunteer.",
+      "rationale": "Specifying content of Zoonibot messages is a different requirement (message content) than timing of comments/explanations (ZO-055/056).",
+      "related_story_ids": [
+        "ZO-055",
+        "ZO-056"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to group subjects by similarity.",
+      "rationale": "Grouping subjects by similarity is a distinct clustering requirement not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As a Zooniverse admin, I want to recommend different projects to volunteers based on their previous experiences.",
+      "rationale": "Project recommendation for volunteers is a distinct recommendation goal separate from content recommendations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Unique",
+      "decision": "No Violation",
+      "evidence": "As an admin, I want to see a summary of articles, so that I reuse them.",
+      "rationale": "Article summarization for reuse is a unique content-processing requirement not duplicated elsewhere.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}
