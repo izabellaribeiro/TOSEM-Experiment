@@ -4,11 +4,11 @@
   "runs_per_condition": 5,
   "temperature": 0,
   "datasets": {
-    "PlanningPoker": "data/canonical/planningpoker.txt",
-    "BADCamp": "data/canonical/badcamp.txt",
-    "Zooniverse": "data/canonical/zooniverse.txt"
+    "PlanningPoker": "data/processed/planningpoker.txt",
+    "BADCamp": "data/processed/badcamp.txt",
+    "Zooniverse": "data/processed/zooniverse.txt"
   },
-  "ground_truth_csv": "ground_truth/gold_standard_qus13_final.csv",
+  "ground_truth_csv": "data/ground_truth/gold_standard_qus13_final.csv",
   "models": [
     {
       "provider": "openai",
@@ -54,19 +54,19 @@
     {
       "id": "zero_shot",
       "label": "Zero-shot",
-      "template": "prompts/zero_shot.txt",
+      "template": "prompts/zero_shot/template.txt",
       "shots": 0
     },
     {
       "id": "one_shot",
       "label": "One-shot",
-      "template": "prompts/one_shot.txt",
+      "template": "prompts/one_shot/template.txt",
       "shots": 1
     },
     {
       "id": "few_shot",
       "label": "Few-shot",
-      "template": "prompts/few_shot.txt",
+      "template": "prompts/few_shot/template.txt",
       "shots": 4
     }
   ]

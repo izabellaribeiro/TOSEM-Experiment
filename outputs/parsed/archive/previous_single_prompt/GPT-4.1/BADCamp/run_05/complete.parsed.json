@@ -1,0 +1,837 @@
+{
+  "metadata": {
+    "provider": "openai",
+    "model_requested": "gpt-4.1",
+    "model_label": "GPT-4.1",
+    "project": "BADCamp",
+    "criterion": "Complete",
+    "run": 5,
+    "temperature": 0,
+    "elapsed_seconds": 56.928
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "view a list of sponsors",
+      "rationale": "The ability to view sponsors is supported by stories for sponsor creation and management (e.g., BC-021, BC-023).",
+      "related_story_ids": [
+        "BC-021",
+        "BC-023"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "view a list of user profiles",
+      "rationale": "User profile creation and update are covered (BC-068, BC-032).",
+      "related_story_ids": [
+        "BC-068",
+        "BC-032"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "email all the trainers at once",
+      "rationale": "Trainer roles and user management are present; emailing is a complementary feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "clear map where the buildings and rooms are",
+      "rationale": "Venue and room creation/maintenance are covered (BC-024, BC-054).",
+      "related_story_ids": [
+        "BC-024",
+        "BC-054"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "edit my training node myself",
+      "rationale": "No story describes the creation of a training node by a trainer; only editing is present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "limit to one registration per day",
+      "rationale": "Registration for trainings is covered (BC-008, BC-012, BC-011).",
+      "related_story_ids": [
+        "BC-008",
+        "BC-011",
+        "BC-012"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "admin view that helps track registration status",
+      "rationale": "Registration and attendee management are covered in other stories.",
+      "related_story_ids": [
+        "BC-008",
+        "BC-011",
+        "BC-012"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "added to a training waitlist",
+      "rationale": "Training registration and waitlist are supported by related stories.",
+      "related_story_ids": [
+        "BC-006",
+        "BC-011",
+        "BC-012"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "accept the cancellation terms with a checkbox",
+      "rationale": "Cancellation workflow is referenced in BC-010.",
+      "related_story_ids": [
+        "BC-010"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "tie in a cancellation deadline",
+      "rationale": "Cancellation and registration workflows are present.",
+      "related_story_ids": [
+        "BC-009",
+        "BC-006",
+        "BC-008"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "add to 'my schedule'",
+      "rationale": "Schedule feature is referenced and supported by registration and session stories.",
+      "related_story_ids": [
+        "BC-012",
+        "BC-055"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see which trainings I have signed up for",
+      "rationale": "Training registration is covered (BC-008, BC-011).",
+      "related_story_ids": [
+        "BC-008",
+        "BC-011"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "view attached to their training node that shows all attendee information",
+      "rationale": "Training nodes and attendee management are present.",
+      "related_story_ids": [
+        "BC-005",
+        "BC-007",
+        "BC-014"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "admin view where all trainee information is shown",
+      "rationale": "Trainee registration and information are covered.",
+      "related_story_ids": [
+        "BC-006",
+        "BC-008",
+        "BC-012"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "dedicated page for each class",
+      "rationale": "Class/training creation and details are covered in related stories.",
+      "related_story_ids": [
+        "BC-016",
+        "BC-017"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "training options clearly marked",
+      "rationale": "Training offerings and details are covered.",
+      "related_story_ids": [
+        "BC-015",
+        "BC-017"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "training landing page with an intro section and a list of all training offerings",
+      "rationale": "Training offerings and landing page are supported by other stories.",
+      "related_story_ids": [
+        "BC-015",
+        "BC-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "link on the home page to a list of training options",
+      "rationale": "Training options and navigation are covered.",
+      "related_story_ids": [
+        "BC-015",
+        "BC-016",
+        "BC-017"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "find out where the coding lounge is and what time it is open",
+      "rationale": "Venue and schedule management are present.",
+      "related_story_ids": [
+        "BC-024",
+        "BC-054",
+        "BC-055"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "refund sponsorship money",
+      "rationale": "Sponsorship payment and management are covered (BC-021, BC-023, BC-030).",
+      "related_story_ids": [
+        "BC-021",
+        "BC-023",
+        "BC-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "become a $350 level sponsor",
+      "rationale": "Sponsorship creation and payment are covered (BC-023, BC-030).",
+      "related_story_ids": [
+        "BC-023",
+        "BC-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "list of attendees associated with this company",
+      "rationale": "Attendee and sponsor management are present.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-021",
+        "BC-023"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify myself as and pay for a $350 company sponsorship",
+      "rationale": "Sponsorship payment and management are covered.",
+      "related_story_ids": [
+        "BC-021",
+        "BC-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "create and maintain venues",
+      "rationale": "Venue creation and management are covered.",
+      "related_story_ids": [
+        "BC-025",
+        "BC-054"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "view venue details",
+      "rationale": "Venue creation and details are covered (BC-024).",
+      "related_story_ids": [
+        "BC-024"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see a list of the sessions associated with sponsor attendees",
+      "rationale": "Sessions and sponsor management are present.",
+      "related_story_ids": [
+        "BC-029",
+        "BC-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see a payment page to pay for my individual sponsorships",
+      "rationale": "Sponsorship payment and registration are covered.",
+      "related_story_ids": [
+        "BC-030",
+        "BC-066"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "assign sponsors to events, trainings and summits",
+      "rationale": "Sponsor and event management are present.",
+      "related_story_ids": [
+        "BC-029",
+        "BC-031"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see all events, trainings and summits that a sponsor is sponsoring",
+      "rationale": "Sponsor and event management are present.",
+      "related_story_ids": [
+        "BC-028",
+        "BC-031"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "enter payment information and have my card charged for an individual sponsorship",
+      "rationale": "Sponsorship payment and registration are covered.",
+      "related_story_ids": [
+        "BC-027",
+        "BC-066"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page",
+      "rationale": "Attendee and sponsor management are present.",
+      "related_story_ids": [
+        "BC-029",
+        "BC-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "update my user profile",
+      "rationale": "User profile creation is covered (BC-068).",
+      "related_story_ids": [
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "sign up for the BADCamp newsletter",
+      "rationale": "Newsletter signup is a standalone feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "tag my blog posts for consumption by Drupal Planet",
+      "rationale": "Blog post creation is covered (BC-035).",
+      "related_story_ids": [
+        "BC-035"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "create blog posts",
+      "rationale": "Blog post creation and consumption are covered.",
+      "related_story_ids": [
+        "BC-034",
+        "BC-036"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "read the blog",
+      "rationale": "Blog post creation is covered (BC-035).",
+      "related_story_ids": [
+        "BC-035"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "sponsor a summit",
+      "rationale": "Summit and sponsorship management are present.",
+      "related_story_ids": [
+        "BC-038",
+        "BC-043"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "register for a summit",
+      "rationale": "Summit registration and management are present.",
+      "related_story_ids": [
+        "BC-040",
+        "BC-041"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "get detailed directions to the summit venue",
+      "rationale": "Venue and summit management are present.",
+      "related_story_ids": [
+        "BC-024",
+        "BC-025"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see what summits I'm signed up for",
+      "rationale": "Summit registration is covered (BC-038).",
+      "related_story_ids": [
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see a list of attendees signed up for my summit",
+      "rationale": "Summit registration and attendee management are present.",
+      "related_story_ids": [
+        "BC-038",
+        "BC-040"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "list basic information about my summit",
+      "rationale": "Summit creation and management are present.",
+      "related_story_ids": [
+        "BC-038",
+        "BC-046"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "list sponsors for my summit",
+      "rationale": "Summit and sponsor management are present.",
+      "related_story_ids": [
+        "BC-037",
+        "BC-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "list an agenda for my summit",
+      "rationale": "Summit creation and management are present.",
+      "related_story_ids": [
+        "BC-042",
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see how many seats are left for the summit",
+      "rationale": "Summit registration and seat tracking are present.",
+      "related_story_ids": [
+        "BC-038",
+        "BC-040"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see specific details on summits",
+      "rationale": "Summit creation and management are present.",
+      "related_story_ids": [
+        "BC-042",
+        "BC-047"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits",
+      "rationale": "Summit creation and management are present.",
+      "related_story_ids": [
+        "BC-042",
+        "BC-046"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "learn about sponsorship levels",
+      "rationale": "Sponsorship creation and management are present.",
+      "related_story_ids": [
+        "BC-021",
+        "BC-023"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "use a WYSIWYG editor for all long-form content",
+      "rationale": "Content creation and editing are present.",
+      "related_story_ids": [
+        "BC-032",
+        "BC-035",
+        "BC-061"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "link to my sponsorship profile from my job listings",
+      "rationale": "Job posting and sponsorship profile management are present.",
+      "related_story_ids": [
+        "BC-052",
+        "BC-064"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "learn about posting jobs as a sponsor",
+      "rationale": "Job posting as a sponsor is covered (BC-052).",
+      "related_story_ids": [
+        "BC-052"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "post a job",
+      "rationale": "Job posting and job board are present.",
+      "related_story_ids": [
+        "BC-053"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "view the job board",
+      "rationale": "Job posting is covered (BC-052).",
+      "related_story_ids": [
+        "BC-052"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "assign a room to a time slot and a location",
+      "rationale": "Room, venue, and schedule management are present.",
+      "related_story_ids": [
+        "BC-024",
+        "BC-055"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see the schedule",
+      "rationale": "Schedule creation and management are present.",
+      "related_story_ids": [
+        "BC-054"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see the final list of sessions approved",
+      "rationale": "Session submission and approval are present (BC-057, BC-058, BC-062, BC-063).",
+      "related_story_ids": [
+        "BC-057",
+        "BC-058",
+        "BC-062",
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "bulk approve sessions as accepted",
+      "rationale": "Session submission and approval are present.",
+      "related_story_ids": [
+        "BC-056",
+        "BC-058",
+        "BC-062",
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "mark a session as accepted",
+      "rationale": "Session submission and approval are present.",
+      "related_story_ids": [
+        "BC-056",
+        "BC-057",
+        "BC-062",
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "receive a notification when sessions have been evaluated",
+      "rationale": "Session submission and evaluation are present.",
+      "related_story_ids": [
+        "BC-056",
+        "BC-057",
+        "BC-058",
+        "BC-062",
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "receive a notification when I submit a session",
+      "rationale": "Session submission is present (BC-062, BC-063).",
+      "related_story_ids": [
+        "BC-062",
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "edit my session",
+      "rationale": "No story describes the creation of a session by an authenticated user; only editing is present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "register to speak at BADCamp",
+      "rationale": "Session submission is present.",
+      "related_story_ids": [
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "submit a session at BADCAMP",
+      "rationale": "Session submission is present.",
+      "related_story_ids": [
+        "BC-062"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "personalize my sponsorship page",
+      "rationale": "Sponsorship creation and management are present.",
+      "related_story_ids": [
+        "BC-021",
+        "BC-023"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits that include when they are",
+      "rationale": "Summit creation and management are present.",
+      "related_story_ids": [
+        "BC-047",
+        "BC-046"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "offered several choices of individual sponsorship",
+      "rationale": "Sponsorship creation and payment are present.",
+      "related_story_ids": [
+        "BC-027",
+        "BC-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "find a link in the menu that links to the registration form",
+      "rationale": "User registration is present (BC-068).",
+      "related_story_ids": [
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "fill out a user registration form",
+      "rationale": "User registration and profile management are present.",
+      "related_story_ids": [
+        "BC-032"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "find session information",
+      "rationale": "Session creation and management are present.",
+      "related_story_ids": [
+        "BC-056",
+        "BC-062",
+        "BC-063"
+      ],
+      "confidence": "High"
+    }
+  ]
+}

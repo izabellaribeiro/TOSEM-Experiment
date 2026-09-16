@@ -1,0 +1,637 @@
+{
+  "metadata": {
+    "provider": "openai",
+    "model_requested": "gpt-5.2",
+    "model_label": "GPT-5.2",
+    "project": "BADCamp",
+    "criterion": "Uniform",
+    "run": 2,
+    "temperature": 0,
+    "elapsed_seconds": 47.257
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to view a list of sponsors, so that...",
+      "rationale": "Matches the dominant backlog template 'As a <role>, I want to <goal>, so that <benefit>'.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to view a list of user profiles, so that...",
+      "rationale": "Uses the same 'As a/I want/so that' structure as the majority of stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainingcoordinator, I want to email all the trainers at once..., so that...",
+      "rationale": "Conforms to the dominant user story template despite wording issues.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to have a very clear map..., so that...",
+      "rationale": "Follows the standard 'As a/I want/so that' pattern used by the backlog majority.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainer, I want to edit my training node myself, so that...",
+      "rationale": "Uses the dominant template; extra trailing text does not change the template form.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainee, I want to limit to one registration per day..., so that...",
+      "rationale": "Keeps the same 'As a/I want/so that' structure as most stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainingcoordinator, I want to have an admin view..., so that...",
+      "rationale": "Still follows the dominant template even with duplicated 'so that'.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to be added to a training waitlist, so that...",
+      "rationale": "Uses the same overall user story template as the backlog majority.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainee, I want to must accept the cancellation terms..., so that...",
+      "rationale": "Despite grammatical issues, it retains the dominant 'As a/I want/so that' template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainingcoordinator, I want to tie in a cancellation deadline..., so that...",
+      "rationale": "Conforms to the dominant template; duplicated 'so that' is not a template deviation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainee, I want to add to \"my schedule\"..., so that...",
+      "rationale": "Uses the same 'As a/I want/so that' structure as most backlog items.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainee, I want to see which trainings I have signed up for, so that...",
+      "rationale": "Matches the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Uniform",
+      "decision": "Violation",
+      "evidence": "As a trainer, I want to have a view... that shows all attendee information Trainers can see all class attendance at first because...",
+      "rationale": "Materially deviates from the dominant template by embedding substantial non-template narrative/justification inside the 'I want' clause rather than keeping a clean 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainingcoordinator, I want to have an admin view..., so that...",
+      "rationale": "Uses the dominant 'As a/I want/so that' template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Uniform",
+      "decision": "Violation",
+      "evidence": "As a anonymoususer, I want to have a dedicated page for each class... The following information must be shown: ... The URL path should be SEO friendly ...",
+      "rationale": "Adds extensive requirements/specification text within the story, making it materially different in form from the dominant simple 'As a/I want/so that' template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Uniform",
+      "decision": "Violation",
+      "evidence": "As a anonymoususer, I want to have the training options clearly marked for the following information: ...",
+      "rationale": "Contains a long embedded list of detailed fields/constraints, materially deviating in template usage compared to the backlog majority's concise 'As a/I want/so that' format.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to have a training landing page..., so that...",
+      "rationale": "Follows the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to have a link on the home page..., so that...",
+      "rationale": "Uses the same 'As a/I want/so that' structure as the majority.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to find out where the coding lounge is..., so that...",
+      "rationale": "Conforms to the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to refund sponsorship money..., so that...",
+      "rationale": "Matches the dominant 'As a/I want/so that' template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to find a link on the sponsorships page..., so that...",
+      "rationale": "Uses the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to See a list of attendees..., so that...",
+      "rationale": "Follows the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to identify myself as and pay for..., so that...",
+      "rationale": "Conforms to the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to create and maintain venues, so that...",
+      "rationale": "Uses the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to view venue details, so that...",
+      "rationale": "Matches the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see a list of the sessions..., so that...",
+      "rationale": "Conforms to the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to See a payment page..., so that...",
+      "rationale": "Uses the dominant 'As a/I want/so that' template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Uniform",
+      "decision": "Violation",
+      "evidence": "As a administrator, I want to assign sponsors to events, trainings and summits so that They will be featured...",
+      "rationale": "Materially deviates from the dominant template by omitting the 'I want to ... , so that ...' comma-separated structure and collapsing into 'I want ... so that ...' with inconsistent casing/structure compared to the majority.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Uniform",
+      "decision": "Violation",
+      "evidence": "As a anonymoususer, I want to see all events, trainings and summits that a sponsor is sponsoring so that I know...",
+      "rationale": "Deviates from the dominant template by missing the standard punctuation/segmentation (no comma before 'so that'), making the template usage inconsistent with the backlog majority.",
+      "related_story_ids": [
+        "BC-028"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to Enter payment information..., so that...",
+      "rationale": "Follows the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a sponsor, I want to link BADCamp attendees..., so that...",
+      "rationale": "Matches the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to update my user profile, so that...",
+      "rationale": "Uses the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to sign up for the BADCamp newsletter, so that...",
+      "rationale": "Conforms to the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to tag my blog posts..., so that...",
+      "rationale": "Matches the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to create blog posts, so that...",
+      "rationale": "Uses the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to read the blog, so that...",
+      "rationale": "Conforms to the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a sponsor, I want to sponsor a summit..., so that...",
+      "rationale": "Matches the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to register for a summit, so that...",
+      "rationale": "Uses the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to get detailed directions..., so that...",
+      "rationale": "Conforms to the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to see what summits I'm signed up for, so that...",
+      "rationale": "Matches the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a summit coordinator, I want to see a list of attendees..., so that...",
+      "rationale": "Uses the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a summit coordinator, I want to list basic information..., so that...",
+      "rationale": "Conforms to the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a summit coordinator, I want to list sponsors for my summit, so that...",
+      "rationale": "Matches the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a summit coordinator, I want to list an agenda for my summit, so that...",
+      "rationale": "Uses the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see how many seats are left..., so that...",
+      "rationale": "Conforms to the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see specific details on summits, so that...",
+      "rationale": "Uses the dominant user story template (even if the benefit clause is long).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see a list of all the summits, so that...",
+      "rationale": "Matches the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to learn about sponsorship levels, so that...",
+      "rationale": "Conforms to the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to use a WYSIWYG editor..., so that...",
+      "rationale": "Uses the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a sponsor, I want to Link to my sponsorship profile..., so that...",
+      "rationale": "Conforms to the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to learn about posting jobs..., so that...",
+      "rationale": "Matches the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a sponsor, I want to post a job, so that...",
+      "rationale": "Uses the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to view the job board, so that...",
+      "rationale": "Conforms to the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to assign a room to a time slot..., so that...",
+      "rationale": "Matches the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see the schedule, so that...",
+      "rationale": "Uses the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see the final list of sessions approved, so that...",
+      "rationale": "Conforms to the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to bulk approve sessions as accepted, so that...",
+      "rationale": "Matches the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to mark a session as accepted, so that...",
+      "rationale": "Uses the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to receive a notification..., so that...",
+      "rationale": "Conforms to the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to receive a notification when I submit a session, so that...",
+      "rationale": "Matches the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to edit my session, so that...",
+      "rationale": "Uses the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to register to speak at BADCamp, so that...",
+      "rationale": "Conforms to the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to submit a session at BADCAMP, so that...",
+      "rationale": "Matches the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a sponsor, I want to personalize my sponsorship page, so that...",
+      "rationale": "Uses the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see a list of all the summits that include when they are, so that...",
+      "rationale": "Conforms to the dominant template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to Be offered several choices..., so that...",
+      "rationale": "Uses the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to easily find a link in the menu..., so that...",
+      "rationale": "Matches the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to fill out a user registration form, so that...",
+      "rationale": "Conforms to the dominant 'As a/I want/so that' structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to find session information, so that...",
+      "rationale": "Uses the dominant user story template.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

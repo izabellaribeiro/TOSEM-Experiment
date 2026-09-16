@@ -1,0 +1,834 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "BADCamp",
+    "criterion": "Complete",
+    "run": 5,
+    "temperature": null,
+    "elapsed_seconds": 111.15
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing a list of sponsors is self-contained and does not expose a missing complementary capability in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing a list of user profiles is supported by account/profile stories (e.g., BC-032); no complementary capability is missing.",
+      "related_story_ids": [
+        "BC-032"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Emailing trainers from the website is an actionable admin feature; the backlog contains trainer/contact and admin communication stories that cover this area.",
+      "related_story_ids": [
+        "BC-013",
+        "BC-041"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "A clear map of buildings/rooms is an independent content/UX feature; related venue and schedule stories exist (BC-024, BC-054).",
+      "related_story_ids": [
+        "BC-024",
+        "BC-054"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "As a trainer, I want to edit my training node myself",
+      "rationale": "Many training-related stories assume editable training nodes, but there is no complementary story that creates training offerings (a create/submit-training story). The backlog lacks an explicit 'create training' or 'submit training' capability required before editing.",
+      "related_story_ids": [
+        "BC-015",
+        "BC-016",
+        "BC-017"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "I want to limit to one registration per day per authenticated user",
+      "rationale": "This enforces constraints on registrations, yet the backlog contains no explicit story for creating/registering for trainings (the required registration-create capability is missing).",
+      "related_story_ids": [
+        "BC-015",
+        "BC-016",
+        "BC-012"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "admin view that helps track registration status for each attendee",
+      "rationale": "Tracking registration status implies there are registration records to track; the backlog lacks a training-registration creation story to generate those records.",
+      "related_story_ids": [
+        "BC-012",
+        "BC-015"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "As a attendee, I want to be added to a training waitlist",
+      "rationale": "A waitlist presumes a registration flow and class capacity; there is no story that implements registering for a training (creation of enrollment) to pair with waitlist behavior.",
+      "related_story_ids": [
+        "BC-015",
+        "BC-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "I want to must accept the cancellation terms with a checkbox",
+      "rationale": "Accepting cancellation terms is part of a registration/cancellation workflow; the backlog lacks a concrete training registration/cancellation create flow that this would attach to.",
+      "related_story_ids": [
+        "BC-006",
+        "BC-010",
+        "BC-015"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "tie in a cancellation deadline to whatever registration / cancellation workflow exists",
+      "rationale": "This refers explicitly to tying into a registration/cancellation workflow, but no training-registration creation/cancellation stories are present to attach the deadline to.",
+      "related_story_ids": [
+        "BC-006",
+        "BC-009",
+        "BC-015"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "add to \"my schedule\" if there is a schedule feature on the site",
+      "rationale": "This is conditional ('if there is a schedule feature') and can be implemented as a personal bookmarking/scheduling feature with existing schedule stories (BC-054/BC-055); it does not strictly require a missing complementary create capability.",
+      "related_story_ids": [
+        "BC-054",
+        "BC-055"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "I want to see which trainings I have signed up for",
+      "rationale": "Showing signed-up trainings requires that users can sign up (create training registrations); the backlog does not include a story for creating training registrations.",
+      "related_story_ids": [
+        "BC-006",
+        "BC-015",
+        "BC-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "view that is attached to their training node that shows all attendee information",
+      "rationale": "Trainer views of attendees assume attendee enrollment records for trainings; without a training registration/create story, attendee data for trainings would not be created.",
+      "related_story_ids": [
+        "BC-005",
+        "BC-012",
+        "BC-015"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "admin view where all trainee information is shown and can be filtered to show a single training session",
+      "rationale": "Filtering trainee information by training session presumes training registrations exist; the backlog lacks the complementary registration-creation story for trainings.",
+      "related_story_ids": [
+        "BC-012",
+        "BC-015",
+        "BC-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "dedicated page for each class ... registrations remaining, link to register for class",
+      "rationale": "A class detail page referencing 'registrations remaining' and a 'link to register' requires a registration creation flow and capacity-management; no explicit training-registration/create story exists in the backlog.",
+      "related_story_ids": [
+        "BC-005",
+        "BC-012",
+        "BC-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "training options clearly marked ... remaining registrations, link to full details, register now link",
+      "rationale": "Listing 'remaining registrations' and 'register now' on a training listing assumes a training registration flow exists; such a creation capability is not present in the backlog.",
+      "related_story_ids": [
+        "BC-015",
+        "BC-012",
+        "BC-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "training landing page with an intro section and a list of all training offerings and promote call for trainings",
+      "rationale": "The landing and 'call for trainings' imply a process to submit/create training offerings; there is no explicit story to create/submit training offerings, so the set is incomplete.",
+      "related_story_ids": [
+        "BC-005",
+        "BC-015",
+        "BC-016"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "link on the home page to a list of training options",
+      "rationale": "Linking to a list of training options presumes training offerings will be created/maintained; the backlog lacks an explicit story for creating training offerings, leaving the listing without a source of data.",
+      "related_story_ids": [
+        "BC-017",
+        "BC-005",
+        "BC-015"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Finding where the coding lounge is and hours can be implemented via venue/location content; relevant venue and schedule stories exist (BC-024, BC-054).",
+      "related_story_ids": [
+        "BC-024",
+        "BC-054"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "refund sponsorship money that was processed via stripe",
+      "rationale": "Refund capability is paired with payment stories (BC-030) and admin privileges; complementary payment/refund stories exist in the backlog.",
+      "related_story_ids": [
+        "BC-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Link to become a $350 level sponsor is a navigation/content item and is supported by sponsorship payment stories (BC-023, BC-030).",
+      "related_story_ids": [
+        "BC-023",
+        "BC-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing a list of attendees associated with a company is feasible given attendee and sponsor stories; no missing complementary capability is evident.",
+      "related_story_ids": [
+        "BC-031",
+        "BC-038"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "identify myself as and pay for a $350 company sponsorship",
+      "rationale": "Payment and identification for sponsorship are supported by payment stories (BC-030) and admin sponsorship management; required complements are present.",
+      "related_story_ids": [
+        "BC-030",
+        "BC-020"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "create and maintain venues",
+      "rationale": "Venue creation/maintenance is explicitly present and supports related viewing stories; no complementary capability is missing.",
+      "related_story_ids": [
+        "BC-025",
+        "BC-054"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "view venue details",
+      "rationale": "Viewing venue details is complementary to BC-024 (create/maintain venues) which exists, so no missing capability.",
+      "related_story_ids": [
+        "BC-024"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing a list of sessions associated with sponsor attendees is a read-only feature that can be implemented using existing session and sponsor stories; no missing create/update counterpart is required.",
+      "related_story_ids": [
+        "BC-056",
+        "BC-028"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "See a payment page to pay for my individual sponsorships as the third step of the registration process",
+      "rationale": "Payment page story aligns with other sponsorship payment stories (BC-023, BC-030); complementary pieces exist for a payment flow.",
+      "related_story_ids": [
+        "BC-023",
+        "BC-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "assign sponsors to events, trainings and summits",
+      "rationale": "Sponsor assignment to entity types is a management capability; while trainings have some missing creation aspects, sponsor assignment can still be applied to events/summits and training assignment can be implemented once training creation is added — the story itself does not expose an uncovered complementary that is strictly missing across the set.",
+      "related_story_ids": [
+        "BC-015",
+        "BC-042"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Showing events/trainings/summits that a sponsor supports is a read/aggregation feature relying on existing listing/detail stories; no essential complementary capability is absent for this story specifically.",
+      "related_story_ids": [
+        "BC-015",
+        "BC-046",
+        "BC-056"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "Enter payment information and have my card charged for an individual sponsorship",
+      "rationale": "Payment capture is present; pairing with admin refund (BC-020) covers the lifecycle; no missing complementary capability identified.",
+      "related_story_ids": [
+        "BC-020",
+        "BC-023"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page",
+      "rationale": "Linking attendees to sponsor pages is an integration/UX behavior that can be implemented from existing attendee and sponsor records; attendee records exist via registration/account stories.",
+      "related_story_ids": [
+        "BC-068",
+        "BC-038"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "update my user profile",
+      "rationale": "Profile update complements account creation (BC-068) which exists; no missing complementary capability.",
+      "related_story_ids": [
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "sign up for the BADCamp newsletter",
+      "rationale": "Newsletter signup is a simple capture feature; nothing in the backlog indicates a necessary complementary capability is missing to implement it.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "tag my blog posts for consumption by Drupal Planet",
+      "rationale": "Tagging blog posts is supported by blog creation story (BC-035); complementary capability exists.",
+      "related_story_ids": [
+        "BC-035"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "create blog posts",
+      "rationale": "Blog creation is present and matches the read story (BC-036); no missing complementary capability.",
+      "related_story_ids": [
+        "BC-036",
+        "BC-034"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "read the blog",
+      "rationale": "Reading the blog is supported by the blog creation story (BC-035); no missing complements.",
+      "related_story_ids": [
+        "BC-035"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sponsoring a summit is a sponsor action supported by sponsor and summit stories; no crucial complementary capability is missing for this story itself.",
+      "related_story_ids": [
+        "BC-043",
+        "BC-028"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "register for a summit",
+      "rationale": "Summit registration (creation of registration) is explicitly present (BC-038); supporting stories around summits exist, so this area is covered.",
+      "related_story_ids": [
+        "BC-045",
+        "BC-047"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "get detailed directions to the summit venue",
+      "rationale": "Directions are a read/UX feature supported by venue and summit details stories; no complementary capability missing.",
+      "related_story_ids": [
+        "BC-025",
+        "BC-046"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see what summits I'm signed up for",
+      "rationale": "This is supported by summit registration story (BC-038); necessary complementary capability exists.",
+      "related_story_ids": [
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see a list of attendees signed up for my summit",
+      "rationale": "Summit registration is present (BC-038), so listing attendees is supported; no missing complementary capability.",
+      "related_story_ids": [
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "list basic information about my summit",
+      "rationale": "Summit coordinators' ability to list summit info is supported by summit-related stories (BC-038, BC-047); no necessary complement missing.",
+      "related_story_ids": [
+        "BC-047",
+        "BC-046"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "list sponsors for my summit",
+      "rationale": "Listing sponsors for a summit is supported by sponsor assignment story (BC-028) and sponsor management; no missing complementary capability.",
+      "related_story_ids": [
+        "BC-028",
+        "BC-029"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "list an agenda for my summit",
+      "rationale": "Summit agenda listing is a content feature supported by summit stories; no complementary capability missing.",
+      "related_story_ids": [
+        "BC-042"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see how many seats are left for the summit",
+      "rationale": "Seat availability is tied to summit registration (BC-038) which exists; complementary capabilities are present.",
+      "related_story_ids": [
+        "BC-038"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see specific details on summits",
+      "rationale": "Summit details are covered by other summit stories and do not expose a missing complementary capability.",
+      "related_story_ids": [
+        "BC-042",
+        "BC-047"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits",
+      "rationale": "Listing summits is supported by summit coordinator stories; no missing complementary capability evident.",
+      "related_story_ids": [
+        "BC-042",
+        "BC-046"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "learn about sponsorship levels",
+      "rationale": "Sponsorship level information is static content that can be implemented without any missing complementary capability.",
+      "related_story_ids": [
+        "BC-023",
+        "BC-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "use a WYSIWYG editor for all long-form content",
+      "rationale": "Editor support is an implementation detail that complements content creation stories (e.g., BC-035); required complementary capabilities exist.",
+      "related_story_ids": [
+        "BC-035"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "Link to my sponsorship profile from my job listings",
+      "rationale": "Linking job listings to sponsor profile is feasible given job posting (BC-052) and sponsor profile stories; no missing complementary capability.",
+      "related_story_ids": [
+        "BC-052",
+        "BC-064"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "learn about posting jobs as a sponsor and contact the sponsorship person",
+      "rationale": "This is informational and ties to job posting/contact stories; no complementary capability missing for the informational requirement.",
+      "related_story_ids": [
+        "BC-052"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "post a job",
+      "rationale": "Job posting is present and paired with a view story (BC-053); no missing complementary capability.",
+      "related_story_ids": [
+        "BC-053"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "view the job board",
+      "rationale": "Viewing job board is supported by job posting (BC-052); no complementary capability absent.",
+      "related_story_ids": [
+        "BC-052"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "assign a room to a time slot and a location",
+      "rationale": "Schedule population story exists and ties to schedule viewing (BC-055); no missing complementary capability.",
+      "related_story_ids": [
+        "BC-055"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see the schedule",
+      "rationale": "Viewing the schedule is supported by schedule-population story (BC-054); no missing complementary capability.",
+      "related_story_ids": [
+        "BC-054"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see the final list of sessions approved",
+      "rationale": "Session approval and acceptance stories (BC-057, BC-058) exist to create the 'final list'; no complementary capability missing.",
+      "related_story_ids": [
+        "BC-057",
+        "BC-058"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "bulk approve sessions as accepted",
+      "rationale": "Bulk approve complements session acceptance and submission stories; the necessary session creation/submission stories (BC-063) exist.",
+      "related_story_ids": [
+        "BC-058",
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "mark a session as accepted",
+      "rationale": "Marking acceptance pairs with session submission and listing stories; session submission exists (BC-063), so no missing complementary capability.",
+      "related_story_ids": [
+        "BC-063",
+        "BC-056"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "receive a notification when sessions have been evaluated",
+      "rationale": "Notifications about session evaluation are complementary to submission and acceptance stories; those exist (BC-063, BC-058), so no missing capability.",
+      "related_story_ids": [
+        "BC-063",
+        "BC-058"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "receive a notification when I submit a session",
+      "rationale": "Notification on submission complements the session submission story (BC-063); the required complementary capability exists.",
+      "related_story_ids": [
+        "BC-063"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "edit my session",
+      "rationale": "Editing a session is supported by session submission and user-auth stories; the create/edit lifecycle for sessions is present (BC-063 and BC-058).",
+      "related_story_ids": [
+        "BC-063",
+        "BC-058"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "register to speak at BADCamp",
+      "rationale": "Session submission for speakers is covered by BC-063 (authenticated submission) and BC-060 (notification); although BC-062 is for anonymous users, the backlog covers submission pathways.",
+      "related_story_ids": [
+        "BC-063",
+        "BC-060"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "submit a session at BADCAMP",
+      "rationale": "Session submission (creation) is present and paired with editing/notification/acceptance stories; no complementary capability is missing.",
+      "related_story_ids": [
+        "BC-061",
+        "BC-059",
+        "BC-058"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "personalize my sponsorship page",
+      "rationale": "Sponsors personalizing their pages is supported by sponsor profile and payment stories; no missing complementary capability is evident.",
+      "related_story_ids": [
+        "BC-023",
+        "BC-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "list of all the summits that include when they are",
+      "rationale": "Summit listings are supported by summit coordinator stories; no missing complementary capability is apparent.",
+      "related_story_ids": [
+        "BC-047",
+        "BC-042"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "Be offered several choices of idividual sponsorship on the second page of registration",
+      "rationale": "Offering sponsorship choices in registration aligns with sponsorship/payment stories (BC-023, BC-030); the complementary payment flows exist.",
+      "related_story_ids": [
+        "BC-023",
+        "BC-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "find a link in the menu that links to the registration form",
+      "rationale": "This is a navigation feature pointing to registration; the backlog includes registration/account stories (BC-068) so no complementary capability is missing.",
+      "related_story_ids": [
+        "BC-068"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "fill out a user registration form",
+      "rationale": "Account/attendee registration is explicitly present; this provides the foundational create capability for user accounts and some attendee functionality.",
+      "related_story_ids": [
+        "BC-032",
+        "BC-067"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "find session information",
+      "rationale": "Finding session information is covered by session submission/approval/listing stories (BC-063, BC-056); no missing complementary capability.",
+      "related_story_ids": [
+        "BC-056",
+        "BC-063"
+      ],
+      "confidence": "High"
+    }
+  ]
+}

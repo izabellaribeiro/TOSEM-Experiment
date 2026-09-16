@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "BADCamp",
+    "criterion": "Unambiguous",
+    "run": 4,
+    "temperature": null,
+    "elapsed_seconds": 108.965
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "view a list of sponsors",
+      "rationale": "The story clearly states the action and target (view a list of sponsors); subjective word 'awesome' does not create materially different requirements.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "view a list of user profiles",
+      "rationale": "The intent and data needed (a list of user profiles) are clear and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "email all the trainers at once",
+      "rationale": "'At once' reasonably indicates a bulk email action; not so vague as to cause materially different implementations in context.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "very clear map",
+      "rationale": "'Very clear' is vague and underspecified (level of detail, zoom, annotations), allowing materially different interpretations of acceptance.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "edit my training node myself",
+      "rationale": "'Edit my training node' and 'links to slides' lack detail about which fields/permissions and whether slides are included, leading to multiple interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "one registration per day per authenticated user",
+      "rationale": "Ambiguous terms: 'per day' (calendar day vs rolling 24h) and whether it applies across all trainings or per training, which materially affect implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see if attendend, refunded, no show",
+      "rationale": "The required statuses are explicitly listed; although wording is rough, the meaning (attendance/refund/no-show) is clear for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "added to a training waitlist",
+      "rationale": "The action and purpose (waitlist) are clear and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "must accept the cancellation terms with a checkbox",
+      "rationale": "Requiring acceptance via checkbox is explicit; 'cancellation terms' content is separate but does not make the mechanism ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "tie in a cancellation deadline to whatever registration / cancellation workflow exists",
+      "rationale": "'Whatever workflow exists' is vague about which workflows and how the deadline integrates, causing materially different interpretations of scope and behavior.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "add to \"my schedule\" if there is a schedule feature on the site",
+      "rationale": "The conditional is explicit (only if schedule feature exists); the desired action (add to my schedule) is clear in that context.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see which trainings I have signed up for",
+      "rationale": "Clear intent and output; not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "shows all attendee information",
+      "rationale": "'All attendee information' is underspecified and privacy-sensitive; it's unclear which fields are included, allowing materially different implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "admin view where all trainee information is shown",
+      "rationale": "Similar to BC-013, 'all trainee information' is vague about which attributes are displayed, creating material ambiguity.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "The following information must be shown: Logo, title, trainers, location, ...",
+      "rationale": "The story lists concrete required fields; optional 'possibly a map view' is flagged as optional and does not make the core requirements ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "training options clearly marked for the following information:",
+      "rationale": "Provides a concrete list of fields to show; despite some redundancy, the required content is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "training landing page with an intro section and a list of all training offerings",
+      "rationale": "Intent is specific (landing page with intro and list); 'promote call for trainings' is a clear marketing element, not materially ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "link on the home page to a list of training options",
+      "rationale": "Specific UI placement and target are explicit; not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "find out where the coding lounge is and what time it is open",
+      "rationale": "Clear information requested (location and opening hours); level of detail is typical and not materially ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "refund sponsorship money that was processed via stripe",
+      "rationale": "Specifies payment processor (Stripe) and action (refund), which is concrete enough for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "link on the sponsorships page to become a $350 level sponsor",
+      "rationale": "Clear target (link on sponsorships page) and specific sponsorship level; not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "attendees associated with this company",
+      "rationale": "'Associated with this company' is vague (employee, registrant, tagged) and could lead to materially different attendee sets being shown.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "identify myself as and pay for a $350 company sponsorship",
+      "rationale": "Intent is concrete (identify and pay for specific sponsorship level); 'identify myself' is reasonably interpreted as selecting a company identity during payment.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "create and maintain venues",
+      "rationale": "CRUD for venues is explicit and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "view venue details",
+      "rationale": "Clear user action and goal; acceptable level of specificity for a story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "sessions associated with sponsor attendees",
+      "rationale": "Phrase 'sponsor attendees' is unclear (attendees from sponsor? attendees associated with sponsor?) causing materially different session lists to be returned.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "as the third step of the registration process",
+      "rationale": "Refers to 'third step' of a registration process that is not defined here; this dependency makes the story ambiguous about when/how the payment page appears.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "assign sponsors to events, trainings and summits",
+      "rationale": "Action and targets are explicit; resulting behavior (featured on sponsor page) is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see all events, trainings and summits that a sponsor is sponsoring",
+      "rationale": "Concrete list retrieval for a sponsor; not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "Enter payment information and have my card charged",
+      "rationale": "Standard payment action; sufficiently specific for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page",
+      "rationale": "Unclear what 'link attendees' means (list, connect profiles, tag), which leads to materially different implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "update my user profile",
+      "rationale": "Typical CRUD story; scope (profile fields) is expected to be handled elsewhere but not ambiguous for this story level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "sign up for the BADCamp newsletter",
+      "rationale": "Clear action and outcome; not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "tag my blog posts for consumption by Drupal Planet",
+      "rationale": "Specifies target system and action (tagging), which is concrete enough for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "create blog posts",
+      "rationale": "Clear content creation intent; not ambiguous at story level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "read the blog",
+      "rationale": "Straightforward user action; does not allow materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "sponsor a summit that matches my brand",
+      "rationale": "'Matches my brand' is subjective but is a marketing preference that doesn't create materially different technical requirements for listing or sponsorship functionality.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "register for a summit",
+      "rationale": "Clear action and outcome; not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "get detailed directions to the summit venue",
+      "rationale": "'Detailed directions' could vary, but the user intent is clear and typical; not likely to cause materially different implementations at story level.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see what summits I'm signed up for",
+      "rationale": "Clear retrieval of user's summit registrations; not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see a list of attendees signed up for my summit",
+      "rationale": "Actor (summit coordinator) and desired data (attendees) are explicit; acceptance criteria are straightforward.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "list basic information about my summit",
+      "rationale": "'Basic information' is underspecified (what fields count as basic) and could lead to materially different implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "list sponsors for my summit",
+      "rationale": "Clear list requirement; no ambiguity about what should be shown (sponsors) at a functional level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "list an agenda for my summit",
+      "rationale": "Clear content requirement (agenda) and purpose; not ambiguous for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see how many seats are left for the summit",
+      "rationale": "Concrete numeric requirement (seats left) with clear meaning; not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "see specific details on summits",
+      "rationale": "'Specific details' is vague about which attributes are required (agenda, speakers, logistics), enabling materially different implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits",
+      "rationale": "Clear list display requirement; not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "learn about sponsorship levels",
+      "rationale": "Clear informational intent; not open to materially different technical interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "use a WYSIWYG editor for all long-form content",
+      "rationale": "Reasonably specific: use of a WYSIWYG for long-form content is clear; 'long-form' is a common distinction and not materially ambiguous here.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "Link to my sponsorship profile from my job listings",
+      "rationale": "The desired link target and origin are explicit; implementation interpretation is straightforward.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "learn about posting jobs as a sponsor and contact the sponsorship person",
+      "rationale": "Clear informational and contact intent; not ambiguous for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "post a job",
+      "rationale": "Straightforward action; not vague at story level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "view the job board",
+      "rationale": "Clear user action and outcome; not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "assign a room to a time slot and a location",
+      "rationale": "The mapping of room to timeslot/location is explicit; though wordy, it is implementable without material ambiguity.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see the schedule",
+      "rationale": "Simple, clear viewing requirement; not ambiguous at story level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see the final list of sessions approved",
+      "rationale": "Explicit content (final approved sessions) and purpose; not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "bulk approve sessions as accepted",
+      "rationale": "Action and result are specific (bulk approve as accepted); implementation interpretation is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "mark a session as accepted",
+      "rationale": "Clear single-session acceptance action; not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "receive a notification when sessions have been evaluated",
+      "rationale": "Actor is 'anonymoususer' but unclear who should receive notifications (submitter, reviewer, all users), creating material ambiguity about notification recipients.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "receive a notification when I submit a session",
+      "rationale": "Clear actor and event: the submitter (I) receives a notification upon submitting, which is not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "edit my session",
+      "rationale": "Clear intent to allow the user to edit their session; not materially ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "register to speak at BADCamp, so that I submit a session",
+      "rationale": "Action and purpose are explicit (register to speak = submit session); not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "submit a session at BADCAMP",
+      "rationale": "Clear and specific submission intent; not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "personalize my sponsorship page",
+      "rationale": "General personalization is stated; while details could vary, the user's intent is clear and not likely to lead to materially different baseline implementations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "list of all the summits that include when they are",
+      "rationale": "Although wording is awkward, the required data (summit list including dates/times) is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "Be offered several choices of idividual sponsorship on the second page of registration",
+      "rationale": "Specifies placement (second page) and intent (offer choices); 'several' is imprecise but not likely to cause materially different interpretations at story level.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "easily find a link in the menu that links to the registration form",
+      "rationale": "'Easily' is subjective but does not create materially different technical requirements for providing a menu link to the registration form.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "fill out a user registration form",
+      "rationale": "Clear user action and purpose (register for an account); not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "find session information",
+      "rationale": "Clear informational intent (find session info); not open to materially different interpretations for basic functionality.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

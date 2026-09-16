@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "google",
+    "model_requested": "gemini-3.1-pro-preview",
+    "model_label": "Gemini-3.1-Pro-Preview",
+    "project": "BADCamp",
+    "criterion": "Conceptually sound",
+    "run": 3,
+    "temperature": 0,
+    "elapsed_seconds": 85.366
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"view a list of sponsors\", Ends: \"thank all the awesome sponsors\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"view a list of user profiles\", Ends: \"know who is attending the conference\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"email all the trainers at once from the website for info and updates\", Ends: \"It is easier to use\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"have a very clear map where the buildings and rooms are\", Ends: \"make it to class on time\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Conceptually sound",
+      "decision": "Violation",
+      "evidence": "Ends: \"the training coordinators don't have to and links to slides\"",
+      "rationale": "The ends introduces another required feature ('links to slides') instead of just explaining why the means is valuable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"limit to one registration per day per authenticated user\", Ends: \"we don't have duplicate spaces\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"have an admin view that helps track registration status for each attendee\", Ends: \"we can see if attendend, refunded, no show\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"be added to a training waitlist\", Ends: \"so they can be considered for a class\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"must accept the cancellation terms with a checkbox\", Ends: \"they can be accountable\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"tie in a cancellation deadline to whatever registration / cancellation workflow exists\", Ends: \"so we don't loose money or spots\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"add to 'my schedule' if there is a schedule feature on the site\", Ends: \"they can schedule their event experience\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"see which trainings I have signed up for\", Ends: \"they can schedule their event experience\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"have a view that is attached to their training node that shows all attendee information...\", Ends: \"the training coordinator doesn't have to do all the work to get login info for environment setup\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"have an admin view where all trainee information is shown and can be filtered to show a single training session\", Ends: \"I can see WTF is happening\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"have a dedicated page for each class to learn more about the offering...\", Ends: \"I can choose the right class, AND the trainer can tweet and promote their class\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"have the training options clearly marked for the following information...\", Ends: \"I can shop for training all with one page AND find their class on on one page\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"have a training landing page with an intro section and a list of all training offerings and promote call for trainings\", Ends: \"I can shop for training all with one page and we can have a call for trainings for selection\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"have a link on the home page to a list of training options\", Ends: \"I can take training\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"find out where the coding lounge is and what time it is open\", Ends: \"I can code with my friends\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"refund sponsorship money that was processed via stripe\", Ends: \"people get their monies back\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"find a link on the sponsorships page to become a $350 level sponsor\", Ends: \"I can pay for and become a sponsor role\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"See a list of attendees associated with this company\", Ends: \"I know who from this sponsor organization is attending\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"identify myself as and pay for a $350 company sponsorship\", Ends: \"I can easily become a sponsor at this level without having to interface with badcamp personnel to get a sponsorship\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"create and maintain venues\", Ends: \"I can provide location details to help users find what they're looking for\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"view venue details\", Ends: \"I can get a sense of the location and see the events happening there\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"see a list of the sessions associated with sponsor attendees\", Ends: \"I know where I can engage with this sponsor and where they are thought leaders\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"See a payment page to pay for my individual sponsorships as the third step of the registration process\", Ends: \"pay for my sponsorship\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"assign sponsors to events, trainings and summits\", Ends: \"They will be featured on the sponsor detail page\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"see all events, trainings and summits that a sponsor is sponsoring\", Ends: \"I know where I can engage with this sponsor and where they are thought leaders\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"Enter payment information and have my card charged for an individual sponsorship\", Ends: \"I can pay for an individual sponsorship\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"link BADCamp attendees to my sponsorship page\", Ends: \"I can show off our level of attendance\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"update my user profile\", Ends: \"I can connect with other Drupalists at BADCamp\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"sign up for the BADCamp newsletter\", Ends: \"I can stay up to date with the latest communications about BADCamp\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"tag my blog posts for consumption by Drupal Planet\", Ends: \"they will be listed on the Drupal Planet blog\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"create blog posts\", Ends: \"I can share the latest information about BADCamp with the public\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"read the blog\", Ends: \"I can stay informed about all the latest happenings with BADCamp\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"sponsor a summit that matches my brand\", Ends: \"I can get exposure to potential customers and otherwise tout my Drupal credentials\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"register for a summit\", Ends: \"I can reserve my seat at the summit\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"get detailed directions to the summit venue\", Ends: \"I can get to the summit easily on the day of the event\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"see what summits I'm signed up for\", Ends: \"I can confirm my attendence and prevent myself from accidentally double-booking with a training or another summit\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"see a list of attendees signed up for my summit\", Ends: \"I can communicate with my attendees by email prior to the event\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"list basic information about my summit\", Ends: \"I can inform potential attendees on why they should attend my summit\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"list sponsors for my summit\", Ends: \"I can make sure sponsors feel rewarded and will be interested in sponsoring in future years\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"list an agenda for my summit\", Ends: \"I can entice attendees and give positive feedback to presenters to encourage participation\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"see how many seats are left for the summit\", Ends: \"I can make sure to register in-time to reserve my spot\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Conceptually sound",
+      "decision": "Violation",
+      "evidence": "Ends: \"register for the event, and get day-of knowledge to help me get to the location\"",
+      "rationale": "The ends introduces another required feature ('register for the event') instead of just explaining why the means is valuable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"see a list of all the summits\", Ends: \"I can determine which summit I might be interested and able to attend\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"learn about sponsorship levels\", Ends: \"I can determine the right level of sponsorship for my organization\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"use a WYSIWYG editor for all long-form content\", Ends: \"I don't have to know HTML to update my content\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"Link to my sponsorship profile from my job listings\", Ends: \"recruits can learn more about my organization\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"learn about posting jobs as a sponsor and contact the sponsorship person\", Ends: \"I have the opportunty to post my job listing on the BADCamp site\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"post a job\", Ends: \"I can hire top-tier Drupal talent\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"view the job board\", Ends: \"I can look for an interesting Drupal gig!\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"assign a room to a time slot and a location\", Ends: \"I can populate the schedule\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"see the schedule\", Ends: \"I can plan my day and figure out where to go!\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"see the final list of sessions approved\", Ends: \"I can see what's going on at BADCamp\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"bulk approve sessions as accepted\", Ends: \"I can save time\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"mark a session as accepted\", Ends: \"I can populate the schedule\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"receive a notification when sessions have been evaluated\", Ends: \"I know whether I've been accepted or rejected\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"receive a notification when I submit a session\", Ends: \"know that my session went through ok\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"edit my session\", Ends: \"if I make a mistake, I can correct it\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Conceptually sound",
+      "decision": "Violation",
+      "evidence": "Ends: \"I submit a session\"",
+      "rationale": "The ends introduces another required feature ('submit a session') instead of explaining why the means is valuable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"submit a session at BADCAMP\", Ends: \"I can get my session evaluated\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"personalize my sponsorship page\", Ends: \"I can promote my brand\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"see a list of all the summits that include when they are\", Ends: \"I can determine which summit I want to attend\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"Be offered several choices of idividual sponsorship on the second page of registration\", Ends: \"I can be awesome and financially support the camp\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"easily find a link in the menu that links to the registration form\", Ends: \"I can easily register for the camp\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"fill out a user registration form\", Ends: \"I can register for the camp and get an account on the website\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "Means: \"find session information\", Ends: \"I can go to a session\"",
+      "rationale": "The means states a feature and the ends provides a valid rationale without introducing a new feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "expected": {
+    "llm_predictions": 47320,
+    "aqusa_predictions": 910,
+    "llm_conditions": 780
+  },
+  "observed": {
+    "llm_predictions": 47320,
+    "aqusa_predictions": 910,
+    "gold_standard_units": 2366,
+    "excluded_metric_rows": 5095
+  },
+  "gold_standard_labels": {
+    "No Violation": 1901,
+    "Violation": 214,
+    "Uncertain": 251
+  },
+  "checks": [
+    {
+      "status": "PASS",
+      "message": "File exists: llm_predictions.csv"
+    },
+    {
+      "status": "PASS",
+      "message": "File exists: aqusa_predictions.csv"
+    },
+    {
+      "status": "PASS",
+      "message": "File exists: gold_standard_qus13.csv"
+    },
+    {
+      "status": "PASS",
+      "message": "File exists: effectiveness_by_run.csv"
+    },
+    {
+      "status": "PASS",
+      "message": "File exists: majority_vote_predictions.csv"
+    },
+    {
+      "status": "PASS",
+      "message": "File exists: variability.csv"
+    },
+    {
+      "status": "PASS",
+      "message": "LLM prediction count is correct: 47,320"
+    },
+    {
+      "status": "PASS",
+      "message": "AQUSA prediction count is correct: 910"
+    },
+    {
+      "status": "PASS",
+      "message": "All expected LLM models are present: DeepSeek-V4-Pro, GPT-4.1, GPT-5.2, Gemini-3.1-Pro-Preview"
+    },
+    {
+      "status": "PASS",
+      "message": "All expected projects are present."
+    },
+    {
+      "status": "PASS",
+      "message": "All 13 QUS criteria are present."
+    },
+    {
+      "status": "PASS",
+      "message": "Every LLM condition contains exactly runs 1-5."
+    },
+    {
+      "status": "PASS",
+      "message": "No duplicate LLM prediction keys found."
+    },
+    {
+      "status": "PASS",
+      "message": "No duplicate Gold Standard keys found."
+    },
+    {
+      "status": "PASS",
+      "message": "Every LLM prediction matches a Gold Standard unit."
+    },
+    {
+      "status": "PASS",
+      "message": "All LLM predictions use valid binary labels."
+    },
+    {
+      "status": "PASS",
+      "message": "AQUSA predictions are restricted to the 5 supported criteria."
+    },
+    {
+      "status": "PASS",
+      "message": "All Gold Standard labels are recognized."
+    },
+    {
+      "status": "PASS",
+      "message": "All confusion matrices satisfy TP + FP + FN + TN = n."
+    },
+    {
+      "status": "PASS",
+      "message": "Undefined metrics documented: 1997 occurrences."
+    },
+    {
+      "status": "PASS",
+      "message": "Every majority-vote unit uses exactly 5 LLM runs."
+    },
+    {
+      "status": "PASS",
+      "message": "All variability analyses use exactly 5 runs."
+    },
+    {
+      "status": "PASS",
+      "message": "All 780 LLM conditions contain the expected number of stories."
+    }
+  ]
+}

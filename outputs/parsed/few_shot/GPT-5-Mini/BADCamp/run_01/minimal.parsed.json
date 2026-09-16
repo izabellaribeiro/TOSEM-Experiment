@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "prompt_profile": "few_shot",
+    "prompt_label": "Few-shot",
+    "shots": 4,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "BADCamp",
+    "criterion": "Minimal",
+    "run": 1,
+    "temperature": null,
+    "elapsed_seconds": 107.597
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to view a list of sponsors, so that I can thank all the awesome sponsors.",
+      "rationale": "Contains only role, means, and rationale; no implementation or procedural notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to view a list of user profiles, so that I know who is attending the conference.",
+      "rationale": "Simple role/means/rationale without extra implementation or testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a trainingcoordinator, I want to email all the trainers at once from the website for info and updates",
+      "rationale": "Expresses desired capability and reason without implementation or procedural notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to have a very clear map where the buildings and rooms are, so that I can make it to class on time.",
+      "rationale": "Only role/means/rationale; wording is subjective but not an implementation hint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "and links to slides",
+      "rationale": "Appends specific content requirement to the core story (extra detail beyond simple role/means/rationale).",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "I want to limit to one registration per day per authenticated user, so that we don't have duplicate spaces.",
+      "rationale": "Specifies a constraint but stays within role/means/rationale without procedural or implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "I want to have an admin view that helps track registration status for each attendee",
+      "rationale": "Describes desired admin view and purpose; no implementation/testing or procedural hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "I want to be added to a training waitlist, so that so they can be considered for a class.",
+      "rationale": "Contains only role, means, and rationale (despite grammatical issues).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "must accept the cancellation terms with a checkbox",
+      "rationale": "Specifies a UI control ('checkbox'), which is an implementation detail beyond a minimal story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "tie in a cancellation deadline to whatever registration / cancellation workflow exists",
+      "rationale": "Refers to tying into an existing workflow—procedural/implementation detail that should be external.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "I want to add to \"my schedule\" if there is a schedule feature on the site",
+      "rationale": "Conditional phrasing is acceptable; story stays within role/means/rationale without implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "I want to see which trainings I have signed up for, so that they can schedule their event experience.",
+      "rationale": "Simple role/means/rationale; no external implementation or testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "get login info for environment setup",
+      "rationale": "Includes procedural/operational detail about obtaining login info and environment setup, which should be external.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "I want to have an admin view where all trainee information is shown and can be filtered to show a single training session",
+      "rationale": "Expresses desired admin capability and purpose; contains no implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "The following information must be shown: Logo, title, trainers, location, possibly a map view, datetime, skill level, registrations remaining, link to register for class. The URL path should be SEO friendly /training/training-title",
+      "rationale": "Contains explicit UI/content layout and URL/SEO implementation details that should be external to the core story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "have the training options clearly marked for the following information: day and time of training, title, short summary, trainers, level, number of registrations, remaining registrations, location of training, link to full details",
+      "rationale": "Lists detailed UI/content fields and presentation specifics that go beyond a minimal story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "I want to have a training landing page with an intro section and a list of all training offerings and promote call for trainings",
+      "rationale": "Describes the desired page and purpose without prescribing implementation or testing details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "I want to have a link on the home page to a list of training options",
+      "rationale": "Specifies user-facing navigation desire; not a low-level implementation or testing note.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "I want to find out where the coding lounge is and what time it is open",
+      "rationale": "Only role, means, and rationale present; no implementation or procedural hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "refund sponsorship money that was processed via stripe",
+      "rationale": "Mentions a specific payment processor (Stripe), which is an implementation/detail that should be external.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "I want to find a link on the sponsorships page to become a $350 level sponsor",
+      "rationale": "Describes a desired navigation and outcome without prescribing implementation/testing details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "See a list of attendees associated with this company",
+      "rationale": "Simple role/means/rationale without extra implementation or testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "identify myself as and pay for a $350 company sponsorship",
+      "rationale": "Describes desired capability and intent; no procedural or implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "create and maintain venues, so that I can provide location details to help users find what they're looking for.",
+      "rationale": "Role, means, and rationale only; no extra notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "view venue details, so that I can get a sense of the location and see the events happening there.",
+      "rationale": "Contains only the essential story elements; no implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "see a list of the sessions associated with sponsor attendees",
+      "rationale": "Functional desire stated without UI/implementation/testing instructions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "as the third step of the registration process",
+      "rationale": "Specifies page order within a process (procedural placement), which is an implementation detail outside a minimal story.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "assign sponsors to events, trainings and summits",
+      "rationale": "Describes functionality and purpose without providing implementation or testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "see all events, trainings and summits that a sponsor is sponsoring",
+      "rationale": "Only role/means/rationale; no extraneous implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "Enter payment information and have my card charged for an individual sponsorship",
+      "rationale": "Specifies required functionality without prescribing implementation details like specific processors or UI controls.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page",
+      "rationale": "Functional desire without implementation or testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "update my user profile, so that I can connect with other Drupalists at BADCamp.",
+      "rationale": "Standard role/means/rationale with no extraneous instructions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "sign up for the BADCamp newsletter",
+      "rationale": "Simple and minimal; no implementation/testing instructions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "tag my blog posts for consumption by Drupal Planet",
+      "rationale": "Requests integration with an external feed but does not include implementation/testing hints; acceptable as a feature desire.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "create blog posts, so that I can share the latest information about BADCamp with the public.",
+      "rationale": "Contains only role, means and rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "read the blog, so that I can stay informed about all the latest happenings with BADCamp.",
+      "rationale": "Simple user goal without implementation or testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "sponsor a summit that matches my brand",
+      "rationale": "Feature-level desire expressed without prescriptive implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "register for a summit, so that I can reserve my seat at the summit.",
+      "rationale": "Contains only role, means, and rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "get detailed directions to the summit venue",
+      "rationale": "User need stated without UI/implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "see what summits I'm signed up for, so that I can confirm my attendence",
+      "rationale": "Standard role/means/rationale; no extraneous notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "see a list of attendees signed up for my summit, so that I can communicate with my attendees by email",
+      "rationale": "Functional requirement without implementation or testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "list basic information about my summit, so that I can inform potential attendees",
+      "rationale": "Only role, means and rationale are present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "list sponsors for my summit, so that I can make sure sponsors feel rewarded",
+      "rationale": "Simple feature request without implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "list an agenda for my summit, so that I can entice attendees",
+      "rationale": "Role/means/rationale only; no implementation or testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "see how many seats are left for the summit, so that I can make sure to register in-time",
+      "rationale": "User goal expressed without prescriptive details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "see specific details on summits, so that I can learn more about the summit I'm interested in",
+      "rationale": "Contains only the expected story elements.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits, so that I can determine which summit I might be interested",
+      "rationale": "Simple role/means/rationale; no extraneous information.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "learn about sponsorship levels, so that I can determine the right level of sponsorship for my organization.",
+      "rationale": "Standard user story form without implementation or testing details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "use a WYSIWYG editor for all long-form content",
+      "rationale": "Explicitly prescribes a specific implementation/detail (WYSIWYG editor) rather than a minimal need.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "Link to my sponsorship profile from my job listings",
+      "rationale": "Feature-level request without implementation or testing instructions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "learn about posting jobs as a sponsor and contact the sponsorship person",
+      "rationale": "Only role/means/rationale; no extraneous implementation or testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "post a job, so that I can hire top-tier Drupal talent.",
+      "rationale": "Simple user story without implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "view the job board, so that I can look for an interesting Drupal gig!",
+      "rationale": "Contains only essential story elements.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "assign a room to a time slot and a location, so that I can populate the schedule",
+      "rationale": "Functional description without prescriptive implementation or testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "see the schedule, so that I can plan my day and figure out where to go!",
+      "rationale": "User-facing need stated without implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "see the final list of sessions approved, so that I can see what's going on at BADCamp",
+      "rationale": "Simple role/means/rationale; no extraneous information.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "bulk approve sessions as accepted, so that I can save time.",
+      "rationale": "Describes desired functionality without implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "mark a session as accepted, so that I can populate the schedule",
+      "rationale": "Standard story structure; no implementation or testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "receive a notification when sessions have been evaluated",
+      "rationale": "Feature request expressed without low-level implementation or testing instructions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "receive a notification when I submit a session",
+      "rationale": "Simple role/means/rationale; no extraneous content.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "edit my session, so that if I make a mistake, I can correct it.",
+      "rationale": "Contains only role, means and rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "register to speak at BADCamp, so that I submit a session.",
+      "rationale": "Standard user story with no implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "submit a session at BADCAMP, so that I can get my session evaluated.",
+      "rationale": "Describes a capability and its purpose without extra implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "personalize my sponsorship page, so that I can promote my brand.",
+      "rationale": "Only role/means/rationale present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "see a list of all the summits that include when they are",
+      "rationale": "User need stated without implementation or testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "on the second page of registration",
+      "rationale": "Specifies exact placement in the registration flow (procedural/UI placement), an implementation detail.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "easily find a link in the menu that links to the registration form",
+      "rationale": "Describes a user navigation need; while it mentions the menu, it's a user-visible requirement rather than an implementation/testing hint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "fill out a user registration form, so that I can register for the camp and get an account on the website.",
+      "rationale": "Standard minimal story form without extra implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "find session information, so that I can go to a session.",
+      "rationale": "Only role, means and rationale; no extraneous instructions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

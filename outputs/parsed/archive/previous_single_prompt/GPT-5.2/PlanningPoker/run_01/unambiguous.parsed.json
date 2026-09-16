@@ -1,0 +1,526 @@
+{
+  "metadata": {
+    "provider": "openai",
+    "model_requested": "gpt-5.2",
+    "model_label": "GPT-5.2",
+    "project": "PlanningPoker",
+    "criterion": "Unambiguous",
+    "run": 1,
+    "temperature": 0,
+    "elapsed_seconds": 59.339
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "create a new game by entering a name and an optional description",
+      "rationale": "The action and required fields are clear and do not allow materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "invite estimators by giving them a URL where they can access the game",
+      "rationale": "Inviting via sharing an access URL is a single clear mechanism; no materially different meaning is implied.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "start a round by entering an item in a single multi-line text field",
+      "rationale": "Specifies the input method (single multi-line text field) and object (item) sufficiently for one interpretation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see all items we try to estimate this session",
+      "rationale": "‘Items’ are consistently used across the backlog as the units being estimated; no competing interpretation is introduced here.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "Selecting an item for (re-)estimation is clear in the planning poker context and aligns with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "add an item to the list of items to be estimated",
+      "rationale": "The operation (add) and target (list of items to be estimated) are clear; minor typo does not create multiple interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "edit an item in the list of items to be estimated",
+      "rationale": "Editing an item is a clear action; while the editable fields are not enumerated, it does not create materially different interpretations of the requirement.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "delete an item from the list of items to be estimated",
+      "rationale": "Deletion of an item from the estimation list is a single, clear operation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "show all estimates immediately",
+      "rationale": "‘Immediately’ is vague and can mean different triggers (e.g., on moderator command, after each estimate, without waiting for all estimators), leading to materially different behaviors.",
+      "related_story_ids": [
+        "PP-033"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "‘Average’ is ambiguous (mean vs median vs rounded mean; handling of non-numeric/special cards), yielding materially different accepted values.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "filled in automatically if all estimators show the same card",
+      "rationale": "‘Estimate field’ is not defined (where it is, what it represents), and ‘same card’ could exclude/include special cards; this allows different implementations.",
+      "related_story_ids": [
+        "PP-012"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "enter the agreed-upon estimate",
+      "rationale": "Although ‘agreed-upon’ depends on team process, the requirement is simply that the moderator can input the final estimate; no materially different system behavior is implied.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "Re-estimating a previously estimated story within the same session is clear and consistent with other items/rounds concepts.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "import stories from a spreadsheet",
+      "rationale": "‘Spreadsheet’ and ‘import’ are underspecified (file type/format, required columns, mapping rules), enabling materially different interpretations of what must be supported.",
+      "related_story_ids": [
+        "PP-015"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "Copy/paste source format and parsing rules are unclear (e.g., delimiter, multi-line cells, column mapping), leading to different functional interpretations.",
+      "related_story_ids": [
+        "PP-014"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "browse through previous games",
+      "rationale": "Browsing previous games is a clear capability; it does not hinge on a vague term that changes required behavior materially.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "view a transcript of a game",
+      "rationale": "‘Transcript’ is not defined (what events/data it includes—chat, rounds, timestamps, participants, changes), allowing materially different outputs.",
+      "related_story_ids": [
+        "PP-018",
+        "PP-019"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "export a transcript of a game as a HTML file",
+      "rationale": "Depends on the undefined scope of ‘transcript’ (what content is exported), so the requirement can be interpreted in materially different ways.",
+      "related_story_ids": [
+        "PP-017",
+        "PP-019"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "export a transcript of a game as a CSV file",
+      "rationale": "CSV structure is ambiguous without defining transcript contents and column schema; multiple materially different exports are possible.",
+      "related_story_ids": [
+        "PP-017",
+        "PP-018"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "delete a game, so that stories and estimates for this game are no longer stored",
+      "rationale": "Deletion target and intended effect (stories and estimates no longer stored) are clear enough for a single interpretation.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "create an account ... entering my name, email address, a password and a username",
+      "rationale": "Required fields are explicitly listed; no materially different interpretation is suggested.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "‘Account name’ is ambiguous relative to PP-021 which distinguishes email address and username; it could mean username or email, leading to different login requirements.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "change my account details",
+      "rationale": "‘Account details’ is vague (which fields: name, email, username, password, etc.), enabling materially different scopes of change functionality.",
+      "related_story_ids": [
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "delete my account, so that account information and games are no longer stored",
+      "rationale": "The action (delete account) and intended data removal scope are stated; no key term invites multiple interpretations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "see dates and times in my local timezone",
+      "rationale": "‘Local timezone’ is ambiguous (browser-detected vs profile setting vs OS; handling travel), leading to different functional interpretations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "get a password reminder by email",
+      "rationale": "‘Password reminder’ is ambiguous (sending the existing password vs reset link vs temporary password), which are materially different security/functional behaviors.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "select whether to have the team estimate with {0, 1/2, 1, 2, 3, 5, 8, etc.} or {0, 1, 2, 4, 8, 16, 32, etc.}",
+      "rationale": "The two alternative card sets are explicitly enumerated and named; the choice is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "The limit (15) and action (invite) are clear; no materially different interpretation is implied.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "join a game by entering my name on the page I received the URL for",
+      "rationale": "Joining via the provided URL and entering a name is a clear flow with no ambiguous terms.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "‘Item’ is consistently used as the unit being estimated; requirement is straightforward display.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see all items we will try to estimate this session",
+      "rationale": "The list of items for the session is a clear concept in this backlog; no materially different interpretation arises.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "immediately see that an estimate has been given",
+      "rationale": "‘Immediately’ is vague regarding timing/trigger (real-time push vs refresh/polling; after selection vs after submission), leading to different requirements.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "be shown all estimates at the same time after all estimators have given their estimate",
+      "rationale": "The reveal condition (after all have estimated) and simultaneous display are clearly stated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "change my estimate up until the last person selects a card and all are shown",
+      "rationale": "The cutoff event is ambiguous: ‘last person selects a card’ vs ‘all are shown’ could be different moments depending on reveal mechanics, yielding different allowed change windows.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-041"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "see each estimator's prior estimates for the story being estimated",
+      "rationale": "‘Prior estimates’ is ambiguous (earlier rounds in same game vs previous games vs earlier attempts at same story), leading to materially different data scope.",
+      "related_story_ids": [
+        "PP-013",
+        "PP-039"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "Scope (‘current round’) and information (‘who’ and ‘what estimates’) are clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "be able start a two-minute countdown timer",
+      "rationale": "Starting a timer is clear, but it is ambiguous who is allowed (‘participant’ could include estimators and moderator) and whether multiple timers/overrides are possible; these lead to different behaviors.",
+      "related_story_ids": [
+        "PP-038"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "timer reset itself as soon as we all play an estimate",
+      "rationale": "‘We all play an estimate’ is ambiguous (all participants vs all estimators; what counts as ‘play’), affecting when reset occurs.",
+      "related_story_ids": [
+        "PP-037",
+        "PP-033"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Prior rounds within the game/session is a clear scope; scrolling back implies viewing earlier entries without multiple interpretations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "cards in the same order across multiple draws",
+      "rationale": "‘Same order’ is ambiguous without defining the ordering rule (numeric ascending, custom deck order, moderator-defined) and what constitutes a ‘draw’, leading to different implementations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "‘Draw’ and ‘completed’ are not defined and could refer to different lifecycle points (last estimate submitted vs reveal vs moderator action), changing behavior materially.",
+      "related_story_ids": [
+        "PP-033",
+        "PP-034"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "small thumbnail photo displayed near where my cards are played",
+      "rationale": "Placement (‘near where my cards are played’) and ownership (‘my’ photo vs others’ photos near their cards) are unclear, allowing materially different UI requirements.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "compliant with XHTML and CSS standards",
+      "rationale": "‘Compliant’ and ‘standards’ are ambiguous without specifying versions/levels (e.g., XHTML 1.0 Strict vs Transitional; CSS2.1 vs CSS3), leading to different acceptance interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "list of definitions for commonly used terms",
+      "rationale": "‘Commonly used terms’ is vague (which terms qualify, who decides), so the scope of the list can be interpreted materially differently.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "created database indexes",
+      "rationale": "Which tables/columns/queries require indexes is unspecified; ‘as fast as possible’ is also vague, allowing materially different implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "function correctly in Internet Explorer 6 and 7, Firefox 1.5 and 2, and Safari 2",
+      "rationale": "Target browsers/versions are explicitly listed; ‘function correctly’ is broad but does not introduce multiple distinct interpretations beyond general compatibility.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "comply with the W3C accessibility guidelines where possible",
+      "rationale": "‘W3C accessibility guidelines’ is underspecified (which standard/version/level) and ‘where possible’ is vague, enabling materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "respond quickly to my actions",
+      "rationale": "‘Quickly’ is subjective and can map to very different performance requirements (e.g., 100ms vs 2s).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "be able to use Unicode",
+      "rationale": "‘Use Unicode’ is ambiguous (UI input only, storage, sorting, export, URLs, full UTF-8 end-to-end), leading to materially different requirements.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "see sensible and predictable URLs",
+      "rationale": "‘Sensible’ and ‘predictable’ are subjective and can be interpreted in multiple materially different URL schemes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "nice error pages when something goes wrong",
+      "rationale": "‘Nice’ and ‘something goes wrong’ are vague (which errors, what content/design), allowing materially different implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "stored in a non-identifiable way",
+      "rationale": "‘Non-identifiable’ is ambiguous without defining anonymization/pseudonymization requirements and what identifiers must be removed, leading to materially different data handling.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "see some metrics on use of the game",
+      "rationale": "‘Some metrics’ is vague (which metrics, time range, granularity), enabling materially different interpretations of what must be provided.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

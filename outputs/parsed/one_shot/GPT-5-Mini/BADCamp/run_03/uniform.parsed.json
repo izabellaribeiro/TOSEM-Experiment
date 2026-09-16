@@ -1,0 +1,914 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "BADCamp",
+    "criterion": "Uniform",
+    "run": 3,
+    "temperature": null,
+    "elapsed_seconds": 154.446
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to view a list of sponsors",
+      "rationale": "Backlog majority follows the 'As a <role>, I want to <action>' template and this story matches that dominant template.",
+      "related_story_ids": [
+        "BC-002",
+        "BC-003",
+        "BC-004"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to view a list of user profiles",
+      "rationale": "Follows the dominant 'As a <role>, I want to <action>' template used across the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-003",
+        "BC-004"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainingcoordinator, I want to email all the trainers at once from the website",
+      "rationale": "Conforms to the dominant 'As a <role>, I want to <action>' structure present in the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-004"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to have a very clear map where the buildings and rooms are",
+      "rationale": "Matches the common 'As a <role>, I want to <action>' template that dominates the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainer, I want to edit my training node myself",
+      "rationale": "Uses the same 'As a <role>, I want to <action>' template as the majority of stories.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainee, I want to limit to one registration per day per authenticated user",
+      "rationale": "Adheres to the dominant 'As a <role>, I want to <action>' template across the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainingcoordinator, I want to have an admin view that helps track registration status",
+      "rationale": "Consistent with the prevailing 'As a <role>, I want to <action>' story structure in the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to be added to a training waitlist",
+      "rationale": "Follows the common 'As a <role>, I want to <action>' template used by most stories.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainee, I want to must accept the cancellation terms with a checkbox",
+      "rationale": "Retains the backlog's dominant 'As a <role>, I want to <action>' structure despite wording issues.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainingcoordinator, I want to tie in a cancellation deadline to whatever registration / cancellation workflow exists",
+      "rationale": "Matches the prevalent 'As a <role>, I want to <action>' template used across the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainee, I want to add to \"my schedule\" if there is a schedule feature on the site",
+      "rationale": "Conforms to the widespread 'As a <role>, I want to <action>' template seen in the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainee, I want to see which trainings I have signed up for",
+      "rationale": "Uses the same dominant 'As a <role>, I want to <action>' story template as the rest of the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainer, I want to have a view that is attached to their training node that shows all attendee information",
+      "rationale": "Although verbose, it still adheres to the 'As a <role>, I want to <action>' template that dominates the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a trainingcoordinator, I want to have an admin view where all trainee information is shown",
+      "rationale": "Follows the common 'As a <role>, I want to <action>' template used by the backlog majority.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to have a dedicated page for each class to learn more about the offering",
+      "rationale": "Despite added detail, the story begins with 'As a <role>, I want to...', matching the dominant template.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to have the training options clearly marked",
+      "rationale": "Adheres to the backlog's prevailing 'As a <role>, I want to <action>' structure.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to have a training landing page with an intro section and a list of all training offerings",
+      "rationale": "Uses the same 'As a <role>, I want to <action>' template that is dominant in the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to have a link on the home page to a list of training options",
+      "rationale": "Conforms to the common template 'As a <role>, I want to <action>' used across the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to find out where the coding lounge is and what time it is open",
+      "rationale": "Follows the dominant 'As a <role>, I want to <action>' template present in the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to refund sponsorship money that was processed via stripe",
+      "rationale": "Matches the backlog majority's 'As a <role>, I want to <action>' structure.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to find a link on the sponsorships page to become a $350 level sponsor",
+      "rationale": "Adheres to the common 'As a <role>, I want to <action>' template used by the backlog majority.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to See a list of attendees associated with this company",
+      "rationale": "Despite capitalization inconsistency, it still uses the dominant 'As a <role>, I want to <action>' form.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to identify myself as and pay for a $350 company sponsorship",
+      "rationale": "Conforms to the backlog's dominant template 'As a <role>, I want to <action>'.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to create and maintain venues",
+      "rationale": "Matches the prevalent 'As a <role>, I want to <action>' template across the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to view venue details",
+      "rationale": "Follows the dominant 'As a <role>, I want to <action>' story template used throughout the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see a list of the sessions associated with sponsor attendees",
+      "rationale": "Adheres to the majority template 'As a <role>, I want to <action>'.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to See a payment page to pay for my individual sponsorships",
+      "rationale": "While capitalization varies, the structure is the same 'As a <role>, I want to <action>'.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to assign sponsors to events, trainings and summits",
+      "rationale": "Conforms to the dominant user-story template present in the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see all events, trainings and summits that a sponsor is sponsoring",
+      "rationale": "Matches the majority 'As a <role>, I want to <action>' template used across stories.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to Enter payment information and have my card charged for an individual sponsorship",
+      "rationale": "Despite capitalization differences, the story keeps the dominant 'As a <role>, I want to <action>' format.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a sponsor, I want to link BADCamp attendees to my sponsorship page",
+      "rationale": "Uses the common 'As a <role>, I want to <action>' template that dominates the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to update my user profile",
+      "rationale": "Adheres to the prevalent 'As a <role>, I want to <action>' structure used by the backlog majority.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to sign up for the BADCamp newsletter",
+      "rationale": "Conforms to the backlog's dominant user-story template 'As a <role>, I want to <action>'.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to tag my blog posts for consumption by Drupal Planet",
+      "rationale": "Follows the dominant 'As a <role>, I want to <action>' template used by most stories in the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to create blog posts",
+      "rationale": "Uses the same dominant template 'As a <role>, I want to <action>' as the rest of the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to read the blog",
+      "rationale": "Conforms to the predominant 'As a <role>, I want to <action>' story structure used across the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a sponsor, I want to sponsor a summit that matches my brand",
+      "rationale": "Adheres to the dominant template 'As a <role>, I want to <action>' present in the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to register for a summit",
+      "rationale": "Matches the backlog majority's 'As a <role>, I want to <action>' template.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to get detailed directions to the summit venue",
+      "rationale": "Uses the same 'As a <role>, I want to <action>' structure that dominates the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a attendee, I want to see what summits I'm signed up for",
+      "rationale": "Conforms to the prevalent 'As a <role>, I want to <action>' template used by most stories.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a summit coordinator, I want to see a list of attendees signed up for my summit",
+      "rationale": "Follows the dominant 'As a <role>, I want to <action>' template observed across the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a summit coordinator, I want to list basic information about my summit",
+      "rationale": "Adheres to the common 'As a <role>, I want to <action>' story format used by the backlog majority.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a summit coordinator, I want to list sponsors for my summit",
+      "rationale": "Consistent with the backlog's dominant 'As a <role>, I want to <action>' template.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a summit coordinator, I want to list an agenda for my summit",
+      "rationale": "Matches the prevalent story template 'As a <role>, I want to <action>' used by most backlog items.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see how many seats are left for the summit",
+      "rationale": "Follows the dominant 'As a <role>, I want to <action>' template present across the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see specific details on summits",
+      "rationale": "Uses the same 'As a <role>, I want to <action>' structure that dominates the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see a list of all the summits",
+      "rationale": "Adheres to the prevalent template 'As a <role>, I want to <action>' used across stories.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to learn about sponsorship levels",
+      "rationale": "Matches the backlog majority's 'As a <role>, I want to <action>' format.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to use a WYSIWYG editor for all long-form content",
+      "rationale": "Conforms to the dominant 'As a <role>, I want to <action>' template present in the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a sponsor, I want to Link to my sponsorship profile from my job listings",
+      "rationale": "Despite capitalization, this story preserves the dominant 'As a <role>, I want to <action>' structure.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to learn about posting jobs as a sponsor and contact the sponsorship person",
+      "rationale": "Follows the backlog majority's 'As a <role>, I want to <action>' template.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a sponsor, I want to post a job",
+      "rationale": "Uses the dominant 'As a <role>, I want to <action>' story template like other backlog items.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to view the job board",
+      "rationale": "Conforms to the prevalent 'As a <role>, I want to <action>' template used across the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to assign a room to a time slot and a location",
+      "rationale": "Matches the dominant user-story template 'As a <role>, I want to <action>'.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see the schedule",
+      "rationale": "Adheres to the common 'As a <role>, I want to <action>' structure used by the backlog majority.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see the final list of sessions approved",
+      "rationale": "Conforms to the dominant 'As a <role>, I want to <action>' template present in the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to bulk approve sessions as accepted",
+      "rationale": "Uses the same 'As a <role>, I want to <action>' format that is dominant in the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a administrator, I want to mark a session as accepted",
+      "rationale": "Matches the prevalent template 'As a <role>, I want to <action>' used by most stories.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to receive a notification when sessions have been evaluated",
+      "rationale": "Conforms to the backlog majority's 'As a <role>, I want to <action>' template.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to receive a notification when I submit a session",
+      "rationale": "Follows the dominant story template 'As a <role>, I want to <action>'.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to edit my session",
+      "rationale": "Adheres to the common 'As a <role>, I want to <action>' template used across the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to register to speak at BADCamp",
+      "rationale": "Uses the same dominant 'As a <role>, I want to <action>' structure present in the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to submit a session at BADCAMP",
+      "rationale": "Conforms to the backlog majority's 'As a <role>, I want to <action>' template despite capitalization differences.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a sponsor, I want to personalize my sponsorship page",
+      "rationale": "Matches the prevalent 'As a <role>, I want to <action>' template used by most stories in the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to see a list of all the summits that include when they are",
+      "rationale": "Despite slightly awkward phrasing, it follows the dominant 'As a <role>, I want to <action>' format.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a authenticateduser, I want to Be offered several choices of idividual sponsorship on the second page of registration",
+      "rationale": "Keeps the standard 'As a <role>, I want to <action>' template that dominates this backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to easily find a link in the menu that links to the registration form",
+      "rationale": "Conforms to the common 'As a <role>, I want to <action>' story structure used by the backlog majority.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to fill out a user registration form",
+      "rationale": "Adheres to the dominant 'As a <role>, I want to <action>' template present across the backlog.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Uniform",
+      "decision": "No Violation",
+      "evidence": "As a anonymoususer, I want to find session information",
+      "rationale": "Matches the backlog majority's 'As a <role>, I want to <action>' structure and therefore does not materially deviate.",
+      "related_story_ids": [
+        "BC-001",
+        "BC-002",
+        "BC-003"
+      ],
+      "confidence": "High"
+    }
+  ]
+}

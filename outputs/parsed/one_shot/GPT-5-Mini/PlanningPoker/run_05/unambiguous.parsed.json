@@ -1,0 +1,494 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "PlanningPoker",
+    "criterion": "Unambiguous",
+    "run": 5,
+    "temperature": null,
+    "elapsed_seconds": 72.655
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Fields to enter are explicitly named (name, optional description); no vague terms that change requirements interpretation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Specifies inviting by giving a URL; term is concrete and implementation-neutral without causing materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Specifies 'single multi-line text field' which is concrete and unambiguous for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Request to 'see all items we try to estimate this session' is clear about scope (this session) and intent.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Selecting an item to estimate/re-estimate is concrete and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Adding an item to the list is specific; although wording repeats 'so that', it's not semantically ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Editing an item to reflect team's understanding is clear in intent and not materially ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Deleting an item from the list is concrete and not open to multiple material interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "show all estimates immediately",
+      "rationale": "'Immediately' is vague here — it could mean automatically on first estimate, on moderator action, or with different timing, which materially affects behavior.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "average of all estimates",
+      "rationale": "'Average' is ambiguous (arithmetic mean, median, trimmed mean, etc.); different choices yield materially different results.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Condition ('if all estimators show the same card') and outcome (fill estimate field) are explicit and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Entering the agreed-upon estimate is explicit and not ambiguous in requirement terms.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Re-estimating a previously estimated story in the session is clear and concrete.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Importing from a spreadsheet is a concrete operation; format/validation details are implementation but the story itself is not materially ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Copy/paste from a spreadsheet is a clear, specific action; not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Browsing previous games to find one is concrete and unambiguous as a user need.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing a transcript of a game is a clear request with little room for materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Export as an HTML file is specific and unambiguous about format.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Export as CSV is a concrete, well-understood format requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Deleting a game so its stories and estimates are no longer stored is explicit in intent and effect.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Account creation fields (name, email, password, username) are explicitly listed and unambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Logging in using account name and password is a clear, standard requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "'Change my account details' is a high-level intent but not phrased with ambiguous terminology that would produce materially different implementations at this story level.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Deleting an account with the effect described (no longer stored) is explicit and not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Displaying dates/times in local timezone is a clear, testable requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "password reminder by email",
+      "rationale": "Ambiguous security behavior: could mean sending the actual password, a reminder, or a reset link — materially different and security-relevant.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Provides explicit card sets (examples) and clarifies intent (modified Fibonacci or powers of 2), so interpretation is clear enough for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sets a precise numeric limit ('up to 15 estimators') which removes ambiguity despite the descriptive phrase.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Joining by entering a name on the provided URL page is concrete and unambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing the item being estimated is explicit and leaves little room for materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing all items for the session is clearly scoped to the session and unambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "'Immediately see that an estimate has been given' implies real-time feedback; while timing expectations exist, it does not create materially different functional interpretations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Showing all estimates at the same time after all have been given is explicit and unambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Allows changing estimate up until the last person selects and all are shown — precise stopping condition defined.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Request to see each estimator's prior estimates for the story is specific in scope and meaning.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing who gave what during current round is concrete and not open to multiple material interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Starting a two-minute countdown visible to all participants is specific and unambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Resetting the two-minute timer when all play an estimate is a clear trigger and effect.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Scrolling back through prior rounds' stories and estimates is a clearly scoped request.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Requiring consistent card order across draws is explicit and unambiguous for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Changing estimate while draw not completed is clearly defined by the draw state.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Requesting a small thumbnail photo displayed near cards is a specific UI element; 'small' is a minor presentation detail not causing materially different functional interpretations at story level.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Specifies compliance with XHTML and CSS standards — versions not given but the standards referenced make requirement concrete enough for implementation.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Having a list of definitions for commonly used terms is a clear deliverable and reduces ambiguity rather than introducing it.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "as fast as possible",
+      "rationale": "Performance goal 'as fast as possible' is vague and could lead to materially different expectations; needs measurable criteria.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Specifies target browsers and versions explicitly, so the requirement is clear and implementable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "where possible",
+      "rationale": "'Where possible' is vague and leaves scope of accessibility requirements unspecified, which can materially change implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "respond quickly to my actions",
+      "rationale": "'Quickly' is an imprecise performance requirement and can lead to materially different implementations without concrete response-time targets.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Support for Unicode is a clear technical capability and not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "sensible and predictable URLs",
+      "rationale": "Terms 'sensible' and 'predictable' are subjective and could be interpreted in materially different ways for URL design.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "nice error pages",
+      "rationale": "'Nice' is subjective (design, content, tone) and can lead to differing expectations; needs concrete acceptance criteria.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "stored in a non-identifiable way",
+      "rationale": "'Non-identifiable' is ambiguous (anonymized, pseudonymized, aggregated) and has material privacy/technical implications.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "some metrics",
+      "rationale": "'Some metrics' is underspecified (which metrics, granularity, retention), allowing materially different interpretations of what must be delivered.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

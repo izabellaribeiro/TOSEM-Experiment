@@ -1,0 +1,497 @@
+{
+  "metadata": {
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "PlanningPoker",
+    "criterion": "Conceptually sound",
+    "run": 5,
+    "temperature": 0,
+    "elapsed_seconds": 249.077
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Conceptually sound",
+      "decision": "Violation",
+      "evidence": "so that I can start inviting estimators",
+      "rationale": "The end points to another required feature (inviting estimators, PP-002) rather than explaining why creating a game is valuable.",
+      "related_story_ids": [
+        "PP-002"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Conceptually sound",
+      "decision": "Violation",
+      "evidence": "so that we can start the game",
+      "rationale": "The end introduces starting the game as another required feature, not a rationale for inviting estimators via URL.",
+      "related_story_ids": [
+        "PP-003"
+      ],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Conceptually sound",
+      "decision": "Violation",
+      "evidence": "so that we can estimate it",
+      "rationale": "The end names estimation as a further required feature instead of explaining why starting a round is valuable.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why seeing all items is useful: to answer questions about the current story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Conceptually sound",
+      "decision": "Violation",
+      "evidence": "so that the team sees that item and can estimate it",
+      "rationale": "The end introduces additional required features (team display and estimation) rather than a rationale for selecting an item.",
+      "related_story_ids": [
+        "PP-030"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end expresses flexibility as a rationale for adding an item.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why editing is useful: better reflecting team understanding.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end gives a rationale for deletion: removing an item so it will not be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why immediate display of estimates is valuable: it supports the decision to reveal partial estimates.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end expresses progression to the next item as a rationale for accepting the average.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end expresses efficiency as a rationale for auto-filling the estimate field.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why entering an agreed estimate is valuable: moving on after agreement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end gives a rationale for re-estimating: changed feelings after estimating related stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end expresses avoiding manual copying as a rationale for importing stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end expresses faster start-up as a rationale for copy/paste.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why browsing is useful: finding the desired previous game.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end gives the purpose of viewing a transcript: seeing the stories and estimates.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains the benefit of HTML export: saving stories and estimates locally.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains the benefit of CSV export: further processing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end gives a rationale for deleting a game: ending storage of its stories and estimates.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why account creation is valuable: starting to use the application.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why login is valuable: starting to use the application.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end expresses keeping information current as a rationale for changing account details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end gives a rationale for deleting an account: ending storage of account information and games.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end expresses avoiding manual effort as a rationale for local timezone display.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why a password reminder is valuable: restoring access after forgetting the password.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains the value of deck selection: allowing teams to use either sequence.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains the rationale for the invite limit: supporting large but not immense teams.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why joining is valuable: to participate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end gives a rationale for seeing the item: knowing what is being estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why seeing all items is useful: gaining a feel for sizes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why immediate estimate visibility matters: knowing who has estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why simultaneous display is valuable: ensuring independent estimates.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end gives a rationale for changing estimates until completion: changing one's mind based on information.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why prior estimates are useful: seeing opinion changes and asking questions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why seeing individual estimates is useful: informing discussion.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end gives a rationale for the timer: limiting discussion time.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why automatic reset is valuable: readiness for the next round.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why scrolling back is useful: using prior-round information for estimation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end gives a rationale for consistent card order: easier comparison.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why allowing changes is valuable: changing one's mind.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why thumbnails are useful: making the game more personal.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why standards compliance is valuable: broader access and intended viewing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end gives a rationale for definitions: easier shared understanding.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why indexes are valuable: faster queries.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why browser compatibility is valuable: broad application use.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why accessibility compliance is valuable: use by people with accessibility issues.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end gives a rationale for responsiveness: avoiding boredom.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why Unicode support is valuable: using any language.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why sensible URLs are useful: a logical and transparent application feel.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end gives a rationale for nice error pages: building trust.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why non-identifiable storage is valuable: studying the data.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Conceptually sound",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The end explains why seeing metrics is useful: understanding usage.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

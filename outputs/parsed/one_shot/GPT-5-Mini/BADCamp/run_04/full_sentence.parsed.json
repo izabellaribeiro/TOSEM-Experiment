@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "BADCamp",
+    "criterion": "Full sentence",
+    "run": 4,
+    "temperature": null,
+    "elapsed_seconds": 62.277
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Well-formed complete sentence (As a ... I want ... so that ...).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence with subject, verb and purpose clause.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Grammatically complete despite minor capitalization typo.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Full sentence expressing actor, desire and rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Full sentence",
+      "decision": "Violation",
+      "evidence": "and links to slides.",
+      "rationale": "Ends with a malformed clause 'and links to slides' attached to prior clause making the sentence grammatically incomplete/unclear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence expressing a desire and reason.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Despite redundancy and typos, it reads as a complete sentence with subject, verb and purpose.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Contains an extra 'so' but remains a complete sentence communicating actor, desire and rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Full sentence",
+      "decision": "Violation",
+      "evidence": "I want to must accept the cancellation terms with a checkbox",
+      "rationale": "Ungrammatical combination 'want to must accept' makes the clause malformed and not a proper full sentence.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence despite minor typos/repetition.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sentence is complete (actor, desire, rationale) though pronoun consistency is off.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Full sentence with clear subject, verb and purpose despite pronoun mismatch.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Full sentence",
+      "decision": "Violation",
+      "evidence": "shows all attendee information Trainers can see all class attendance",
+      "rationale": "Run-on / missing punctuation and mixed clauses make the text grammatically malformed and hard to read as a single well-formed sentence.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence; informal language ('WTF') does not break sentence completeness.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Contains multiple sentences/lists; the initial clause is a complete sentence and overall text reads as full sentences despite a missing period.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Long enumerated sentence but grammatically complete (actor, desire, rationale).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence expressing need and rationale despite slightly awkward phrasing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Well-formed sentence with subject, verb and purpose clause.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence (actor, desire, rationale).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sentence is grammatically complete.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Full sentence with clear structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence despite capitalization error.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Well-formed sentence expressing actor, desire and rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sentence is grammatically complete and clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Full sentence with actor, desired functionality and rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Full sentence",
+      "decision": "Violation",
+      "evidence": "so that pay for my sponsorship",
+      "rationale": "The rationale clause is missing a subject/verb ('so that I can pay' or similar), making the sentence grammatically incomplete.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence expressing admin action and purpose.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Grammatically complete and readable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Full sentence with clear subject and purpose.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence expressing actor desire and rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Simple, well-formed sentence.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence with actor, goal and reason.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sentence reads as a complete requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Well-formed sentence.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence expressing purpose.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Full sentence with clear structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Grammatically complete.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence providing actor, desire and reason.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Well-formed sentence despite minor typos.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence stating actor need and rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Grammatically complete and readable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence with purpose clause.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Full sentence expressing functionality and rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence (actor, desire, rationale).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Well-formed sentence despite verbosity.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Full sentence with clear structure.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence conveying intent and reason.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Well-formed sentence describing desired editor behaviour.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence with actor and purpose.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sentence is grammatically complete despite a typo.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Simple, complete sentence.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence; punctuation choice does not break completeness.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Full sentence describing admin action and reason.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Well-formed sentence despite exclamation and extra punctuation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sentence communicates a complete idea.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete and grammatical.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Full sentence expressing a single action and reason.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Grammatically complete and clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence notifying user of desired behavior.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Well-formed sentence with subject, verb and purpose.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence expressing the action of registering to speak.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Grammatically complete user story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Full sentence conveying sponsor's intent and rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Awkward phrasing ('include when they are') but still a complete sentence.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence despite capitalization and spelling typos.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Well-formed sentence with clear intent.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Complete sentence describing registration action and purpose.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Full sentence",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Simple, grammatically complete sentence.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "BADCamp",
+    "criterion": "Unambiguous",
+    "run": 4,
+    "temperature": null,
+    "elapsed_seconds": 71.652
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The story clearly states an intent to view a list of sponsors; no vague terms that allow materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing a list of user profiles is specific enough; terms are not materially ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "email all the trainers at once",
+      "rationale": "'at once' is ambiguous (bulk single message vs. separate messages) and 'from the website' lacks specification of sending mechanism, which can lead to materially different implementations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "very clear map",
+      "rationale": "'Very clear' is subjective and underspecified; different stakeholders may require materially different map detail/precision.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "links to slides",
+      "rationale": "The phrase 'links to slides' is vague in this context (should links be shown, uploaded, auto-populated?), creating materially different interpretations of the feature.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "one registration per day",
+      "rationale": "'Per day' is underspecified (calendar day vs rolling 24-hour period, time zone), which materially affects implementation.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Specifies an admin view to track registration status with example statuses; terms are sufficiently concrete for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Being added to a training waitlist is straightforward and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Requirement to accept cancellation terms with a checkbox is clear and unambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "whatever registration / cancellation workflow exists",
+      "rationale": "Referencing 'whatever workflow exists' is underspecified and ambiguous about how the deadline should be integrated, enabling materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "if there is a schedule feature on the site",
+      "rationale": "The conditional 'if there is a schedule feature' leaves scope ambiguous (is this optional or required), leading to different interpretations of acceptance criteria.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing which trainings one has signed up for is clear and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "all attendee information",
+      "rationale": "'All attendee information' is vague (which fields are included, privacy constraints) and can lead to materially different requirements and privacy implications.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "all trainee information",
+      "rationale": "The term 'all trainee information' is underspecified (what attributes, PII or not), leading to materially different implementations and privacy handling.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "possibly a map view; SEO friendly",
+      "rationale": "'Possibly a map view' and 'SEO friendly' are vague/subjective—'possibly' leaves scope unclear and 'SEO friendly' is subjective without concrete criteria, enabling different implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The list of fields to be clearly marked is concrete; although wording has minor redundancy, it does not cause materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Requesting a landing page with intro and list of offerings is clear enough for implementation; no materially ambiguous terms.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "A home-page link to training options is specific and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Finding the coding lounge and its open hours is straightforward and not materially ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Refunding sponsorship processed via Stripe is clear and specific about the payment processor and intent.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Finding a link to become a $350 sponsor on the sponsorships page is concrete and unambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing a list of attendees associated with a company is clear and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Identifying and paying for a $350 company sponsorship is specific and not vague.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "'Create and maintain venues' is high-level but commonly understood in this domain and not so vague as to allow materially different interpretations for basic CRUD functionality.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing venue details to get a sense of location and events is straightforward and not materially ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing sessions associated with sponsor attendees is reasonably concrete and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Requesting a payment page as the third step in registration is specific enough for implementation (references step position), not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Assigning sponsors to events/trainings/summits to feature them is clear and implementable without multiple material interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing all events/trainings/summits a sponsor is sponsoring is concrete and unambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Entering payment information and charging card is specific and not materially ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "link BADCamp attendees to my sponsorship page",
+      "rationale": "The verb 'link' is ambiguous here (display attendee list, hyperlink to profiles, or associate attendees with sponsor), which leads to materially different requirements and privacy implications.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Updating a user profile is a common, unambiguous requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Signing up for a newsletter is clear and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Tagging blog posts for consumption by Drupal Planet is specific and unambiguous in intent.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creating blog posts is straightforward and not materially ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Reading the blog is unambiguous and straightforward.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "matches my brand",
+      "rationale": "'Matches my brand' is subjective and underspecified (color, messaging, audience fit), which can lead to materially different sponsor expectations and implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Registering for a summit to reserve a seat is specific and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Getting detailed directions to a venue is a clear request; while 'detailed' is subjective, it does not create materially different technical interpretations in this context.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing summits one is signed up for is straightforward and not materially ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing a list of attendees for a summit to email them is clear and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "basic information",
+      "rationale": "'Basic information' is underspecified (which fields constitute 'basic'), and different interpretations could materially alter the feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing sponsors for a summit is concrete and not materially ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing an agenda is specific and implementable without multiple material interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing how many seats are left is clear and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "specific details",
+      "rationale": "The term 'specific details' is vague (which details are required), and different interpretations could materially change the scope of content shown.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing a list of all summits is straightforward and not materially ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Learning about sponsorship levels is a clear intent; while details may vary, the story is not semantically vague in a way that yields materially different requirements.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Using a WYSIWYG editor for long-form content is clear and commonly understood; 'long-form content' is not so vague as to cause materially different interpretations here.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Linking sponsorship profile from job listings is concrete and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Learning about posting jobs and contacting a sponsorship person is clear and actionable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Posting a job is specific and straightforward.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing the job board is unambiguous and clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Assigning a room to a time slot and location is concrete and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing the schedule to plan a day is clear and not semantically vague in a way that changes requirements materially.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing the final list of approved sessions is specific and unambiguous for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Bulk approving sessions as accepted is clear and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Marking a session as accepted is specific and unambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Receiving a notification when sessions have been evaluated is understandable; 'evaluated' is standard in this domain and not likely to cause materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Receiving a notification upon submission is clear and specific.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Editing a session is straightforward and not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Registering to speak to submit a session is clear and not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Submitting a session to get evaluated is specific and standard in context.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "personalize my sponsorship page",
+      "rationale": "'Personalize' is underspecified (what can be personalized—logo, colors, copy, layout?), leading to materially different implementations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing a list of summits including when they are is understandable and not materially ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "several choices of idividual sponsorship",
+      "rationale": "'Several choices' is vague (how many, what options), which can materially change the UI and payment flow expectations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "easily find a link",
+      "rationale": "'Easily' is subjective and underspecified (what is considered easy navigation or how measured), which can lead to different interface implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Filling out a registration form to create an account is clear and not semantically ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Finding session information to attend is a clear and commonly understood request; not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

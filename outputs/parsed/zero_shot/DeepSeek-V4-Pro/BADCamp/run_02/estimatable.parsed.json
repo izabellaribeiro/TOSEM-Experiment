@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "BADCamp",
+    "criterion": "Estimatable",
+    "run": 2,
+    "temperature": 0,
+    "elapsed_seconds": 190.13
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The requested behavior is a specific, bounded list view and can be reasonably estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The feature is a clear list of user profiles with a defined purpose.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Emailing all trainers from the website is a specific, bounded action.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "A map showing buildings and rooms is clear enough in scope to estimate as a scheduled navigation aid.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Editing a training node and adding slide links is a small, bounded trainer feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The one-registration-per-day rule is specific and can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "An admin view tracking registration status is a defined reporting feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Adding an attendee to a waitlist is a clear, bounded behavior.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Requiring a cancellation terms checkbox is a specific acceptance step.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "whatever registration / cancellation workflow exists",
+      "rationale": "The target workflow is unspecified, so the integration scope is too vague to estimate reliably.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "if there is a schedule feature on the site",
+      "rationale": "The feature depends on an undetermined schedule capability, making scope unclear for planning.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Showing a trainee's signed-up trainings is a specific list view.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "A trainer-facing attendee information view for a training node is bounded and clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Admin filtering of trainee information by training session is a defined reporting feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The page requirements are explicitly listed, making implementation scope clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The required training fields are enumerated, so the work can be estimated.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The landing page contents are described concretely enough to plan the page.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Adding a home page link to training options is a clearly bounded task.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Showing coding lounge location and hours is specific and estimatable.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Refunding Stripe-processed sponsorship payments is a defined payment operation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "A link to become a $350 sponsor is precise and bounded.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing attendees associated with a company is a clear view.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The sponsorship identification and payment flow has a clear goal and scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creating and maintaining venues is a standard bounded CRUD feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing venue details is a specific detail page requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Showing sessions associated with sponsor attendees is a bounded list view.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "A payment page as the third registration step is sufficiently specific.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Assigning sponsors to events, trainings, and summits is a defined admin association feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Displaying sponsored events, trainings, and summits is bounded and specific.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Entering payment information and charging a card is a defined payment feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Linking attendees to a sponsorship page is a bounded sponsor-page association feature.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Updating a user profile is a clear account-management feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Newsletter signup is a specific, small feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Tagging blog posts for Drupal Planet consumption is a specific integration behavior.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creating blog posts is a standard bounded content-authoring feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Reading the blog is a clear display feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sponsoring a summit is a defined action; brand matching is business motivation rather than vague system scope.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Registering for a summit is a specific event-registration behavior.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Providing detailed directions to the summit venue is bounded and clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Showing signed-up summits for an attendee is a clear list view.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "A summit coordinator seeing attendee lists is a defined reporting feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing basic summit information is a clear informational feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing sponsors for a summit is specific and bounded.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "An agenda list for a summit is a clear content display feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Showing remaining seats is a specific count display.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "The behavior is viewing summit details; additional reasons are user motivations, not extra scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "A list of all summits is a specific bounded view.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Learning about sponsorship levels is an informational feature with clear scope.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Using a WYSIWYG editor for long-form content is a specific editor integration, not an unplanned broad requirement.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Linking sponsorship profile from job listings is a clear cross-link feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Informational content and contact ability can be scoped as a bounded page feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Posting a job is a specific content-authoring feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing a job board is a bounded list/detail view.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Assigning a room to a time slot and location is a standard scheduling action.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Displaying the schedule is a clear calendar/list feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Showing the final approved session list is specific and bounded.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Bulk approving sessions is a clear admin batch operation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Marking a session as accepted is a precise admin action.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sending a notification after session evaluation is a defined trigger-action feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Notification on session submission is a specific trigger-action feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Editing a session is a standard bounded content-editing feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Registering to speak is actionably scoped as submitting a session proposal.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Submitting a session is a clear content submission feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Estimatable",
+      "decision": "Violation",
+      "evidence": "personalize my sponsorship page",
+      "rationale": "The feature lacks any detail about which page elements or personalization capabilities are included, making it too broad to estimate.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing summits with date/time is a clear bounded view.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Offering several sponsorship choices on a registration page is specific.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "A menu link to registration is a precise, small navigation task.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Filling out a user registration form is a standard bounded feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Estimatable",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Finding session information is a clear informational lookup feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

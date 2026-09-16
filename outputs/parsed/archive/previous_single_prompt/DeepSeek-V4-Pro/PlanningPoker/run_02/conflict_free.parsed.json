@@ -1,0 +1,495 @@
+{
+  "metadata": {
+    "provider": "deepseek",
+    "model_requested": "deepseek-v4-pro",
+    "model_label": "DeepSeek-V4-Pro",
+    "project": "PlanningPoker",
+    "criterion": "Conflict-free",
+    "run": 2,
+    "temperature": 0,
+    "elapsed_seconds": 295.224
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creating a game does not impose a rule that conflicts with another backlog story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Inviting estimators via URL does not conflict with other stories; PP-028 adds a limit but is not incompatible.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Starting a round by entering an item can coexist with adding, importing, or selecting items.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing all session items does not conflict with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Selecting an item to estimate or re-estimate is compatible with item management stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Adding an item to the backlog does not conflict with other item-management behaviors.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Editing an item is compatible with other backlog stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Deleting an item is conditional and does not impose an incompatible rule.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Conflict-free",
+      "decision": "Violation",
+      "evidence": "show all estimates immediately ... even though not all estimators have given their estimate",
+      "rationale": "PP-009 permits revealing estimates before all estimators have estimated, which conflicts with PP-033's rule that all estimates are shown only after all estimators have given their estimate.",
+      "related_story_ids": [
+        "PP-033"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Accepting an average estimate is an available action and does not conflict with other finalization stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Auto-filling an estimate when all estimators select the same card is compatible with other estimate finalization rules.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Entering an agreed-upon estimate is an alternative finalization action and is not incompatible with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Re-estimating an earlier story is compatible with session item management.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Importing stories from a spreadsheet does not conflict with manual entry or copy/paste alternatives.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Copying and pasting stories is an alternative entry path and not inconsistent with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Browsing previous games does not conflict with game deletion rules; deleted games simply may no longer appear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing a transcript is compatible with other transcript-related stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Exporting a transcript as HTML does not conflict with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Exporting a transcript as CSV does not conflict with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Deleting a game is conditional and does not impose an incompatible rule with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Account creation fields do not conflict with login or other account stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Logging in with account name and password is compatible with account creation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Changing account details does not conflict with other account-management stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Deleting an account is conditional and not clearly incompatible with research data storage stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Displaying dates and times in local timezone does not conflict with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Password reminder by email does not conflict with other account stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Selecting an estimation sequence does not conflict with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Limiting invitations to 15 estimators refines PP-002 and is not incompatible with it.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Joining a game by entering a name does not conflict with invitation rules.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing the item being estimated is compatible with other estimator stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing all session items does not conflict with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing that an estimator has submitted an estimate does not reveal the estimate value and is compatible with PP-033.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Conflict-free",
+      "decision": "Violation",
+      "evidence": "shown all estimates at the same time after all estimators have given their estimate",
+      "rationale": "PP-033 requires estimates to be revealed only after all estimators have given their estimate, which conflicts with PP-009's early reveal permission.",
+      "related_story_ids": [
+        "PP-009"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Changing an estimate until the draw completes is compatible with the reveal timing rules in other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing prior estimates for the story being estimated does not conflict with current-round estimate rules.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Seeing who gave which estimates during the current round is compatible with estimates being revealed after all submissions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Starting a countdown timer does not conflict with other participant stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Resetting the timer when all estimates are played is compatible with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Scrolling back through prior rounds does not conflict with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Keeping card order consistent does not conflict with deck-selection stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Changing an estimate as long as the draw has not completed is compatible with other draw-related stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Displaying thumbnail photos does not impose an explicit rule conflicting with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Standards compliance does not conflict with other backlog stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "A terminology list does not conflict with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creating database indexes does not conflict with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Browser compatibility does not explicitly conflict with other stories such as standards compliance.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Accessibility guideline compliance does not conflict with other backlog stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Responsiveness does not conflict with other stories; database indexes may support it.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Unicode support does not conflict with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Predictable URLs do not conflict with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Nice error pages do not conflict with other stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Storing research results non-identifiably does not explicitly conflict with other stories such as thumbnails or transcript export.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Conflict-free",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing usage metrics does not conflict with other backlog stories.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "prompt_profile": "one_shot",
+    "prompt_label": "One-shot",
+    "shots": 1,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "BADCamp",
+    "criterion": "Minimal",
+    "run": 2,
+    "temperature": null,
+    "elapsed_seconds": 82.568
+  },
+  "evaluations": [
+    {
+      "story_id": "BC-001",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Contains only role, goal (view list of sponsors) and rationale (to thank sponsors); no implementation or procedural notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-002",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Simple role, means and rationale; no implementation or testing hints present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-003",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Describes role, capability (email trainers) and reason; no implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-004",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Contains role, need (clear map) and rationale; no procedural or implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-005",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Includes a functional need (edit training node) and an added content requirement ('links to slides') which is functional, not an implementation/testing hint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-006",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Specifies role, constraint (limit one registration per day) and rationale; no implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-007",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Describes admin view need and rationale; despite duplication/typos, contains no implementation or testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-008",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Simple role, means (added to waitlist) and rationale; no external implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-009",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "must accept the cancellation terms with a checkbox",
+      "rationale": "Specifies a UI control ('checkbox'), which is an implementation detail that should be external to the core story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-010",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Describes tying a deadline to registration/cancellation workflow (functional/organizational), not an implementation/testing hint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-011",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Specifies adding to 'my schedule' if such a feature exists — conditional but not an implementation or testing note.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-012",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Simple need to view signed-up trainings with rationale; no extraneous implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-013",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Long and wordy but contains role, capability (view attendee info) and rationale (reduce coordinator work); no implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-014",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Describes an admin view and filtering need with rationale; no implementation details present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-015",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "The URL path should be SEO friendly /training/training-title",
+      "rationale": "Contains an explicit implementation detail (specific URL path format) which goes beyond role, means and rationale.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-016",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Lists information to be shown (functional content) for training options; this is within scope of the story rather than an implementation/testing hint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-017",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Describes a landing page with intro and list—functional description and rationale without implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-018",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Simple navigation need (link on home page) and rationale; no implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-019",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Functional need to find location and opening time; no implementation or procedural notes included.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-020",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "refund sponsorship money that was processed via stripe",
+      "rationale": "Specifies a particular payment processor ('stripe'), an implementation choice that should be external to the core story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-021",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Describes finding a link and a business-level sponsorship amount; no implementation/testing instructions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-022",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Functional need to see attendees associated with a company with rationale; no extraneous notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-023",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Specifies identifying and paying for a sponsorship level (business detail) but no implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-024",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Administrator capability to create/maintain venues and rationale; no implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-025",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Functional user need to view venue details and rationale; contains no implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-026",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Describes functionality to see sessions associated with sponsor attendees; no implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-027",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "as the third step of the registration process",
+      "rationale": "Specifies ordering within the registration flow ('third step'), a procedural/UI detail that is an implementation-level constraint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-028",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Administrator capability to assign sponsors to events with rationale; no implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-029",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Functional need to see sponsored events/training; no extraneous implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-030",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Describes entering payment information and being charged—a functional requirement; not an implementation/testing hint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-031",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sponsor wants to link attendees to sponsorship page—functional and no implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-032",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Update user profile is a standard capability with a rationale; no implementation/testing notes present.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-033",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Signing up for a newsletter is a functional user need without implementation or testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-034",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Tagging blog posts for consumption by Drupal Planet is a content routing/business need, not an implementation/testing hint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-035",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Creating blog posts is a content authoring need with rationale; no extraneous implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-036",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Reading the blog is a straightforward user need with no implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-037",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sponsor wants to sponsor a summit that matches their brand—business need without implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-038",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Attendee registration for a summit is a role/means/rationale story without implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-039",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Request for detailed directions is functional and contains no implementation/test hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-040",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing signed-up summits to avoid double-booking is a standard rationale-based story without implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-041",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Summit coordinator viewing attendee list to email them is functional and lacks implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-042",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing basic summit information is a content need and contains no extraneous implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-043",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing sponsors for a summit is a functional requirement with rationale; no implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-044",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing an agenda is a content/function need without implementation/testing notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-045",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "User wants to see how many seats are left—functional and free of implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-046",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing summit details for registration and logistics is functional and contains no implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-047",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing all summits is a simple content need with no implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-048",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Learning about sponsorship levels is a business/functional need without implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-049",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "use a WYSIWYG editor for all long-form content",
+      "rationale": "Specifies a particular implementation choice ('WYSIWYG editor'), which should be external to the core user story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-050",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Linking from job listings to sponsorship profile is functional and contains no implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-051",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Describes learning about posting jobs and contacting a person; functional, not implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-052",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sponsor posting a job is a functional story without implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-053",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing the job board is a user need with no extraneous implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-054",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Administrator assigning room/time/location is a functional task; no implementation/testing hints included.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-055",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing the schedule is a content need and lacks implementation or testing instructions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-056",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Viewing final list of approved sessions is functional and contains no implementation hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-057",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Bulk approve as a capability is a functional admin need; 'bulk' is a business/UX requirement, not an implementation/testing hint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-058",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Marking a session as accepted is a straightforward admin action with rationale, no implementation detail.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-059",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "User notification when sessions evaluated is a functional requirement without implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-060",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Notification on submission is a standard functional story; no implementation details included.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-061",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Editing a session to correct mistakes is a functional need with rationale, no implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-062",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Registering to speak (submit a session) is a user action and rationale; no implementation notes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-063",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Submitting a session as an authenticated user is functional and contains no implementation/testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-064",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Sponsor personalizing sponsor page is a business/functional need without implementation details.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-065",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Listing summits including when they are is a functional content need; no implementation/test hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-066",
+      "criterion": "Minimal",
+      "decision": "Violation",
+      "evidence": "on the second page of registration",
+      "rationale": "Specifies page ordering ('second page of registration'), a procedural/UI implementation detail beyond the core story.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-067",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Finding a link in the menu to the registration form is a navigation need without implementation/testing instructions.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-068",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Filling out a registration form is a means; it's a functional description rather than an implementation/testing hint.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "BC-069",
+      "criterion": "Minimal",
+      "decision": "No Violation",
+      "evidence": "",
+      "rationale": "Finding session information is a content need with rationale and contains no implementation or testing hints.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

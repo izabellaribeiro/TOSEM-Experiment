@@ -1,0 +1,557 @@
+{
+  "metadata": {
+    "prompt_profile": "few_shot",
+    "prompt_label": "Few-shot",
+    "shots": 4,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "Zooniverse",
+    "criterion": "Unambiguous",
+    "run": 3,
+    "temperature": null,
+    "elapsed_seconds": 88.549
+  },
+  "evaluations": [
+    {
+      "story_id": "ZO-001",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "content identification or fingerprinting",
+      "rationale": "Specifies the method (content identification/fingerprinting) for search, avoiding materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-002",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "based on my profile",
+      "rationale": "'My profile' is underspecified (which profile fields, weighting, or signals?), allowing materially different implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-003",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "other users similar to myself",
+      "rationale": "Undefined notion of 'similar' (which attributes, threshold, algorithm), permitting different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-004",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "based on content similarity",
+      "rationale": "Specifies similarity by content for finding related music/ringback tones; terms are concrete enough for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-005",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "enriched metadata and image tags",
+      "rationale": "Identifies specific data sources (metadata, image tags) and goals, avoiding broad ambiguity despite minor wording ('relevant listening path').",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-006",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "upload tagged videos and have tags available",
+      "rationale": "Clear: user uploads tagged videos and tags must be available for processing; terms are specific enough for requirements.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-007",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "view thumbnail sequences of video segments",
+      "rationale": "Straightforward and specific functionality; no vague terms that allow materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-008",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "get info about similar video items and segments",
+      "rationale": "'Info' is underspecified (what fields, level of detail?), leading to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-009",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "get info about perceptually similar video items and segments",
+      "rationale": "Again 'info' is vague (what metadata/attributes), and 'perceptually similar' needs operational definition—permits differing implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-010",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "from similar profiles",
+      "rationale": "'Similar profiles' is undefined (similarity metrics, attributes), which allows materially different requirements interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-011",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "most relevant news events in my area",
+      "rationale": "'Most relevant' and 'my area' are vague (what relevance metric, geographic scope), leading to different implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-012",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "receive related information about them",
+      "rationale": "'Related information' is underspecified (what attributes/details), permitting materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-013",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "receive related information about them",
+      "rationale": "Same issue: 'related information' about identified products is unspecified and could be interpreted in many ways.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-014",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "receive related information about them",
+      "rationale": "'Related information' for broadcaster logos is unspecified (branding, airing rights, etc.), allowing materially different requirements.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-015",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "receive related information about them",
+      "rationale": "Ambiguous what 'related information' about brands entails; different stakeholders may interpret this materially differently.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-016",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "recommended with videos related to that picture or image",
+      "rationale": "Intended behavior (recommend videos related to the provided image) is clear enough for implementation despite 'related' being general.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-017",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "any other relevant point of interest",
+      "rationale": "Phrase 'relevant point of interest' is vague (what counts as relevant?), allowing materially different interpretations of what is included.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-018",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "using automatic speech recognition",
+      "rationale": "Specifies the technique (ASR) used to search content items; terms are concrete enough for development.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-019",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "see, validate and edit segmentation of videos",
+      "rationale": "Actions (see, validate, edit segmentation) are specific and not open to multiple material interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-020",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "annotate news video segments and extract a topic for each segment",
+      "rationale": "Specifies both activity (annotate) and outcome (a topic per segment); reasonably unambiguous at story level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-021",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "based on A/V quality aspects",
+      "rationale": "Refers to filtering/ranking by audio/video quality aspects—while broad, it names the decision basis clearly enough to avoid multiple material interpretations.",
+      "related_story_ids": [],
+      "confidence": "Moderate"
+    },
+    {
+      "story_id": "ZO-022",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "get a quick assessment",
+      "rationale": "'Quick' is subjective and underspecified (latency, confidence), which could change requirements materially.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-023",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "prefilter nudity content",
+      "rationale": "Purpose and target (nudity) are explicit; not open to materially different interpretations at story level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-024",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "using search based on low­level asset information",
+      "rationale": "Specifies low-level asset information as the basis for prefiltering, which is a clear implementation direction.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-025",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "automatically validated the ingested contents for copyright infringement",
+      "rationale": "Goal (copyright validation) and automatic execution are clear; acceptable at story level despite legal complexity.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-026",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "search on high­level asset information such as metadata and tags",
+      "rationale": "Explicitly names the basis (metadata, tags) for prefiltering, avoiding vague terms.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-027",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "how interesting or appealing or complex a picture is",
+      "rationale": "Terms 'interesting', 'appealing', 'complex' are subjective and underspecified, leading to different material interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-028",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "detect when a scientist should be prompted",
+      "rationale": "'When a scientist should be prompted' lacks criteria (what thresholds or signals), allowing materially different implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-029",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "identify volunteer types",
+      "rationale": "Unclear what 'types' means (roles, behavior clusters, expertise), causing materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-030",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "using simple low­level image features",
+      "rationale": "Specifies method (simple low-level features) and target (preclassify Galaxy Zoo images), avoiding ambiguity.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-031",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "images with no classifiable animals",
+      "rationale": "Clear objective (detect images with no classifiable animals); the target condition is explicit.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-032",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "image series detection for the case of timestamping malfunction",
+      "rationale": "Specifies condition (timestamping malfunction) and activity (image series detection), which is concrete enough.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-033",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "animal species preclassification in Snapshot Serengeti",
+      "rationale": "Specifies goal (species preclassification) and dataset; terms are sufficiently specific.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-034",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "animal attribute preclassification",
+      "rationale": "Clear intent to preclassify attributes; while attribute list may be detailed later, story is specific enough.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-035",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "animal number detection",
+      "rationale": "Specifies the measurable target (number of animals), which is not ambiguous for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-036",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "automatic segmentation or localization of plankton",
+      "rationale": "Specifies tasks (segmentation/localization) and domain (plankton), avoiding vague terminology.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-037",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "images with no classifiable plankton",
+      "rationale": "Condition is explicit (no classifiable plankton), so requirements interpretation is clear.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-038",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "detection of plankton size or orientation",
+      "rationale": "Specifies concrete measurable attributes (size, orientation), not open to multiple material interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-039",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "preclassification of plankton species",
+      "rationale": "Clear goal and domain; 'preclassification' of species is specific enough for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-040",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "reduce video duration",
+      "rationale": "'Reduce video duration' is underspecified (how much reduction, by what rules), which can lead to materially different implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-041",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "detect the time ... where the worm lays an egg",
+      "rationale": "Specifies a specific detection target (time of egg-laying) with little room for multiple material interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-042",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "areas of flooding, damage, temporary shelters, blocked roads",
+      "rationale": "Lists explicit examples of important features to detect, making the requirement concrete rather than vague.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-043",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "based on their experience",
+      "rationale": "'Experience' is vague (how measured: time, accuracy, classifications?), allowing materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-044",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "remove artefacts such as bright stars and camera read errors",
+      "rationale": "Specifies concrete artefacts to remove; the target behaviour is explicit and not ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-045",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "detect moving and transient objects",
+      "rationale": "Clear detection targets (moving/transient objects); not open to materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-046",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "remove background noise and distracting sounds",
+      "rationale": "Specifies concrete audio cleanup tasks; reasonably unambiguous for implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-047",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "group whale calls that are similar",
+      "rationale": "'Similar' is not defined (similarity metric/type), which can lead to materially different grouping implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-048",
+      "criterion": "Unambiguous",
+      "decision": "No Violation",
+      "evidence": "identify the number of whales heard",
+      "rationale": "Specifies a measurable outcome (number of whales in an audio file), which is unambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-049",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "know when I should interrupt a volunteer",
+      "rationale": "'When I should interrupt' lacks criteria (thresholds, signals), allowing materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-050",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "know whether I should interrupt a volunteer with text, an image, or a video",
+      "rationale": "The modalities are listed but the triggers/criteria for choosing among them are unspecified, permitting different implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-051",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "know when I should educate a volunteer",
+      "rationale": "No criteria for 'when' education is needed are provided, which is underspecified and ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-052",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "whether I should educate a volunteer with text, an image, or a video",
+      "rationale": "Selection criteria among modalities are unspecified; 'whether' is vague without triggers or rules.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-053",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "which piece of education I should give",
+      "rationale": "'Which piece' is underspecified (what education pieces exist, mapping rules), allowing materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-054",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "made an interesting comment",
+      "rationale": "'Interesting' is subjective and undefined, leading to multiple materially different interpretations of when to flag comments.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-055",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "know when Zoonibot should comment on a subject",
+      "rationale": "No criteria for 'when' Zoonibot should comment are provided, making the requirement ambiguous.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-056",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "know when Zoonibot should give an explanation",
+      "rationale": "'When' is undefined; triggers and conditions for explanations are unspecified and material to implementation.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-057",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "know what Zoonibot should say to a volunteer",
+      "rationale": "'What' is open-ended and unspecified (tone, content, constraints), allowing materially different outcomes.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-058",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "group subjects by similarity",
+      "rationale": "'Similarity' is not defined (which features, thresholds), leading to materially different grouping strategies.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-059",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "based on their previous experiences",
+      "rationale": "'Previous experiences' is underspecified (which experiences, time window, weighting), permitting different implementations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "ZO-060",
+      "criterion": "Unambiguous",
+      "decision": "Violation",
+      "evidence": "see a summary of articles",
+      "rationale": "'Summary' is underspecified (length, level of detail, fields included) and 'reuse' is vague, allowing materially different interpretations.",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}

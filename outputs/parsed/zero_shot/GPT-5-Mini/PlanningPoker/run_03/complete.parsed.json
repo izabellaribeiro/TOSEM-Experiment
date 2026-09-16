@@ -1,0 +1,547 @@
+{
+  "metadata": {
+    "prompt_profile": "zero_shot",
+    "prompt_label": "Zero-shot",
+    "shots": 0,
+    "provider": "openai",
+    "model_requested": "gpt-5-mini",
+    "model_label": "GPT-5-Mini",
+    "project": "PlanningPoker",
+    "criterion": "Complete",
+    "run": 3,
+    "temperature": null,
+    "elapsed_seconds": 75.805
+  },
+  "evaluations": [
+    {
+      "story_id": "PP-001",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "create a new game by entering a name and an optional description",
+      "rationale": "This story is self-contained (game creation) and does not expose a missing complementary capability elsewhere in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-002",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "invite estimators by giving them a URL where they can access the game",
+      "rationale": "Invitation via URL is supported and has complementary stories (join by URL); no missing capability exposed here.",
+      "related_story_ids": [
+        "PP-029"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-003",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "start a round by entering an item in a single multi-line text field",
+      "rationale": "Starting a round (entering an item) is covered; this story does not by itself expose a missing complementary capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-004",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see all items we try to estimate this session",
+      "rationale": "Listing items is supported together with item creation/edit/delete stories; no complementary capability is missing for this behavior.",
+      "related_story_ids": [
+        "PP-006",
+        "PP-007",
+        "PP-008"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-005",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "select an item to be estimated or re-estimated",
+      "rationale": "Selection of items is matched by item management stories; it does not reveal an absent complementary capability.",
+      "related_story_ids": [
+        "PP-006",
+        "PP-007"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-006",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "add an item to the list of items to be estimated",
+      "rationale": "Creation of items is present; corresponding edit/delete are also present, so no complementary capability is missing for items.",
+      "related_story_ids": [
+        "PP-007",
+        "PP-008"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-007",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "edit an item in the list of items to be estimated",
+      "rationale": "Edit capability is present together with add and delete; no complementary CRUD capability is missing for items.",
+      "related_story_ids": [
+        "PP-006",
+        "PP-008"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-008",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete an item from the list of items to be estimated",
+      "rationale": "Delete capability complements add/edit and is present; no missing complementary requirement is evident.",
+      "related_story_ids": [
+        "PP-006",
+        "PP-007"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-009",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "show all estimates immediately",
+      "rationale": "This story presupposes that estimators can submit/play estimates, but the backlog contains no story describing the basic action \"as an estimator I want to give/select/play an estimate (select a card)\" — the essential creation capability for estimates is missing.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-010",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "accept the average of all estimates",
+      "rationale": "Accepting an average requires stored estimates from participants, yet the backlog lacks a story enabling estimators to submit/select estimates (the complementary creation behavior is missing).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-011",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "have the \"estimate\" field filled in automatically if all estimators show the same card",
+      "rationale": "Auto-filling depends on estimators 'showing' cards; there is no story specifying the fundamental action of estimators playing/selecting cards (submit estimates) in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-012",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "enter the agreed-upon estimate",
+      "rationale": "Entering an agreed estimate presumes prior individual estimates exist; the backlog lacks a story enabling estimators to submit those individual estimates (missing complementary capability).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-013",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "estimate a story we estimated earlier in the session again",
+      "rationale": "Re-estimating implies prior rounds of estimators submitting estimates; no story specifies how estimators submit/select their estimates (the creation action is absent).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-014",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "import stories from a spreadsheet",
+      "rationale": "Importing stories is a standalone capability; it does not expose a missing complementary requirement in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-015",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "copy/paste stories from a spreadsheet",
+      "rationale": "Copy/paste import is self-contained and does not reveal absent complementary functionality.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-016",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "browse through previous games",
+      "rationale": "Browsing previous games is supported by other stories (view/export transcripts, delete game) and does not reveal a missing complementary capability by itself.",
+      "related_story_ids": [
+        "PP-017",
+        "PP-020"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-017",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "view a transcript of a game, so that I can see the stories and estimates",
+      "rationale": "Viewing transcripts requires that individual estimates have been submitted and recorded; the backlog lacks a story for estimators to submit/select estimates (the creation capability is missing).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-018",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "export a transcript of a game as a HTML file",
+      "rationale": "Exporting transcripts assumes estimates have been collected; no story specifies how estimators provide those estimates (missing complementary capability).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-019",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "export a transcript of a game as a CSV file",
+      "rationale": "CSV export depends on stored estimates produced by participants; the backlog lacks a story enabling participants to submit estimates (missing creation behavior).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-020",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete a game",
+      "rationale": "Delete game complements browse/export and is present; it does not by itself reveal a missing complementary capability.",
+      "related_story_ids": [
+        "PP-016",
+        "PP-017"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-021",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "create an account for the application",
+      "rationale": "Account creation is present and paired with login/change/delete/password reset stories; no complementary account capability appears missing.",
+      "related_story_ids": [
+        "PP-022",
+        "PP-023",
+        "PP-024",
+        "PP-026"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-022",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "log in using my account name and password",
+      "rationale": "Login complements account creation and password reset; there is no missing complementary capability for accounts evident here.",
+      "related_story_ids": [
+        "PP-021",
+        "PP-024"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-023",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "change my account details",
+      "rationale": "Account detail changes complement create/login/delete stories; no missing capability is exposed.",
+      "related_story_ids": [
+        "PP-021",
+        "PP-024"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-024",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "delete my account, so that account information and games are no longer stored",
+      "rationale": "Account deletion is explicitly present and complements game deletion; no missing related capability is exposed.",
+      "related_story_ids": [
+        "PP-020",
+        "PP-021"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-025",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see dates and times in my local timezone",
+      "rationale": "Timezone presentation is a UI/detail concern and does not expose a missing complementary feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-026",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "get a password reminder by email",
+      "rationale": "Password reminder is supported and does not reveal an absent complementary capability.",
+      "related_story_ids": [
+        "PP-021",
+        "PP-022"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-027",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "select whether to have the team estimate with {0, 1/2, 1, 2, 3, 5, 8, etc.} or {0, 1, 2, 4, 8, 16, 32, etc.}",
+      "rationale": "Configuring card sets is self-contained; while it pertains to estimates, it does not itself expose a missing basic capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-028",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "invite up to 15 estimators",
+      "rationale": "Capacity limit is a constraint on invitation/join features; the complementary join story exists (PP-029).",
+      "related_story_ids": [
+        "PP-002",
+        "PP-029"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-029",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "join a game by entering my name on the page I received the URL for",
+      "rationale": "Joining is present and complements the invitation story; it does not reveal a missing complementary capability.",
+      "related_story_ids": [
+        "PP-002",
+        "PP-028"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-030",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see the item we're estimating",
+      "rationale": "Seeing the current item is supported by item selection/start round stories; it does not expose a missing capability by itself.",
+      "related_story_ids": [
+        "PP-003",
+        "PP-005"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-031",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see all items we will try to estimate this session",
+      "rationale": "This is covered by item listing features and item import/management; no complementary capability is missing.",
+      "related_story_ids": [
+        "PP-004",
+        "PP-006"
+      ],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-032",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "immediately see that an estimate has been given by a specific estimator",
+      "rationale": "This presupposes that estimators can submit/play an estimate; the backlog contains no story describing the fundamental action for estimators to give/select/play an estimate (missing creation capability).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-033",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "be shown all estimates at the same time after all estimators have given their estimate",
+      "rationale": "Showing all estimates after submissions assumes participants can submit estimates; there is no story specifying how estimators submit/select estimates (the complementary capability is absent).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-034",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "be able to change my estimate up until the last person selects a card and all are shown",
+      "rationale": "Changing an estimate implies an initial estimate submission mechanism; no story describes the basic estimator action of selecting/playing an estimate (missing).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-035",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "see each estimator's prior estimates for the story being estimated",
+      "rationale": "Viewing prior estimates requires that those estimates were submitted and recorded; the backlog lacks the complementary story for estimators to submit their estimates.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-036",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "see who gave what estimates during the current round",
+      "rationale": "This depends on per-estimator estimate submissions; the basic capability for estimators to submit/select estimates is not present in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-037",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "start a two-minute countdown timer that all participants can see",
+      "rationale": "Timer start is independent and self-contained; it does not expose a missing complementary capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-038",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "have the two-minute timer reset itself as soon as we all play an estimate",
+      "rationale": "The reset behavior depends on participants 'playing an estimate'; there is no story defining how estimators play/submit estimates (missing complementary action).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-039",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "scroll back through the stories and estimates from prior rounds",
+      "rationale": "Accessing prior-round estimates assumes those estimates were submitted and persisted; the backlog lacks a story for estimators to submit/select estimates (the essential creation capability).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-040",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "have the cards in the same order across multiple draws",
+      "rationale": "Card ordering is a UI/detail requirement and does not by itself expose a missing complementary capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-041",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "change my estimate as long as the draw has not been completed",
+      "rationale": "Changing an estimate presumes an initial estimate submission action; the backlog contains no story for the basic estimator action of submitting/selecting an estimate (missing).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-042",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "have a small thumbnail photo displayed near where my cards are played",
+      "rationale": "Displaying thumbnails 'near where my cards are played' presumes a card-play/estimate action; the backlog lacks the fundamental story describing how estimators play/select estimates.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-043",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "site which is compliant with XHTML and CSS standards",
+      "rationale": "Standards compliance is a developer quality requirement and does not reveal a missing complementary functional capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-044",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "have a list of definitions for commonly used terms",
+      "rationale": "Definitions are a documentation task and do not indicate any missing complementary functional requirement.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-045",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "have created database indexes",
+      "rationale": "Performance/indexing is a developer task and does not expose a missing complementary capability at feature level.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-046",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "application function correctly in Internet Explorer 6 and 7, Firefox 1.5 and 2, and Safari 2",
+      "rationale": "Browser compatibility is a non-functional requirement and does not reveal a missing complementary feature.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-047",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "site comply with the W3C accessibility guidelines where possible",
+      "rationale": "Accessibility is a quality requirement and does not indicate a missing functional capability across the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-048",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "have the application respond quickly to my actions",
+      "rationale": "Performance requirement is present as a non-functional constraint and does not expose missing complementary features.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-049",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "be able to use Unicode",
+      "rationale": "Unicode support is a platform/internationalization requirement and does not reveal a missing complementary capability.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-050",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "see sensible and predictable URLs",
+      "rationale": "URL design is a UX requirement and does not indicate missing functional pieces in the backlog.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-051",
+      "criterion": "Complete",
+      "decision": "No Violation",
+      "evidence": "have nice error pages when something goes wrong",
+      "rationale": "Error pages are a quality concern and do not expose missing complementary functional capabilities.",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-052",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "results to be stored in a non-identifiable way, so that I can study the data",
+      "rationale": "Storing research results assumes the system collects and persists individual estimates; there is no story describing how estimators submit/select those estimates (the complementary creation capability is missing).",
+      "related_story_ids": [],
+      "confidence": "High"
+    },
+    {
+      "story_id": "PP-053",
+      "criterion": "Complete",
+      "decision": "Violation",
+      "evidence": "be able to see some metrics on use of the game",
+      "rationale": "Metrics on usage require event/data collection such as submitted estimates and game activity; the backlog does not include the basic story for participants to submit/record their estimates (missing data-creation capability).",
+      "related_story_ids": [],
+      "confidence": "High"
+    }
+  ]
+}
