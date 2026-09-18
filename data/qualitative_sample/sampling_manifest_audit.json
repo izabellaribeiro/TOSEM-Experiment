@@ -1,0 +1,80 @@
+{
+  "purpose": "Provenance recovery for an existing manually selected sample, not a sampling algorithm",
+  "procedure_authority": "Study author clarification in the repository task",
+  "selection_method": "manual_stratified_coverage_selection",
+  "random_sampling": false,
+  "random_seed_used": false,
+  "matching_fields": [
+    "project",
+    "story_id",
+    "criterion",
+    "prediction",
+    "evidence",
+    "rationale",
+    "related_story_ids"
+  ],
+  "source_sha256": {
+    "results/rq4/final_adjudicated.xlsx": "17a97248a726847cc403da2328b7087d5e2343f60b3d60fd8b11bbf591934ffe",
+    "data/qualitative_sample/qualitative_evaluation_coder1.xlsx": "3534e7fc8c437f45f34edaec24454d89a8d79e845cae78b7c6b15331d9ccc7a6",
+    "data/qualitative_sample/qualitative_evaluation_coder2.xlsx": "e3857ea245ea31ff918ef124732c53689bcd471cfb0bd86072aac399c2c9667a",
+    "outputs/parsed/normalized/llm_predictions.csv": "8d19533f932a99f304522b5274d7c68be63905f0a4a8d4de03bea610056e3fc9",
+    "data/ground_truth/gold_standard_qus13_final.csv": "129daf56bca5a24f5efb46b6468f78dff36b5193d82e3c6f5a53cbc25b63a55a"
+  },
+  "case_count": 30,
+  "candidate_record_count": 51,
+  "source_status_counts": {
+    "unique_match": 20,
+    "ambiguous": 10
+  },
+  "ambiguous_cases": [
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q29"
+  ],
+  "unresolved_cases": [],
+  "coverage": {
+    "classification_quadrant": {
+      "FN": 7,
+      "FP": 7,
+      "TN": 8,
+      "TP": 8
+    },
+    "model": {
+      "DeepSeek-V4-Pro": 10,
+      "GPT-5-Mini": 10,
+      "Gemini-3.1-Pro-Preview": 10
+    },
+    "prompt_profile": {
+      "few_shot": 10,
+      "one_shot": 10,
+      "zero_shot": 10
+    },
+    "project": {
+      "BADCamp": 10,
+      "PlanningPoker": 10,
+      "Zooniverse": 10
+    },
+    "criterion": {
+      "Atomic": 2,
+      "Complete": 3,
+      "Conceptually sound": 2,
+      "Conflict-free": 1,
+      "Estimatable": 3,
+      "Full sentence": 2,
+      "Independent": 3,
+      "Minimal": 2,
+      "Problem-oriented": 4,
+      "Unambiguous": 3,
+      "Uniform": 2,
+      "Unique": 2,
+      "Well-formed": 1
+    }
+  }
+}

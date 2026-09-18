@@ -1,0 +1,31 @@
+case_id,classification_quadrant,model,prompt_profile,project,story_id,criterion,run,ground_truth,prediction,selection_method,source_status,candidate_count
+Q01,TP,DeepSeek-V4-Pro,zero_shot,PlanningPoker,PP-046,Minimal,3,Violation,Violation,manual_stratified_coverage_selection,unique_match,1
+Q02,TN,DeepSeek-V4-Pro,zero_shot,BADCamp,BC-013,Complete,3,No Violation,No Violation,manual_stratified_coverage_selection,unique_match,1
+Q03,FP,DeepSeek-V4-Pro,zero_shot,Zooniverse,ZO-014,Conceptually sound,1,No Violation,Violation,manual_stratified_coverage_selection,unique_match,1
+Q04,FN,DeepSeek-V4-Pro,one_shot,PlanningPoker,PP-027,Problem-oriented,2,Violation,No Violation,manual_stratified_coverage_selection,unique_match,1
+Q05,TP,DeepSeek-V4-Pro,one_shot,BADCamp,BC-017,Unambiguous,1,Violation,Violation,manual_stratified_coverage_selection,unique_match,1
+Q06,TN,DeepSeek-V4-Pro,one_shot,Zooniverse,ZO-026,Independent,4,No Violation,No Violation,manual_stratified_coverage_selection,unique_match,1
+Q07,FP,DeepSeek-V4-Pro,few_shot,PlanningPoker,PP-046,Estimatable,2,No Violation,Violation,manual_stratified_coverage_selection,unique_match,1
+Q08,FN,DeepSeek-V4-Pro,few_shot,BADCamp,BC-017,Atomic,5,Violation,No Violation,manual_stratified_coverage_selection,unique_match,1
+Q09,TP,DeepSeek-V4-Pro,few_shot,Zooniverse,ZO-034,Problem-oriented,2,Violation,Violation,manual_stratified_coverage_selection,unique_match,1
+Q10,TN,Gemini-3.1-Pro-Preview,zero_shot,PlanningPoker,PP-037,Full sentence,,No Violation,No Violation,manual_stratified_coverage_selection,ambiguous,3
+Q11,FP,Gemini-3.1-Pro-Preview,zero_shot,BADCamp,BC-059,Conflict-free,,No Violation,Violation,manual_stratified_coverage_selection,ambiguous,3
+Q12,FN,Gemini-3.1-Pro-Preview,zero_shot,Zooniverse,ZO-017,Estimatable,,Violation,No Violation,manual_stratified_coverage_selection,ambiguous,3
+Q13,TP,Gemini-3.1-Pro-Preview,one_shot,PlanningPoker,PP-034,Unique,,Violation,Violation,manual_stratified_coverage_selection,ambiguous,5
+Q14,TN,Gemini-3.1-Pro-Preview,one_shot,BADCamp,BC-015,Uniform,,No Violation,No Violation,manual_stratified_coverage_selection,ambiguous,3
+Q15,FP,Gemini-3.1-Pro-Preview,one_shot,Zooniverse,ZO-050,Independent,,No Violation,Violation,manual_stratified_coverage_selection,ambiguous,2
+Q16,FN,Gemini-3.1-Pro-Preview,few_shot,PlanningPoker,PP-047,Minimal,,Violation,No Violation,manual_stratified_coverage_selection,ambiguous,2
+Q17,TP,Gemini-3.1-Pro-Preview,few_shot,BADCamp,BC-007,Full sentence,,Violation,Violation,manual_stratified_coverage_selection,ambiguous,4
+Q18,TN,Gemini-3.1-Pro-Preview,few_shot,Zooniverse,ZO-043,Well-formed,,No Violation,No Violation,manual_stratified_coverage_selection,ambiguous,2
+Q19,FP,GPT-5-Mini,zero_shot,PlanningPoker,PP-045,Unambiguous,1,No Violation,Violation,manual_stratified_coverage_selection,unique_match,1
+Q20,FN,GPT-5-Mini,zero_shot,BADCamp,BC-023,Atomic,3,Violation,No Violation,manual_stratified_coverage_selection,unique_match,1
+Q21,TP,GPT-5-Mini,zero_shot,Zooniverse,ZO-028,Problem-oriented,5,Violation,Violation,manual_stratified_coverage_selection,unique_match,1
+Q22,TN,GPT-5-Mini,one_shot,PlanningPoker,PP-035,Complete,5,No Violation,No Violation,manual_stratified_coverage_selection,unique_match,1
+Q23,FP,GPT-5-Mini,one_shot,BADCamp,BC-014,Complete,1,No Violation,Violation,manual_stratified_coverage_selection,unique_match,1
+Q24,FN,GPT-5-Mini,one_shot,Zooniverse,ZO-060,Uniform,1,Violation,No Violation,manual_stratified_coverage_selection,unique_match,1
+Q25,TP,GPT-5-Mini,few_shot,PlanningPoker,PP-041,Unique,4,Violation,Violation,manual_stratified_coverage_selection,unique_match,1
+Q26,TN,GPT-5-Mini,few_shot,BADCamp,BC-062,Conceptually sound,5,No Violation,No Violation,manual_stratified_coverage_selection,unique_match,1
+Q27,FP,GPT-5-Mini,few_shot,Zooniverse,ZO-050,Unambiguous,3,No Violation,Violation,manual_stratified_coverage_selection,unique_match,1
+Q28,FN,DeepSeek-V4-Pro,zero_shot,PlanningPoker,PP-001,Problem-oriented,3,Violation,No Violation,manual_stratified_coverage_selection,unique_match,1
+Q29,TP,Gemini-3.1-Pro-Preview,one_shot,BADCamp,BC-037,Estimatable,,Violation,Violation,manual_stratified_coverage_selection,ambiguous,4
+Q30,TN,GPT-5-Mini,few_shot,Zooniverse,ZO-053,Independent,5,No Violation,No Violation,manual_stratified_coverage_selection,unique_match,1

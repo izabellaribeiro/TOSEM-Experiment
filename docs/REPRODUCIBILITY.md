@@ -132,9 +132,17 @@ The preserved artifacts permit inspection of the selected cases and final judgme
 3. `data/qualitative_sample/adjudication.xlsm`: inspect `Adjudication`, `Summary`, and `Instructions` for recorded disagreements and decisions. The workbook may contain macros, but none is executed by this package.
 4. `results/rq4/final_adjudicated.xlsx`: inspect `Final Coding`, `Adjudicated Cases`, `Final Summary`, and `Method Note`. The recorded final sample has 30 cases: 8 TP, 8 TN, 7 FP and 7 FN. RC2/RC1/RC0 counts are 14/11/5; ES2/ES1/ES0 counts are 17/10/3. These are existing workbook values, not newly generated research results.
 
-**Sampling gap:** no script, random seed, deterministic selection rule, or original complete case-to-model/prompt/run mapping is supplied. The manuscript describes diversity-oriented stratified sampling of run-level outputs; that description does not establish a reproducible algorithm. Exact text matching during inspection found multiple eligible run records for 10 cases, so a unique source run must not be guessed.
+**Author-clarified sampling procedure:** the original sample was selected manually using stratified, coverage-oriented selection. Individual run-level candidates were organized into TP, TN, FP and FN, inspected manually case by case, and selected for approximate quadrant balance and diversity across model, prompting strategy, QUS criterion and project. The sample is exploratory, not intended for population-level statistical representativeness. **No random sampling or random seed was used**; a seed is not missing metadata.
 
-**Analysis gap:** the final workbook records agreement statistics and summaries, but their calculation/export script is not present. The manual steps verify the recorded artifacts; they do not constitute a claimed executable reproduction of qualitative sampling, coder independence, agreement calculation, or adjudication history. Request the original sampling manifest, analysis script or documented workbook formulas, and export procedure from the authors.
+The existing case provenance can now be recovered reproducibly with:
+
+```text
+python -m scripts.rq4.build_sampling_manifest
+```
+
+This reads the fixed final/coder workbooks and normalized predictions and writes `data/qualitative_sample/sampling_manifest.csv`, `sampling_candidate_matches.csv`, and `sampling_manifest_audit.json`. It does not select cases, alter human coding, or replay manual judgments. The manifest records all 30 cases, the author-confirmed method `manual_stratified_coverage_selection`, and supported source fields. There are 20 unique run matches; Q10–Q18 and Q29 remain ambiguous, with blank run values and all alternatives preserved separately. All 30 cases have supported model and prompt values. The observed sample has 8 TP, 8 TN, 7 FP, 7 FN, and 10 cases per model, prompt and project. The matching inputs, source hashes and criterion coverage are documented in the audit JSON.
+
+**Remaining gaps:** a unique source execution cannot be assigned to the ten ambiguous cases without additional original records. The final workbook records agreement statistics and summaries, but their calculation/export script is not present. The steps above verify recorded artifacts and recover supported provenance; they do not constitute executable reproduction of manual selection judgments, coder independence, agreement calculation, or adjudication history. Request the unresolved source keys and the original analysis script or documented workbook formulas/export procedure from the authors.
 
 ## 8. Collect new model responses, if needed
 
