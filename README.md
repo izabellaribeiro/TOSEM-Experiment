@@ -2,7 +2,7 @@
 
 Replication artifacts for **Beyond Accuracy: A Multidimensional Evaluation of LLMs for User Story Quality Assessment**, by Izabella R. S. Silva and coauthors. The supplied 2026 manuscript evaluates predictive effectiveness, prompting, repeated-run reliability, and rationale quality across the 13 Quality User Story (QUS) criteria.
 
-This package contains preserved experimental inputs, API outputs, analysis code, quantitative results, and human qualitative coding workbooks. **Quantitative reanalysis is executable; confidence analysis and qualitative sample selection are not fully reproducible from the supplied scripts.** See [reproducibility instructions](docs/REPRODUCIBILITY.md), [artifact traceability](docs/TRACEABILITY.md), and [manual-review items](docs/MANUAL_REVIEW.md).
+This package contains preserved experimental inputs, API outputs, analysis code, quantitative results, and human qualitative coding workbooks. **Quantitative reanalysis includes the high-confidence stable-error audit; broader confidence analyses and qualitative sample selection remain incomplete.** See [reproducibility instructions](docs/REPRODUCIBILITY.md), [artifact traceability](docs/TRACEABILITY.md), and [manual-review items](docs/MANUAL_REVIEW.md).
 
 ## Study overview
 
@@ -78,10 +78,10 @@ The raw and parsed output trees each have an `archive/previous_single_prompt/` s
 | RQ1 / §4.1 | Effectiveness by model, criterion, dimension, project; supported-five AQUSA comparison | `scripts/rq1/`, `results/rq1/` |
 | RQ2 / §4.2 | Prompt summaries, Friedman test, pairwise Wilcoxon tests, Holm correction, effect sizes | `scripts/rq2/`, `results/rq2/` |
 | RQ3 / §4.3 | Jaccard, unanimity/flip rates, Fleiss' kappa, detection frequencies, majority voting | `scripts/rq3/`, `results/rq3/` |
-| RQ3 / §4.3 | Confidence versus correctness/agreement | Confidence fields exist in parsed outputs; dedicated analysis script is missing |
+| RQ3 / §4.3 | High-confidence, stable, incorrect units | `scripts/rq3/analyze_high_confidence_stable_errors.py`; see [RQ3 instructions](scripts/rq3/README.md) for outputs and remaining confidence gaps |
 | RQ4 / §4.4 | RC/ES coding and adjudicated summaries | `data/qualitative_sample/`, `results/rq4/`; manual inspection |
 
-The RQ1 and RQ3 entry points call the same preserved metrics implementation, which calculates both sets of outputs and descriptive RQ2 tables. These entry points are new orchestration only, not newly invented analyses.
+The RQ1 and RQ3 entry points share the preserved metrics implementation. RQ3 then runs the new high-confidence stable-error audit using the study owner's explicit five-run definition. This new implementation is distinguished from the preserved original calculations.
 
 ## Quick start: reanalyze the saved experiment
 
@@ -126,7 +126,7 @@ For per-RQ instructions, input/output paths, new model collection, NLTK installa
 
 [requirements.txt](requirements.txt) lists only dependencies used by existing execution and analysis code: `requests`, `nltk`, `yattag`, `numpy`, `pandas`, and `scipy`. AQUSA's experiment pins are retained. Other versions were not fully pinned in the source package; the reproduction manifest records installed versions without presenting them as original execution metadata. Excel-compatible software is needed to inspect the preserved `.xlsx`/`.xlsm` workbooks; macros are not required for the documented inspection workflow.
 
-The supplied scripts do not recreate the 30-case sampling process, confidence-analysis tables, qualitative agreement calculations, or every article-level table/figure. No missing seed, sampling algorithm, result, or methodological decision has been invented. See [MANUAL_REVIEW.md](docs/MANUAL_REVIEW.md).
+The supplied scripts do not recreate the 30-case sampling process, general confidence analyses beyond the stable-error audit, qualitative agreement calculations, or every article-level table/figure. No missing seed, sampling algorithm, result, or methodological decision has been invented. See [MANUAL_REVIEW.md](docs/MANUAL_REVIEW.md).
 
 ## Citation
 

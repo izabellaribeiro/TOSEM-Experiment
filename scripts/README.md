@@ -7,7 +7,8 @@ Invoke package modules from the repository root with `python -m`:
 | `scripts.reproduce` | Saved-output reanalysis with separate output root; no model calls |
 | `scripts.rq1.run_analysis` | Existing shared effectiveness, stability and aggregation calculations and descriptive tables |
 | `scripts.rq2.analyze_prompting_statistics` | Original prompting inferential analysis, relocated with updated input/output defaults |
-| `scripts.rq3.run_analysis` | Entry point for the existing stability/aggregation pipeline shared with RQ1 |
+| `scripts.rq3.run_analysis` | Shared stability/aggregation pipeline, followed by the new high-confidence stable-error audit |
+| `scripts.rq3.analyze_high_confidence_stable_errors` | Explicit five-run high-confidence stable-error definition, manuscript-count comparison and diagnostics |
 | `scripts/rq4/README.md` | Manual inspection workflow; original sample-selection/qualitative-analysis scripts absent |
 | `scripts.execution.run_llms` | Paid model API collection; raw and parsed files stored separately |
 | `scripts.execution.run_aqusa` | Bundled AQUSA baseline execution |

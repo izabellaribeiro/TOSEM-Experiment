@@ -50,7 +50,7 @@ python -m scripts.reproduce --output-root replication_runs/check
 python -m scripts.verify_package --reproduced-root replication_runs/check
 ```
 
-The first command normalizes the saved current parsed JSONs and AQUSA reports, audits coverage, calculates the existing shared RQ1/RQ3 metrics and RQ1–RQ3 descriptive tables, runs RQ2 statistical analysis, and records the current environment. It does not call any model API or invent missing confidence/RQ4 analyses.
+The first command normalizes the saved current parsed JSONs and AQUSA reports, audits coverage, calculates the existing shared RQ1/RQ3 metrics and RQ1–RQ3 descriptive tables, runs the high-confidence stable-error audit and RQ2 statistical analysis, and records the current environment. It does not call any model API or invent missing RQ4 procedures.
 
 All regenerated artifacts are written below `replication_runs/check/`, not over the preserved files. Using the same output root again overwrites only that reproduction's generated files; choose a different output root to retain separate checks. The default root is `replication_runs/latest/`. The environment variable `TOSEM_OUTPUT_ROOT` selects an alternative root for individual module commands; the all-analysis command sets it for its subprocesses.
 
@@ -110,7 +110,7 @@ The existing CLI accepts an explicit output directory; do not point it at preser
 python -m scripts.rq3.run_analysis
 ```
 
-This calls the same implementation as RQ1. If RQ1 already ran in the selected output root, its RQ3 files are already available; there is no need to run it twice.
+This first calls the shared RQ1 implementation, then runs the high-confidence stable-error audit on the regenerated run-level CSV. If RQ1 already ran, its stability/aggregation outputs exist; the new confidence audit can be invoked separately as documented below.
 
 Inspect:
 
@@ -121,7 +121,7 @@ Inspect:
 
 The original metrics implementation is preserved: in particular, majority voting is computed for units with at least three available predictions. The full reproduction is required to pass the five-run audit before these results are used.
 
-**Confidence gap:** raw/parsed outputs retain self-reported confidence and decisions, but the source package has no dedicated script or saved table for confidence versus correctness, confidence versus agreement, or consistently incorrect high-confidence units. The manuscript reports these analyses, but they cannot be reproduced by an existing entry point here. Obtain the authors' original implementation and aggregation definitions; no replacement analysis or missing numerical result is fabricated.
+**High-confidence stable-error audit:** `python -m scripts.rq3.analyze_high_confidence_stable_errors --output-root replication_runs/rq3_high_confidence` analyzes preserved individual-run predictions using the study owner's explicit definition: five distinct runs, unanimous incorrect binary prediction, and literal `High` confidence in every run. It verifies the manuscript count of 1,910 without forcing agreement and writes exclusions and a full unit audit. See [RQ3 instructions](../scripts/rq3/README.md) for outputs and failure statuses. Broader confidence-versus-correctness/agreement analyses remain a gap; this is a newly implemented reproducibility analysis, not recovered original code.
 
 ## 7. RQ4: qualitative sample and human analysis
 

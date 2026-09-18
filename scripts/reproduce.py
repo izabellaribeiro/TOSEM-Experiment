@@ -15,7 +15,7 @@ def main():
     os.environ['TOSEM_OUTPUT_ROOT'] = str(args.output_root.resolve())
     from scripts.shared.paths import output_root
     output_root()  # Validate before any writes.
-    for module in ('scripts.shared.validate_setup', 'scripts.rq1.run_analysis',
+    for module in ('scripts.shared.validate_setup', 'scripts.rq3.run_analysis',
                    'scripts.rq2.analyze_prompting_statistics', 'scripts.shared.create_manifest'):
         subprocess.run([sys.executable, '-m', module], cwd=ROOT, check=True)
 
