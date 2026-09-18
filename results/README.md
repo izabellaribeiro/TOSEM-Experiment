@@ -10,6 +10,6 @@
 
 Every original result file retains its contents. Processed majority-vote predictions live in `outputs/parsed/aggregation/`; raw API outputs live in `outputs/raw/`. Original execution audit/manifest artifacts live in `docs/provenance/`.
 
-Reproduction commands write below `replication_runs/` rather than overwriting these results. RQ3 confidence tables and a generator for every article-level display are not supplied. The RQ4 workbook is an existing final artifact, not evidence of an available executable sampling or coding pipeline.
+Reproduction commands write below `replication_runs/` rather than overwriting these results. New RQ3 high-confidence stable-error tables can be generated separately using `scripts.rq3.analyze_high_confidence_stable_errors`; other confidence analyses and a generator for every article-level display remain unavailable. The RQ4 workbook is an existing final artifact, not evidence of an available executable sampling or coding pipeline.
 
 See [TRACEABILITY.md](../docs/TRACEABILITY.md) and [MANUAL_REVIEW.md](../docs/MANUAL_REVIEW.md).
